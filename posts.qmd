@@ -1,0 +1,10 @@
+---
+title: "Recent Work"
+listing: 
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+Read more about our work here.

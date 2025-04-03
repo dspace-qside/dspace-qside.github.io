@@ -1,0 +1,24 @@
+---
+title: "My Post"
+description: "Post description"
+author:
+  - name: Ariana Mendible
+    url: arianamendible.com
+    orcid: 0000-0001-7820-3658
+#    affiliation: Seattle University Department of Mathematics
+#    affiliation-url: 
+date: "4/3/2025"
+date-modified: "4/3/2025"
+categories: [analysis, network]
+#citation: 
+#  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/
+image: placeholder.jpg
+bibliography: references.bib
+# csl: american-statistical-association.csl # include ASA citation style
+csl: diabetologia.csl
+draft: false
+---
+
+This is the blog post content with a citation from a bib file. @csik2021
+
+la dee da

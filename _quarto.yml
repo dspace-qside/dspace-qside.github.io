@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "DSPACE"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - posts.qmd
+      - icon: github
+        href: https://github.com/dspace-qside
+  # sidebar:
+  #   style: "floating"
+  #   search: false
+  #   contents:
+  #     - text: "Introduction"
+  #       href: about.qmd
+
+format:
+  html:
+    theme:
+      - flatly # themes listed here https://bootswatch.com/
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+
