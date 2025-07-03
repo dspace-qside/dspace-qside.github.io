@@ -1,30 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Science, Police Accountability, and Community Engagement Research Lab",
-    "section": "",
-    "text": "The Data Science, Police Accountability, and Community Engagement Research Lab seeks to empower community members by democratizing access to information about policing."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Recent Work",
-    "section": "",
-    "text": "Read more about our work here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy Post 2\n\n\n\n\n\nPost description\n\n\n\n\n\nMay 22, 2022\n\n\nFizz McPhee\n\n\n\n\n\n\n\n\n\n\n\n\nMy Post\n\n\n\n\n\n\nanalysis\n\n\nnetwork\n\n\nharumph\n\n\n\nPost description\n\n\n\n\n\nMay 22, 2021\n\n\nFizz McPhee\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "Recent Work",
@@ -32,11 +7,11 @@
     "text": "Read more about our work here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy Post\n\n\n\n\n\n\nanalysis\n\n\nnetwork\n\n\n\nPost description\n\n\n\n\n\nApr 3, 2025\n\n\nAriana Mendible\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/test-post-1/index.html",
-    "href": "posts/test-post-1/index.html",
-    "title": "My Post",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Science, Police Accountability, and Community Engagement Research Lab",
     "section": "",
-    "text": "This is the blog post content\nla dee da"
+    "text": "The Data Science, Police Accountability, and Community Engagement Research Lab seeks to empower community members by democratizing access to information about policing."
   },
   {
     "objectID": "posts/test-post/index.html",
@@ -44,5 +19,12 @@
     "title": "My Post",
     "section": "",
     "text": "This is the blog post content with a citation from a bib file. [1]\nla dee da\n\n\n\n\nReferences\n\n1. Csik S (2021) Why Create Presentation Slides about Blogging When You Can Just Blog about It Instead? https://samanthacsik.github.io/posts/2021-09-21-distill-blogs/"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]

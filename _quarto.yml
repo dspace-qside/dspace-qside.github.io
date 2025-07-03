@@ -3,11 +3,12 @@ project:
 
 website:
   title: "DSPACE"
+  favicon: activity.svg
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      # - href: index.qmd
+      #   text: Home
+      # - about.qmd
       - posts.qmd
       - icon: github
         href: https://github.com/dspace-qside
