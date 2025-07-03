@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./activity.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -149,14 +150,6 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./posts.html" aria-current="page"> 
 <span class="menu-text">Recent Work</span></a>
   </li>  
@@ -208,7 +201,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YW5hbHlzaXMlMkNuZXR3b3Jr" data-listing-date-sort="1743663600000" data-listing-file-modified-sort="1743724420669" data-listing-date-modified-sort="1743663600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<div class="quarto-post image-right" data-index="0" data-categories="YW5hbHlzaXMlMkNuZXR3b3Jr" data-listing-date-sort="1743663600000" data-listing-file-modified-sort="1751503898726" data-listing-date-modified-sort="1743663600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
 <div class="thumbnail">
 <p><a href="./posts/test-post/index.html" class="no-external"></a></p><a href="./posts/test-post/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/test-post/placeholder.jpg" class="thumbnail-image"></p>
@@ -339,7 +332,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/dspace-qside\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
