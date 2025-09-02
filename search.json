@@ -18,7 +18,7 @@
     "href": "posts/test-post/index.html",
     "title": "My Post",
     "section": "",
-    "text": "This is the blog post content with a citation from a bib file. [1]\nla dee da\n\n\n\n\nReferences\n\n1. Csik S (2021) Why Create Presentation Slides about Blogging When You Can Just Blog about It Instead? https://samanthacsik.github.io/posts/2021-09-21-distill-blogs/"
+    "text": "This is the blog post content with a citation from a bib file. [1]\nMore stuff.\n\n\n\n\nReferences\n\n1. Csik S (2021) Why Create Presentation Slides about Blogging When You Can Just Blog about It Instead? https://samanthacsik.github.io/posts/2021-09-21-distill-blogs/"
   },
   {
     "objectID": "about.html",
