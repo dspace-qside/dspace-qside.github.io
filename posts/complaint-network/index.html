@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Claire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson, Ethan Masadde">
+<meta name="dcterms.date" content="2025-08-21">
+
+<title>Connecting the Dots: A Preliminary Network Analysis of Police Misconduct in Minneapolis – DSPACE</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../activity.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">DSPACE</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Recent Work</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dspace-qside"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Connecting the Dots: A Preliminary Network Analysis of Police Misconduct in Minneapolis</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Claire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson, Ethan Masadde </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 21, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a>
+  <ul class="collapse">
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  </ul></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future work</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- Through this blog, we plan to provide informal updates on our work with the Reinvestigation Workgroup, located in Minneapolis, Minnesota. These updates could also serve as classroom materials for statistics/data science and social justice discussions. Whether you are a community member, student, faculty member, or other stakeholder, [we welcome your feedback](https://forms.gle/rRzc61GjC9FjQcxg8)! -->
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Recent research on policing suggests that some officer behaviors, such as misconduct and use of force, can be described as social phenomena. Rather than being one-off events attributed to individual dispositions or situational factors, these behaviors often reflect peer and organizational dynamics. Scholars emphasize the role that interpersonal connections play in influencing how, when, and with whom these incidents occur. One central question that researchers ask is whether trends in misconduct and/or use of force within a department tends to cluster within specific subgroup(s) of officers and, if so, what characteristics drive these patterns.</p>
+<p>DSPACE has been collaborating with a community partner, the <a href="https://reinvestigationgroup.com/">Reinvestigation Workgroup</a> (RWG), to gain a better understanding of policing practices in Minneapolis. Based in Minnesota, RWG investigates instances of police violence to support families and promote accountability. Our shared interest in this issue emerged from ongoing conversations in the community about the complaint process for the Minneapolis Police Department (MPD). Community members have already done remarkable work to increase transparency around MPD practices by compiling and sharing data through the <a href="http://complaints.cuapb.org/">Citizens United Against Police Brutality (CUAPB) police complaint archive</a>. Through this initiative, CUAPB requested, curated, and shared a collection of police complaints from across Minnesota. The archive is searchable by officer name and lists complaints, both sustained and dismissed, as well as supporting news articles and court cases related to each officer. This information helped spark our shared curiosity about deeper and current institutional dynamics in the MPD. One key question was concerning how social dynamics within the police department shape patterns of officer behavior that lead to complaints from the community.</p>
+<p>This problem can be studied by thinking about police departments as social networks, where officers (which we refer to as <em>nodes</em>) are linked. These links could take many forms, but for us and in many other studies, officers are linked through their shared involvement in complaints (we will call the links <em>edges</em>). The network formed through these nodes and edges can be used to study patterns of interaction or association between officers.</p>
+<p>These questions are not new- there are several studies over recent years probing at the connections between officer relationships and behavior. Some highlights from recent work on officer networks that study complaints against officers, shooting behavior, and use of force include:</p>
+<ul>
+<li>Officer pairs with greater differences in tenure were found to be much less likely to be co-named on a complaint, whereas officer pairs of the same race were more likely to be co-named on complaints <span class="citation" data-cites="wood2019network">[<a href="#ref-wood2019network" role="doc-biblioref">1</a>]</span>.<br>
+</li>
+<li>Bad behavior can diffuse through social networks—prior exposure to peers involved in problematic conduct can influence an officer’s future behavior <span class="citation" data-cites="ouellet2019network">[<a href="#ref-ouellet2019network" role="doc-biblioref">2</a>]</span> <span class="citation" data-cites="ouellet2023officer">[<a href="#ref-ouellet2023officer" role="doc-biblioref">3</a>]</span>.</li>
+<li>Use-of-force incidents are not randomly distributed across pairs of individuals but tend to concentrate within officer partnerships, particularly among those who share similar characteristics such as race, rank, or years of experience <span class="citation" data-cites="hashimi2025partners">[<a href="#ref-hashimi2025partners" role="doc-biblioref">4</a>]</span>.</li>
+<li>Officers who are more centrally connected in a social network, particularly those who act as bridges between otherwise unconnected peers, are significantly more likely to shoot, even after accounting for demographic factors and career movements, such as promotions or transfers <span class="citation" data-cites="zhao2020network">[<a href="#ref-zhao2020network" role="doc-biblioref">5</a>]</span>.</li>
+</ul>
+<p>Although other researchers are interested in complaints against officers from a social and network perspective, this type of data simply isn’t widely available. The studies listed above rely on two main datasets for their work: the <a href="https://cpdb.co">Civic Police Data Project</a>, which contains allegations of misconduct by the Chicago Police Department (CPD) from 1988-2023 compiled by the Invisible Institute, and <a href="https://force.nj.com/">The Force Report</a>, which documents over 11,000 use-of-force incidents reported by New Jersey police departments between 2012 to 2016. In our current work between DSPACE and RWG, we analyze a new dataset from our community which includes complaints against officers in the MPD. We briefly introduce the tools and metrics from network analysis necessary to provide a quantitative look at how social dynamics and departmental structures influence patterns in complaints about police officers.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<!-- **How are complaints about police recorded in Minneapolis?**  -->
+<!-- In 2012, the MPD overhauled their system for accountability and to move away from civilian oversight. The Office of Police Conduct Reveiw was established by local ordinance to address complaints and cases of misconduct (cite). Under this system, citizens and officers  -->
+<p><strong>How did we gather/process the complaint data for analysis?</strong></p>
+<p>To study complaint dynamics, we looked for the original source of data on police complaints in Minneapolis. The Minneapolis Police Department offers a <a href="https://www.minneapolismn.gov/government/government-data/datasource/officer-complaint-history-dashboard/">police officer public profile dashboard</a> that contains broad information about complaints against MPD officers. This public-facing dashboard contains three Tableau data displays, each representing a different time period and in slightly different formats due to discrepancies in the collecting agency. We focus on the most recent set of complaints, which includes complaints submitted through Internal Affairs and the Office of Police Conduct Review.</p>
+<p>Each of the three sets of complaints contain information on officers who received complaints, giving their names, all complaint identification numbers associated with them at MPD, and the status of the case (usually simply closed or open). The data is presented in a searchable Tableau display– users are instructed to type in a particular officer’s name, and individual officers must be selected for their entries to display. However, there is no direct download option, so we had to get a little creative. If you’re curious to learn more about how we scraped and cleaned this data, we have provided them in the Technical Appendix (posted soon).</p>
+<p>After gathering information from the website, the final information was organized into a dataset representing complaints, with officer name, report number, and status for each complaint. We note that this is not much information! We don’t have access to public information about why complaints were filed, who filed them, or the details of the behavior/incident that resulted in a complaint. This means that there are important limitations to the findings that can be gathered about police behavior resulting in complaints in Minneapolis, which we discuss in detail at the end of this page.</p>
+</section>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<p>To complete this network analysis, we need to define three key aspects: which officers are included, what types of interactions are examined, and the specific time frame for our study. First, consider the case where two officers receive the same number of complaints, one officer within a one-year period compared to another officer’s 25-year career. Though our network analysis won’t take time into account directly, we try to make more fair comparisons between officers by focusing on the most recent complaint data, available from February 2023 until the date that we scraped the complaint data from the website, May 8, 2025. Another important consideration is that only officers who have received complaints are represented in the network. This subset of all officers may not represent the broader department dynamics, especially when attempting to take officer demographics into account. We accounted for this by requesting a roster of all officers so we can quantify how many officers do not have complaints against them. The Minneapolis Police Department has provided information about who was employed by MPD in January 2023, 2024, and 2025 through a public records request. For this analysis, we consider any officer that was listed on any of these three snapshot rosters.</p>
+<p>In our network analysis, <em>nodes</em> are defined as the individual officers that have any complaint against them and are also included in the roster data provided by MPD. <em>Edges</em>, or connections between nodes, are defined by two officers appearing together on the same complaint. This can be seen in the image at the end of this section– the dots (nodes) are individual officers and the lines connecting these dots (edges) appear when these two officers have at least one complaint that they appear on together. We note that this network does not illustrate if certain edges occur more frequently than others. In other words, if two officers have been named together on one complaint, the edge will visually look the same as if two other officers were named together on a dozen complaints. Later, we will show that there are often officers that are named by themselves in complaints or not named with many other officers. However, we also see that there are some officers that have many other officers with whom they are named on complaints- motivating our network analysis.</p>
+<p>We begin our analysis of this co-complaint network with some descriptive information about the officers themselves. We wanted to investigate how many officers are listed on the rosters, how many of them have complaints, and how many of them share complaints with another officer. The total number of unique officer names/IDs that are included anywhere on these three rosters is 659 (587 names in 2023, 549 in 2024, 566 in 2025). Out of all of these officers on the roster, 406 of them, or 61.6%, have complaints against them. However, not all of these officers are named on complaints with other officers- some of them are only named by themselves. Out of all the officers on the roster, 311 of them (47.2%) are included in a co-complaint (a complaint with more than one officer named). These are the officers that we focus on here, due to the socialized nature of the reported activity in which they are participating. Among officers who have complaints, a given officer is named in 2.86 complaints on average, either by themselves or with others. We show the distribution of the number of complaints per officer in Figure 1, below. This is highly skewed- there are some officers that have 10 or more complaints against them while many have less than 5 complaints against them.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We’d also like to look at this topic from a complaints-based perspective: are civilians usually submitting complaints about a single officer’s behaviors or is it typically more than one officer on a single complaint? Our dataset contains a total of 733 complaints about officers on the provided rosters, some of which contain multiple officers on the same complaint. The average number of officers listed in a single complaint is 1.59, with the full distribution shown in Figure 2. This distribution is less skewed, but we see that although there are many complaints that only involve one officer, 36% of complaints contain more than one officer. Lastly, we want to give a preliminary sense of how officers are connected to other officers through co-complaint activity. To do this, we find that, on average, officers are connected to 3.26 other officers through co-complaints, or being names on the same complaint.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Social network analysis of this co-complaint data gives us the ability to see if there are certain officers that are more central to complaint activity than others. Some numeric summaries can allow us to gain a deeper understanding of this behavior. For example, “betweenness centrality” measures show how often a given node lies on the shortest path between two officers in the co-complaint network.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> We can think of betweenness centrality as an indicator of importance in the network: an officer with a high “betweenness value” acts as a bridge between peer officers who would otherwise be unconnected when it comes to behavior that results in complaints.</p>
+<p>To allow you to explore this co-complaint information, we’ve created a set of interactive visualizations. If you hover over a node/circle in the widget below, you will see the name of the officer attached to the individual node of the network, and their rank. You can also select the name of a specific officer to see their position in this network of co-complaints (their node will turn into a star in the visualization). We’ve also added the option to color officers by their betweenness centrality, so that we can visualize how central they are to this type of activity again with the ability to hover over nodes to see officer names. You can also color the nodes by the rank of the officer. Below the network visualization, we’ve included the distribution of the betweenness centrality measures for all of the officers in our analysis (those that have a complaint against them), with the highlighted node labeled in the distribution. This shows the centrality of the officer you’ve selected, compared to all other officers in the network. We encourage you to spend some time investigating the data!</p>
+ <iframe id="network_app" src="https://dspace.shinyapps.io/shinyapp/" style="border: none; width: 100%; height: 850px" frameborder="0"></iframe>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<p>It would be irresponsible to leave out the limitations to this work! Most importantly, our data, while useful in this network analysis, leaves out meaningful context. We are not controlling for the amount of time an officer is on patrol or what kind of assignment they have, as we do not have access to this information. Both of these may significantly impact how often an officer is subject to complaints– more time on patrol means more public interaction and more vulnerability to receiving a complaint. Officers in Minneapolis also often patrol in pairs. Even though many officers are named on complaints by themselves in this dataset, some of the co-complaints with another officer may be simply because they were patrolling together and not because the officers had identical roles in the incident. Further, this network only shows how many complaints were received, regardless of their resolution. Complaints that are deemed unsubstantiated, dismissed, or withdrawn will appear equal to complaints that result in disciplinary action. We also only include officers that are active on the last three annual MPD rosters, limiting our findings to those confirmed to be recently employed by the MPD. It may be missing officers who were not listed on those rosters or were on leave. Finally, it is important to note that these statistics are limited. They can be informative at the broad level or in comparison to other departments, which is part of our ongoing work. However, they should not be used to draw conclusions on an individual officer basis without further context or information. We hope that these analyses and visualizations will be helpful information for continuing conversations in Minneapolis about the social nature of police behavior that results in complaints.</p>
+</section>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future work</h2>
+<p>The DSPACE group is looking forward to continuing this analysis with RWG. We will continue to refine our definition and scope of the MPD network data, perhaps including complaints from the older available data sets. Through rosters provided from data requests, we also can establish how specific training and roles, leadership or otherwise, within the police department may impact an officer’s position in this co-complaint network. We are also aiming to compare the MPD co-complaint network findings to complaint data from other urban areas, so that we can get a sense of how complaints about police for the MPD compare to other police departments. If you have feedback on this work or would like to get involved, please reach out to us through our <a href="https://forms.gle/rRzc61GjC9FjQcxg8">DSPACE Google Form</a>.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-wood2019network" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Wood G, Roithmayr D, Papachristos AV (2019) The network structure of police misconduct. Socius 5:2378023119879798</div>
+</div>
+<div id="ref-ouellet2019network" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Ouellet M, Hashimi S, Gravel J, Papachristos AV (2019) Network exposure and excessive use of force: Investigating the social transmission of police misconduct. Criminology &amp; Public Policy 18(3):675–704</div>
+</div>
+<div id="ref-ouellet2023officer" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Ouellet M, Hashimi S, Vega Yon GG (2023) Officer networks and firearm behaviors: Assessing the social transmission of weapon-use. Journal of Quantitative Criminology 39(3):679–703</div>
+</div>
+<div id="ref-hashimi2025partners" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Hashimi S, Ouellet M, Ledford L (2025) Partners in force? Understanding police use of force from a network perspective. Journal of Research in Crime and Delinquency 62(3):429–473</div>
+</div>
+<div id="ref-zhao2020network" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Zhao L, Papachristos AV (2020) Network position and police who shoot. The ANNALS of the American Academy of Political and Social Science 687(1):89–112</div>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Calculated as the sum of the proportions of the number of shortest paths between two nodes in the network that contain a certain node to the total number of shortest paths between those two nodes.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/dspace-qside\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
