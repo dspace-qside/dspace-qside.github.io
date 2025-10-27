@@ -1,0 +1,380 @@
+---
+title: "Connecting the Dots: A Preliminary Network Analysis of Police Misconduct in Minneapolis"
+author: "Claire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson, Ethan Masadde"
+output: html_document
+date: "2025-08-21"
+description: ' '
+image: network.png
+categories: [complaints, network]
+bibliography: references.bib
+#csl: american-statistical-association.csl # include ASA citation style
+csl: diabetologia.csl
+page-layout: full
+---
+
+<!-- Through this blog, we plan to provide informal updates on our work with the Reinvestigation Workgroup, located in Minneapolis, Minnesota. These updates could also serve as classroom materials for statistics/data science and social justice discussions. Whether you are a community member, student, faculty member, or other stakeholder, [we welcome your feedback](https://forms.gle/rRzc61GjC9FjQcxg8)! -->
+
+## Introduction
+
+Recent research on policing suggests that some officer behaviors, such as misconduct and use of force, can be described as social phenomena. Rather than being one-off events attributed to individual dispositions or situational factors, these behaviors often reflect peer and organizational dynamics. Scholars emphasize the role that interpersonal connections play in influencing how, when, and with whom these incidents occur. One central question that researchers ask is whether trends in misconduct and/or use of force within a department tends to cluster within specific subgroup(s) of officers and, if so, what characteristics drive these patterns.
+
+DSPACE has been collaborating with a community partner, the [Reinvestigation Workgroup](https://reinvestigationgroup.com/) (RWG), to gain a better understanding of policing practices in Minneapolis. Based in Minnesota, RWG investigates instances of police violence to support families and promote accountability. Our shared interest in this issue emerged from ongoing conversations in the community about the complaint process for the Minneapolis Police Department (MPD). Community members have already done remarkable work to increase transparency around MPD practices by compiling and sharing data through the [Citizens United Against Police Brutality (CUAPB) police complaint archive](http://complaints.cuapb.org/). Through this initiative, CUAPB requested, curated, and shared a collection of police complaints from across Minnesota. The archive is searchable by officer name and lists complaints, both sustained and dismissed, as well as supporting news articles and court cases related to each officer. This information helped spark our shared curiosity about deeper and current institutional dynamics in the MPD. One key question was concerning how social dynamics within the police department shape patterns of officer behavior that lead to complaints from the community.
+
+This problem can be studied by thinking about police departments as social networks, where officers (which we refer to as *nodes*) are linked. These links could take many forms, but for us and in many other studies, officers are linked through their shared involvement in complaints (we will call the links *edges*). The network formed through these nodes and edges can be used to study patterns of interaction or association between officers. 
+
+These questions are not new- there are  several studies over recent years probing at the connections between officer relationships and behavior. Some highlights from recent work on officer networks that study complaints against officers, shooting behavior, and use of force include:
+
+  * Officer pairs with greater differences in tenure were found to be much less likely to be co-named on a complaint, whereas officer pairs of the same race were more likely to be co-named on complaints @wood2019network.  
+  * Bad behavior can diffuse through social networks—prior exposure to peers involved in problematic conduct can influence an officer’s future behavior @ouellet2019network @ouellet2023officer.
+  * Use-of-force incidents are not randomly distributed across pairs of individuals but tend to concentrate within officer partnerships, particularly among those who share similar characteristics such as race, rank, or years of experience @hashimi2025partners. 
+  * Officers who are more centrally connected in a social network, particularly those who act as bridges between otherwise unconnected peers, are significantly more likely to shoot, even after accounting for demographic factors and career movements, such as promotions or transfers @zhao2020network.
+  
+Although other researchers are interested in complaints against officers from a social and network perspective, this type of data simply isn’t widely available. The studies listed above rely on two main datasets for their work: the [Civic Police Data Project](https://cpdb.co), which contains allegations of misconduct by the Chicago Police Department (CPD) from 1988-2023 compiled by the Invisible Institute, and [The Force Report](https://force.nj.com/), which documents over 11,000 use-of-force incidents reported by New Jersey police departments between 2012 to 2016. In our current work between DSPACE and RWG, we analyze a new dataset from our community which includes  complaints against officers in the MPD. We briefly introduce the tools and metrics from network analysis necessary to provide a quantitative look at how social dynamics and departmental structures influence patterns in complaints about police officers.
+  
+
+## Data
+
+<!-- **How are complaints about police recorded in Minneapolis?**  -->
+<!-- In 2012, the MPD overhauled their system for accountability and to move away from civilian oversight. The Office of Police Conduct Reveiw was established by local ordinance to address complaints and cases of misconduct (cite). Under this system, citizens and officers  -->
+
+**How did we gather/process the complaint data for analysis?** 
+
+To study complaint dynamics, we looked for the original source of data on police complaints in Minneapolis. The Minneapolis Police Department offers a [police officer public profile dashboard](https://www.minneapolismn.gov/government/government-data/datasource/officer-complaint-history-dashboard/) that contains broad information about complaints against MPD officers. This public-facing dashboard contains three Tableau data displays, each representing a different time period and in slightly different formats due to discrepancies in the collecting agency. We focus on the most recent set of complaints, which includes complaints submitted through Internal Affairs and the Office of Police Conduct Review.
+
+Each of the three sets of complaints contain information on officers who received complaints, giving their names, all complaint identification numbers associated with them at MPD, and the status of the case (usually simply closed or open). The data is presented in a searchable Tableau display– users are instructed to type in a particular officer’s name, and individual officers must be selected for their entries to display. However, there is no direct download option, so we had to get a little creative. If you’re curious to learn more about how we scraped and cleaned this data, we have provided them in the Technical Appendix (posted soon). 
+
+After gathering information from the website, the final information was organized into a dataset representing complaints, with officer name, report number, and status for each complaint. We note that this is not much information! We don’t have access to public information about why complaints were filed, who filed them, or the details of the behavior/incident that resulted in a complaint. This means that there are important limitations to the findings that can be gathered about police behavior resulting in complaints in Minneapolis, which we discuss in detail at the end of this page.
+
+
+## Analysis
+
+
+To complete this network analysis, we need to define three key aspects: which officers are included, what types of interactions are examined, and the specific time frame for our study. First, consider the case where two officers receive the same number of complaints, one officer within a one-year period compared to another officer’s 25-year career. Though our network analysis won’t take time into account directly, we try to make more fair comparisons between officers by focusing on the most recent complaint data, available from February 2023 until the date that we scraped the complaint data from the website, May 8, 2025. Another important consideration is that only officers who have received complaints are represented in the network. This subset of all officers may not represent the broader department dynamics, especially when attempting to take officer demographics into account. We accounted for this by requesting a roster of all officers so we can quantify how many officers do not have complaints against them. The Minneapolis Police Department has provided information about who was employed by MPD in January 2023, 2024, and 2025 through a public records request. For this analysis, we consider any officer that was listed on any of these three snapshot rosters. 
+
+In our network analysis, *nodes* are defined as the individual officers that have any complaint against them and are also included in the roster data provided by MPD. *Edges*, or connections between nodes, are defined by two officers appearing together on the same complaint. This can be seen in the image at the end of this section– the dots (nodes) are individual officers and the lines connecting these dots (edges) appear when these two officers have at least one complaint that they appear on together. We note that this network does not illustrate if certain edges occur more frequently than others. In other words, if two officers have been named together on one complaint, the edge will visually look the same as if two other officers were named together on a dozen complaints. Later, we will show that there are often officers that are named by themselves in complaints or not named with many other officers. However, we also see that there are some officers that have many other officers with whom they are named on complaints- motivating our network analysis. 
+
+```{r, echo = F, include = F}
+#start clean
+rm(list = ls())
+
+#load libraries
+library(tidyverse)
+library(igraph)
+library(ggraph)
+library(here)
+library(dplyr)
+library(RColorBrewer)
+library(readxl)
+library(stringdist)
+library(viridis)
+library(shiny)
+library(stringr)
+library(ggplot2)
+library(plotly)
+
+###
+### Formatting and Analysis of Roster Data
+###
+#read in full roster data, 2023-2025
+mpd_roster_full <-
+  read_csv("data/MPD_roster_2023-2025_Public.csv")
+
+#formatting names in officer roster
+mpd_roster_full <- mpd_roster_full %>%
+  mutate(full_name = Name) %>%
+  #create a first and last name in the roster
+  separate(Name, into = c("last_name", "first_name"), sep = ",") %>%
+  mutate(
+    last_name = str_trim(last_name),
+    first_name = word(str_trim(first_name), 1)
+  ) %>%
+  #create a final formatted name variable
+  mutate(format_name = paste(first_name, last_name))
+
+
+#lowercase all names in the roster for consistent comparison
+mpd_roster_full <- mpd_roster_full %>%
+  mutate(
+    first_name = str_to_lower(first_name),
+    last_name = str_to_lower(last_name),
+    #remove hyphens and extra spaces
+    format_name = str_remove_all(str_to_lower(format_name), "-")
+  )
+
+#find any officer that has two ids but the same name
+name_id_counts <- mpd_roster_full %>%
+  group_by(format_name) %>%
+  summarise(num_ids = n_distinct(ID), .groups = "drop") %>%
+  filter(num_ids > 1)
+
+#reformat this person to distinguish between the two ids-
+#    this is already done in the complaint data
+mpd_roster_full$format_name[which(mpd_roster_full$format_name == 
+                                    "matthew olson" &
+                                    mpd_roster_full$ID == "005305")] <- 
+  "matthew olson (5305)"
+mpd_roster_full$format_name[which(mpd_roster_full$format_name == 
+                                    "matthew olson" &
+                                    mpd_roster_full$ID == "005313")] <- 
+  "matthew olson (5313)"
+
+#total number of unique officers across the dataset
+length(unique(mpd_roster_full$format_name))
+
+#count of unique officers in 2023, 2024, 2025
+num_off_per_year <- mpd_roster_full %>% group_by(Year) %>% 
+  summarise(officers_unique = n_distinct(format_name))
+
+#not using object after this point
+rm(name_id_counts)
+
+
+###
+### Formatting of complaint data names
+###
+#load the web-scraped complaint data 
+new_complaints <- read_csv('data/new_complaints.csv') %>%
+  select(!`...1`)
+
+#format all names in the complaint data for consistent comparison
+new_complaints <- new_complaints %>%
+  mutate(
+    format_name = str_to_lower(name),                #lowercase      
+    format_name = str_remove_all(format_name, "-"),  #remove hyphens
+    format_name = str_squish(format_name)            #remove extra spaces
+  )
+
+#manually correct spelling discrepancies in new complaint data
+new_complaints <- new_complaints %>%
+  mutate(
+    format_name = case_when(
+      format_name == "ariel lunasanchez" ~ "ariel luna sanchez",
+      format_name == "daniel oppergard" ~ "daniel oppegard",
+      format_name == "kelly o'rourke" ~ "kelly orourke",
+      format_name == "nicolas custode" ~ "nicholas custode",
+      format_name == "paul o'hanlon" ~ "paul ohanlon",
+      format_name == "timothy davis jr" ~ "timothy davis jr.",
+      format_name == "charlie adams" ~ "charles adams",
+      format_name == "scott aikins" ~ "scott aikins i",
+      format_name == "jeff werner" ~ "jeffrey werner",
+      format_name == "luke weatherspoon" ~ "lucas weatherspoon",
+      format_name == "craig crisp" ~ "craig crisp jr.",
+      format_name == "marjane khazraeinazm.." ~ "marjane khazraeinazmpour",
+      format_name == "richard walker" ~ "richard walker sr.",
+      format_name == "nicholas sciorrotta jr" ~ "nicholas sciorrotta jr jr.",
+      TRUE ~ format_name
+    )
+  )
+
+
+###
+### Preliminary analysis of complaint data: 
+###
+#vector of unique officer names in full roster data
+officer_names_roster <- unique(mpd_roster_full$format_name) 
+
+#vector of unique officer names in new complaint data
+officer_names_complaint <- unique(new_complaints$format_name) 
+
+#how many of the roster officer names appear in the new complaint dataset?
+num_off_compl <- length(which(officer_names_roster %in%
+                                new_complaints$format_name)) #406
+
+#how many of the complaint officer names appear in the roster dataset?
+length(which(officer_names_complaint %in% mpd_roster_full$format_name)) #406
+
+#what percent of roster officer names appear in the new complaint dataset?
+perc_off_comp <- num_off_compl/
+  length(officer_names_roster)*100 #61.6%
+
+#what percent of complaint officer names appear in the roster dataset?
+length(which(officer_names_complaint %in% mpd_roster_full$format_name))/
+  length(officer_names_complaint) #90.6%
+
+#get the unmatched names from complaints (i.e., not in roster)
+unmatched_df <- 
+  officer_names_complaint[!(officer_names_complaint %in%
+                              officer_names_roster)] %>% 
+  as.data.frame() %>%
+  dplyr::rename(., unmatched_name = ".")
+
+#find the closest match in the roster for each unmatched name
+#these all appear to be true unmatches
+unmatched_df <- unmatched_df %>%
+  rowwise() %>%
+  mutate(
+    closest_match =
+      officer_names_roster[which.min(stringdist(unmatched_name,
+                                                officer_names_roster))],
+    match_number = min(stringdist(unmatched_name, officer_names_roster))) %>%
+  ungroup()  %>%
+  arrange(match_number)
+
+###
+### Cleanup
+rm(unmatched_df)
+
+###
+### Additional officer analysis for post
+###
+#count number of officers per complaint
+new_complaint_offcount <- new_complaints %>% count(complaint_id) 
+
+#subset the count data to those that have more than 1 officer involved
+new_complaint_offcount_multiple <- new_complaint_offcount %>% 
+  filter(n>1)
+  
+#subset the complaint data to only complaints with more than one officer
+new_complaint_cos_only <- 
+  new_complaints[which(new_complaints$complaint_id %in%
+                         new_complaint_offcount_multiple$complaint_id),]
+
+#how many officers on the roster are included in *co*-complaint
+co_comp_off_num <- length(which(officer_names_roster %in%
+                                  new_complaint_cos_only$format_name)) #311
+
+#what percent of these roster officer names appear in the co-complaint dataset?
+co_comp_off_perc <- length(which(officer_names_roster %in%
+                                   new_complaint_cos_only$format_name))/
+  length(officer_names_roster) #47.19%
+
+#filter complaint data to only those officers in the 2023-2025 rosters
+final_complaints <- new_complaints %>% filter(format_name %in%
+                                                officer_names_roster)
+
+#number of complaints per officer (including single complaints)
+comp_per_off <- final_complaints %>% count(name) 
+mean(comp_per_off$n)
+
+#distribution of comp per officers
+p1 <- ggplot(data=comp_per_off) + geom_histogram(aes(x=n)) +
+  labs(title = "Figure 1: Distribution of # of Complaints per Officer",
+       x= "Number of Complaints per Officer", y = "Count of Officers") 
+```
+
+
+We begin our analysis of this co-complaint network with some descriptive information about the officers themselves. We wanted to investigate how many officers are listed on the rosters, how many of them have complaints, and how many of them share complaints with another officer. The total number of unique officer names/IDs that are included anywhere on these three rosters is `r length(officer_names_roster)` (`r num_off_per_year[1,2]` names in 2023, `r num_off_per_year[2,2]` in 2024, `r num_off_per_year[3,2]` in 2025). Out of all of these officers on the roster, `r num_off_compl` of them, or `r round(perc_off_comp, 1)`%, have complaints against them. However, not all of these officers are named on complaints with other officers- some of them are only named by themselves. Out of all the officers on the roster, `r co_comp_off_num` of them (`r round(co_comp_off_perc*100,1)`%)  are included in a co-complaint (a complaint with more than one officer named). These are the officers that we focus on here, due to the socialized nature of the reported activity in which they are participating. Among officers who have complaints, a given officer is named in `r round(mean(comp_per_off$n),2)` complaints on average, either by themselves or with others. We show the distribution of the number of complaints per officer in Figure 1, below. This is highly skewed- there are some officers that have 10 or more complaints against them while many have less than 5 complaints against them. 
+
+
+```{r, echo = F, include = T, message = F}
+p1
+```
+
+
+
+```{r, echo = F, include = F}
+#number of officers per complaint
+off_per_comp <- final_complaints %>% count(complaint_id) 
+mean(off_per_comp$n)
+
+#what percent of complaints contain more than one officer
+more_than_1_perc <- length(which(off_per_comp$n >1))/nrow(off_per_comp)
+
+#distribution of off per comp
+p2 <- ggplot(data=off_per_comp) + geom_histogram(aes(x=n)) +
+  labs(title = "Figure 2: Distribution of # of Officers per Complaint",
+       x= "Number of Officers per Complaint", y = "Count of Complaints")
+```
+
+
+```{r,echo = F, include = F}
+#only take most recent position of each officer
+mpd_roster_full_unique <- mpd_roster_full %>%
+  group_by(ID) %>%
+  slice(n())
+
+###
+### Create Network of Officers in MPD Roster with Complaints
+###
+
+#vector of complaint ids
+compids = unique(final_complaints$complaint_id)
+
+#create edges of the network (co-named on complaints)
+edges = data.frame()
+
+for(j in 1:length(compids)){
+  
+  # get all officers involved in jth complaint
+  involved_ids = which(final_complaints$complaint_id==compids[j])
+  officers = final_complaints$format_name[involved_ids] %>% unique()
+  
+  # make two-column data frame of each unique combo of officers in the complaint
+  if (length(officers)>1) {
+    combos = combn(officers, 2) %>% t() %>% data.frame
+  } else if (length(officers) == 1) {
+    combos = data.frame(X1 = officers, X2 = officers)
+  }
+  edges = rbind(edges, combos)
+}
+
+#create nodes of the network (officers)
+nodes <- data.frame(names = unique(c(unique(edges$X1), unique(edges$X2)))) 
+
+#add officer characteristics
+nodes <- left_join(nodes, mpd_roster_full_unique, by = c('names' = 'format_name'))
+
+#create initial visualization of the network
+current_network <- igraph::graph_from_data_frame(d=unique(edges),
+                                                 vertices=nodes, directed = FALSE)
+
+#remove self-loops
+current_network <- simplify(current_network, remove.loops = TRUE)
+
+
+#calculate betweenness centrality with values scaled between 0 and 1 for comparability
+betw_vals <- igraph::betweenness(current_network, normalized = TRUE)
+betw_df <- cbind(V(current_network)$name, betw_vals) %>% as.data.frame()
+colnames(betw_df)[1] <- "names"
+betw_df$betw_vals <- as.numeric(betw_df$betw_vals)
+
+nodes <- left_join(nodes, betw_df)
+
+
+###
+### Calculate degree
+###
+mean_degree <- mean(igraph::degree(current_network))
+```
+
+
+We’d also like to look at this topic from a complaints-based perspective: are civilians usually submitting complaints about a single officer’s behaviors or is it typically more than one officer on a single complaint? Our dataset contains a total of `r length(unique(final_complaints$complaint_id))` complaints about officers on the provided rosters, some of which contain multiple officers on the same complaint. The average number of officers listed in a single complaint is `r round(mean(off_per_comp$n),2)`, with the full distribution shown in Figure 2. This distribution is less skewed, but we see that although there are many complaints that only involve one officer, `r round(more_than_1_perc*100, 1)`% of complaints contain more than one officer. Lastly, we want to give a preliminary sense of how officers are connected to other officers through co-complaint activity. To do this, we find that, on average, officers are connected to `r round(mean_degree, 2)` other officers through co-complaints, or being names on the same complaint.
+
+```{r, echo = F, include = T, message = F}
+p2
+```
+
+
+Social network analysis of this co-complaint data gives us the ability to see if there are certain officers that are more central to complaint activity than others.  Some numeric summaries can allow us to gain a deeper understanding of this behavior. For example, “betweenness centrality” measures show how often a given node lies on the shortest path between two officers in the co-complaint network.^[Calculated as the sum of the proportions of the number of shortest paths between two nodes in the network that contain a certain node to the total number of shortest paths between those two nodes.] We can think of betweenness centrality as an indicator  of importance in the network: an officer with a high “betweenness value”  acts as a bridge between peer officers who would otherwise be unconnected when it comes to behavior that results in complaints. 
+
+
+To allow you to explore this co-complaint information, we’ve created a set of interactive visualizations. This visualization is best explored on a larger screen. If you hover over a node/circle in the widget below, you will see the name of the officer attached to the individual node of the network, and their rank. Color schemes can be selected to show betweenenss centrality or an officer's rank. You can select a specific officer by clicking on a node in the main network, browsing the dropdown menu, or typing in their name if known. This will higlight more information about one officer. A filtered sub-network will show only this officer's connections and a summary table displays more detailed metrics. We've also included the distribution of the betweenness centrality measures for all of the officers in our analysis, with the highlighted node labeled in the distribution. This shows the centrality of the officer you've selected, compared to all other officers in the network. We encourage you to spend some time investigating the data!
+
+```{r, echo= F, include = T, message = F}
+#output objects needed for Shiny app
+save(final_complaints, mpd_roster_full_unique, current_network, 
+     nodes, file = "data/network_files.Rdata")
+```
+
+```{=html}
+ <iframe id="network_app" src="https://dspace.shinyapps.io/complaint_network/" style="border: none; width: 100%; height: 975px" frameborder="0"></iframe>
+```
+
+## Interpretation
+#### What does it mean if an officer has no connections?
+Notice that there are some disconnected nodes on the periphery of the network. Officers represented by these nodes were not co-named with any other officer. Their disconnection to other nodes does not say anything about the *number* of complaints they have received. Officers who have never received complaints would be left out of the network entirely, and officers without connections could have been named in multiple complaints. These solitary cases only give information about the social nature of complained behavior. A lack of connections may reflect more isolated incidents, like a single officer responding, or roles that involve limited interaction with colleagues.
+
+#### What does the number of connections say about an officer?
+Some officers are connected to only one or two others, while others are linked to many. More connections suggest an officer has been co-named with a wider group of colleagues. These highly connected officers typically appear near the center of the network, surrounded by many lines representing co-complaint ties. This pattern may suggest they work in settings with higher levels of interaction or collaboration, such as patrol units or specialized teams, where routines, behaviors, and decisions are often shared. When complaints cluster within these groups, it may point to broader patterns in how officers operate together, potentially reflecting shared norms or workplace dynamics that shape the likelihood of being named in a complaint. However, it is important to note that having many connections doesn’t necessarily mean an officer holds a central or influential position in the structure of the network. That is where betweenness centrality comes in. 
+
+#### What does it mean if an officer has a high betweenness centrality? 
+Betweenness centrality goes beyond measuring the number of connections an officer has. This measure instead reflects how often an officer lies on the shortest paths connecting different parts of the network, indicating influence in the network. For example, Officer A might be co-named with 12 others, all from the same closely-connected unit. Even with many ties, Officer A may not bridge across clusters, and therefore their betweenness centrality would be relatively low. On the other hand, Officer B might be connected to just 4 others, but if each of those peers belongs to a different group, Officer B plays a key linking role across the department. In that case, Officer B would have high betweenness centrality, despite having fewer overall connections. This shows that Officer B has more influence in the complained incidents. This could be indicative of Officer B's social importance. However, betweenness centrality could also be affected by the hierarchy of assignments, such as holding a leadership role, rotating assignments more frequently, or other administrative reasons. Node color helps make this information easier to interpret: warmer colors (like orange and red) indicate higher betweenness centrality—officers who frequently connect different clusters of complaint activity. Cooler colors (like blue and green) represent lower centrality—officers who may still be involved in complaints but don’t serve as major bridges in the network.
+
+Lastly, it is important to note that the lines in this network are unweighted. This means each line simply shows whether two officers were ever co-named in a complaint. It doesn’t reflect how many times they were named together. Whether the connection happened once or twenty times, it is treated the same. This design keeps the focus on the *structure* of relationships-- who is connected to whom-- rather than the frequency of co-complaints, helping us uncover broader patterns in the network.
+
+## Limitations
+It would be irresponsible to leave out the limitations to this work! Most importantly, our data, while useful in this network analysis, leaves out meaningful context. We are not controlling for the amount of time an officer is on patrol or what kind of assignment they have, as we do not have access to this information. Both of these may significantly impact how often an officer is subject to complaints– more time on patrol means more public interaction and more vulnerability to receiving a complaint. Officers in Minneapolis also often patrol in pairs. Even though many officers are named on complaints by themselves in this dataset, some of the co-complaints with another officer may be simply because they were patrolling together and not because the officers had identical roles in the incident. Further, this network only shows how many complaints were received, regardless of their resolution. Complaints that are deemed unsubstantiated, dismissed, or withdrawn will appear equal to complaints that result in disciplinary action. We also only include officers that are active on the last three annual MPD rosters, limiting our findings to those confirmed to be recently employed by the MPD. It may be missing officers who were not listed on those rosters or were on leave. Finally, it is important to note that these statistics are limited. They can be informative at the broad level or in comparison to other departments, which is part of our ongoing work. However, they should not be used to draw conclusions on an individual officer basis without further context or information. We hope that these analyses and visualizations will be helpful information for continuing conversations in Minneapolis about the social nature of police behavior that results in complaints.
+
+## Future work
+The DSPACE group is looking forward to continuing this analysis with RWG. We will continue to refine our definition and scope of the MPD network data, perhaps including  complaints from the older available data sets. Through rosters provided from data requests, we also can establish how specific training and roles, leadership or otherwise, within the police department may impact an officer’s position in this co-complaint network. We are also aiming to compare the MPD co-complaint network findings to complaint data from other urban areas, so that we can get a sense of how complaints about police for the MPD compare to other police departments.  If you have feedback on this work or would like to get involved, please reach out to us through our [DSPACE Google Form](https://forms.gle/rRzc61GjC9FjQcxg8).
+

@@ -16,7 +16,7 @@ image: placeholder.jpg
 bibliography: references.bib
 # csl: american-statistical-association.csl # include ASA citation style
 csl: diabetologia.csl
-draft: false
+draft: true
 ---
 
 This is the blog post content with a citation from a bib file. @csik2021
