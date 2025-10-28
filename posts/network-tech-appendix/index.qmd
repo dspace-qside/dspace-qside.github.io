@@ -1,0 +1,24 @@
+---
+title: "Data Scraping for Complaint Network"
+author: " Ariana Mendible, Mia Wang, Claire Kelling"
+output: html_document
+date: "2025-10-28"
+date-modified: last-modified
+language: 
+  title-block-published: "PUBLISHED"
+  title-block-modified: "UPDATED"
+description: ' '
+image: network.png
+categories: [complaints, network]
+# bibliography: references.bib
+# csl: american-statistical-association.csl # include ASA citation style
+# csl: diabetologia.csl
+page-layout: full
+draft: true
+---
+
+<!-- Claire to write short intro -->
+
+<!-- Ariana to write data scraping description -->
+
+<!-- Mia to write data preparation and network-building description -->
