@@ -1,10 +1,121 @@
 ---
 title: "Data Science, Police Accountability, and Community Engagement Research Lab"
+section-divs: false
+# page-layout: full
+toc: false
+anchor-sections: false
 ---
 
-The Data Science, Police Accountability, and Community Engagement Research Lab seeks to empower community members by democratizing access to information about policing. 
+The Data Science, Police Accountability, and Community Engagement (DSPACE) Group partners with communities to work towards data-informed police accountability. Housed within the [Institute for the Quantitative Study of Inclusion, Diversity and Equity](https://qsideinstitute.org/) (QSIDE) since 2021, the DSPACE Group serves as the Institute’s research-intensive branch in the realm of police accountability. Our team of mathematicians, statisticians, and data scientists collaborates with community members and organizations to answer challenging questions about patterns in policing. Our endeavor is to make a direct and meaningful impact to the public and to contribute to scholarly research at the intersection of data science/statistics and policing.
+<br>
+</br>
 
+## Lab Contributors
 
+<style>
+.card-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
 
+.card {
+width: 150px;
+border: 0px solid #ccc;
+border-radius: 5px;
+overflow: hidden;
+text-decoration: none;
+color: inherit;
+transition: box-shadow 0.2s ease;
+}
 
+.card-content p {
+  font-size: 12px;
+  margin: 0;
+}
+.card-content h5 {
+  font-size: 16px
+}
 
+.card:hover {
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 15px;
+}
+</style>
+
+<div class="card-grid">
+<!---->
+<a class="card" href="https://clairekelling.com/index.html" target="_blank">
+<img src=files/images/Claire.jpg alt="Image 1">
+<div class="card-content">
+<h5>Claire Kelling</h5>
+<p>Assistant Professor of Statistics, Carleton College</p>
+</div>
+</a>
+<!---->
+<a class="card" href="https://www.arianamendible.com/" target="_blank">
+<img src=files/images/Ariana.jpg alt="Ariana Mendible">
+<div class="card-content">
+<h5>Ariana Mendible</h5>
+<p>Assistant Professor of Mathematics and Data Science, Seattle University</p>
+</div>
+</a>
+<!---->
+<a class="card" href="https://www.alexwiedemann.online/" target="_blank">
+<img src=files/images/Alex.jpg alt="Alex Wiedemann">
+<div class="card-content">
+<h5>Alex Wiedemann</h5>
+<p>Assistant Professor of Mathematics and Computational Data Science,  Hamline University</p>
+</div>
+</a>
+<!---->
+<a class="card" href="https://www.tmarrinan.com/" target="_blank">
+<img src=files/images/Tim.jpg alt="Tim Marrinan">
+<div class="card-content">
+<h5>Tim Marrinan</h5>
+<p>Data Scientist, Pacific Northwest National Laboratory</p>
+</div>
+</a>
+<!---->
+<a class="card" target="_blank">
+<img src=files/images/Mia.jpg alt="Mia (Cong) Wang">
+<div class="card-content">
+<h5>Mia (Cong) Wang</h5>
+<p>Student Researcher, BS Mathematics & Statistics '25, Carleton College</p>
+</div>
+</a>
+<!---->
+<a class="card" target="_blank">
+<img src=files/images/Will.jpg alt="Will Asinger">
+<div class="card-content">
+<h5>Will Asinger</h5>
+<p>PhD Student, Biostatistics and Health Data Science, University of Minnesota</p>
+</div>
+</a>
+<!---->
+<a class="card" target="_blank">
+<img src=files/images/rwglogo.jpg alt="RWG">
+<div class="card-content">
+<h5>Reinvestigation Workgroup</h5>
+<p>A Minnesota-based investigation team that reinvestigates police killings</p>
+</div>
+</a></div>
+<!---->
+<!--<a class="card" href="https://example.com/6" target="_blank">
+<img src="https://via.placeholder.com/250x150" alt="Image 6">
+<div class="card-content">
+<h5>Card Title 6</h5>
+<p>Description for card 6.</p>
+</div>
+</a>-->
+</div>
