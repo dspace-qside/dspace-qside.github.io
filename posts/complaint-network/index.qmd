@@ -23,9 +23,9 @@ Recent research on policing suggests that some officer behaviors, such as miscon
 
 DSPACE has been collaborating with a community partner, the [Reinvestigation Workgroup](https://reinvestigationgroup.com/) (RWG), to gain a better understanding of policing practices in Minneapolis. Based in Minnesota, RWG investigates instances of police violence to support families and promote accountability. Our shared interest in this issue emerged from ongoing conversations in the community about the complaint process for the Minneapolis Police Department (MPD). Community members have already done notable work to increase transparency around MPD practices by compiling and sharing data through the [Citizens United Against Police Brutality (CUAPB) police complaint archive](http://complaints.cuapb.org/). Through this initiative, CUAPB requested, curated, and shared a collection of police complaints from across Minnesota. The archive is searchable by officer name and lists complaints, both sustained and dismissed, as well as supporting news articles and court cases related to each officer. This information helped spark our shared curiosity about deeper and current institutional dynamics in the MPD. One key question was concerning how social dynamics within the police department shape patterns of officer behavior that lead to complaints from the community.
 
-This problem can be studied by thinking about police departments as social networks, where officers (which we refer to as *nodes*) are linked. These links could take many forms, but for us and in many other studies, officers are linked through their shared involvement in complaints (we will call the links *edges*). The network formed through these nodes and edges can be used to study patterns of interaction or association between officers.
+This problem can be studied by thinking about police departments as social networks, where officers (which we refer to as *nodes*) are linked. These links could take many forms, but for us and in other studies, officers are linked through their shared involvement in complaints (we will call the links *edges*). The network formed through these nodes and edges can be used to study patterns of interaction or association between officers.
 
-These questions are not new- there are several studies over recent years probing at the connections between officer relationships and behavior. Some highlights from recent work on officer networks that study complaints against officers, shooting behavior, and use of force include:
+These questions are not new- there are several studies over recent years probing at the connections between interactions with civilians, officer relationships, and behavior. Some highlights from recent work on officer networks that study complaints against officers, shooting behavior, and use of force include:
 
 -   Officer pairs with greater differences in tenure were found to be much less likely to be co-named on a complaint, whereas officer pairs of the same race were more likely to be co-named on complaints @wood2019network.\
 -   Bad behavior can diffuse through social networks—prior exposure to peers involved in problematic conduct can influence an officer’s future behavior @ouellet2019network @ouellet2023officer.
@@ -40,7 +40,7 @@ Although other researchers are interested in complaints against officers from a 
 
 In 2012, the MPD overhauled their complaint system for increased accountability and to add internal oversight structures. The [Office of Police Conduct Review (OPCR)](https://www.minneapolismn.gov/government/departments/civil-rights/opcr/) was established by local ordinance to address complaints and cases of misconduct. Under this system, civilians must submit complaints to OPCR within 270 days of alleged misconduct. After an evidence-gathering period, the OPCR either performs a full investigation within 180 days, refers the complaint to MPD when training is needed over discipline, or dismisses the case @roth2023transforming. There are a number of decision-making steps, each from various participants and with waiting times: the OPCR director’s decision, a panel review, and the police chief’s review and decision. Finally, the case is marked closed, either with Discipline or No Discipline. If the complaint was sustained and resulted in disciplinary action, information such as location and violation type is made public. Otherwise, a case is marked No Discipline and no further details are released. Importantly, the No Discipline category includes **both unfounded/exonerated complaints and sustained complaints that resulted in non-disciplinary action**.[^2] For more information about the complaint filing and decision-making process, refer to the OPCR website @opcrprocess. 
 
-[^2]: We included the "Closed- No Discipline" category in our final data because this category includes complaints that *were* substantiated but resulted in non-disciplinary corrective actions such as coaching or training. However, we have no way to differentiate between these and cases that were exonerated, which is a limitation of this work. 
+[^2]: We included the "Closed- No Discipline" category in our final data because this category includes complaints that *were* substantiated but resulted in non-disciplinary corrective actions such as coaching or training. However, we have no way to differentiate between these and cases that were exonerated, which is a key limitation of this work. 
 
 #### How did we gather and process the complaint data for analysis?
 
@@ -181,18 +181,22 @@ officer_names_complaint <- unique(new_complaints$format_name)
 
 #how many of the roster officer names appear in the new complaint dataset?
 num_off_compl <- length(which(officer_names_roster %in%
-                                new_complaints$format_name)) #406
+                                new_complaints$format_name)) 
+
+#how many officers do not appear in the complaint dataset?
+num_off_no_compl <- length(which(!(officer_names_roster %in%
+                                     new_complaints$format_name)))
 
 #how many of the complaint officer names appear in the roster dataset?
-length(which(officer_names_complaint %in% mpd_roster_full$format_name)) #406
+length(which(officer_names_complaint %in% mpd_roster_full$format_name)) 
 
 #what percent of roster officer names appear in the new complaint dataset?
 perc_off_comp <- num_off_compl/
-  length(officer_names_roster)*100 #61.6%
+  length(officer_names_roster)*100 
 
 #what percent of complaint officer names appear in the roster dataset?
 length(which(officer_names_complaint %in% mpd_roster_full$format_name))/
-  length(officer_names_complaint) #90.6%
+  length(officer_names_complaint) 
 
 #get the unmatched names from complaints (i.e., not in roster)
 unmatched_df <- 
@@ -234,12 +238,12 @@ new_complaint_cos_only <-
 
 #how many officers on the roster are included in *co*-complaint
 co_comp_off_num <- length(which(officer_names_roster %in%
-                                  new_complaint_cos_only$format_name)) #311
+                                  new_complaint_cos_only$format_name)) 
 
 #what percent of these roster officer names appear in the co-complaint dataset?
 co_comp_off_perc <- length(which(officer_names_roster %in%
                                    new_complaint_cos_only$format_name))/
-  length(officer_names_roster) #47.19%
+  length(officer_names_roster) 
 
 #filter complaint data to only those officers in the 2023-2025 rosters
 final_complaints <- new_complaints %>% filter(format_name %in%
@@ -249,16 +253,30 @@ final_complaints <- new_complaints %>% filter(format_name %in%
 comp_per_off <- final_complaints %>% count(name) 
 mean(comp_per_off$n)
 
+#add all officers with no complaints for visualization
+#no complaints officers
+off_no_comp_df <- cbind(officer_names_roster[which(!(officer_names_roster %in% 
+                                              new_complaints$format_name))],
+                        rep(0, num_off_no_compl)) %>% as.data.frame()
+colnames(off_no_comp_df) <- colnames(comp_per_off)
+off_no_comp_df$n <- as.numeric(off_no_comp_df$n)
+
+#combine data for officers with complaints and with 0 complaints
+comp_per_off_with_zeros <- bind_rows(comp_per_off,
+                                 off_no_comp_df)
+
 #distribution of comp per officers
-p1 <- ggplot(data=comp_per_off) + geom_histogram(aes(x=n)) +
+p1 <- ggplot(data=comp_per_off_with_zeros) + 
+  geom_histogram(aes(x=n,
+                     text = paste("complaints:", scales::number(n, accuracy = 1)))) +
   labs(title = "Figure 1: Distribution of # of Complaints per Officer",
        x= "Number of Complaints per Officer", y = "Count of Officers") 
 ```
 
-We begin our analysis of this co-complaint network with some descriptive information about the officers themselves. We wanted to investigate how many officers are listed on the rosters, how many of them have complaints, and how many of them share complaints with another officer. The total number of unique officer names/IDs that are included anywhere on these three rosters is `r length(officer_names_roster)` (`r num_off_per_year[1,2]` names in 2023, `r num_off_per_year[2,2]` in 2024, `r num_off_per_year[3,2]` in 2025). Out of all of these officers on the roster, `r num_off_compl` of them, or `r round(perc_off_comp, 1)`%, have complaints against them. However, not all of these officers are named on complaints with other officers- some of them are only named by themselves. Out of all the officers on the roster, `r co_comp_off_num` of them (`r round(co_comp_off_perc*100,1)`%) are included in a co-complaint (a complaint with more than one officer named). These are the officers that we focus on here, due to the socialized nature of the reported activity in which they are participating. Among officers who have complaints, a given officer is named in `r round(mean(comp_per_off$n),2)` complaints on average, either by themselves or with others. We show the distribution of the number of complaints per officer in Figure 1, below. This is highly skewed- there are some officers that have 10 or more complaints against them while many have less than 5 complaints against them.
+We begin our analysis of this co-complaint network with some descriptive information about the officers themselves. We wanted to investigate how many officers are listed on the rosters, how many of them have complaints, and how many of them share complaints with another officer. The total number of unique officer names/IDs that are included anywhere on these three rosters is `r length(officer_names_roster)` (`r num_off_per_year[1,2]` names in 2023, `r num_off_per_year[2,2]` in 2024, `r num_off_per_year[3,2]` in 2025). Out of all of these officers on the roster, `r num_off_compl` of them, or `r round(perc_off_comp, 1)`%, have complaints against them. However, not all of these officers are named on complaints with other officers- some of them are only named by themselves. Out of all the officers on the roster, `r co_comp_off_num` of them (`r round(co_comp_off_perc*100,1)`%) are included in a co-complaint (a complaint with more than one officer named). These are the officers that we focus on here, due to the socialized nature of the reported activity in which they are participating. Among officers who have complaints, a given officer is named in `r round(mean(comp_per_off$n),2)` complaints on average, either by themselves or with others. We show the distribution of the number of complaints per officer in Figure 1, below. This is highly skewed- there are some officers that have 10 or more complaints against them while the vast majority have less than 5 complaints against them.
 
 ```{r, echo = F, include = T, message = F}
-ggplotly(p1, tooltip = "count")
+ggplotly(p1, tooltip = c("count", "text"))
 ```
 
 ```{r, echo = F, include = F}
@@ -270,7 +288,9 @@ mean(off_per_comp$n)
 more_than_1_perc <- length(which(off_per_comp$n >1))/nrow(off_per_comp)
 
 #distribution of off per comp
-p2 <- ggplot(data=off_per_comp) + geom_histogram(aes(x=n)) +
+p2 <- ggplot(data=off_per_comp) + 
+  geom_histogram(aes(x=n,
+                     text = paste("officers:", scales::number(n, accuracy = 1)))) +
   labs(title = "Figure 2: Distribution of # of Officers per Complaint",
        x= "Number of Officers per Complaint", y = "Count of Complaints")
 ```
@@ -338,14 +358,16 @@ mean_degree <- mean(igraph::degree(current_network))
 We’d also like to look at this topic from a complaints-based perspective: are civilians usually submitting complaints about a single officer’s behaviors or is it typically more than one officer on a single complaint? Our dataset contains a total of `r length(unique(final_complaints$complaint_id))` complaints about officers on the provided rosters, some of which contain multiple officers on the same complaint. The average number of officers listed in a single complaint is `r round(mean(off_per_comp$n),2)`, with the full distribution shown in Figure 2. This distribution is less skewed, but we see that although there are many complaints that only involve one officer, `r round(more_than_1_perc*100, 1)`% of complaints contain more than one officer. Lastly, we want to give a preliminary sense of how officers are connected to other officers through co-complaint activity. To do this, we find that, on average, officers are connected to `r round(mean_degree, 2)` other officers through co-complaints, or being names on the same complaint.
 
 ```{r, echo = F, include = T, message = F}
-ggplotly(p2, tooltip = "count")
+ggplotly(p2, tooltip = c("count", "text"))
 ```
 
-Social network analysis of this co-complaint data gives us the ability to see if there are certain officers that are more central to complaint activity than others. Some numeric summaries can allow us to gain a deeper understanding of this behavior. For example, “betweenness centrality” measures show how often a given node lies on the shortest path between two officers in the co-complaint network.[^1] We can think of betweenness centrality as an indicator of importance in the network: an officer with a high “betweenness value” acts as a bridge between peer officers who would otherwise be unconnected when it comes to behavior that results in complaints.
+Social network analysis of this co-complaint data gives us the ability to see if there are certain officers that are more central to co-complaint activity than others. Some numeric summaries can allow us to gain a deeper understanding of this behavior. For example, “betweenness centrality” measures show how often a given node lies on the shortest path between two officers in the co-complaint network.[^1] We can think of betweenness centrality as an indicator of importance in the network: an officer with a high “betweenness value” acts as a bridge between peer officers who would otherwise be unconnected when it comes to complaints from civilians.
 
 [^1]: Calculated as the sum of the proportions of the number of shortest paths between two nodes in the network that contain a certain node to the total number of shortest paths between those two nodes.
 
-To allow you to explore this co-complaint information, we’ve created a set of interactive visualizations. These visualizations are best explored on a larger screen. If you hover over a node/circle in the widget below, you will see the name of the officer attached to the individual node of the network and their rank. Color schemes can be selected to show betweenness centrality or an officer's rank. You can select a specific officer by clicking on a node in the main network, browsing the dropdown menu, or typing in their name if known. Providing an officer name selection will give more information about the selected officer. A filtered sub-network will show only this officer's direct connections and a summary table displays more detailed metrics, including how many complaints that officer appeared on and the officers with which they are connected. We've also included the distribution of the betweenness centrality measures for all of the officers in our analysis, with the highlighted node labeled in the distribution. This shows the centrality of the officer you've selected, compared to all other officers in the network. We encourage you to spend some time investigating the data!
+To allow you to explore this co-complaint information, we’ve created a set of interactive visualizations. These visualizations are best explored on a larger screen. If you hover over a node/circle in the widget below, you will see the name of the officer attached to the individual node of the network and their rank. Color schemes can be selected to show betweenness centrality, an officer's rank, or how many complaints an officer has received. You can select a specific officer by clicking on a node in the main network, browsing the dropdown menu, or typing in their name if known. Providing an officer name selection will give more information about the selected officer. A filtered sub-network will show only this officer's direct connections and a summary table displays more detailed metrics, including how many complaints that officer appeared on and the officers with which they are connected. We've also included the distribution of the betweenness centrality measures for all of the officers in our analysis, with the highlighted node labeled in the distribution. This shows the centrality of the officer you've selected, compared to all other officers in the network. We encourage you to spend some time investigating the data!
+
+**This data is updated as of May 8, 2025. We plan to update the data used in this app approximately twice per year.**
 
 ```{r, echo= F, include = T, message = F}
 #output objects needed for Shiny app
@@ -360,7 +382,7 @@ save(final_complaints, mpd_roster_full_unique, current_network,
 
 #### What does it mean if an officer has no connections?
 
-Notice that there are some disconnected nodes on the periphery of the network. Officers represented by these nodes were not co-named with any other officer in any complaint(s). Their disconnection to other nodes/officers does not say anything about the *number* of complaints they have received. Officers who have never received complaints would be left out of the network entirely, and officers without connections could have been named in multiple complaints. These disconnected officers give information about the social nature of complaints on officers. A lack of connections may reflect officers that are involved in more isolated incidents, like a single officer responding, officers whose actions are differentiated from that of their patrol partner, or roles that involve limited interaction with colleagues.
+Notice that there are some disconnected nodes on the periphery of the network. Officers represented by these nodes were not co-named with any other officer in any complaint(s). Their disconnection to other nodes/officers does not say anything about the *number* of complaints they have received. Officers who have never received complaints would be left out of the network entirely, and officers without connections could have been named in multiple complaints. These disconnected officers give information about the social nature of complaints about officers. A lack of connections may reflect officers that are involved in more isolated incidents, like a single officer responding, officers whose actions are differentiated from that of their patrol partner, or roles that involve limited interaction with colleagues.
 
 #### What does the number of connections say about an officer?
 
@@ -368,7 +390,7 @@ Some officers are connected to only one or two other officers, while others are 
 
 #### What does it mean if an officer has a high betweenness centrality?
 
-Betweenness centrality goes beyond measuring the number of connections of an officer. This measure instead reflects how often an officer lies on the shortest paths connecting different parts of the network, indicating influence in the network. For example, Officer A might be co-named with 12 others, all from the same closely-connected unit. Even with many ties, Officer A may not bridge across clusters, and therefore their betweenness centrality would be relatively low. On the other hand, Officer B might be connected to just 4 others, but if each of those peers belongs to a different group, Officer B plays a key linking role across the department. In that case, Officer B would have high betweenness centrality, despite having fewer overall connections. This shows that Officer B may have more influence in the culture surrounding these events resulting in complaints. This could be indicative of Officer B's social importance. However, betweenness centrality could also be affected by the hierarchy of assignments, such as holding a leadership role, rotating assignments more frequently, or other administrative reasons. Node color by betweenness helps make this information easier to interpret: warmer colors (like orange and red) indicate higher betweenness centrality—officers who frequently connect different clusters of complaint activity. Cooler colors (like blue and green) represent lower centrality—officers who may still be involved in complaints but don’t serve as major bridges in the network.
+Betweenness centrality goes beyond measuring the number of connections of an officer. This measure instead reflects how often an officer lies on the shortest paths connecting different parts of the network, indicating influence in the network. For example, Officer A might be co-named with 12 others, all from the same closely-connected unit. Even with many ties, Officer A may not bridge across clusters, and therefore their betweenness centrality would be relatively low. On the other hand, Officer B might be connected to just 4 others, but if each of those peers belongs to a different group, Officer B plays a key linking role across the department. In that case, Officer B would have high betweenness centrality, despite having fewer overall connections. This shows that Officer B may have more influence in the culture surrounding these events resulting in complaints. This could be indicative of Officer B's social importance. However, betweenness centrality could also be affected by the hierarchy of assignments, such as holding a leadership role, rotating assignments more frequently, or other administrative reasons. Node color by betweenness helps make this information easier to interpret: warmer colors (like orange and red) indicate higher betweenness centrality—officers who frequently connect different clusters of complaint activity. Cooler colors (like blue and green) represent lower centrality—officers who may still be involved in complaints but don’t serve as major bridges in the network. 
 
 Lastly, it is important to note that the lines in this network are unweighted. This means each line simply shows whether two officers were ever co-named in a complaint. It doesn’t reflect how many times they were named together. Whether the connection happened once or twenty times, it is treated the same. This design keeps the focus on the *structure* of relationships-- who is connected to whom-- rather than the frequency of co-complaints, helping us uncover broad patterns in the network.
 
