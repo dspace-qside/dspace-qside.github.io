@@ -29,6 +29,14 @@ server <- function(input, output, session) {
     V(g)$name <- nodes$names
     V(g)$rank <- nodes$JOBTITLE
     V(g)$betw_central <- nodes$betw_vals
+
+    # Calculate number of complaints for each officer
+    complaint_counts <- sapply(V(g)$name, function(officer_name) {
+      officer_complaints <- final_complaints[final_complaints$format_name == officer_name, ]
+      length(unique(officer_complaints$complaint_id))
+    })
+    V(g)$num_complaints <- complaint_counts
+    
     return(g)
   })
   
@@ -155,6 +163,38 @@ server <- function(input, output, session) {
                             colors = legend_colors)
       } else {
         legend_data <- list(title = "Betweenness\nCentrality", 
+                            levels = min_val, 
+                            colors = "lightblue")
+      }
+    } else if (input$color_option == "num_complaints") {
+      complaint_vals <- V(g)$num_complaints
+      
+      # Create truly continuous color scale
+      color_palette <- colorRampPalette(c("lightblue", "yellow", "red"))(1000)
+      
+      # Map each complaint count to a color
+      min_val <- min(complaint_vals, na.rm = TRUE)
+      max_val <- max(complaint_vals, na.rm = TRUE)
+      
+      if (max_val > min_val) {
+        # Scale values to 1-1000 range for color mapping
+        scaled_vals <- round((complaint_vals - min_val) / (max_val - min_val) * 999) + 1
+        vertex.col <- color_palette[scaled_vals]
+      } else {
+        vertex.col <- rep("lightblue", vcount(g))
+      }
+      
+      main_title <- "Network Colored by Number of Complaints"
+      
+      # Continuous legend with actual values
+      if (max_val > min_val) {
+        legend_vals <- round(seq(min_val, max_val, length.out = 10), 0)
+        legend_colors <- colorRampPalette(c("lightblue", "yellow", "red"))(10)
+        legend_data <- list(title = "Number of\nComplaints", 
+                            levels = legend_vals, 
+                            colors = legend_colors)
+      } else {
+        legend_data <- list(title = "Number of\nComplaints", 
                             levels = min_val, 
                             colors = "lightblue")
       }
@@ -372,6 +412,24 @@ server <- function(input, output, session) {
         # All values are the same
         vertex.col <- rep("lightblue", vcount(sub_g))
       }
+    } else if (input$color_option == "num_complaints") {
+      complaint_vals <- V(sub_g)$num_complaints
+      all_complaint_vals <- V(shiny_network())$num_complaints  # Use full network for scale
+      
+      # Create truly continuous color scale (same as main network)
+      color_palette <- colorRampPalette(c("lightblue", "yellow", "red"))(1000)
+      
+      # Map each complaint count to a color using full network scale
+      min_val <- min(all_complaint_vals, na.rm = TRUE)
+      max_val <- max(all_complaint_vals, na.rm = TRUE)
+      
+      if (max_val > min_val) {
+        # Scale values to 1-1000 range for color mapping
+        scaled_vals <- round((complaint_vals - min_val) / (max_val - min_val) * 999) + 1
+        vertex.col <- color_palette[scaled_vals]
+      } else {
+        vertex.col <- rep("lightblue", vcount(sub_g))
+      }
     }
     
     vertex.size <- rep(12, vcount(sub_g))
@@ -578,6 +636,36 @@ server <- function(input, output, session) {
              labels = round(seq(min_val, max_val, length.out = 5), 3),
              cex.axis = 1.0)
         title(main = "Betweenness Centrality", cex.main = 1.1, line = 0.5)
+        box()
+      }
+    } else if (input$color_option == "num_complaints") {
+      complaint_vals <- V(g)$num_complaints
+      min_val <- min(complaint_vals, na.rm = TRUE)
+      max_val <- max(complaint_vals, na.rm = TRUE)
+      
+      if (max_val > min_val) {
+        # Create horizontal color bar for continuous scale (left to right)
+        par(mar = c(3, 6, 2, 6))
+        
+        # Create color gradient
+        legend_colors <- colorRampPalette(c("lightblue", "yellow", "red"))(100)
+        
+        # Create horizontal bar using image (transpose for left-to-right)
+        image(x = seq(min_val, max_val, length.out = 100),
+              y = 0:1,
+              z = matrix(1:100, nrow = 100, ncol = 1),
+              col = legend_colors,
+              axes = FALSE,
+              xlab = "Number of Complaints",
+              ylab = "",
+              xlim = c(min_val, max_val),
+              ylim = c(0, 1))
+        
+        # Add axis and title
+        axis(1, at = seq(min_val, max_val, length.out = 5),
+             labels = round(seq(min_val, max_val, length.out = 5), 0),
+             cex.axis = 1.0)
+        title(main = "Number of Complaints", cex.main = 1.1, line = 0.5)
         box()
       }
     }

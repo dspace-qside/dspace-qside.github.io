@@ -31,7 +31,8 @@ ui <- fluidPage(
                        "Color officers/nodes by:",
                        choices = c("Default" = "none",
                                    "Rank" = "rank", 
-                                   "Betweenness Centrality" = "betw_central"),
+                                   "Betweenness Centrality" = "betw_central",
+                                   "Number of Complaints" = "num_complaints"),
                        selected = "none")
     )
   ),
