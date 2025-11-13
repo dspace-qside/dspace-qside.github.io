@@ -3,9 +3,9 @@ title: "Connecting the Dots: A Preliminary Network Analysis of Complaints about 
 author: "Claire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson"
 output: html_document
 date: "2025-10-28"
-date-modified: last-modified
+date-modified: "2025-05-08"
 language: 
-  title-block-modified: "LAST UPDATED"
+  title-block-modified: "DATA LAST UPDATED"
 description: ' '
 image: network.png
 categories: [complaints, network]

@@ -5,7 +5,7 @@ account: dspace
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15532062
-bundleId: 11097558
+bundleId: 11174249
 url: https://dspace.shinyapps.io/complaint_network/
 version: 1
 asMultiple: FALSE
