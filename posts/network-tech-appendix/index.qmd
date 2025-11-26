@@ -1,6 +1,6 @@
 ---
-title: "Data Scraping for Complaint Network"
-author: " Ariana Mendible, Mia Wang, Claire Kelling"
+title: "Technical Appendix to **Connecting the Dots: A Preliminary Network Analysis of Complaints about Police in Minneapolis**"
+author: "Mia Wang, Ariana Mendible, Claire Kelling"
 output: html_document
 date: "2025-10-28"
 date-modified: last-modified
@@ -8,17 +8,60 @@ language:
   title-block-published: "PUBLISHED"
   title-block-modified: "UPDATED"
 description: ' '
-image: network.png
+image: data_source.png
 categories: [complaints, network]
 # bibliography: references.bib
 # csl: american-statistical-association.csl # include ASA citation style
 # csl: diabetologia.csl
 page-layout: full
 draft: true
+crossrefs-hover: false
 ---
 
-<!-- Claire to write short intro -->
 
-<!-- Ariana to write data scraping description -->
+## Background
+We hope that our blog post on police complaint data in Minneapolis, Minnesota will be helpful for community members, students, faculty members, and other stakeholders, especially if folks want to reproduce this analysis in similar contexts. In order to maximize this potential, we want to provide additional documentation for our process for gathering and analyzing the data. We focus on a conceptual description in this document, but the complete code for the data processing is available [here](https://github.com/dspace-qside/dspace-qside.github.io/blob/main/posts/complaint-network/index.qmd) and the code for the Shiny app is available [here](https://github.com/dspace-qside/dspace-qside.github.io/tree/main/posts/complaint-network/complaint_network). 
+<!-- These websites were linked in the Google doc but they aren't the right ones I don't think? -->
 
-<!-- Mia to write data preparation and network-building description -->
+## Data Collection
+### Data Source
+The complaint data used in this analysis comes from the [City of Minneapolis Officer complaint history dashboard](https://www.minneapolismn.gov/government/government-data/datasource/officer-complaint-history-dashboard/). This page is a Tableau dashboard with three widgets, each displaying disjoint complaint data sources from a different time period and source. Complaints made prior to September 2012 were collected by the Civilian Review Authority. The Office of Police Conduct Review (OCPR) was responsible for complaints from then through February 2023. Finally, data after February 2023 is provided by Internal Affairs (IA) or the OCPR in an updated format. The latter two widgets, with data from 2023-2025, were used in the network analysis, and their data collection and processing is described here.
+
+### Downloading the Data 
+In order to scrape this dashboard, we used a mix of Python scripts and (extensive) manual selection. Unfortunately, none of the three widgets had a data download feature, which called for manual processing and individualized scripts for each. Though the data can't be downloaded in a convenient format, there is an option to print the current display of the dashboard to PDF.[^1] Selecting the right combination of print options creates a very long single-page PDF report with structured tables. Therefore, we just needed to get each dashboard to display all the entries, save to PDF, and then organize the tables.  
+
+[^1]: It is important to note that the dashboard must be viewed in full screen mode to see the download option.
+
+For the two newest data sets, encompassing September 2012-present, this was fairly simple. On top of the officer search bar, there is a filter to Include Values or Exclude Values. Changing the option to Exclude, typing in an empty value, " ", and selecting the empty tick box, then shows all entries. How convenient! This procedure can be seen in Figure @fig-select. 
+
+![Search parameters for displaying all officers](officer_select.png){#fig-select width=100%}
+
+After displaying all named officers in both dashboards, they were exported to a single PDF using the specific options shown in Figure @fig-options. 
+
+![PDF print options for data export](download_options.png){#fig-options width=40%}
+
+The resulting PDF has two very long pages, one for each widget, each with a slightly different tabular format, seen in Figure @fig-pdfs. 
+
+![PDF data format for the two data sets](pdf_compared.png){#fig-pdfs width=100%}
+
+### Data Cleaning
+Finally, the `PyPDF2` Python package was used to read the PDF files, and data cleaning was performed. Because the PDF contains actual text data, rather than a rendering, all text data output is accurate to what is written[^2]. However, there are some issues with the data. Row-wise, the table is not complete. Ideally, each row of the table would be complete with officer name, report number, case status, action, and discipline, as available. In our case, the table only prints each name once and can be interpreted to be repeated between row-separating lines. The same issue persists for all columns, where some report numbers have multiple actions or allegations, as shown in the example in Figure @fig-tricky. Therefore, we needed to do some data cleaning to complete these tables. 
+[^2]: Accuracy of reading the PDF can be a concern for certain data formats, especially if optical character recognition is used to extract text as a string data type. 
+
+::: {#fig-tricky layout-ncol=2}
+
+![Input](tricky_input.png)
+
+![Output](tricky_output.png)
+
+A particularly tricky data case with nested column values
+:::
+
+We used both the text extraction and text location (i.e. where each entry is located on the page), as well as some pattern matching (e.g. complaint numbers starting with "EVT-") to infer the appropriate ordering. Due to the well-separated column display, the horizontal location of each word chunk was sufficient to infer which column the data belonged in. Officer names could be forward-filled until the next name appeared. This was repeated for all column types, e.g. where multiple actions or allegations applied to one complaint. The final output is an organized Pandas dataframe for each of the data sets with complaint entries, with officer, report number, and status in each. 
+
+### Data Verification
+Data ordering was checked for correctness. String matching was used to ensure complaint numbers were formatted with digits in the prescribed pattern or with the "EVT-" prefix. All unique column values for Case Status, Action, and Allegation were printed to check that no unexpected entries were present. For example, Case Status should only contain unique entries "Open", "Closed" or "Closed-Final Discipline". Unfortunately, many Allegation entries were cut off in both the PDF and the dashboard where the string length exceeded the column width, so detail may be missing here. Some particularly tricky table entries, like the one shown in Figure @fig-tricky, were manually checked for accurate ordering and complete data capture as well. 
+
+## Preparation of the Data for Network Analysis
+We began with two data sources: (1) web-scraped MPD complaint records and (2) the official roster of currently active MPD officers. To ensure that the resulting network represents the current organizational structure, we restricted the complaint data to officers whose names appear in the active roster. After filtering, 355 unique officers remained, indicating that 60.89% of the 583 rostered officers have at least one documented complaint.
+To construct the co-complaint edge list, we iterated over all unique complaint IDs. For each complaint, we extracted the associated set of officers and generated all unique unordered officer pairs; each pair corresponds to a co-complaint tie, representing joint involvement in the same allegation. Solo complaints were assigned self-pairs for completeness during processing, but these self-edges were excluded from the final network. Nodes were defined as all unique officers appearing in the edge list. Duplicate officer pairs were removed so that each officer-to-officer connection appears only once in the final undirected graph, regardless of how many complaints they were co-named in.
