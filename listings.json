@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/network-tech-appendix/index.html",
       "/posts/complaint-network/index.html",
       "/posts/stopa-paper/index.html"
     ]
