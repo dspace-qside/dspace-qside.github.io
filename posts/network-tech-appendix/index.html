@@ -189,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="downloading-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="downloading-the-data">Downloading the Data</h3>
-<p>To extract data from this dashboard, we used Python scripts along with extensive manual selection. Unfortunately, none of the three widgets offered a direct data download option, so each widget required separate manual processing and customized scripts. Though the data are not easily exportable, the dashboard does allow printing the current view to PDF. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Selecting the right combination of print options, explained below, creates a very long single-page PDF report with structured tables. Our task was then reduced to getting each dashboard to display all entries, exporting the views to PDF, and organizing the tables.</p>
+<p>To extract data from this dashboard, we used Python scripts along with extensive manual selection. Unfortunately, none of the three widgets offered a direct data download option, so each widget required separate manual processing and customized scripts. Though the data are not easily exportable, the dashboard does allow printing the current view to PDF.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Selecting the right combination of print options, explained below, creates a very long single-page PDF report with structured tables. Our task was then reduced to getting each dashboard to display all entries, exporting the views to PDF, and organizing the tables.</p>
 <p>For the two newest data sets, encompassing September 2012 to the present, this process was fairly straightforward. Above the officer search bar, there is a filter that allows the user to either Include Values or Exclude Values. By switching the filter to Exclude, typing a single space ” “, and selecting the empty tick box, the dashboard conveniently returns all entries. This procedure is shown in Figure <a href="#fig-select" class="quarto-xref">Figure&nbsp;1</a>.</p>
 <div id="fig-select" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -226,7 +226,7 @@ Figure&nbsp;3: PDF data format for the two data sets
 </section>
 <section id="data-cleaning" class="level3">
 <h3 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h3>
-<p>Finally, we used the <code>PyPDF2</code> Python package to read the PDF files and perform data cleaning. Because the PDF preserves actual text rather than an image rendering, all extracted text data matches the original content <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. However, there are some issues with the initial data tables. Row-wise, the output is incomplete. Ideally, each row would contain an officer name, report number, case status, action, and discipline, as available. Instead, each officer’s name appears only once and is implicitly repeated for subsequent rows until the next horizontal separator. A similar issue persists in other columns, where a single report number corresponds to multiple actions or allegations, as shown in the example in Figure <a href="#fig-tricky" class="quarto-xref">Figure&nbsp;4</a>. Therefore, we needed to clean the data to complete these tables.</p>
+<p>Finally, we used the <a href="https://pypi.org/project/PyPDF2/"><code>PyPDF2</code></a> Python package to read the PDF files and perform data cleaning. Because the PDF preserves actual text rather than an image rendering, all extracted text data matches the original content<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. However, there are some issues with the initial data tables. Row-wise, the output is incomplete. Ideally, each row would contain an officer name, report number, case status, action, and discipline, as available. Instead, each officer’s name appears only once and is implicitly repeated for subsequent rows until the next horizontal separator. A similar issue persists in other columns, where a single report number corresponds to multiple actions or allegations, as shown in the example in Figure <a href="#fig-tricky" class="quarto-xref">Figure&nbsp;4</a>. Therefore, we needed to clean the data to complete these tables.</p>
 <div id="fig-tricky" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tricky-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -267,13 +267,18 @@ Figure&nbsp;4: A particularly tricky data case with nested column values
 <section id="node-construction-from-roster" class="level3">
 <h3 class="anchored" data-anchor-id="node-construction-from-roster">Node Construction from Roster</h3>
 <p>We used officer names to match the characteristics from the officer rosters to the complaint data, as badge numbers/IDs were not available in both datasets. These names occasionally differed across the two sources due to punctuation (e.g., hyphens or apostrophes), spacing, and minor spelling differences. Therefore, we implemented a standardized name-cleaning and validation process before merging the two datasets. We first constructed a consistent “first + last” name representation for each officer by trimming extraneous whitespace and retaining only the primary first name when additional tokens (e.g., middle names/initials) were present. We then applied identical normalization rules to both datasets - converting names to lowercase and removing common formatting variation such as hyphens and extra spaces - to reduce mismatches introduced through scraping or data entry. After standardization, we compared the sets of unique officer names across the roster and complaint records. Initially, 87.05% of the unique names in the complaint data matched a roster name. We then extracted the 58 unmatched names from the complaint data and used string-based record linkage to evaluate whether mismatches reflected correctable spelling/formatting differences or truly non-roster individuals (e.g., officers that were not present on these three annual roster snapshots). For each unmatched name, we identified the most plausible roster counterpart by computing the closest roster name under a string-similarity measure (i.e., the smallest edit distance) and ranking unmatched names by this minimum distance. Names with very small discrepancies were flagged for manual review as likely spelling or formatting issues, whereas names with larger discrepancies were treated as more likely to represent different individuals truly not present in the rosters and were left unchanged. Based on this ranked review, we manually corrected 14 high-confidence names using a documented list of manual changes. The matched names across the complaint and roster datasets are included in <a href="#tbl-names" class="quarto-xref">Table&nbsp;1</a>.</p>
-<div id="tbl-names" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div class="grid">
+<div class="g-col-2">
+
+</div>
+<div class="g-col-8">
+<div id="tbl-names" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-names-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Matched names between MPD roster and MPD complaint data.
 </figcaption>
 <div aria-describedby="tbl-names-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<table class="table-striped caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Name in Complaint Data</th>
@@ -341,6 +346,11 @@ Table&nbsp;1: Matched names between MPD roster and MPD complaint data.
 </table>
 </div>
 </figure>
+</div>
+</div>
+<div class="g-col-2">
+
+</div>
 </div>
 <p>We also checked for name ambiguity within the roster data by identifying cases where the same standardized name corresponded to multiple distinct officer IDs. We want to ensure the merge of the roster and complaint data did not inadvertently combine complaints from different individuals with the same name. We found one instance in which two officers shared the exact same name but had different IDs. The complaint data contains the IDs for these two officers (and these two officers alone) to differentiate them, so to prevent mis-linkage for the officers who share this name, we also appended the ID as a suffix to their name in the roster data.</p>
 <p>After these corrections, 90.63% of the unique names in the complaint records matched a roster name (406 matched officers), indicating that 61.6% of the 659 rostered officers had at least one documented complaint during 2023–2025. We then counted the number of complaints associated with each officer and attached this count to the co-complaint network nodes, discussed next, as an officer-level attribute for visualization.</p>
