@@ -85,7 +85,7 @@ padding: 15px;
 <img src=files/images/Tim.jpg alt="Tim Marrinan">
 <div class="card-content">
 <h5>Tim Marrinan</h5>
-<p>Data Scientist, Pacific Northwest National Laboratory</p>
+<p>Data Scientist, <br> PhD Mathematics</p>
 </div>
 </a>
 <!---->
