@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Claire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson">
+<meta name="dcterms.date" content="2025-10-28">
+
+<title>Connecting the Dots: A Preliminary Network Analysis of Complaints about Police in Minneapolis – DSPACE</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../activity.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../../site_libs/plotly-binding-4.11.0/plotly.js"></script>
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">DSPACE</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Recent Work</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dspace-qside"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Connecting the Dots: A Preliminary Network Analysis of Complaints about Police in Minneapolis</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">complaints</div>
+                <div class="quarto-category">network</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Claire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 28, 2025</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">DATA LAST UPDATED</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">May 8, 2025</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future work</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<!-- Through this blog, we plan to provide informal updates on our work with the Reinvestigation Workgroup, located in Minneapolis, Minnesota. These updates could also serve as classroom materials for statistics/data science and social justice discussions. Whether you are a community member, student, faculty member, or other stakeholder, [we welcome your feedback](https://forms.gle/rRzc61GjC9FjQcxg8)! -->
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Recent research on policing suggests that some officer behaviors, such as misconduct and use of force, can be described as social phenomena. Rather than being one-off events attributed to individual dispositions or situational factors, these behaviors often reflect peer and organizational dynamics. Scholars emphasize the role that interpersonal connections play in influencing how, when, and with whom these incidents occur. One central question that researchers ask is whether trends in misconduct, use of force, or other types of police behavior within a department tends to cluster within specific subgroup(s) of officers and, if so, what characteristics drive these patterns.</p>
+<p>DSPACE has been collaborating with a community partner, the <a href="https://reinvestigationgroup.com/">Reinvestigation Workgroup</a> (RWG), to gain a better understanding of policing practices in Minneapolis. Based in Minnesota, RWG investigates instances of police violence to support families and promote accountability. Our shared interest in this issue emerged from ongoing conversations in the community about the complaint process for the Minneapolis Police Department (MPD). Community members have already done notable work to increase transparency around MPD practices by compiling and sharing data through the <a href="http://complaints.cuapb.org/">Citizens United Against Police Brutality (CUAPB) police complaint archive</a>. Through this initiative, CUAPB requested, curated, and shared a collection of police complaints from across Minnesota. The archive is searchable by officer name and lists complaints, both sustained and dismissed, as well as supporting news articles and court cases related to each officer. This information helped spark our shared curiosity about deeper and current institutional dynamics in the MPD. One key question was concerning how social dynamics within the police department shape patterns of officer behavior that lead to complaints from the community.</p>
+<p>This problem can be studied by thinking about police departments as social networks, where officers (which we refer to as <em>nodes</em>) are linked. These links could take many forms, but for us and in other studies, officers are linked through their shared involvement in complaints (we will call the links <em>edges</em>). The network formed through these nodes and edges can be used to study patterns of interaction or association between officers.</p>
+<p>These questions are not new- there are several studies over recent years probing at the connections between interactions with civilians, officer relationships, and behavior. Some highlights from recent work on officer networks that study complaints against officers, shooting behavior, and use of force include:</p>
+<ul>
+<li>Officer pairs with greater differences in tenure were found to be much less likely to be co-named on a complaint, whereas officer pairs of the same race were more likely to be co-named on complaints <span class="citation" data-cites="wood2019network">[<a href="#ref-wood2019network" role="doc-biblioref">1</a>]</span>.<br>
+</li>
+<li>Bad behavior can diffuse through social networks—prior exposure to peers involved in problematic conduct can influence an officer’s future behavior <span class="citation" data-cites="ouellet2019network">[<a href="#ref-ouellet2019network" role="doc-biblioref">2</a>]</span> <span class="citation" data-cites="ouellet2023officer">[<a href="#ref-ouellet2023officer" role="doc-biblioref">3</a>]</span>.</li>
+<li>Use-of-force incidents are not randomly distributed across pairs of individuals but tend to concentrate within officer partnerships, particularly among those who share similar characteristics such as race, rank, or years of experience <span class="citation" data-cites="hashimi2025partners">[<a href="#ref-hashimi2025partners" role="doc-biblioref">4</a>]</span>.</li>
+<li>Officers who are more centrally connected in a social network, particularly those who act as bridges between otherwise unconnected peers, are significantly more likely to shoot, even after accounting for demographic factors and career movements, such as promotions or transfers <span class="citation" data-cites="zhao2020network">[<a href="#ref-zhao2020network" role="doc-biblioref">5</a>]</span>.</li>
+</ul>
+<p>Although other researchers are interested in complaints against officers from a social and network perspective, this type of data simply isn’t widely available. The studies listed above rely on two main datasets for their work: the <a href="https://cpdb.co">Civic Police Data Project</a>, which contains allegations of misconduct by the Chicago Police Department (CPD) from 1988-2023 compiled by the Invisible Institute, and <a href="https://force.nj.com/">The Force Report</a>, which documents over 11,000 use-of-force incidents reported by New Jersey police departments between 2012 to 2016. In our current work between DSPACE and RWG, we analyze a dataset from our community which includes complaints against officers in the MPD. We briefly introduce the tools and metrics from network analysis necessary to provide a quantitative look at how social dynamics and departmental structures influence patterns in complaints about police officers.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<section id="how-are-complaints-about-police-recorded-in-minneapolis" class="level4">
+<h4 class="anchored" data-anchor-id="how-are-complaints-about-police-recorded-in-minneapolis">How are complaints about police recorded in Minneapolis?</h4>
+<p>In 2012, the MPD overhauled their complaint system for increased accountability and to add internal oversight structures. The <a href="https://www.minneapolismn.gov/government/departments/civil-rights/opcr/">Office of Police Conduct Review (OPCR)</a> was established by local ordinance to address complaints and cases of misconduct. Under this system, civilians must submit complaints to OPCR within 270 days of alleged misconduct. After an evidence-gathering period, the OPCR either performs a full investigation within 180 days, refers the complaint to MPD when training is needed over discipline, or dismisses the case <span class="citation" data-cites="roth2023transforming">[<a href="#ref-roth2023transforming" role="doc-biblioref">6</a>]</span>. There are a number of decision-making steps, each from various participants and with waiting times: the OPCR director’s decision, a panel review, and the police chief’s review and decision. Finally, the case is marked closed, either with Discipline or No Discipline. If the complaint was sustained and resulted in disciplinary action, information such as location and violation type is made public. Otherwise, a case is marked No Discipline and no further details are released. Importantly, the No Discipline category includes <strong>both unfounded/exonerated complaints and sustained complaints that resulted in non-disciplinary action</strong>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> For more information about the complaint filing and decision-making process, refer to the OPCR website <span class="citation" data-cites="opcrprocess">[<a href="#ref-opcrprocess" role="doc-biblioref">7</a>]</span>.</p>
+</section>
+<section id="how-did-we-gather-and-process-the-complaint-data-for-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="how-did-we-gather-and-process-the-complaint-data-for-analysis">How did we gather and process the complaint data for analysis?</h4>
+<p>To study complaint dynamics, we looked for the original source of data on police complaints in Minneapolis. The Minneapolis Police Department offers a <a href="https://www.minneapolismn.gov/government/government-data/datasource/officer-complaint-history-dashboard/">police officer public profile dashboard</a> that contains broad information about complaints against MPD officers. This public-facing dashboard contains three Tableau data displays, each representing a different time period and in slightly different formats due to discrepancies in the collecting agency. We focus on the most recent set of complaints, which includes complaints submitted through Internal Affairs and the Office of Police Conduct Review.</p>
+<p>Each of the three sets of complaints contain information on officers who received complaints, giving their names, all complaint identification numbers associated with them at MPD, and the status of the case (usually simply closed or open). The data is presented in a searchable Tableau display– users are instructed to type in a particular officer’s name, and individual officers must be selected for their entries to display. However, there is no direct download option, so we had to get a little creative. If you’re curious to learn more about how we scraped and cleaned this data, we have provided them in the <a href="https://dspace-qside.github.io/posts/network-tech-appendix/">Technical Appendix</a>.</p>
+<p>After gathering information from the website, the final information was organized into a data set representing complaints, with officer name, report number, and status for each complaint. We note that this is not much information! We don’t have access to public information about why complaints were filed, who filed them, or the details of the behavior/incident that resulted in a complaint. This means that there are important limitations to the findings that can be gathered about police behavior resulting in complaints in Minneapolis, which we discuss in detail near the end of this page.</p>
+</section>
+</section>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<p>To complete this network analysis, we need to define three key aspects: which officers are included, what types of interactions are examined, and the specific time frame for our study. First, consider the case where two officers receive the same number of complaints, one officer within a one-year period compared to another officer’s 25-year career. Though our network analysis won’t take time into account directly, we try to make more fair comparisons between officers by focusing on the most recent complaint data, available from February 2023 until the date that we scraped the complaint data from the website, May 8, 2025. Another important consideration is that only officers who have received complaints are represented in the network. This subset of all officers may not represent the broader department dynamics, especially when attempting to take officer demographics into account. To approximately determine how many officers are not included in our network, we requested a roster of all officers so we can quantify how many officers do not have complaints against them. The Minneapolis Police Department has provided information about who was employed by MPD in January 2023, 2024, and 2025 through a public records request. For this analysis, we consider any officer that was listed on any of these three snapshot rosters.</p>
+<p>In our network analysis, <em>nodes</em> are defined as the individual officers that have any complaint against them and are also included in the roster data provided by MPD. <em>Edges</em>, or connections between nodes, are defined by two officers appearing together on the same complaint. This can be seen in the image at the end of this section– the dots (nodes) are individual officers and the lines connecting these dots (edges) appear when these two officers have at least one complaint that they appear on together. We note that this network does not illustrate if certain edges occur more frequently than others. In other words, if two officers have been named together on one complaint, the edge will visually look the same as if two other officers were named together on a dozen complaints. Later, we will show that there are often officers that are named by themselves in complaints or not named with many other officers. However, we also see that there are some officers that have many other officers with whom they are named on complaints- motivating our network analysis.</p>
+<p>We begin our analysis of this co-complaint network with some descriptive information about the officers themselves. We wanted to investigate how many officers are listed on the rosters, how many of them have complaints, and how many of them share complaints with another officer. The total number of unique officer names/IDs that are included anywhere on these three rosters is 659 (587 names in 2023, 549 in 2024, 566 in 2025). Out of all of these officers on the roster, 406 of them, or 61.6%, have complaints against them. However, not all of these officers are named on complaints with other officers- some of them are only named by themselves. Out of all the officers on the roster, 311 of them (47.2%) are included in a co-complaint (a complaint with more than one officer named). These are the officers that we focus on here, due to the socialized nature of the reported activity in which they are participating. Among officers who have complaints, a given officer is named in 2.86 complaints on average, either by themselves or with others. We show the distribution of the number of complaints per officer in Figure 1, below. This is highly skewed- there are some officers that have 10 or more complaints against them while the vast majority have less than 5 complaints against them.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-522d0cb35d022abad1b7" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-522d0cb35d022abad1b7">{"x":{"data":[{"orientation":"v","width":[0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137931039,0.96551724137931028,0.9655172413793105,0.9655172413793105,0.9655172413793105,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672,0.96551724137930961,0.96551724137930961,0.96551724137930961,0.96551724137931672],"base":[0,149,96,51,35,26,19,12,6,3,2,1,1,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,96,51,35,26,19,12,6,3,2,1,1,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,96,51,35,26,19,12,6,3,0,1,1,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,96,51,35,26,19,12,6,3,0,0,1,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,96,51,35,26,19,12,6,3,0,0,0,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,96,51,35,26,19,12,6,3,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,96,51,35,26,19,12,6,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,96,51,35,26,19,12,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,51,35,26,19,12,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,51,35,26,19,12,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,26,19,12,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,19,12,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,12,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"x":[0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28,0,0.96551724137931039,1.9310344827586206,2.896551724137931,3.8620689655172415,4.8275862068965516,5.793103448275863,6.7586206896551726,7.724137931034484,8.6896551724137936,9.6551724137931032,10.620689655172415,11.586206896551726,12.551724137931036,13.517241379310345,14.482758620689657,15.448275862068968,16.413793103448278,17.379310344827587,18.344827586206897,19.310344827586206,20.27586206896552,21.241379310344829,22.206896551724139,23.172413793103448,24.137931034482762,25.103448275862071,26.068965517241381,27.03448275862069,28],"y":[253,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,149,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"text":["count: 253<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 0","count:   0<br />complaints: 1","count: 149<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 1","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   2<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 10","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   1<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 11","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   1<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 12","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   2<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 13","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   1<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 14","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   1<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 15","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:  96<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 2","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   0<br />complaints: 28","count:   1<br />complaints: 28","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:  51<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 3","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:  35<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 4","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:  26<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 5","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:  19<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 6","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:  12<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 7","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   6<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 8","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   3<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9","count:   0<br />complaints: 9"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(89,89,89,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":43.105022831050235},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Figure 1: Distribution of # of Complaints per Officer","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.931034482758621,29.931034482758623],"tickmode":"array","ticktext":["0","10","20"],"tickvals":[0,10,20],"categoryorder":"array","categoryarray":["0","10","20"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Number of Complaints per Officer","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-12.65,265.64999999999998],"tickmode":"array","ticktext":["0","50","100","150","200","250"],"tickvals":[0,50,100,150,200,249.99999999999997],"categoryorder":"array","categoryarray":["0","50","100","150","200","250"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Count of Officers","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"60be53fed6bd":{"x":{},"text":{},"type":"bar"}},"cur_data":"60be53fed6bd","visdat":{"60be53fed6bd":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>We’d also like to look at this topic from a complaints-based perspective: are civilians usually submitting complaints about a single officer’s behaviors or is it typically more than one officer on a single complaint? Our dataset contains a total of 733 complaints about officers on the provided rosters, some of which contain multiple officers on the same complaint. The average number of officers listed in a single complaint is 1.59, with the full distribution shown in Figure 2. This distribution is less skewed, but we see that although there are many complaints that only involve one officer, 36% of complaints contain more than one officer. Lastly, we want to give a preliminary sense of how officers are connected to other officers through co-complaint activity. To do this, we find that, on average, officers are connected to 3.26 other officers through co-complaints, or being names on the same complaint.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e01946f989235106dadf" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e01946f989235106dadf">{"x":{"data":[{"orientation":"v","width":[0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918,0.2413793103448274,0.2413793103448274,0.2413793103448274,0.24137931034482918],"base":[0,0,0,0,175,0,0,0,48,0,0,0,19,0,0,0,0,13,0,0,0,5,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,48,0,0,0,19,0,0,0,0,13,0,0,0,5,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,13,0,0,0,5,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,5,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"x":[1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8,1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8,1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8,1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8,1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8,1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8,1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8,1,1.2413793103448274,1.4827586206896552,1.7241379310344827,1.9655172413793105,2.2068965517241379,2.4482758620689653,2.6896551724137931,2.931034482758621,3.1724137931034484,3.4137931034482758,3.6551724137931036,3.8965517241379315,4.1379310344827589,4.3793103448275863,4.6206896551724137,4.862068965517242,5.1034482758620694,5.3448275862068968,5.5862068965517242,5.8275862068965516,6.0689655172413799,6.3103448275862073,6.5517241379310347,6.7931034482758621,7.0344827586206904,7.2758620689655178,7.5172413793103452,7.7586206896551726,8],"y":[469,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],"text":["count: 469<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 1","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count: 175<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 2","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:  48<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 3","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:  19<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 4","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:  13<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 5","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   5<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 6","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   3<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 7","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   0<br />officers: 8","count:   1<br />officers: 8"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(89,89,89,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":37.260273972602747,"l":43.105022831050235},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Figure 2: Distribution of # of Officers per Complaint","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.51724137931034486,8.4827586206896566],"tickmode":"array","ticktext":["2","4","6","8"],"tickvals":[2,4,6,8],"categoryorder":"array","categoryarray":["2","4","6","8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Number of Officers per Complaint","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-23.450000000000003,492.44999999999999],"tickmode":"array","ticktext":["0","100","200","300","400"],"tickvals":[0,100,200,300,400],"categoryorder":"array","categoryarray":["0","100","200","300","400"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Count of Complaints","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"60be5194b38d":{"x":{},"text":{},"type":"bar"}},"cur_data":"60be5194b38d","visdat":{"60be5194b38d":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Social network analysis of this co-complaint data gives us the ability to see if there are certain officers that are more central to co-complaint activity than others. Some numeric summaries can allow us to gain a deeper understanding of this behavior. For example, “betweenness centrality” measures show how often a given node lies on the shortest path between two officers in the co-complaint network.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> We can think of betweenness centrality as an indicator of importance in the network: an officer with a high “betweenness value” acts as a bridge between peer officers who would otherwise be unconnected when it comes to complaints from civilians.</p>
+<p>To allow you to explore this co-complaint information, we’ve created a set of interactive visualizations. These visualizations are best explored on a larger screen. If you hover over a node/circle in the widget below, you will see the name of the officer attached to the individual node of the network and their rank. Color schemes can be selected to show betweenness centrality, an officer’s rank, or how many complaints an officer has received. You can select a specific officer by clicking on a node in the main network, browsing the dropdown menu, or typing in their name if known. Providing an officer name selection will give more information about the selected officer. A filtered sub-network will show only this officer’s direct connections and a summary table displays more detailed metrics, including how many complaints that officer appeared on and the officers with which they are connected. We’ve also included the distribution of the betweenness centrality measures for all of the officers in our analysis, with the highlighted node labeled in the distribution. This shows the centrality of the officer you’ve selected, compared to all other officers in the network. We encourage you to spend some time investigating the data!</p>
+<p><strong>This data is updated as of May 8, 2025. We plan to update the data used in this app approximately twice per year.</strong></p>
+ <iframe id="network_app" src="https://dspace.shinyapps.io/complaint_network/" style="border: none; width: 100%; height: 975px" frameborder="0"></iframe>
+</section>
+<section id="interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
+<section id="what-does-it-mean-if-an-officer-has-no-connections" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-it-mean-if-an-officer-has-no-connections">What does it mean if an officer has no connections?</h4>
+<p>Notice that there are some disconnected nodes on the periphery of the network. Officers represented by these nodes were not co-named with any other officer in any complaint(s). Their disconnection to other nodes/officers does not say anything about the <em>number</em> of complaints they have received. Officers who have never received complaints would be left out of the network entirely, and officers without connections could have been named in multiple complaints. These disconnected officers give information about the social nature of complaints about officers. A lack of connections may reflect officers that are involved in more isolated incidents, like a single officer responding, officers whose actions are differentiated from that of their patrol partner, or roles that involve limited interaction with colleagues.</p>
+</section>
+<section id="what-does-the-number-of-connections-say-about-an-officer" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-the-number-of-connections-say-about-an-officer">What does the number of connections say about an officer?</h4>
+<p>Some officers are connected to only one or two other officers, while others are linked to many. More connections suggest an officer has been co-named with a wider group of colleagues on complaints. These highly connected officers typically appear near the center of the network, surrounded by many lines representing co-complaint ties. This pattern may suggest they work in settings with higher levels of interaction or collaboration, such as patrol units or specialized teams, where routines, behaviors, and decisions are often shared. When complaints cluster within these groups, it may point to broader patterns in how officers operate together, potentially reflecting shared norms or workplace dynamics that shape the likelihood of being named in a complaint. However, it is important to note that having many connections does not necessarily mean an officer holds a central or influential position in the structure of the network. That is where betweenness centrality comes in.</p>
+</section>
+<section id="what-does-it-mean-if-an-officer-has-a-high-betweenness-centrality" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-it-mean-if-an-officer-has-a-high-betweenness-centrality">What does it mean if an officer has a high betweenness centrality?</h4>
+<p>Betweenness centrality goes beyond measuring the number of connections of an officer. This measure instead reflects how often an officer lies on the shortest paths connecting different parts of the network, indicating influence in the network. For example, Officer A might be co-named with 12 others, all from the same closely-connected unit. Even with many ties, Officer A may not bridge across clusters, and therefore their betweenness centrality would be relatively low. On the other hand, Officer B might be connected to just 4 others, but if each of those peers belongs to a different group, Officer B plays a key linking role across the department. In that case, Officer B would have high betweenness centrality, despite having fewer overall connections. This shows that Officer B may have more influence in the culture surrounding these events resulting in complaints. This could be indicative of Officer B’s social importance. However, betweenness centrality could also be affected by the hierarchy of assignments, such as holding a leadership role, rotating assignments more frequently, or other administrative reasons. Node color by betweenness helps make this information easier to interpret: warmer colors (like orange and red) indicate higher betweenness centrality—officers who frequently connect different clusters of complaint activity. Cooler colors (like blue and green) represent lower centrality—officers who may still be involved in complaints but don’t serve as major bridges in the network.</p>
+<p>Lastly, it is important to note that the lines in this network are unweighted. This means each line simply shows whether two officers were ever co-named in a complaint. It doesn’t reflect how many times they were named together. Whether the connection happened once or twenty times, it is treated the same. This design keeps the focus on the <em>structure</em> of relationships– who is connected to whom– rather than the frequency of co-complaints, helping us uncover broad patterns in the network.</p>
+</section>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>It would be irresponsible to leave out the limitations to this work! Most importantly, our data, while useful in this network analysis, leaves out meaningful context. <strong>We are not controlling for the amount of time an officer is on patrol or what kind of assignment they have, as we do not have access to this information.</strong> Both of these may significantly impact how often an officer is subject to complaints– more time on patrol means more public interaction and more vulnerability to receiving a complaint. Officers in Minneapolis also often patrol in pairs. Even though many officers are named on complaints by themselves in this dataset, some of the co-complaints with another officer may be simply because they were patrolling together and not because the officers had identical roles in the incident. An officer may also be connected with more officers because of changes to their paired patrol assignments. Further, <strong>this network only shows how many complaints were received, regardless of their resolution.</strong> Complaints that are deemed unsubstantiated or where no discipline was taken will appear equal to complaints that result in disciplinary action. We also only include officers that are active on the last three annual MPD rosters, limiting our findings to those confirmed to be recently employed by the MPD. When determining the percent of officers that have complaints against them, we may be missing officers who were not listed on those rosters or were on leave. Finally, it is important to note that these statistics are limited. They can be informative at the broad, systematic level or in comparison to other departments, which is part of our ongoing work. However, <strong>these statistics should not be used to draw conclusions about individual officers without further context or information. This is a critical role that our community partner serves.</strong> We hope that these analyses and visualizations will be helpful information for continuing conversations in Minneapolis about the social nature of police behavior that results in complaints.</p>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future work</h2>
+<p>The DSPACE group is looking forward to continuing this analysis with RWG. We will continue to refine our definition and scope of the MPD network data, perhaps including complaints from the older available data sets. Through rosters provided from data requests, we also can establish how specific training and roles, leadership or otherwise, within the police department may impact an officer’s position in this co-complaint network. We are also aiming to compare the MPD co-complaint network findings to complaint data from other urban areas, so that we can get a sense of how complaints about police for the MPD compare to other police departments. If you have feedback on this work or would like to get involved, please reach out to us through our <a href="https://forms.gle/rRzc61GjC9FjQcxg8">DSPACE Google Form</a>.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-wood2019network" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Wood G, Roithmayr D, Papachristos AV (2019) The network structure of police misconduct. Socius 5:2378023119879798</div>
+</div>
+<div id="ref-ouellet2019network" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Ouellet M, Hashimi S, Gravel J, Papachristos AV (2019) Network exposure and excessive use of force: Investigating the social transmission of police misconduct. Criminology &amp; Public Policy 18(3):675–704</div>
+</div>
+<div id="ref-ouellet2023officer" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Ouellet M, Hashimi S, Vega Yon GG (2023) Officer networks and firearm behaviors: Assessing the social transmission of weapon-use. Journal of Quantitative Criminology 39(3):679–703</div>
+</div>
+<div id="ref-hashimi2025partners" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Hashimi S, Ouellet M, Ledford L (2025) Partners in force? Understanding police use of force from a network perspective. Journal of Research in Crime and Delinquency 62(3):429–473</div>
+</div>
+<div id="ref-zhao2020network" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Zhao L, Papachristos AV (2020) Network position and police who shoot. The ANNALS of the American Academy of Political and Social Science 687(1):89–112</div>
+</div>
+<div id="ref-roth2023transforming" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Roth J (2023) Transforming the <span>Minneapolis Police Department</span> to conform with the rule of law: Reform or abolition. Mitchell Hamline L Rev 49:474</div>
+</div>
+<div id="ref-opcrprocess" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Police Conduct Review MO of Police complaint process for the public</div>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>We included the “Closed- No Discipline” category in our final data because this category includes complaints that <em>were</em> substantiated but resulted in non-disciplinary corrective actions such as coaching or training. However, we have no way to differentiate between these and cases that were exonerated, which is a key limitation of this work.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Calculated as the sum of the proportions of the number of shortest paths between two nodes in the network that contain a certain node to the total number of shortest paths between those two nodes.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/dspace-qside\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

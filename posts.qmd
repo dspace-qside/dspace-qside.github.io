@@ -5,6 +5,9 @@ listing:
   sort: "date desc"
   type: default
   categories: true
+  max-description-length: 0 
 ---
 
-Read more about our work here.
+Through this blog, we plan to provide updates on our work with the Reinvestigation Workgroup, located in Minneapolis, Minnesota. These updates are meant to be informal and could also serve as classroom materials for statistics/data science and social justice conversations. Whether you are a community member, student, faculty member, or other stakeholder, [we welcome your feedback](https://forms.gle/rRzc61GjC9FjQcxg8)!
+<br>
+</br>

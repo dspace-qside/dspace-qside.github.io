@@ -4,9 +4,11 @@ section-divs: false
 # page-layout: full
 toc: false
 anchor-sections: false
+bibliography: references.bib
+csl: diabetologia.csl
 ---
 
-The Data Science, Police Accountability, and Community Engagement (DSPACE) Group partners with communities to work towards data-informed police accountability. Housed within the [Institute for the Quantitative Study of Inclusion, Diversity and Equity](https://qsideinstitute.org/) (QSIDE) since 2021, the DSPACE Group serves as the Institute’s research-intensive branch in the realm of police accountability. Our team of mathematicians, statisticians, and data scientists collaborates with community members and organizations to answer challenging questions about patterns in policing. Our endeavor is to make a direct and meaningful impact to the public and to contribute to scholarly research at the intersection of data science/statistics and policing.
+The Data Science, Police Accountability, and Community Engagement (DSPACE) Group partners with communities to work towards data-informed police accountability. Our group originated as the Small Town Policing Accountability (SToPA) Lab within the [Institute for Quantitative Study of Inclusion, Diversity, and Equity](https://qsideinstitute.org/) (QSIDE Institute). The SToPA Lab was developed in 2021 by a group of data scientists, social justice activists, and statisticians in response to discriminatory practices within the Williamstown, MA police department @cohen2020. In Spring 2024, members of the SToPA Lab formed this new DSPACE research group focused on communities of all sizes and as the research-intensive branch in the realm of police accountability. Our team of mathematicians, statisticians, and data scientists collaborates with community members and organizations to answer challenging questions about patterns in policing. Our endeavor is to make a direct and meaningful impact with the public and to contribute to scholarly research at the intersection of data science/statistics and policing.
 <br>
 </br>
 
