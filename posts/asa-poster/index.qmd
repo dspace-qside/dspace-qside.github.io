@@ -1,0 +1,20 @@
+---
+title: "Comparing co-complaint networks reveals distinct structures across police departments"
+description: 'Poster'
+author: "Will Asinger, Mia (Cong) Wang, Claire Kelling, Alex Wiedemann, Ariana Mendible"
+date: "5/28/2026"
+categories: [network, complaints, publications]
+image: network_radar_chart.png
+page-layout: full
+freeze: false
+---
+
+The following poster was presented by Will Asinger and Mia Wang at the [2026 ASA Midwest Regional Conference in Statistics and Data Science](https://irsa.umn.edu/events/2026-asa-midwest-regional-conference-statistics-and-data-science), winning the Graduate Student Poster Award!
+
+```{=html}
+<iframe src="asa_midwest_sds_2026.pdf" 
+        width="100%" 
+        height="100%">
+</iframe>
+```
+

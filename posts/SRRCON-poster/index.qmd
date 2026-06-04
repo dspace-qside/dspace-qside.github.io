@@ -1,0 +1,21 @@
+---
+title: "Can LLMs Extract Useful Data from News
+Articles for Police Accountability?"
+description: 'Poster'
+author: "Jesse Loi, Ariana Mendible"
+date: "5/29/2026"
+categories: [LLM, complaints, publications]
+image: hist_comparison.png
+page-layout: full
+freeze: false
+---
+
+The following poster was presented by Jesse Loi at the [Seattle Univeristy Student Research and Creativity Conference](https://srcconprogram.my.canva.site/srccon-conference-2026). 
+
+```{=html}
+<iframe src="SRRCon_Poster.pdf" 
+        width="100%" 
+        height="100%">
+</iframe>
+```
+
