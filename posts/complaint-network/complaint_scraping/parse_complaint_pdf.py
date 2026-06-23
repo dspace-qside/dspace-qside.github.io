@@ -65,7 +65,7 @@ def extract_and_format(fname, pagenum):
 # ================================================================================================================ 
 
 # Read in the PDF and save x and y locations of text
-df = extract_and_format("Public Profile Card Finder.pdf", 0)
+df = extract_and_format("Profile Card Finder.pdf", 0)
 
 # determine the name columns by x location
 df['is_name'] = df['x'] < 100
@@ -126,6 +126,7 @@ while i < (len(df)-6):
         i+=1
     else:
         print('error')
+        i+=1
 
 # saving the data frame to csv 
 df2 = pd.DataFrame({col1[0]: col1, 
@@ -142,7 +143,7 @@ df2.to_csv('old_complaints.csv')
 # ================================================================================================================ 
 
 # Read in the PDF and save x and y locations of text
-df = extract_and_format("Public Profile Card Finder.pdf", 1)
+df = extract_and_format("Profile Card Finder.pdf", 1)
 
 # clean up some known messiness including 
 df = df[ df['text']!=' \n']
