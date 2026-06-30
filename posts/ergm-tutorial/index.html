@@ -1,2 +1,1833 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"></html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alex Wiedemann">
+
+<title>(B)ERGM Tutorial – DSPACE</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../activity.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">DSPACE</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Recent Work</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dspace-qside"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">(B)ERGM Tutorial</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alex Wiedemann </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#faux-mesa-high" id="toc-faux-mesa-high" class="nav-link active" data-scroll-target="#faux-mesa-high">Faux Mesa High</a></li>
+  <li><a href="#ergms" id="toc-ergms" class="nav-link" data-scroll-target="#ergms">ERGMs</a>
+  <ul class="collapse">
+  <li><a href="#informal-derivation" id="toc-informal-derivation" class="nav-link" data-scroll-target="#informal-derivation">Informal “Derivation”</a></li>
+  <li><a href="#formal-ergm-model" id="toc-formal-ergm-model" class="nav-link" data-scroll-target="#formal-ergm-model">Formal ERGM Model</a></li>
+  <li><a href="#interpretation-of-model-parameters" id="toc-interpretation-of-model-parameters" class="nav-link" data-scroll-target="#interpretation-of-model-parameters">Interpretation of model parameters</a></li>
+  </ul></li>
+  <li><a href="#implementing-ergms" id="toc-implementing-ergms" class="nav-link" data-scroll-target="#implementing-ergms">Implementing ERGMs</a>
+  <ul class="collapse">
+  <li><a href="#model-1-edges-only" id="toc-model-1-edges-only" class="nav-link" data-scroll-target="#model-1-edges-only">Model 1: edges only</a></li>
+  <li><a href="#model-2-grade-and-race-activity-and-homophily" id="toc-model-2-grade-and-race-activity-and-homophily" class="nav-link" data-scroll-target="#model-2-grade-and-race-activity-and-homophily">Model 2: grade and race activity and homophily</a></li>
+  </ul></li>
+  <li><a href="#goodness-of-fit" id="toc-goodness-of-fit" class="nav-link" data-scroll-target="#goodness-of-fit">Goodness of fit</a></li>
+  <li><a href="#model-3-adding-triadic-closure" id="toc-model-3-adding-triadic-closure" class="nav-link" data-scroll-target="#model-3-adding-triadic-closure">Model 3: Adding triadic closure</a>
+  <ul class="collapse">
+  <li><a href="#estimation-with-mcmle" id="toc-estimation-with-mcmle" class="nav-link" data-scroll-target="#estimation-with-mcmle">Estimation with MCMLE</a></li>
+  <li><a href="#gof-model-3" id="toc-gof-model-3" class="nav-link" data-scroll-target="#gof-model-3">GOF: Model 3</a></li>
+  </ul></li>
+  <li><a href="#bergms" id="toc-bergms" class="nav-link" data-scroll-target="#bergms">BERGMs</a>
+  <ul class="collapse">
+  <li><a href="#handwavy-details" id="toc-handwavy-details" class="nav-link" data-scroll-target="#handwavy-details">Handwavy details</a></li>
+  <li><a href="#diagnostics" id="toc-diagnostics" class="nav-link" data-scroll-target="#diagnostics">Diagnostics</a></li>
+  </ul></li>
+  <li><a href="#implementing-bergm" id="toc-implementing-bergm" class="nav-link" data-scroll-target="#implementing-bergm">Implementing BERGM</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(network)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'network' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+'network' 1.20.0 (2026-02-06), part of the Statnet Project
+* 'news(package="network")' for changes since last version
+* 'citation("network")' for citation information
+* 'https://statnet.org' for help, support, and other information</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ergm)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ergm' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+'ergm' 4.12.0 (2026-02-17), part of the Statnet Project
+* 'news(package="ergm")' for changes since last version
+* 'citation("ergm")' for citation information
+* 'https://statnet.org' for help, support, and other information</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>'ergm' 4 is a major update that introduces some backwards-incompatible
+changes. Please type 'news(package="ergm")' for a list of major
+changes.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sna)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: statnet.common</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'statnet.common' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'statnet.common'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    attr, order, replace</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>sna: Tools for Social Network Analysis
+Version 2.8 created on 2024-09-07.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Bergm)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>We adopt the notation and syntax of the official <a href="https://statnet.org/workshop-ergm/ergm_tutorial.html">Statnet ERGM workshop tutorial</a>. More details on syntax, troubleshooting, etc are documented there and in the <a href="https://cran.r-project.org/web/packages/ergm/refman/ergm.html">documentation</a>. Below, we “borrow” an example from the tutorial and expand on the math/stats/theory quite a bit.</p>
+<section id="faux-mesa-high" class="level1">
+<h1>Faux Mesa High</h1>
+<p>We will use a simulated mutual friendship network of a faux high school from the <code>ergm</code> package. There are 205 students (nodes) and 203 reported friendships (edges). Vertex attributes include <code>Grade</code>, <code>Race</code>, and <code>Sex</code>. Our substantive question: <strong>what explains friendship ties at this school?</strong> Is it just the overall density of edges, or do some groups (e.g.&nbsp;grade, race, sex) have more friendships overall (<strong>activity</strong>)? Do some groups form ties disproportionately within themselves (<strong>homophily</strong>)?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(faux.mesa.high)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>mesa <span class="ot">&lt;-</span> faux.mesa.high</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>mesa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> Network attributes:
+  vertices = 205 
+  directed = FALSE 
+  hyper = FALSE 
+  loops = FALSE 
+  multiple = FALSE 
+  bipartite = FALSE 
+  total edges= 203 
+    missing edges= 0 
+    non-missing edges= 203 
+
+ Vertex attribute names: 
+    Grade Race Sex 
+
+No edge attributes</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mesa, <span class="at">vertex.col =</span> <span class="st">"Grade"</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"bottomleft"</span>, <span class="at">fill =</span> <span class="dv">7</span><span class="sc">:</span><span class="dv">12</span>,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">legend =</span> <span class="fu">paste</span>(<span class="st">"Grade"</span>, <span class="dv">7</span><span class="sc">:</span><span class="dv">12</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/plot-data-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Faux Mesa High</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>We cannot apply the usual statistical tests (e.g.&nbsp;regression) since those require independent observations, and intuitively we know that network ties are not independent (e.g., my own friends are likely to be friends with each other—this alone interlocks the entire network). Instead, we view the observed network as one possible realization of real social processes subject to stochastic noise, and we aim to infer a distribution of plausible realizations under those processes. Unlike “standard” inference in which we infer properties about a population based on a sample, we are using our full population (or at least a snapshot of it) to infer a “distribution of alternate realities.”</p>
+<p>We might like to consider the distribution of all graphs with properties similar to the observed network, like number of edges or triangles, etc, where “more similar = more likely”, but enumeration of this set would be impossible (e.g., there are about <span class="math inline">\(10^{500}\)</span> ways to assign exactly 203 friendships to 205 students, as compared to about <span class="math inline">\(10^{80}\)</span> atoms in the universe, before even considering slight deviations like <span class="math inline">\(\pm1, \pm2, \ldots\)</span> friendships). Instead, we use a process which generates random graphs that are representative of this distribution.</p>
+</section>
+<section id="ergms" class="level1">
+<h1>ERGMs</h1>
+<section id="informal-derivation" class="level2">
+<h2 class="anchored" data-anchor-id="informal-derivation">Informal “Derivation”</h2>
+<p>Let <span class="math inline">\(Y\)</span> be the random variable which represents our theoretical distribution of networks. Let’s image that the probability of network <span class="math inline">\(y\)</span> depends on two things:</p>
+<ul>
+<li><span class="math inline">\(g_1(y)\)</span>: the number of edges in <span class="math inline">\(y\)</span></li>
+<li><span class="math inline">\(g_2(y)\)</span>: the number of triangles in <span class="math inline">\(y\)</span></li>
+</ul>
+<p>We might naively try to fit the probability as linear, <span class="math display">\[\theta_1g_1(y) + \theta_2g_2(y),\]</span> but this is clearly problematic since it can take both positive and negative values (e.g., if we want to penalize triangles then <span class="math inline">\(\theta_2&lt;0\)</span>). Instead, we fit the (unnormaliezd) log-probability as linear, meaning</p>
+<p><span class="math display">\[\Pr(Y=y) \;\propto\; \exp\{\theta_1g_1(y) + \theta_2g_2(y)\}.\]</span> To get true probabilities, we normalize: <span class="math display">\[\Pr(Y=y) \;=\; \frac{\exp\{\theta_1g_1(y) + \theta_2g_2(y)\}}{\sum_{y'}\exp\{\theta_1g_1(y') + \theta_2g_2(y')\}}.\]</span></p>
+</section>
+<section id="formal-ergm-model" class="level2">
+<h2 class="anchored" data-anchor-id="formal-ergm-model">Formal ERGM Model</h2>
+<p>Generalizing, an (unweighted) <strong>exponential random graph model (ERGM)</strong> assign probabilities</p>
+<p><span class="math display">\[
+\Pr(Y=y) = \frac{\exp\{\theta^\top g(y)\}}{k(\theta)},
+\qquad
+k(\theta) = \sum_{y'} \exp\{\theta^\top g(y')\},
+\]</span></p>
+<p>where <span class="math inline">\(g(y) = (g_1(y), \ldots, g_p(y))^\top\)</span> is a vector of <strong>sufficient statistics</strong> (usually counts of structural features) and <span class="math inline">\(\theta=(\theta_1, \ldots, \theta_p)^\top\)</span> is the parameter vector. Notably, <span class="math inline">\(k(\theta)\)</span> is typically impossible to compute, since the sum over <span class="math inline">\(y'\)</span> is intractable.</p>
+<p>A fairly technical theorem by Hammersley and Clifford states, loosely, that many network models can be expressed in such form.</p>
+</section>
+<section id="interpretation-of-model-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation-of-model-parameters">Interpretation of model parameters</h2>
+<p>Let <span class="math inline">\(y_{-ij}\)</span> denote an arbitrary but fixed network with the value of edge <span class="math inline">\(ij\)</span> left unspecified.</p>
+<ul>
+<li><span class="math inline">\(y^+\)</span> is defined as <span class="math inline">\(y_{-ij}\)</span> with <span class="math inline">\(y_{ij}=1\)</span>, and</li>
+<li><span class="math inline">\(y^-\)</span> is defined as <span class="math inline">\(y_{-ij}\)</span> with <span class="math inline">\(y_{ij}=0\)</span>.</li>
+</ul>
+<p>Define the <strong>change statistic</strong> as <span class="math display">\[\delta_{ij}(y):= g(y^+)-g(y^-).\]</span></p>
+<p>Importantly, we can divide probabilities in the formula above (and cancel the intractable <span class="math inline">\(k(\theta)\)</span> term!) and derive</p>
+<p><span class="math display">\[\log \frac{\Pr(Y=y^+)}{\Pr(Y=y^-)} = \operatorname{logit} \Pr(Y_{ij}=1|Y_{-ij}=y_{-ij}) = \theta^\top \delta_{ij}(y) = \sum\theta_k\{g_k(y^+)-g_k(y^-)\},\]</span></p>
+<p>which closely resembles the interpretation of coefficients in logistic regression. The biggest difference is the logit function now represents conditional log-odds of an edge holding the rest of the <em>network</em> fixed; notably, we typically cannot say we are holding the other <em>covariates</em> fixed, since changing one edge may change several covariates.</p>
+<p>For example, suppose as before that <span class="math display">\[\Pr(Y=y) \;=\; \frac{\exp\{\theta_1g_1(y) + \theta_2g_2(y)\}}{\sum_{y'}\exp\{\theta_1g_1(y') + \theta_2g_2(y')\}},\]</span> where <span class="math inline">\(g_1\)</span>, <span class="math inline">\(g_2\)</span> count edges and triangles. Then <span class="math display">\[\operatorname{logit} \Pr(Y_{ij}=1|Y_{-ij}=y_{-ij}) = \theta^\top \delta_{ij}(y) = \theta_1 \cdot 1 + \theta_2\cdot \#(\text{shared partners}),\]</span> since adding the edge <span class="math inline">\(ij\)</span> will create a triangle for every vertex <span class="math inline">\(k\)</span> such that <span class="math inline">\(ik\)</span> and <span class="math inline">\(jk\)</span> are already edges. The conditional log-odds change depending on network structure!</p>
+</section>
+</section>
+<section id="implementing-ergms" class="level1">
+<h1>Implementing ERGMs</h1>
+<p>We will fit three ERGMs on our data. Model 1 uses <code>edges</code> only and acts as a baseline. Model 2 follows the <a href="https://statnet.org/workshop-ergm/ergm_tutorial.html#Nodal_covariates:_Homophily">Statnet tutorial</a> and further includes grade and race activity and homophily. After considering GOF for these models we will discuss Model 3, which includes triadic closure, but more on that later.</p>
+<ul>
+<li><strong><code>edges</code>:</strong> total number of ties; controls overall density.</li>
+<li><strong><code>nodefactor("Grade")</code> / <code>nodefactor("Race")</code>:</strong> differential <strong>activity</strong>; nodes in certain grades or racial groups may tend to have more (or fewer) friendships</li>
+<li><strong><code>nodematch("Grade", diff = TRUE)</code> / <code>nodematch("Race", diff = TRUE)</code>:</strong> differential <strong>homophily</strong>; nodes in certain grades or racial groups may tend to prefer within-group friendships; the <code>diff = TRUE</code> option allows for different propensities for within-group ties at each level of the attribute, rather than a shared homophily coefficient.</li>
+</ul>
+<p>Models 1 and 2 include only <strong>dyad-independent</strong> terms; that is, for each pair <span class="math inline">\((i,j)\)</span>, the change statistics <span class="math inline">\(\delta_{ij}(y)\)</span> depend only on nodes <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> (not who they are connected to). By default, <code>ergm()</code> targets <strong>maximum likelihood (MLE)</strong>: it chooses <span class="math inline">\(\hat\theta\)</span> to make the observed network <span class="math inline">\(y_{\text{obs}}\)</span> as probable as possible under the model; i.e., <span class="math display">\[ \hat{\theta} = \operatorname{argmax}_{\theta} \Pr(Y=y_{\text{obs}} \mid \theta).\]</span> The details do not matter here, but we will need to pay attention to what algorithm(s) are being employed later for diagnostics. We’ll use default settings; see <a href="https://cran.r-project.org/web/packages/ergm/refman/ergm.html#ergm">documentation</a> for more options.</p>
+<section id="model-1-edges-only" class="level2">
+<h2 class="anchored" data-anchor-id="model-1-edges-only">Model 1: edges only</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>fauxmodel<span class="fl">.01</span> <span class="ot">&lt;-</span> <span class="fu">ergm</span>(mesa <span class="sc">~</span> edges)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Starting maximum pseudolikelihood estimation (MPLE):</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Obtaining the responsible dyads.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Evaluating the predictor and response matrix.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Maximizing the pseudolikelihood.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Finished MPLE.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Evaluating log-likelihood at the estimate. </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fauxmodel<span class="fl">.01</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Call:
+ergm(formula = mesa ~ edges)
+
+Maximum Likelihood Results:
+
+      Estimate Std. Error MCMC % z value Pr(&gt;|z|)    
+edges -4.62502    0.07053      0  -65.58   &lt;1e-04 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+     Null Deviance: 28987  on 20910  degrees of freedom
+ Residual Deviance:  2286  on 20909  degrees of freedom
+ 
+AIC: 2288  BIC: 2296  (Smaller is better. MC Std. Err. = 0)</code></pre>
+</div>
+</div>
+<p>This model matches total tie count only and ignores grade and race structure. Notice that the <code>edges</code> estimate is strongly negative since the network is relatively sparse. Because there is no dependence on other edges in this model, the (conditional) probability of any edge is <span class="math display">\[\Pr(Y_{ij}=1)=\Pr(Y_{ij}=1 |Y_{-ij}=y_{-ij}) = \operatorname{logit}^{-1}(-4.62502)\simeq 0.0097,\]</span> so every edge has a the same <span class="math inline">\(0.97\%\)</span> chance of existing. (One can show that an Erds–R'enyi model with parameter <span class="math inline">\(p\)</span> is equivalent to an <code>edges</code>-only ERGM with paremter <span class="math inline">\(\theta=\operatorname{logit}(p)\)</span>.)</p>
+</section>
+<section id="model-2-grade-and-race-activity-and-homophily" class="level2">
+<h2 class="anchored" data-anchor-id="model-2-grade-and-race-activity-and-homophily">Model 2: grade and race activity and homophily</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fauxmodel<span class="fl">.02</span> <span class="ot">&lt;-</span> <span class="fu">ergm</span>(mesa <span class="sc">~</span> edges <span class="sc">+</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nodefactor</span>(<span class="st">"Grade"</span>) <span class="sc">+</span> <span class="fu">nodematch</span>(<span class="st">"Grade"</span>, <span class="at">diff =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nodefactor</span>(<span class="st">"Race"</span>) <span class="sc">+</span> <span class="fu">nodematch</span>(<span class="st">"Race"</span>, <span class="at">diff =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Observed statistic(s) nodematch.Race.Black and nodematch.Race.Other are at their smallest attainable values. Their coefficients will be fixed at -Inf.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Starting maximum pseudolikelihood estimation (MPLE):</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Obtaining the responsible dyads.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Evaluating the predictor and response matrix.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Maximizing the pseudolikelihood.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Finished MPLE.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Evaluating log-likelihood at the estimate. </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fauxmodel<span class="fl">.02</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Call:
+ergm(formula = mesa ~ edges + nodefactor("Grade") + nodematch("Grade", 
+    diff = TRUE) + nodefactor("Race") + nodematch("Race", diff = TRUE))
+
+Maximum Likelihood Results:
+
+                      Estimate Std. Error MCMC % z value Pr(&gt;|z|)    
+edges                  -8.0538     1.2561      0  -6.412  &lt; 1e-04 ***
+nodefactor.Grade.8      1.5201     0.6858      0   2.216 0.026663 *  
+nodefactor.Grade.9      2.5284     0.6493      0   3.894  &lt; 1e-04 ***
+nodefactor.Grade.10     2.8652     0.6512      0   4.400  &lt; 1e-04 ***
+nodefactor.Grade.11     2.6291     0.6563      0   4.006  &lt; 1e-04 ***
+nodefactor.Grade.12     3.4629     0.6566      0   5.274  &lt; 1e-04 ***
+nodematch.Grade.7       7.4662     1.1730      0   6.365  &lt; 1e-04 ***
+nodematch.Grade.8       4.2882     0.7150      0   5.997  &lt; 1e-04 ***
+nodematch.Grade.9       2.0371     0.5538      0   3.678 0.000235 ***
+nodematch.Grade.10      1.2489     0.6233      0   2.004 0.045111 *  
+nodematch.Grade.11      2.4521     0.6124      0   4.004  &lt; 1e-04 ***
+nodematch.Grade.12      1.2987     0.6981      0   1.860 0.062824 .  
+nodefactor.Race.Hisp   -1.6659     0.2963      0  -5.622  &lt; 1e-04 ***
+nodefactor.Race.NatAm  -1.4725     0.2869      0  -5.132  &lt; 1e-04 ***
+nodefactor.Race.Other  -2.9618     1.0372      0  -2.856 0.004296 ** 
+nodefactor.Race.White  -0.8488     0.2958      0  -2.869 0.004112 ** 
+nodematch.Race.Black      -Inf     0.0000      0    -Inf  &lt; 1e-04 ***
+nodematch.Race.Hisp     0.6912     0.3451      0   2.003 0.045153 *  
+nodematch.Race.NatAm    1.2482     0.3550      0   3.517 0.000437 ***
+nodematch.Race.Other      -Inf     0.0000      0    -Inf  &lt; 1e-04 ***
+nodematch.Race.White    0.3140     0.6405      0   0.490 0.623947    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+     Null Deviance: 28987  on 20910  degrees of freedom
+ Residual Deviance:  1798  on 20889  degrees of freedom
+ 
+AIC: 1836  BIC: 1987  (Smaller is better. MC Std. Err. = 0)
+Warnings:
+
+ * The following terms have infinite coefficient estimates due to an
+   extreme sufficient statistic:
+
+   nodematch.Race.Black, nodematch.Race.Other</code></pre>
+</div>
+</div>
+<p>The <code>-Inf</code> values are the result of a <strong>boundary problem</strong>. The possible values of <span class="math inline">\(g(y)\)</span> exist in a vector space. If the observed statistics vector <span class="math inline">\(g(y_{\text{obs}})\)</span> lies on or close to the boundary convex hull of the feasible statistics, the MLE may not exist or may be unstable. It’s easy to see why it failed here by looking at the original data.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(mesa <span class="sc">%v%</span> <span class="st">"Race"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Black  Hisp NatAm Other White 
+    6   109    68     4    18 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mixingmatrix</span>(mesa, <span class="st">"Race"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      Black Hisp NatAm Other White
+Black     0    8    13     0     5
+Hisp      8   53    41     1    22
+NatAm    13   41    46     0    10
+Other     0    1     0     0     0
+White     5   22    10     0     4</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Note:  Marginal totals can be misleading for undirected mixing matrices.</code></pre>
+</div>
+</div>
+<p>There are only six Black students and four in the Other category in the original data, and the mixing matrix shows no within-group ties for those races. Hence the “infinite penalty.”</p>
+</section>
+</section>
+<section id="goodness-of-fit" class="level1">
+<h1>Goodness of fit</h1>
+<p>We used our single observed network <span class="math inline">\(y_{\text{obs}}\)</span> to return point estimates <span class="math inline">\(\hat\theta\)</span>. We now ask whether networks simulated by parameters <span class="math inline">\(\hat\theta\)</span> resemble <span class="math inline">\(y_{\text{obs}}\)</span> <em>on features beyond those explicitly forced by the fit.</em> Internally, <code>gof()</code> uses <strong>Markov Chain Monte Carlo (MCMC)</strong> to simulate random graphs at the given <span class="math inline">\(\hat\theta\)</span>.</p>
+<p>For Model 1 (edges only), GOF is predictably poor. We call <code>gof()</code> to simulate networks at <span class="math inline">\(\hat\theta\)</span> and compare observed versus simulated distributions for <strong>degree</strong>, <strong>edgewise shared partners</strong>, and <strong>minimum geodesic distance</strong>. The solid lines marks <span class="math inline">\(y_{\text{obs}}\)</span>; box-plots summarize the simulations.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>fauxmodel.<span class="fl">01.</span>gof <span class="ot">&lt;-</span> <span class="fu">gof</span>(fauxmodel<span class="fl">.01</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fauxmodel.<span class="fl">01.</span>gof)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-1-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 1 (edges only)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-1-2.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 1 (edges only)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-1-3.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 1 (edges only)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-1-4.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 1 (edges only)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>For Model 2, we have improvement but still not great.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>fauxmodel.<span class="fl">02.</span>gof <span class="ot">&lt;-</span> <span class="fu">gof</span>(fauxmodel<span class="fl">.02</span>)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fauxmodel.<span class="fl">02.</span>gof)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-2-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 2 (edges+grade+race)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-2-2.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 2 (edges+grade+race)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-2-3.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 2 (edges+grade+race)</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-2-4.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 2 (edges+grade+race)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="model-3-adding-triadic-closure" class="level1">
+<h1>Model 3: Adding triadic closure</h1>
+<p>Homophily and activity terms do not describe structural clustering: if <span class="math inline">\(i\)</span> is friends with <span class="math inline">\(j\)</span>, and <span class="math inline">\(j\)</span> is friends with <span class="math inline">\(k\)</span>, then <span class="math inline">\(i\)</span> and <span class="math inline">\(k\)</span> are more likely to become friends (<strong>triadic closure</strong>).</p>
+<p>We could add the raw <code>triangle</code> count as a sufficient statistic, but this is known to often cause <strong>degeneracy</strong> (probability mass collapses, and the ERGM places most of its probability on unrealistic networks, like nearly empty or nearly complete graphs). Instead, the <strong>geometrically weighted edgewise shared partners</strong> <code>gwesp</code> is the standard way to reward ties between pairs who share mutual friends. We will use</p>
+<p><code>gwesp(0.25, fixed = TRUE)</code></p>
+<p>which specifies a fixed decay parameter of <code>0.25</code>: going from 0 to 1 shared partners matters a lot, going from 1 to 2 shared partners adds a little more value, and every additional partner beyond continuse this diminishing return of value added. A decay parameters closer to 0 means a steeper / more extreme diminishing return curve.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>fauxmodel<span class="fl">.03</span> <span class="ot">&lt;-</span> <span class="fu">ergm</span>(mesa <span class="sc">~</span> edges <span class="sc">+</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nodefactor</span>(<span class="st">"Grade"</span>) <span class="sc">+</span> <span class="fu">nodematch</span>(<span class="st">"Grade"</span>, <span class="at">diff =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nodefactor</span>(<span class="st">"Race"</span>) <span class="sc">+</span> <span class="fu">nodematch</span>(<span class="st">"Race"</span>, <span class="at">diff =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gwesp</span>(<span class="fl">0.25</span>, <span class="at">fixed =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Observed statistic(s) nodematch.Race.Black and nodematch.Race.Other are at their smallest attainable values. Their coefficients will be fixed at -Inf.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Starting maximum pseudolikelihood estimation (MPLE):</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Obtaining the responsible dyads.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Evaluating the predictor and response matrix.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Maximizing the pseudolikelihood.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Finished MPLE.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Starting Monte Carlo maximum likelihood estimation (MCMLE):</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Iteration 1 of at most 60:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>1 Optimizing with step length 0.1621.
+The log-likelihood improved by 2.7123.
+Estimating equations are not within tolerance region.
+Iteration 2 of at most 60:
+1 Optimizing with step length 0.1683.
+The log-likelihood improved by 2.3858.
+Estimating equations are not within tolerance region.
+Iteration 3 of at most 60:
+1 Optimizing with step length 0.2344.
+The log-likelihood improved by 2.0833.
+Estimating equations are not within tolerance region.
+Iteration 4 of at most 60:
+1 Optimizing with step length 0.3407.
+The log-likelihood improved by 2.2784.
+Estimating equations are not within tolerance region.
+Iteration 5 of at most 60:
+1 Optimizing with step length 0.4199.
+The log-likelihood improved by 1.7652.
+Estimating equations are not within tolerance region.
+Iteration 6 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 1.7312.
+Estimating equations are not within tolerance region.
+Iteration 7 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 1.2340.
+Estimating equations are not within tolerance region.
+Iteration 8 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 1.3171.
+Estimating equations are not within tolerance region.
+Iteration 9 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 1.1227.
+Estimating equations are not within tolerance region.
+Iteration 10 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.1886.
+Estimating equations are not within tolerance region.
+Iteration 11 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.2194.
+Estimating equations are not within tolerance region.
+Estimating equations did not move closer to tolerance region more than 1 time(s) in 4 steps; increasing sample size.
+Iteration 12 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.0905.
+Convergence test p-value: 0.9684. Not converged with 99% confidence; increasing sample size.
+Iteration 13 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.0894.
+Convergence test p-value: 0.9996. Not converged with 99% confidence; increasing sample size.
+Iteration 14 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.1247.
+Estimating equations are not within tolerance region.
+Iteration 15 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.0784.
+Convergence test p-value: 0.6540. Not converged with 99% confidence; increasing sample size.
+Iteration 16 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.0166.
+Convergence test p-value: 0.1707. Not converged with 99% confidence; increasing sample size.
+Iteration 17 of at most 60:
+1 Optimizing with step length 1.0000.
+The log-likelihood improved by 0.0215.
+Convergence test p-value: 0.0023. Converged with 99% confidence.
+Finished MCMLE.
+Evaluating log-likelihood at the estimate. Fitting the dyad-independent submodel...
+Bridging between the dyad-independent submodel and the full model...
+Setting up bridge sampling...
+Using 16 bridges: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 .
+Bridging finished.
+
+This model was fit using MCMC.  To examine model diagnostics and check
+for degeneracy, use the mcmc.diagnostics() function.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fauxmodel<span class="fl">.03</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Call:
+ergm(formula = mesa ~ edges + nodefactor("Grade") + nodematch("Grade", 
+    diff = TRUE) + nodefactor("Race") + nodematch("Race", diff = TRUE) + 
+    gwesp(0.25, fixed = TRUE))
+
+Monte Carlo Maximum Likelihood Results:
+
+                      Estimate Std. Error MCMC % z value Pr(&gt;|z|)    
+edges                  -8.5193     1.1948      0  -7.130  &lt; 1e-04 ***
+nodefactor.Grade.8      1.3958     0.6609      0   2.112 0.034690 *  
+nodefactor.Grade.9      2.1613     0.6271      0   3.446 0.000568 ***
+nodefactor.Grade.10     2.4687     0.6288      0   3.926  &lt; 1e-04 ***
+nodefactor.Grade.11     2.2418     0.6305      0   3.555 0.000377 ***
+nodefactor.Grade.12     2.8643     0.6231      0   4.597  &lt; 1e-04 ***
+nodematch.Grade.7       5.9567     1.1606      0   5.132  &lt; 1e-04 ***
+nodematch.Grade.8       3.2186     0.6571      0   4.898  &lt; 1e-04 ***
+nodematch.Grade.9       1.6306     0.4737      0   3.442 0.000577 ***
+nodematch.Grade.10      1.0672     0.5560      0   1.919 0.054957 .  
+nodematch.Grade.11      1.8177     0.5288      0   3.437 0.000588 ***
+nodematch.Grade.12      0.9525     0.5846      0   1.629 0.103251    
+nodefactor.Race.Hisp   -1.1029     0.2490      0  -4.429  &lt; 1e-04 ***
+nodefactor.Race.NatAm  -1.0893     0.2473      0  -4.405  &lt; 1e-04 ***
+nodefactor.Race.Other  -2.1035     0.9797      0  -2.147 0.031780 *  
+nodefactor.Race.White  -0.5921     0.2494      0  -2.374 0.017579 *  
+nodematch.Race.Black      -Inf     0.0000      0    -Inf  &lt; 1e-04 ***
+nodematch.Race.Hisp     0.5578     0.3033      0   1.839 0.065928 .  
+nodematch.Race.NatAm    1.0711     0.3080      0   3.477 0.000506 ***
+nodematch.Race.Other      -Inf     0.0000      0    -Inf  &lt; 1e-04 ***
+nodematch.Race.White    0.3163     0.6197      0   0.510 0.609794    
+gwesp.fixed.0.25        1.4037     0.1124      0  12.486  &lt; 1e-04 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+     Null Deviance: 28987  on 20910  degrees of freedom
+ Residual Deviance:  1624  on 20888  degrees of freedom
+ 
+AIC: 1664  BIC: 1823  (Smaller is better. MC Std. Err. = 0.4307)
+Warnings:
+
+ * The following terms have infinite coefficient estimates due to an
+   extreme sufficient statistic:
+
+   nodematch.Race.Black, nodematch.Race.Other</code></pre>
+</div>
+</div>
+<section id="estimation-with-mcmle" class="level2">
+<h2 class="anchored" data-anchor-id="estimation-with-mcmle">Estimation with MCMLE</h2>
+<p>Because <code>gwesp</code> is <strong>dyad-dependent</strong> (the change statistic <span class="math inline">\(\delta_{ij}(y)\)</span> depends on shared partners elsewhere in the graph), the MLE algorithm used for dyad-independent Models 1 and 2 is no longer tractable. In this case, <code>ergm()</code> now uses <strong>Maximum <em>Pseudo</em>-Likelihood Estimation (MPLE)</strong> to find an initial <span class="math inline">\(\hat{\theta}\)</span>, then uses <strong>Monte Carlo Maximum Likelihood Estimation (MCMLE)</strong> to refine this estimate:</p>
+<ol type="1">
+<li>At the current <span class="math inline">\(\theta\)</span>, simulate networks from the ERGM</li>
+<li>Compare the sample average of <span class="math inline">\(g(y)\)</span> to <span class="math inline">\(g(y_{\text{obs}})\)</span></li>
+<li>Update <span class="math inline">\(\theta\)</span> by some rules, and repeat until the observed statistics are typical under the model</li>
+</ol>
+<p>Each iteration uses MCMC steps to simulate networks. The <code>MCMC %</code> column in <code>summary()</code> reports the percentage of each coefficient’s standard error attributable to MCMC sampling variation. Notably, this alone is not a convergence diagnostic: when MCMLE is used, it is important to check for estimation convergence (e.g.&nbsp;via <code>mcmc.diagnostics()</code>) before intepretting model results.</p>
+<p>For example, for some specifications, such as the aforementioned <code>edges</code> + <code>triangle</code> combination on sparse networks, MCMLE may produce useless simulations (near empty, near complete, or otherwise non-helpful structures). Below, we run <code>mcmc.diagnostics()</code> to plot MCMC sample statistics against their observed values: trace plots should fluctuate around the observed horizontal line without systematic drift. Failure here indicates estimation instability. The <a href="https://statnet.org/workshop-ergm/ergm_tutorial.html#What_it_looks_like_when_a_model_fails">Statnet tutorial</a> has an example which illustrates such failings.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mcmc.diagnostics</span>(fauxmodel<span class="fl">.03</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/mcmc-diagnostics-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/mcmc-diagnostics-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/mcmc-diagnostics-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/mcmc-diagnostics-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/mcmc-diagnostics-5.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Sample statistics summary:
+
+Iterations = 419840:8374272
+Thinning interval = 2048 
+Number of chains = 1 
+Sample size per chain = 3885 
+
+1. Empirical mean and standard deviation for each variable,
+   plus standard error of the mean:
+
+                           Mean     SD Naive SE Time-series SE
+edges                  1.228829 26.897  0.43153        1.15438
+nodefactor.Grade.8     1.630631 23.074  0.37020        1.07012
+nodefactor.Grade.9     1.065894 17.346  0.27830        0.58519
+nodefactor.Grade.10   -1.155212 10.785  0.17303        0.38619
+nodefactor.Grade.11   -0.643243 16.635  0.26688        0.76166
+nodefactor.Grade.12    0.091634 10.153  0.16290        0.41081
+nodematch.Grade.7      0.747748 18.046  0.28953        0.82501
+nodematch.Grade.8      0.891634 11.242  0.18037        0.52586
+nodematch.Grade.9      0.499871  7.889  0.12657        0.27499
+nodematch.Grade.10    -0.371171  4.282  0.06871        0.16097
+nodematch.Grade.11    -0.225483  7.486  0.12010        0.35730
+nodematch.Grade.12     0.182754  3.809  0.06110        0.16770
+nodefactor.Race.Hisp   0.063835 28.108  0.45096        0.98508
+nodefactor.Race.NatAm  1.927413 27.824  0.44640        1.20659
+nodefactor.Race.Other -0.004118  1.051  0.01687        0.01850
+nodefactor.Race.White  0.289318 11.229  0.18016        0.42369
+nodematch.Race.Hisp    0.031918 10.810  0.17343        0.34321
+nodematch.Race.NatAm   0.756242 10.819  0.17357        0.45768
+nodematch.Race.White   0.051223  2.311  0.03707        0.08001
+gwesp.fixed.0.25       1.563917 30.264  0.48555        1.29860
+
+2. Quantiles for each variable:
+
+                        2.5%    25%     50%   75% 97.5%
+edges                 -48.00 -18.00  0.0000 19.00 56.00
+nodefactor.Grade.8    -38.00 -15.00  0.0000 16.00 54.00
+nodefactor.Grade.9    -29.00 -12.00  0.0000 12.00 38.00
+nodefactor.Grade.10   -19.00  -9.00 -2.0000  5.00 23.00
+nodefactor.Grade.11   -28.00 -13.00 -2.0000 10.00 36.90
+nodefactor.Grade.12   -17.00  -7.00 -1.0000  7.00 22.00
+nodematch.Grade.7     -31.00 -12.00 -1.0000 13.00 39.00
+nodematch.Grade.8     -18.00  -7.00  0.0000  8.00 27.00
+nodematch.Grade.9     -13.00  -5.00  0.0000  5.00 18.00
+nodematch.Grade.10     -7.00  -4.00 -1.0000  2.00  9.00
+nodematch.Grade.11    -12.00  -6.00 -1.0000  4.00 16.90
+nodematch.Grade.12     -5.00  -3.00  0.0000  2.00  9.00
+nodefactor.Race.Hisp  -50.00 -20.00 -1.0000 18.00 59.00
+nodefactor.Race.NatAm -48.00 -18.00  0.0000 20.00 61.00
+nodefactor.Race.Other  -1.00  -1.00  0.0000  1.00  3.00
+nodefactor.Race.White -20.00  -8.00 -1.0000  8.00 24.00
+nodematch.Race.Hisp   -19.00  -7.00 -1.0000  7.00 23.00
+nodematch.Race.NatAm  -18.00  -7.00  0.0000  7.00 24.00
+nodematch.Race.White   -4.00  -2.00  0.0000  1.00  5.00
+gwesp.fixed.0.25      -51.57 -20.09  0.1571 21.68 64.03
+
+
+Are sample statistics significantly different from observed?
+               edges nodefactor.Grade.8 nodefactor.Grade.9 nodefactor.Grade.10
+diff.      1.2288288          1.6306306         1.06589447        -1.155212355
+test stat. 1.0644888          1.5237776         1.82143820        -2.991305231
+P-val.     0.2871073          0.1275643         0.06854027         0.002777877
+           nodefactor.Grade.11 nodefactor.Grade.12 nodematch.Grade.7
+diff.               -0.6432432          0.09163449         0.7477477
+test stat.          -0.8445320          0.22305891         0.9063549
+P-val.               0.3983722          0.82348966         0.3647480
+           nodematch.Grade.8 nodematch.Grade.9 nodematch.Grade.10
+diff.             0.89163449        0.49987130        -0.37117117
+test stat.        1.69557892        1.81779103        -2.30585463
+P-val.            0.08996565        0.06909608         0.02111876
+           nodematch.Grade.11 nodematch.Grade.12 nodefactor.Race.Hisp
+diff.              -0.2254826          0.1827542           0.06383526
+test stat.         -0.6310693          1.0897886           0.06480240
+P-val.              0.5279952          0.2758063           0.94833133
+           nodefactor.Race.NatAm nodefactor.Race.Other nodefactor.Race.White
+diff.                  1.9274131          -0.004118404             0.2893179
+test stat.             1.5973991          -0.222589074             0.6828581
+P-val.                 0.1101768           0.823855341             0.4946965
+           nodematch.Race.Hisp nodematch.Race.NatAm nodematch.Race.White
+diff.               0.03191763           0.75624196           0.05122265
+test stat.          0.09299831           1.65235422           0.64023248
+P-val.              0.92590490           0.09846236           0.52202147
+           gwesp.fixed.0.25       (Omni)
+diff.             1.5639174           NA
+test stat.        1.2043063 5.854200e+01
+P-val.            0.2284712 2.018804e-05
+
+Sample statistics cross-correlations:
+                           edges nodefactor.Grade.8 nodefactor.Grade.9
+edges                 1.00000000        0.459964472        0.396886409
+nodefactor.Grade.8    0.45996447        1.000000000        0.072626033
+nodefactor.Grade.9    0.39688641        0.072626033        1.000000000
+nodefactor.Grade.10   0.33276104        0.025927785        0.067633961
+nodefactor.Grade.11   0.39272107        0.084576572        0.061769742
+nodefactor.Grade.12   0.25320724       -0.059090616        0.112383398
+nodematch.Grade.7     0.65026628       -0.018822401       -0.017715850
+nodematch.Grade.8     0.44307879        0.989896818        0.062580579
+nodematch.Grade.9     0.33745996        0.073289483        0.952690871
+nodematch.Grade.10    0.24309670        0.017270715       -0.005417301
+nodematch.Grade.11    0.34630038        0.085518086        0.025305141
+nodematch.Grade.12    0.12540717       -0.088609373        0.025726423
+nodefactor.Race.Hisp  0.78954179        0.263312571        0.307753742
+nodefactor.Race.NatAm 0.76495588        0.460636104        0.329104164
+nodefactor.Race.Other 0.05441431       -0.002058282        0.117238038
+nodefactor.Race.White 0.58680550        0.144399864        0.118076268
+nodematch.Race.Hisp   0.59455202        0.161300762        0.228716555
+nodematch.Race.NatAm  0.59239418        0.384707258        0.269027966
+nodematch.Race.White  0.27338989        0.046875625        0.001662936
+gwesp.fixed.0.25      0.94627142        0.441880622        0.338635699
+                      nodefactor.Grade.10 nodefactor.Grade.11
+edges                         0.332761042          0.39272107
+nodefactor.Grade.8            0.025927785          0.08457657
+nodefactor.Grade.9            0.067633961          0.06176974
+nodefactor.Grade.10           1.000000000          0.13288816
+nodefactor.Grade.11           0.132888159          1.00000000
+nodefactor.Grade.12           0.169025161          0.11339637
+nodematch.Grade.7             0.037084033         -0.03216177
+nodematch.Grade.8             0.014524091          0.07394904
+nodematch.Grade.9            -0.004843513          0.01718674
+nodematch.Grade.10            0.887396642          0.05235392
+nodematch.Grade.11            0.080293123          0.96100485
+nodematch.Grade.12            0.053187403          0.02699531
+nodefactor.Race.Hisp          0.225220686          0.23932454
+nodefactor.Race.NatAm         0.203558094          0.30022969
+nodefactor.Race.Other         0.058195377          0.02633650
+nodefactor.Race.White         0.323295444          0.29102999
+nodematch.Race.Hisp           0.148967462          0.12933411
+nodematch.Race.NatAm          0.139809346          0.20455857
+nodematch.Race.White          0.215520812          0.12977622
+gwesp.fixed.0.25              0.270116122          0.36955772
+                      nodefactor.Grade.12 nodematch.Grade.7 nodematch.Grade.8
+edges                        0.2532072351        0.65026628       0.443078794
+nodefactor.Grade.8          -0.0590906165       -0.01882240       0.989896818
+nodefactor.Grade.9           0.1123833976       -0.01771585       0.062580579
+nodefactor.Grade.10          0.1690251609        0.03708403       0.014524091
+nodefactor.Grade.11          0.1133963666       -0.03216177       0.073949042
+nodefactor.Grade.12          1.0000000000       -0.02475757      -0.071281678
+nodematch.Grade.7           -0.0247575698        1.00000000      -0.020604472
+nodematch.Grade.8           -0.0712816778       -0.02060447       1.000000000
+nodematch.Grade.9            0.0370417510       -0.01916616       0.070958470
+nodematch.Grade.10           0.0440855332        0.05170277       0.016346951
+nodematch.Grade.11           0.0584800338       -0.03432544       0.080690935
+nodematch.Grade.12           0.8702715162       -0.04246067      -0.089115805
+nodefactor.Race.Hisp         0.2429477826        0.61184083       0.246335714
+nodefactor.Race.NatAm        0.1279697751        0.44927883       0.452843195
+nodefactor.Race.Other        0.0295855861       -0.01136026      -0.002063883
+nodefactor.Race.White        0.0793088393        0.47070908       0.133925246
+nodematch.Race.Hisp          0.1759814879        0.51739548       0.148410266
+nodematch.Race.NatAm         0.0770818153        0.34729239       0.382014444
+nodematch.Race.White         0.0008314313        0.25139506       0.042196438
+gwesp.fixed.0.25             0.2256984357        0.64972149       0.435940731
+                      nodematch.Grade.9 nodematch.Grade.10 nodematch.Grade.11
+edges                       0.337459961        0.243096697        0.346300384
+nodefactor.Grade.8          0.073289483        0.017270715        0.085518086
+nodefactor.Grade.9          0.952690871       -0.005417301        0.025305141
+nodefactor.Grade.10        -0.004843513        0.887396642        0.080293123
+nodefactor.Grade.11         0.017186740        0.052353922        0.961004854
+nodefactor.Grade.12         0.037041751        0.044085533        0.058480034
+nodematch.Grade.7          -0.019166165        0.051702769       -0.034325441
+nodematch.Grade.8           0.070958470        0.016346951        0.080690935
+nodematch.Grade.9           1.000000000       -0.029677295        0.007750823
+nodematch.Grade.10         -0.029677295        1.000000000        0.035207613
+nodematch.Grade.11          0.007750823        0.035207613        1.000000000
+nodematch.Grade.12          0.002742886       -0.001080840        0.012661445
+nodefactor.Race.Hisp        0.258611554        0.144995748        0.199753179
+nodefactor.Race.NatAm       0.295376831        0.162227304        0.271779087
+nodefactor.Race.Other       0.106084905        0.029744061        0.020068735
+nodefactor.Race.White       0.075566867        0.262126004        0.263692013
+nodematch.Race.Hisp         0.195380146        0.090007493        0.101771895
+nodematch.Race.NatAm        0.248660861        0.117764249        0.184302809
+nodematch.Race.White       -0.020499954        0.190529095        0.111552806
+gwesp.fixed.0.25            0.300795942        0.204436631        0.341460574
+                      nodematch.Grade.12 nodefactor.Race.Hisp
+edges                        0.125407172           0.78954179
+nodefactor.Grade.8          -0.088609373           0.26331257
+nodefactor.Grade.9           0.025726423           0.30775374
+nodefactor.Grade.10          0.053187403           0.22522069
+nodefactor.Grade.11          0.026995310           0.23932454
+nodefactor.Grade.12          0.870271516           0.24294778
+nodematch.Grade.7           -0.042460667           0.61184083
+nodematch.Grade.8           -0.089115805           0.24633571
+nodematch.Grade.9            0.002742886           0.25861155
+nodematch.Grade.10          -0.001080840           0.14499575
+nodematch.Grade.11           0.012661445           0.19975318
+nodematch.Grade.12           1.000000000           0.14699245
+nodefactor.Race.Hisp         0.146992451           1.00000000
+nodefactor.Race.NatAm        0.040818644           0.28244406
+nodefactor.Race.Other        0.020316764           0.03188367
+nodefactor.Race.White        0.002170744           0.38212316
+nodematch.Race.Hisp          0.112320633           0.91130374
+nodematch.Race.NatAm         0.015071879           0.12365431
+nodematch.Race.White        -0.027247572           0.14370950
+gwesp.fixed.0.25             0.124397646           0.72007172
+                      nodefactor.Race.NatAm nodefactor.Race.Other
+edges                            0.76495588          0.0544143094
+nodefactor.Grade.8               0.46063610         -0.0020582818
+nodefactor.Grade.9               0.32910416          0.1172380382
+nodefactor.Grade.10              0.20355809          0.0581953769
+nodefactor.Grade.11              0.30022969          0.0263365030
+nodefactor.Grade.12              0.12796978          0.0295855861
+nodematch.Grade.7                0.44927883         -0.0113602626
+nodematch.Grade.8                0.45284319         -0.0020638830
+nodematch.Grade.9                0.29537683          0.1060849051
+nodematch.Grade.10               0.16222730          0.0297440605
+nodematch.Grade.11               0.27177909          0.0200687350
+nodematch.Grade.12               0.04081864          0.0203167639
+nodefactor.Race.Hisp             0.28244406          0.0318836674
+nodefactor.Race.NatAm            1.00000000          0.0195491353
+nodefactor.Race.Other            0.01954914          1.0000000000
+nodefactor.Race.White            0.27706503          0.0180514784
+nodematch.Race.Hisp              0.10756829          0.0183418333
+nodematch.Race.NatAm             0.92171447          0.0091030491
+nodematch.Race.White             0.08739136          0.0001928628
+gwesp.fixed.0.25                 0.74419089          0.0258951105
+                      nodefactor.Race.White nodematch.Race.Hisp
+edges                           0.586805498          0.59455202
+nodefactor.Grade.8              0.144399864          0.16130076
+nodefactor.Grade.9              0.118076268          0.22871655
+nodefactor.Grade.10             0.323295444          0.14896746
+nodefactor.Grade.11             0.291029992          0.12933411
+nodefactor.Grade.12             0.079308839          0.17598149
+nodematch.Grade.7               0.470709080          0.51739548
+nodematch.Grade.8               0.133925246          0.14841027
+nodematch.Grade.9               0.075566867          0.19538015
+nodematch.Grade.10              0.262126004          0.09000749
+nodematch.Grade.11              0.263692013          0.10177190
+nodematch.Grade.12              0.002170744          0.11232063
+nodefactor.Race.Hisp            0.382123163          0.91130374
+nodefactor.Race.NatAm           0.277065035          0.10756829
+nodefactor.Race.Other           0.018051478          0.01834183
+nodefactor.Race.White           1.000000000          0.21158740
+nodematch.Race.Hisp             0.211587400          1.00000000
+nodematch.Race.NatAm            0.137259814          0.04098433
+nodematch.Race.White            0.682895526          0.09059960
+gwesp.fixed.0.25                0.567496798          0.53471340
+                      nodematch.Race.NatAm nodematch.Race.White
+edges                          0.592394176         0.2733898917
+nodefactor.Grade.8             0.384707258         0.0468756251
+nodefactor.Grade.9             0.269027966         0.0016629361
+nodefactor.Grade.10            0.139809346         0.2155208120
+nodefactor.Grade.11            0.204558574         0.1297762155
+nodefactor.Grade.12            0.077081815         0.0008314313
+nodematch.Grade.7              0.347292394         0.2513950614
+nodematch.Grade.8              0.382014444         0.0421964380
+nodematch.Grade.9              0.248660861        -0.0204999543
+nodematch.Grade.10             0.117764249         0.1905290952
+nodematch.Grade.11             0.184302809         0.1115528060
+nodematch.Grade.12             0.015071879        -0.0272475723
+nodefactor.Race.Hisp           0.123654309         0.1437094980
+nodefactor.Race.NatAm          0.921714466         0.0873913599
+nodefactor.Race.Other          0.009103049         0.0001928628
+nodefactor.Race.White          0.137259814         0.6828955255
+nodematch.Race.Hisp            0.040984326         0.0905996044
+nodematch.Race.NatAm           1.000000000         0.0394188258
+nodematch.Race.White           0.039418826         1.0000000000
+gwesp.fixed.0.25               0.588878771         0.2675217932
+                      gwesp.fixed.0.25
+edges                       0.94627142
+nodefactor.Grade.8          0.44188062
+nodefactor.Grade.9          0.33863570
+nodefactor.Grade.10         0.27011612
+nodefactor.Grade.11         0.36955772
+nodefactor.Grade.12         0.22569844
+nodematch.Grade.7           0.64972149
+nodematch.Grade.8           0.43594073
+nodematch.Grade.9           0.30079594
+nodematch.Grade.10          0.20443663
+nodematch.Grade.11          0.34146057
+nodematch.Grade.12          0.12439765
+nodefactor.Race.Hisp        0.72007172
+nodefactor.Race.NatAm       0.74419089
+nodefactor.Race.Other       0.02589511
+nodefactor.Race.White       0.56749680
+nodematch.Race.Hisp         0.53471340
+nodematch.Race.NatAm        0.58887877
+nodematch.Race.White        0.26752179
+gwesp.fixed.0.25            1.00000000
+
+Sample statistics auto-correlation:
+Chain 1 
+              edges nodefactor.Grade.8 nodefactor.Grade.9 nodefactor.Grade.10
+Lag 0     1.0000000          1.0000000          1.0000000           1.0000000
+Lag 2048  0.6969872          0.7384123          0.5967802           0.5330776
+Lag 4096  0.5207419          0.5677893          0.3914377           0.3673704
+Lag 6144  0.4133212          0.4529588          0.2622251           0.2709906
+Lag 8192  0.3171991          0.3698514          0.1886247           0.2111878
+Lag 10240 0.2405876          0.2938766          0.1412652           0.1504430
+          nodefactor.Grade.11 nodefactor.Grade.12 nodematch.Grade.7
+Lag 0               1.0000000           1.0000000         1.0000000
+Lag 2048            0.7341227           0.6752044         0.7431929
+Lag 4096            0.5675207           0.5125547         0.5727706
+Lag 6144            0.4586239           0.3849823         0.4560739
+Lag 8192            0.3737213           0.3007942         0.3507952
+Lag 10240           0.3041538           0.2427691         0.2842608
+          nodematch.Grade.8 nodematch.Grade.9 nodematch.Grade.10
+Lag 0             1.0000000         1.0000000          1.0000000
+Lag 2048          0.7485853         0.6169299          0.5657269
+Lag 4096          0.5771761         0.4150335          0.3870280
+Lag 6144          0.4612042         0.2791780          0.2799626
+Lag 8192          0.3763141         0.2042605          0.2166732
+Lag 10240         0.3013863         0.1582886          0.1611194
+          nodematch.Grade.11 nodematch.Grade.12 nodefactor.Race.Hisp
+Lag 0              1.0000000          1.0000000            1.0000000
+Lag 2048           0.7685645          0.7510663            0.6065833
+Lag 4096           0.6013098          0.5788866            0.3939291
+Lag 6144           0.4893380          0.4472638            0.2769766
+Lag 8192           0.3971572          0.3417641            0.1801089
+Lag 10240          0.3214253          0.2595685            0.1265056
+          nodefactor.Race.NatAm nodefactor.Race.Other nodefactor.Race.White
+Lag 0                 1.0000000           1.000000000             1.0000000
+Lag 2048              0.7058863           0.092249778             0.6337069
+Lag 4096              0.5353234           0.007672521             0.4448835
+Lag 6144              0.4225623          -0.025177886             0.3280192
+Lag 8192              0.3235451           0.021421148             0.2373814
+Lag 10240             0.2419023           0.003243681             0.1790955
+          nodematch.Race.Hisp nodematch.Race.NatAm nodematch.Race.White
+Lag 0              1.00000000            1.0000000            1.0000000
+Lag 2048           0.54657891            0.7009725            0.5639525
+Lag 4096           0.32497045            0.5298580            0.3582003
+Lag 6144           0.21331983            0.4085585            0.2484061
+Lag 8192           0.13353998            0.3124094            0.1767961
+Lag 10240          0.09522135            0.2299103            0.1272778
+          gwesp.fixed.0.25
+Lag 0            1.0000000
+Lag 2048         0.6835525
+Lag 4096         0.5239579
+Lag 6144         0.4142536
+Lag 8192         0.3179093
+Lag 10240        0.2391275
+
+Sample statistics burn-in diagnostic (Geweke):
+Chain 1 
+
+Fraction in 1st window = 0.1
+Fraction in 2nd window = 0.5 
+
+                edges    nodefactor.Grade.8    nodefactor.Grade.9 
+          -0.08452458           -1.82528519            0.90687970 
+  nodefactor.Grade.10   nodefactor.Grade.11   nodefactor.Grade.12 
+          -0.02432314           -1.03287990            2.09986213 
+    nodematch.Grade.7     nodematch.Grade.8     nodematch.Grade.9 
+           0.34912052           -1.82845621            0.54997480 
+   nodematch.Grade.10    nodematch.Grade.11    nodematch.Grade.12 
+          -0.52100539           -1.08159933            1.96178082 
+ nodefactor.Race.Hisp nodefactor.Race.NatAm nodefactor.Race.Other 
+           0.34269430           -0.64134408            0.57787126 
+nodefactor.Race.White   nodematch.Race.Hisp  nodematch.Race.NatAm 
+          -0.15663203            0.21823417           -0.82060767 
+ nodematch.Race.White      gwesp.fixed.0.25 
+          -0.45066360           -0.12038549 
+
+Individual P-values (lower = worse):
+                edges    nodefactor.Grade.8    nodefactor.Grade.9 
+           0.93263936            0.06795800            0.36447042 
+  nodefactor.Grade.10   nodefactor.Grade.11   nodefactor.Grade.12 
+           0.98059486            0.30166010            0.03574097 
+    nodematch.Grade.7     nodematch.Grade.8     nodematch.Grade.9 
+           0.72699883            0.06748111            0.58233666 
+   nodematch.Grade.10    nodematch.Grade.11    nodematch.Grade.12 
+           0.60236301            0.27943060            0.04978801 
+ nodefactor.Race.Hisp nodefactor.Race.NatAm nodefactor.Race.Other 
+           0.73182845            0.52129915            0.56335104 
+nodefactor.Race.White   nodematch.Race.Hisp  nodematch.Race.NatAm 
+           0.87553486            0.82724666            0.41186978 
+ nodematch.Race.White      gwesp.fixed.0.25 
+           0.65223202            0.90417779 
+Joint P-value (lower = worse):  0.4810945 
+
+Note: MCMC diagnostics shown here are from the last round of
+  simulation, prior to computation of final parameter estimates.
+  Because the final estimates are refinements of those used for this
+  simulation run, these diagnostics may understate model performance.
+  To directly assess the performance of the final model on in-model
+  statistics, please use the GOF command: gof(ergmFitObject,
+  GOF=~model).</code></pre>
+</div>
+</div>
+</section>
+<section id="gof-model-3" class="level2">
+<h2 class="anchored" data-anchor-id="gof-model-3">GOF: Model 3</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>fauxmodel.<span class="fl">03.</span>gof <span class="ot">&lt;-</span> <span class="fu">gof</span>(fauxmodel<span class="fl">.03</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Sampling ■■■■■■■■                          23% |  ETA:  5s</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Sampling ■■■■■■■■■■■■■■■■■■■■■■■           72% |  ETA:  2s</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fauxmodel.<span class="fl">03.</span>gof)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-gwesp-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 3</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-gwesp-2.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 3</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-gwesp-3.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 3</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/gof-gwesp-4.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>GOF for Model 3</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="bergms" class="level1">
+<h1>BERGMs</h1>
+<p>The ERGM section treats <span class="math inline">\(\theta\)</span> as fixed and returns a point estimate <span class="math inline">\(\hat\theta\)</span> (via MLE or MCMLE). A <strong>Bayesian exponential random graph model</strong> (BERGM) keeps the same likelihood,</p>
+<p><span class="math display">\[
+\Pr(Y = y_{\text{obs}} \mid \theta) = \frac{\exp\{\theta^\top g(y_{\text{obs}})\}}{k(\theta)},
+\]</span></p>
+<p>but places a prior <span class="math inline">\(p(\theta)\)</span> on the parameters and targets the posterior</p>
+<p><span class="math display">\[
+p(\theta \mid Y = y_{\text{obs}}) \;=\; \frac{\Pr(Y = y_{\text{obs}} \mid \theta)\, p(\theta)}{\int \Pr(Y = y_{\text{obs}} \mid \theta')\, p(\theta')\, d\theta'}.
+\]</span></p>
+<p>The sufficient statistics <span class="math inline">\(g(y)\)</span>, the change statistics <span class="math inline">\(\delta_{ij}(y)\)</span>, and the interpretation of each <span class="math inline">\(\theta_k\)</span> is unchanged. What’s changed is our inferential goal, shifting from a single <span class="math inline">\(\hat\theta\)</span> to a distribution for <span class="math inline">\(\theta\)</span>.</p>
+<section id="handwavy-details" class="level2">
+<h2 class="anchored" data-anchor-id="handwavy-details">Handwavy details</h2>
+<p>See <a href="https://arxiv.org/pdf/2605.25873">Bayesian perspectives on exponential random graph models</a>, a recent (May 2026) survey for BERGMs. In short, the Bayesian approach helps regularize coefficients toward modest values, while also enabling principled uncertainty quantification (i.e., posterior credible intervals). However, the problem is now doubly-intractable: each evaluation of <span class="math inline">\(\Pr(Y = y_{\text{obs}} \mid \theta)\)</span> requires the normalizing constant <span class="math inline">\(k(\theta)\)</span> from before, but now <span class="math inline">\(\theta\)</span> itself is unknown. The <code>Bergm</code> package uses an <strong>exchange algorithm</strong>: at each step it simulates an auxiliary network at a proposed <span class="math inline">\(\theta\)</span> (via <code>ergm</code>’s MCMC) and accepts or rejects that proposal by comparing auxiliary and observed sufficient statistics, avoiding explicit evaluation of <span class="math inline">\(k(\theta)\)</span>. This inner network simulation is one more layer of MCMC nested inside the outer sampler over <span class="math inline">\(\theta\)</span>.</p>
+<p>To move <span class="math inline">\(\theta\)</span>, <code>bergm()</code> runs <strong>parallel adaptive direction sampling (PADS)</strong> across several <span class="math inline">\(\theta\)</span>-chains (by default, twice the number of model terms). Each step proposes a new value for chain <span class="math inline">\(h\)</span> by</p>
+<p><span class="math display">\[
+\theta^{\text{prop}} \;=\; \theta_h \;+\; \gamma\,(\theta_{h_1} - \theta_{h_2}) \;+\; \varepsilon,
+\qquad \varepsilon \sim N(0,\, V_{\text{proposal}}\, I),
+\]</span></p>
+<p>where <span class="math inline">\(h_1, h_2\)</span> are two other chains chosen at random; the exchange algorithm then decides whether to accept <span class="math inline">\(\theta^{\text{prop}}\)</span>.</p>
+<ul>
+<li><code>gamma</code> scales the directional step along their difference.</li>
+<li><code>V.proposal</code> sets the variance of the extra random jitter.</li>
+</ul>
+<p>Together, these parameters control proposal size. We can tune them (along with <code>burn.in</code> and <code>main.iters</code>) until we have a reasonable acceptance rate (<span class="math inline">\(~20\%\)</span>). See <a href="https://cran.r-project.org/web/packages/Bergm/refman/Bergm.html#bergm">the documentation</a> for syntax. As before, we’ll need to make sure to check diagnostics before interpreting coefficients.</p>
+</section>
+<section id="diagnostics" class="level2">
+<h2 class="anchored" data-anchor-id="diagnostics">Diagnostics</h2>
+<p>The standard <code>Bergm</code> workflow has three steps after fitting:</p>
+<ul>
+<li><code>summary()</code> reports the acceptance rate in the exchange algorithm (a good value is <span class="math inline">\(~20\%\)</span>), posterior means, standard deviations, and credible intervals in the form of posterior percentiles (e.g., <span class="math inline">\(95\%\)</span> credible interval is bewteen <code>2.5%</code> and <code>97.5%</code>). It also reports two standard errors for each <span class="math inline">\(\theta_k\)</span>:
+<ul>
+<li><code>Naive SE</code> treats the <span class="math inline">\(n\)</span> posterior draws as independent, ignoring MCMC autocorrelation and typically underestimates uncertainty when the chain mixes slowly.</li>
+<li><code>Time-series SE</code> accounts for autocorrelation in the draws. If <code>Time-series SE</code> is much larger than <code>Naive SE</code>, this is a signal that the chain is mixing poorly for that parameter and the credible intervals may be too narrow.</li>
+</ul></li>
+<li><code>plot()</code> shows three panels per parameter: marginal posterior density (left), trace plot (middle), and autocorrelation (right).
+<ul>
+<li>Density: should look reasonably smooth and stable across MCMC pages; sharp spikes or multi-modality can indicate poor mixing or label-switching-like behavior.</li>
+<li>Trace: should look stationary.</li>
+<li>Autocorrelation: should decay quickly toward zero as lag increases. Slow decay means successive draws are highly dependent and effective sample size is small.</li>
+</ul></li>
+<li><code>bgof()</code> carries out Bayesian GOF: it draws <span class="math inline">\(\theta\)</span> from the posterior, simulates networks at each draw, and compares degree, minimum geodesic distance and edgewise shared partner distributions to <span class="math inline">\(y_{\text{obs}}\)</span>. The red line is <span class="math inline">\(y_{\text{obs}}\)</span>; boxplots summarize the posterior predictive simulations; gray lines mark the <span class="math inline">\(5\%\)</span> and <span class="math inline">\(95\%\)</span> simulation quantiles at each bin.</li>
+</ul>
+</section>
+</section>
+<section id="implementing-bergm" class="level1">
+<h1>Implementing BERGM</h1>
+<p>We fit the same formula as Model 3. Recall that the frequentist methods fit fixed some race homophily coefficients at <span class="math inline">\(-\infty\)</span>. By default, the <code>bergm()</code> function initializes MPLE coefficients, and <span class="math inline">\(-\infty\)</span> starting values break the exchange algorithm. We will instead manually specify the initialization <code>bergm_start</code>, replacing <span class="math inline">\(-\infty\)</span> entries with a large negative value.</p>
+<p>With default values, the acceptance rate is only <span class="math inline">\(\sim 3\%\)</span> (poor mixing). A few quick tests found the parameters below, though they can probably still be tuned more.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>bergm_start <span class="ot">&lt;-</span> <span class="fu">coef</span>(fauxmodel<span class="fl">.03</span>)</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>bergm_start[<span class="sc">!</span><span class="fu">is.finite</span>(bergm_start)] <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">10</span></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>fauxmodel.bergm <span class="ot">&lt;-</span> <span class="fu">bergm</span>(</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>  mesa <span class="sc">~</span> edges <span class="sc">+</span></span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">nodefactor</span>(<span class="st">"Grade"</span>) <span class="sc">+</span> <span class="fu">nodematch</span>(<span class="st">"Grade"</span>, <span class="at">diff =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">nodefactor</span>(<span class="st">"Race"</span>) <span class="sc">+</span> <span class="fu">nodematch</span>(<span class="st">"Race"</span>, <span class="at">diff =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gwesp</span>(<span class="fl">0.25</span>, <span class="at">fixed =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">startVals  =</span> bergm_start,</span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">burn.in    =</span> <span class="dv">200</span>,</span>
+<span id="cb62-11"><a href="#cb62-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">main.iters =</span> <span class="dv">2000</span>,</span>
+<span id="cb62-12"><a href="#cb62-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">aux.iters  =</span> <span class="dv">1000</span>,</span>
+<span id="cb62-13"><a href="#cb62-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">gamma      =</span> <span class="fl">0.30</span>,</span>
+<span id="cb62-14"><a href="#cb62-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">V.proposal =</span> <span class="fl">0.0005</span></span>
+<span id="cb62-15"><a href="#cb62-15" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code> &gt; MCMC start</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fauxmodel.bergm)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Posterior Density Estimate for Model: y ~ edges + nodefactor("Grade") + nodematch("Grade", diff = TRUE) + nodefactor("Race") + nodematch("Race", diff = TRUE) + gwesp(0.25, fixed = TRUE) 
+ 
+                                      Mean        SD     Naive SE
+theta1 (edges)                  -8.3216258 1.5976965 0.0053858339
+theta2 (nodefactor.Grade.8)      1.1590616 0.7759647 0.0026157763
+theta3 (nodefactor.Grade.9)      2.2525447 0.7941709 0.0026771495
+theta4 (nodefactor.Grade.10)     2.4049757 0.7596920 0.0025609213
+theta5 (nodefactor.Grade.11)     2.2403934 0.7785829 0.0026246026
+theta6 (nodefactor.Grade.12)     2.8405935 0.8229257 0.0027740819
+theta7 (nodematch.Grade.7)       6.2320911 1.3778713 0.0046448031
+theta8 (nodematch.Grade.8)       3.8076558 0.9421662 0.0031760415
+theta9 (nodematch.Grade.9)       1.8235596 0.7920156 0.0026698839
+theta10 (nodematch.Grade.10)     1.5641907 0.8996292 0.0030326495
+theta11 (nodematch.Grade.11)     2.1765454 0.8603155 0.0029001228
+theta12 (nodematch.Grade.12)     1.1879359 1.1337038 0.0038217146
+theta13 (nodefactor.Race.Hisp)  -1.2814838 0.4664444 0.0015723838
+theta14 (nodefactor.Race.NatAm) -1.3321152 0.5046209 0.0017010767
+theta15 (nodefactor.Race.Other) -3.2553423 1.7653958 0.0059511481
+theta16 (nodefactor.Race.White) -0.8297547 0.5029666 0.0016955001
+theta17 (nodematch.Race.Black)  -8.4298004 7.3942234 0.0249259220
+theta18 (nodematch.Race.Hisp)    0.5745054 0.5403531 0.0018215299
+theta19 (nodematch.Race.NatAm)   1.3961492 0.6081519 0.0020500798
+theta20 (nodematch.Race.Other)  -3.3219371 9.9366660 0.0334964942
+theta21 (nodematch.Race.White)   0.4653568 1.2136125 0.0040910870
+theta22 (gwesp.fixed.0.25)       1.3489984 0.1419574 0.0004785383
+                                Time-series SE
+theta1 (edges)                     0.072434409
+theta2 (nodefactor.Grade.8)        0.035598839
+theta3 (nodefactor.Grade.9)        0.039019759
+theta4 (nodefactor.Grade.10)       0.034077621
+theta5 (nodefactor.Grade.11)       0.033632623
+theta6 (nodefactor.Grade.12)       0.038599014
+theta7 (nodematch.Grade.7)         0.066886233
+theta8 (nodematch.Grade.8)         0.040821528
+theta9 (nodematch.Grade.9)         0.034524682
+theta10 (nodematch.Grade.10)       0.038560274
+theta11 (nodematch.Grade.11)       0.036711137
+theta12 (nodematch.Grade.12)       0.049116358
+theta13 (nodefactor.Race.Hisp)     0.019616748
+theta14 (nodefactor.Race.NatAm)    0.021672964
+theta15 (nodefactor.Race.Other)    0.079456527
+theta16 (nodefactor.Race.White)    0.021346645
+theta17 (nodematch.Race.Black)     0.324556446
+theta18 (nodematch.Race.Hisp)      0.023502973
+theta19 (nodematch.Race.NatAm)     0.026111446
+theta20 (nodematch.Race.Other)     0.455969673
+theta21 (nodematch.Race.White)     0.052465957
+theta22 (gwesp.fixed.0.25)         0.005871585
+
+                                       2.5%         25%        50%        75%
+theta1 (edges)                  -11.8347420  -9.2710155 -8.2239198 -7.2061058
+theta2 (nodefactor.Grade.8)      -0.3423904   0.6429124  1.1507994  1.6305273
+theta3 (nodefactor.Grade.9)       0.8969718   1.7017497  2.1863462  2.7174295
+theta4 (nodefactor.Grade.10)      1.0196059   1.8794822  2.3914292  2.8859828
+theta5 (nodefactor.Grade.11)      0.8532294   1.7131658  2.1954206  2.7154242
+theta6 (nodefactor.Grade.12)      1.3413768   2.2790169  2.7959817  3.3610368
+theta7 (nodematch.Grade.7)        3.8751030   5.2772659  6.1124505  7.0506594
+theta8 (nodematch.Grade.8)        2.0594238   3.1659204  3.7649077  4.3912058
+theta9 (nodematch.Grade.9)        0.3282604   1.2916004  1.8029497  2.3492940
+theta10 (nodematch.Grade.10)     -0.1585349   0.9533592  1.5576182  2.1485756
+theta11 (nodematch.Grade.11)      0.5393587   1.6132694  2.1501634  2.7305768
+theta12 (nodematch.Grade.12)     -0.9987875   0.3944025  1.2098459  1.9644430
+theta13 (nodefactor.Race.Hisp)   -2.2040103  -1.6017998 -1.2797301 -0.9626968
+theta14 (nodefactor.Race.NatAm)  -2.3038592  -1.6755494 -1.3381818 -0.9875575
+theta15 (nodefactor.Race.Other)  -7.5211859  -4.1100826 -2.9805202 -2.0210318
+theta16 (nodefactor.Race.White)  -1.7933681  -1.1763508 -0.8395391 -0.4998877
+theta17 (nodematch.Race.Black)  -24.6706223 -12.8152600 -8.0321003 -3.2096067
+theta18 (nodematch.Race.Hisp)    -0.4828992   0.2071264  0.5719879  0.9350083
+theta19 (nodematch.Race.NatAm)    0.2262771   0.9788389  1.3970305  1.8167941
+theta20 (nodematch.Race.Other)  -22.5516091  -9.7613770 -3.5511470  3.2545337
+theta21 (nodematch.Race.White)   -1.9486782  -0.3344216  0.4828976  1.3193588
+theta22 (gwesp.fixed.0.25)        1.0665623   1.2543835  1.3494183  1.4451528
+                                     97.5%
+theta1 (edges)                  -5.4974050
+theta2 (nodefactor.Grade.8)      2.7814623
+theta3 (nodefactor.Grade.9)      3.9733795
+theta4 (nodefactor.Grade.10)     3.9812610
+theta5 (nodefactor.Grade.11)     3.8894899
+theta6 (nodefactor.Grade.12)     4.5802147
+theta7 (nodematch.Grade.7)       9.2742829
+theta8 (nodematch.Grade.8)       5.7740764
+theta9 (nodematch.Grade.9)       3.4481336
+theta10 (nodematch.Grade.10)     3.3470215
+theta11 (nodematch.Grade.11)     3.9489046
+theta12 (nodematch.Grade.12)     3.3573524
+theta13 (nodefactor.Race.Hisp)  -0.3833634
+theta14 (nodefactor.Race.NatAm) -0.3370849
+theta15 (nodefactor.Race.Other) -0.6941067
+theta16 (nodefactor.Race.White)  0.1841097
+theta17 (nodematch.Race.Black)   4.5485955
+theta18 (nodematch.Race.Hisp)    1.6556552
+theta19 (nodematch.Race.NatAm)   2.5848217
+theta20 (nodematch.Race.Other)  16.6019259
+theta21 (nodematch.Race.White)   2.7202056
+theta22 (gwesp.fixed.0.25)       1.6263442
+
+ Acceptance rate: 0.15 
+ 
+ </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot(fauxmodel.bergm) works interactively but calls new graphics devices internally that Quarto cannot render....</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fauxmodel.bergm)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bgof</span>(</span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>  fauxmodel.bergm,</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">n.deg  =</span> <span class="dv">30</span>,  <span class="co"># degree bins</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n.dist =</span> <span class="dv">20</span>,  <span class="co"># distance bins</span></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">n.esp  =</span> <span class="dv">15</span>   <span class="co"># edgewise shared partner bins</span></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/bergm-gof-1.png" class="img-fluid figure-img" width="1152"></p>
+<figcaption>BERGM GOF</figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dspace-qside\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
