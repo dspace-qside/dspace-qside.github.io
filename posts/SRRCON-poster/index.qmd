@@ -10,7 +10,7 @@ page-layout: full
 freeze: false
 ---
 
-The following poster was presented by Jesse Loi at the [Seattle Univeristy Student Research and Creativity Conference](https://srcconprogram.my.canva.site/srccon-conference-2026). 
+The following poster was presented by Jesse Loi at the [Seattle University Student Research and Creativity Conference](https://srcconprogram.my.canva.site/srccon-conference-2026). 
 
 ```{=html}
 <iframe src="SRRCon_Poster.pdf" 
