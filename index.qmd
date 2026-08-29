@@ -140,3 +140,162 @@ padding: 15px;
 </a>-->
 </div>
 
+
+## Recent Developments
+```{r, echo = F, message = F, waring = F}
+library(googlesheets4)
+library(dplyr)
+
+# Replace with your developments sheet ID
+developments_sheet_id <- "17PethTSGMLFswtIZWl1ZYZYZnH-YocWK2X3CvTDssjU"
+
+gs4_auth()  # authenticate for Google sheets
+
+devs <- read_sheet(developments_sheet_id, 
+                   sheet = "Sheet1") %>%  
+  filter(!is.na(short_description) & short_description != "") %>%
+   arrange(desc(date))
+
+# Badge color per type
+type_colors <- c(
+  community   = "#c48a3a",
+  publication = "#4a7fa5",
+  talk        = "#7a9e6e",
+  media       = "#9b6fa5",
+  service     = "#5a9e9e",
+  student     = "#c46a6a",
+  update      = "#6a7a9e"
+)
+
+type_labels <- c(
+  community   = "Community",
+  publication = "Publication",
+  talk        = "Talk",
+  media       = "Media",
+  service     = "Service",
+  student     = "Student",
+  update      = "Update"
+)
+
+make_feed_item <- function(i) {
+  type    <- tolower(trimws(devs$category[i]))
+  color   <- ifelse(type %in% names(type_colors), 
+                    type_colors[type], "#888")
+  label   <- ifelse(type %in% names(type_labels), 
+                    type_labels[type], devs$category[i])
+  date_fmt <- format(as.Date(devs$date[i]), "%b %Y")
+  title_html <- paste0('<span class="feed-title">',
+                       devs$short_description[i], '</span>')
+  desc_html <- if (!is.na(devs$long_description[i]) &&
+                   devs$long_description[i] != "") {
+    paste0('<p class="feed-desc">', devs$long_description[i], '</p>')
+  } else ""
+  paste0(
+    '<div class="feed-item">',
+      '<div class="feed-left">',
+        '<div class="feed-dot" style="background-color:', 
+    color, '"></div>',
+        '<div class="feed-line"></div>',
+      '</div>',
+      '<div class="feed-right">',
+        '<div class="feed-meta">',
+          '<span class="feed-badge" style="background-color:', 
+    color, '">', label, '</span>',
+          '<span class="feed-date">', date_fmt, '</span>',
+        '</div>',
+        title_html,
+        desc_html,
+      '</div>',
+    '</div>'
+  )
+}
+```
+
+
+```{r, echo = F}
+#| results: asis
+
+cat('<div class="feed-container">\n')
+for (i in seq_len(nrow(devs))) {
+  cat(make_feed_item(i))
+  cat("\n")
+}
+cat('</div>\n')
+```
+
+<style>
+.feed-container {
+  margin-top: 1rem;
+  max-width: 720px;
+}
+.feed-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+.feed-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16px;
+  flex-shrink: 0;
+}
+.feed-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 0.35rem;
+}
+.feed-line {
+  width: 2px;
+  flex: 1;
+  background-color: #e0e0e0;
+  margin-top: 4px;
+}
+.feed-item:last-child .feed-line {
+  display: none;
+}
+.feed-right {
+  padding-bottom: 1.4rem;
+  flex: 1;
+}
+.feed-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+.feed-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.1rem 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.feed-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+.feed-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+}
+a.feed-title:hover {
+  color: #4a7fa5;
+  text-decoration: underline;
+}
+.feed-desc {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0.25rem 0 0 0;
+  line-height: 1.5;
+}
+</style>
+
