@@ -4,3 +4,4 @@
 .Rhistory
 
 **/*.quarto_ipynb
+.Rproj.user/*
