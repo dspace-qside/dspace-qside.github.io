@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Recent Work",
     "section": "",
-    "text": "Through this blog, we plan to provide updates on our work with the Reinvestigation Workgroup, located in Minneapolis, Minnesota. These updates are meant to be informal and could also serve as classroom materials for statistics/data science and social justice conversations. Whether you are a community member, student, faculty member, or other stakeholder, we welcome your feedback!  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCan LLMs Extract Useful Data from News Articles for Police Accountability?\n\n\n\nLLM\n\ncomplaints\n\npublications\n\n\n\nPoster\n\n\n\n\n\nMay 29, 2026\n\n\nJesse Loi, Ariana Mendible\n\n\n\n\n\n\n\n\n\n\n\n\nComparing co-complaint networks reveals distinct structures across police departments\n\n\n\nnetwork\n\ncomplaints\n\npublications\n\n\n\nPoster\n\n\n\n\n\nMay 28, 2026\n\n\nWill Asinger, Mia (Cong) Wang, Claire Kelling, Alex Wiedemann, Ariana Mendible\n\n\n\n\n\n\n\n\n\n\n\n\nTechnical Appendix to Connecting the Dots: A Preliminary Network Analysis of Complaints about Police in Minneapolis\n\n\n\ncomplaints\n\nnetwork\n\n\n\n\n\n\n\n\nJan 12, 2026\n\n\nMia Wang, Ariana Mendible, Claire Kelling\n\n\n\n\n\n\n\n\n\n\n\n\nConnecting the Dots: A Preliminary Network Analysis of Complaints about Police in Minneapolis\n\n\n\ncomplaints\n\nnetwork\n\n\n\n\n\n\n\n\nOct 28, 2025\n\n\nClaire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson\n\n\n\n\n\n\n\n\n\n\n\n\nData Collection and Analysis for Small-Town Policing: Challenges and Recommendations\n\n\n\npublications\n\n\n\nStatistics and Public Policy, https://doi.org/10.1080/2330443X.2024.2379270\n\n\n\n\n\nAug 29, 2024\n\n\n\n\n\nNo matching items"
+    "text": "Through this blog, we plan to provide updates on our work with the Reinvestigation Workgroup, located in Minneapolis, Minnesota. These updates are meant to be informal and could also serve as classroom materials for statistics/data science and social justice conversations. Whether you are a community member, student, faculty member, or other stakeholder, we welcome your feedback!  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDSPACE Community Data Walk\n\n\n\ncommunity\n\n\n\nA debrief on our in-person community data walk\n\n\n\n\n\nSep 16, 2026\n\n\nDSPACE Group\n\n\n\n\n\n\n\n\n\n\n\n\nCan LLMs Extract Useful Data from News Articles for Police Accountability?\n\n\n\nLLM\n\ncomplaints\n\npublications\n\n\n\nPoster\n\n\n\n\n\nMay 29, 2026\n\n\nJesse Loi, Ariana Mendible\n\n\n\n\n\n\n\n\n\n\n\n\nComparing co-complaint networks reveals distinct structures across police departments\n\n\n\nnetwork\n\ncomplaints\n\npublications\n\n\n\nPoster\n\n\n\n\n\nMay 28, 2026\n\n\nWill Asinger, Mia (Cong) Wang, Claire Kelling, Alex Wiedemann, Ariana Mendible\n\n\n\n\n\n\n\n\n\n\n\n\nTechnical Appendix to Connecting the Dots: A Preliminary Network Analysis of Complaints about Police in Minneapolis\n\n\n\ncomplaints\n\nnetwork\n\n\n\n\n\n\n\n\nJan 12, 2026\n\n\nMia Wang, Ariana Mendible, Claire Kelling\n\n\n\n\n\n\n\n\n\n\n\n\nConnecting the Dots: A Preliminary Network Analysis of Complaints about Police in Minneapolis\n\n\n\ncomplaints\n\nnetwork\n\n\n\n\n\n\n\n\nOct 28, 2025\n\n\nClaire Kelling, Ariana Mendible, Mia Wang, Alex Wiedemann, Tim Marrinan, Emma Pederson\n\n\n\n\n\n\n\n\n\n\n\n\nData Collection and Analysis for Small-Town Policing: Challenges and Recommendations\n\n\n\npublications\n\n\n\nStatistics and Public Policy, https://doi.org/10.1080/2330443X.2024.2379270\n\n\n\n\n\nAug 29, 2024\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -19,6 +19,34 @@
     "title": "Comparing co-complaint networks reveals distinct structures across police departments",
     "section": "",
     "text": "The following poster was presented by Will Asinger and Mia Wang at the 2026 ASA Midwest Regional Conference in Statistics and Data Science, winning the Graduate Student Poster Award!"
+  },
+  {
+    "objectID": "posts/data-walk/index.html",
+    "href": "posts/data-walk/index.html",
+    "title": "DSPACE Community Data Walk",
+    "section": "",
+    "text": "At the end of August 2026, we held an in-person meeting with our community partner, the Reinvestigation Workgroup (RWG), at the University of Minnesota’s Urban Research and Outreach-Engagement Center (UROC). RWG is a Minnesota-based volunteer organization that investigates cases involving police violence, and together we collaborate on data projects driven by their questions relating to police accountability. During the meeting, we shared progress on our work on comparative co-complaint networks, and introduced new data sources that could be of interest in future analyses. We brainstormed new questions and ideas for data projects utilizing use-of-force data, police officer complaint data, and data from the Board of Peace Officers Standards and Training (POST).\nWe concluded the meeting with several courses of action, informed by rich insights from our community partners. For example, we plan to explore updating our network analysis with newly acquired POST data that includes tenure duration and departments, potentially providing insights into the movement of officers throughout Minnesota. Additionally, we may request enhanced officer training data to help us understand the relationships, if any, between officer training and complaints. Fruitful conversations on these topics also informed our later discussions during a data walk event in South Minneapolis."
+  },
+  {
+    "objectID": "posts/data-walk/index.html#complaint-graphics",
+    "href": "posts/data-walk/index.html#complaint-graphics",
+    "title": "DSPACE Community Data Walk",
+    "section": "Complaint Graphics",
+    "text": "Complaint Graphics"
+  },
+  {
+    "objectID": "posts/data-walk/index.html#ice-graphics",
+    "href": "posts/data-walk/index.html#ice-graphics",
+    "title": "DSPACE Community Data Walk",
+    "section": "ICE Graphics",
+    "text": "ICE Graphics"
+  },
+  {
+    "objectID": "posts/data-walk/index.html#use-of-force-graphics",
+    "href": "posts/data-walk/index.html#use-of-force-graphics",
+    "title": "DSPACE Community Data Walk",
+    "section": "Use Of Force Graphics",
+    "text": "Use Of Force Graphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese visuals led us into a variety of fruitful discussions on the matter of policing and public safety in Minneapolis. One meaningful conversation illuminated how roster data may help us delve into movement of officers across the region and the state. For example, community members wondered if officers who receive discipline tend to relocate to other departments, with specific concern noted for tribal lands. Through these insights, grounded in community members’ lived experiences and questions, we are working to formalize testable hypotheses that incorporate community knowledge and interests."
   },
   {
     "objectID": "posts/SRRCON-poster/index.html",
