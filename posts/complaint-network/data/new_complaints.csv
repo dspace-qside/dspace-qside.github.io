@@ -1,1226 +1,2461 @@
-"","name","complaint_id","case_status"
-"1","Aaron Stone","EVT-00000939-1","Closed - No Discipline"
-"2","Aaron Womble","EVT-00000022-1","Closed - No Discipline"
-"3","Aaron Womble","EVT-00000487-1","Closed - No Discipline"
-"4","Aaron Womble","EVT-00000826-4","Closed - No Discipline"
-"5","Abdirahman Ali","EVT-00000902-1","Open"
-"6","Abdirizaq Mumin","EVT-00000027-1","Open"
-"7","Abdirizaq Mumin","EVT-00000437-1","Closed - No Discipline"
-"8","Abdirizaq Mumin","EVT-00000738-1","Open"
-"9","Abdirizaq Mumin","EVT-00000764-1","Open"
-"10","Abdisamad Ahmed","EVT-00000002-1","Closed - No Discipline"
-"11","Abdisamad Ahmed","EVT-00000181-1","Open"
-"12","Abdisamad Ahmed","EVT-00000329-1","Open"
-"13","Abdisamad Ahmed","EVT-00000523-1","Closed - No Discipline"
-"14","Abdisamad Ahmed","EVT-00000523-2","Open"
-"15","Abdisamad Ahmed","EVT-00000545-1","Closed - No Discipline"
-"16","Abdisamad Ahmed","EVT-00000555-2","Closed - No Discipline"
-"17","Abdisamad Ahmed","EVT-00000734-1","Open"
-"18","Abdisamad Ahmed","EVT-00000788-1","Closed - No Discipline"
-"19","Abdisamad Ahmed","EVT-00001070-1","Open"
-"20","Abdiwahab Ali","EVT-00000666-1","Closed - No Discipline"
-"21","Adam Lepinski","EVT-00000033-1","Closed - No Discipline"
-"22","Adam Lepinski","EVT-00000156-1","Open"
-"23","Adam Lepinski","EVT-00000228-1","Open"
-"24","Adam Lepinski","EVT-00000692-1","Open"
-"25","Adam Lepinski","EVT-00000753-1","Closed - No Discipline"
-"26","Adam Lepinski","EVT-00000809-1","Closed - No Discipline"
-"27","Adam Lewis","EVT-00000060-1","Closed - No Discipline"
-"28","Adam Lewis","EVT-00000211-1","Closed - No Discipline"
-"29","Adam Lewis","EVT-00000449-1","Closed - No Discipline"
-"30","Addison Zeck","EVT-00000701-1","Closed - No Discipline"
-"31","Adrian Infante","EVT-00000714-1","Open"
-"32","Alejandro Boldo","EVT-00000727-1","Open"
-"33","Alejandro Boldo","EVT-00000805-1","Open"
-"34","Alejandro Boldo","EVT-00000874-1","Open"
-"35","Alejandro Boldo","EVT-00000924-1","Open"
-"36","Alex Nonnemacher","EVT-00000447-2","Closed - No Discipline"
-"37","Alex Nonnemacher","EVT-00000453-1","Closed - No Discipline"
-"38","Alexander Hrabe","EVT-00000689-1","Open"
-"39","Alexander Krohnfeldt","EVT-00000910-1","Open"
-"40","Alexander Reynolds","EVT-00000133-1","Closed - No Discipline"
-"41","Alexander Reynolds","EVT-00000299-1","Open"
-"42","Alexander Reynolds","EVT-00000337-1","Closed - No Discipline"
-"43","Alexander Reynolds","EVT-00000356-1","Open"
-"44","Alexander Reynolds","EVT-00000358-1","Closed - No Discipline"
-"45","Alexander Reynolds","EVT-00000360-1","Open"
-"46","Alexander Reynolds","EVT-00000409-1","Closed - No Discipline"
-"47","Alexander Reynolds","EVT-00000456-1","Closed - No Discipline"
-"48","Alexander Reynolds","EVT-00000456-3","Open"
-"49","Alexander Reynolds","EVT-00000463-1","Open"
-"50","Alexander Reynolds","EVT-00000464-1","Open"
-"51","Alexander Reynolds","EVT-00000533-1","Open"
-"52","Alexander Reynolds","EVT-00000534-1","Closed - No Discipline"
-"53","Alexander Reynolds","EVT-00000534-2","Open"
-"54","Alexander Reynolds","EVT-00000581-1","Open"
-"55","Alexander Reynolds","EVT-00000584-1","Open"
-"56","Alexander Reynolds","EVT-00000598-1","Open"
-"57","Alexander Reynolds","EVT-00000693-1","Open"
-"58","Alexander Reynolds","EVT-00000696-1","Open"
-"59","Alexander Reynolds","EVT-00000731-1","Open"
-"60","Alexander Reynolds","EVT-00000750-1","Open"
-"61","Alexander Reynolds","EVT-00000751-1","Closed - No Discipline"
-"62","Alexander Reynolds","EVT-00000753-1","Closed - No Discipline"
-"63","Alexander Reynolds","EVT-00000774-1","Closed - No Discipline"
-"64","Alexander Reynolds","EVT-00000777-1","Open"
-"65","Alexander Reynolds","EVT-00000937-1","Open"
-"66","Alexander Reynolds","EVT-00000945-1","Closed - No Discipline"
-"67","Alexander Reynolds","EVT-00000968-1","Open"
-"68","Alexandra De Lugo","EVT-00000244-1","Closed - No Discipline"
-"69","Alexandra De Lugo","EVT-00000939-1","Closed - No Discipline"
-"70","Alexandra Duong","EVT-00000281-1","Closed - No Discipline"
-"71","Ali Saleh","EVT-00000838-2","Closed - No Discipline"
-"72","Allie Simonett","EVT-00000456-3","Open"
-"73","Allie Simonett","EVT-00000567-1","Open"
-"74","Allie Simonett","EVT-00000581-1","Open"
-"75","Allie Simonett","EVT-00000696-4","Closed - No Discipline"
-"76","Allie Simonett","EVT-00000719-1","Closed - No Discipline"
-"77","Allie Simonett","EVT-00000751-1","Closed - No Discipline"
-"78","Amanda Sanchez","EVT-00000119-1","Open"
-"79","Amanda Sanchez","EVT-00000260-1","Open"
-"80","Amanda Sanchez","EVT-00000331-1","Open"
-"81","Amanda Sanchez","EVT-00000488-1","Closed - No Discipline"
-"82","Amanda Sanchez","EVT-00000865-1","Closed - No Discipline"
-"83","Amanda Sanchez","EVT-00000987-1","Open"
-"84","Amber Englund","EVT-00000329-1","Open"
-"85","Amber Englund","EVT-00000533-1","Open"
-"86","Andrea Mays","EVT-00000318-1","Closed - No Discipline"
-"87","Andrea Mays","EVT-00000533-1","Open"
-"88","Andrew Allen","EVT-00001007-1","Open"
-"89","Andrew Bittell","EVT-00000295-1","Open"
-"90","Andrew Braun","EVT-00000602-1","Closed - No Discipline"
-"91","Andrew Canadeo","EVT-00000569-1","Closed - No Discipline"
-"92","Andrew Carigiet","EVT-00000340-1","Open"
-"93","Andrew Carigiet","EVT-00000430-1","Open"
-"94","Andrew Schroeder","EVT-00000166-1","Open"
-"95","Andrew Schroeder","EVT-00000411-2","Open"
-"96","Andrew Schroeder","EVT-00000628-1","Open"
-"97","Andrew Schroeder","EVT-00000673-1","Open"
-"98","Andrew Schroeder","EVT-00000812-1","Closed - No Discipline"
-"99","Andrew Schroeder","EVT-00000837-1","Closed - No Discipline"
-"100","Angel Arevalo","EVT-00000008-1","Closed - No Discipline"
-"101","Angel Arevalo","EVT-00000628-1","Open"
-"102","Angela Hayden","EVT-00000207-1","Open"
-"103","Angela Hayden","EVT-00000510-1","Closed - No Discipline"
-"104","Anna Davids","EVT-00000795-1","Open"
-"105","Anna Hedberg","EVT-00000211-1","Closed - No Discipline"
-"106","Anna Hedberg","EVT-00000933-2","Open"
-"107","Antonio San Roman","EVT-00000638-1","Closed - No Discipline"
-"108","Ariel Luna-Sanchez","EVT-00000527-1","Open"
-"109","Ariel Luna-Sanchez","EVT-00000877-1","Closed - No Discipline"
-"110","Ashish Joshi","EVT-00000586-1","Open"
-"111","Ashley Bergersen","EVT-00000268-1","Closed - No Discipline"
-"112","Ashley Bergersen","EVT-00000544-1","Open"
-"113","Ashley Bergersen","EVT-00000654-1","Open"
-"114","Ashley Bergersen","EVT-00000763-1","Closed - No Discipline"
-"115","Ashley Leehane","EVT-00000372-1","Closed - No Discipline"
-"116","Ashley Leehane","EVT-00000407-1","Closed - No Discipline"
-"117","Ashton Dorris","EVT-00000352-1","Open"
-"118","Ashton Dorris","EVT-00000532-1","Closed - No Discipline"
-"119","Ashton Dorris","EVT-00000676-1","Closed - No Discipline"
-"120","Austin Sable","EVT-00000145-1","Open"
-"121","Austin Sable","EVT-00000149-1","Closed - No Discipline"
-"122","Austin Sable","EVT-00000243-1","Closed - No Discipline"
-"123","Austin Sable","EVT-00000326-1","Closed - No Discipline"
-"124","Austin Sable","EVT-00000411-1","Closed - No Discipline"
-"125","Austin Sable","EVT-00000793-1","Open"
-"126","Austin Sable","EVT-00000867-1","Open"
-"127","Austin Sable","EVT-00000930-1","Open"
-"128","Bach Dang","EVT-00000213-1","Open"
-"129","Bach Dang","EVT-00000741-1","Closed - No Discipline"
-"130","Bee Lee","EVT-00000638-1","Closed - No Discipline"
-"131","Benjamin Bauer","EVT-00000041-1","Closed - Final Discipline"
-"132","Benjamin Bauer","EVT-00000044-1","Closed - No Discipline"
-"133","Benjamin Fadell","EVT-00000142-1","Closed - No Discipline"
-"134","Benjamin Fadell","EVT-00000412-1","Closed - No Discipline"
-"135","Benjamin Fadell","EVT-00000742-1","Closed - No Discipline"
-"136","Benjamin Fadell","EVT-00000742-2","Open"
-"137","Benjamin Hain","EVT-00000582-1","Open"
-"138","Benjamin Truong","EVT-00000059-1","Closed - No Discipline"
-"139","Benjamin Truong","EVT-00000841-2","Open"
-"140","Beth Mota","EVT-00000628-1","Open"
-"141","Beth Mota","EVT-00000855-1","Open"
-"142","Blas Garcia","EVT-00000097-1","Closed - Final Discipline"
-"143","Blas Garcia","EVT-00000130-1","Open"
-"144","Blas Garcia","EVT-00000560-1","Open"
-"145","Blas Garcia","EVT-00000574-1","Closed - No Discipline"
-"146","Blas Garcia","EVT-00000738-2","Open"
-"147","Brandon Bartholomew","EVT-00000181-1","Open"
-"148","Brandon Bartholomew","EVT-00000203-1","Open"
-"149","Brandon Bartholomew","EVT-00000445-2","Closed - No Discipline"
-"150","Brandon Bartholomew","EVT-00000493-1","Open"
-"151","Brandon Bartholomew","EVT-00000635-1","Closed - No Discipline"
-"152","Brandon Bartholomew","EVT-00000883-1","Open"
-"153","Brandon Noble","EVT-00000233-1","Open"
-"154","Brandon Noble","EVT-00000407-1","Closed - No Discipline"
-"155","Brandon Noble","EVT-00000677-1","Open"
-"156","Brandon Noble","EVT-00000886-1","Open"
-"157","Brian Bennett","EVT-00000602-1","Closed - No Discipline"
-"158","Brian Butler","EVT-00000004-1","Closed - No Discipline"
-"159","Brian Butler","EVT-00000148-1","Open"
-"160","Brian Butler","EVT-00000259-1","Open"
-"161","Brian Butler","EVT-00000476-1","Closed - No Discipline"
-"162","Brian Butler","EVT-00000698-1","Closed - No Discipline"
-"163","Brian Butler","EVT-00000744-1","Open"
-"164","Brian Butler","EVT-00000933-1","Open"
-"165","Brian Butler","EVT-00000977-1","Open"
-"166","Brian Butler","EVT-00000978-1","Closed - No Discipline"
-"167","Brian Cummings","EVT-00000023-1","Closed - No Discipline"
-"168","Brian Cummings","EVT-00000155-1","Open"
-"169","Brian Grahme","EVT-00000228-1","Open"
-"170","Brian Graupner","EVT-00000940-1","Open"
-"171","Brian O'hara","EVT-00000002-1","Closed - No Discipline"
-"172","Brian O'hara","EVT-00000082-1","Closed - No Discipline"
-"173","Brian O'hara","EVT-00000113-1","Closed - No Discipline"
-"174","Brian Peebles","EVT-00000425-1","Closed - No Discipline"
-"175","Brian Peebles","EVT-00000465-1","Open"
-"176","Brian Peebles","EVT-00000583-2","Closed - No Discipline"
-"177","Brian Peebles","EVT-00000780-1","Open"
-"178","Brian Peebles","EVT-00000997-1","Open"
-"179","Brian Sand","EVT-00000762-1","Open"
-"180","Brian Thureson","EVT-00000324-1","Open"
-"181","Brittney Adams","EVT-00000063-1","Closed - No Discipline"
-"182","Brittney Adams","EVT-00000143-1","Open"
-"183","Brittney Adams","EVT-00000484-1","Closed - No Discipline"
-"184","Bryan Castle","EVT-00000566-1","Closed - No Discipline"
-"185","Bryan Matlon","EVT-00000778-1","Open"
-"186","Bryan Olson","EVT-00000533-1","Open"
-"187","Bryan Olson","EVT-00000880-1","Closed - No Discipline"
-"188","Caleb Kittock","EVT-00000979-1","Open"
-"189","Cameron Spiczka","EVT-00000461-1","Open"
-"190","Cameron Spiczka","EVT-00000480-1","Closed - No Discipline"
-"191","Cameron Spiczka","EVT-00000676-1","Closed - No Discipline"
-"192","Cameron Spiczka","EVT-00000731-3","Open"
-"193","Camren Dearing","EVT-00000042-1","Closed - No Discipline"
-"194","Camren Dearing","EVT-00000043-1","Closed - No Discipline"
-"195","Camren Dearing","EVT-00000157-1","Open"
-"196","Camren Dearing","EVT-00000272-1","Closed - Final Discipline"
-"197","Camren Dearing","EVT-00000429-1","Closed - No Discipline"
-"198","Camren Dearing","EVT-00000793-1","Open"
-"199","Carl Blad","EVT-00000602-1","Closed - No Discipline"
-"200","Carlos Baires Escobar","EVT-00000076-1","Closed - No Discipline"
-"201","Carlos Baires Escobar","EVT-00000132-1","Open"
-"202","Carlos Baires Escobar","EVT-00000178-1","Closed - Final Discipline"
-"203","Carlos Baires Escobar","EVT-00000340-1","Open"
-"204","Carlos Baires Escobar","EVT-00000666-2","Open"
-"205","Carlos Baires Escobar","EVT-00000858-1","Open"
-"206","Chad Conner","EVT-00000137-1","Open"
-"207","Chad Conner","EVT-00000670-1","Open"
-"208","Chang Lee","EVT-00000016-1","Closed - No Discipline"
-"209","Chang Lee","EVT-00000370-1","Open"
-"210","Chang Lee","EVT-00000512-1","Closed - No Discipline"
-"211","Chang Lee","EVT-00000557-1","Closed - No Discipline"
-"212","Chanica Hall","EVT-00000657-1","Open"
-"213","Chanica Hall","EVT-00000981-1","Open"
-"214","Charles Mc Cree","EVT-00000099-1","Closed - No Discipline"
-"215","Charles Mc Cree","EVT-00000182-1","Closed - No Discipline"
-"216","Charles Mc Cree","EVT-00000222-1","Closed - No Discipline"
-"217","Charles Mc Cree","EVT-00000841-1","Open"
-"218","Charles Mc Cree","EVT-00000927-2","Closed - No Discipline"
-"219","Charles Starkman","EVT-00000608-2","Open"
-"220","Charlie Adams","EVT-00000600-1","Closed - No Discipline"
-"221","Charlie Adams","EVT-00000669-1","Closed - No Discipline"
-"222","Chaz Wilson","EVT-00000226-2","Closed - No Discipline"
-"223","Chaz Wilson","EVT-00000420-1","Open"
-"224","Chaz Wilson","EVT-00000489-1","Closed - No Discipline"
-"225","Chaz Wilson","EVT-00000494-1","Open"
-"226","Chaz Wilson","EVT-00000582-1","Open"
-"227","Chaz Wilson","EVT-00000604-1","Open"
-"228","Chou Moua","EVT-00000341-1","Closed - No Discipline"
-"229","Chou Moua","EVT-00000706-1","Closed - No Discipline"
-"230","Christian Gomez Santos","EVT-00000077-1","Open"
-"231","Christian Gomez Santos","EVT-00000407-1","Closed - No Discipline"
-"232","Christian Gomez Santos","EVT-00000425-1","Closed - No Discipline"
-"233","Christian Gomez Santos","EVT-00000481-1","Closed - No Discipline"
-"234","Christian Gomez Santos","EVT-00000765-1","Closed - No Discipline"
-"235","Christian Gomez Santos","EVT-00000883-1","Open"
-"236","Christian Gomez Santos","EVT-00000949-1","Open"
-"237","Christie Nelson","EVT-00000546-1","Open"
-"238","Christie Nelson","EVT-00000759-1","Open"
-"239","Christie Nelson","EVT-00000809-1","Closed - No Discipline"
-"240","Christie Nelson","EVT-00000832-1","Closed - No Discipline"
-"241","Christopher Cushenbery","EVT-00000295-1","Open"
-"242","Christopher Duncan","EVT-00000008-1","Closed - No Discipline"
-"243","Christopher Duncan","EVT-00000564-1","Closed - No Discipline"
-"244","Christopher Duncan","EVT-00000589-1","Open"
-"245","Christopher Duncan","EVT-00000783-1","Open"
-"246","Christopher Duncan","EVT-00000869-1","Closed - No Discipline"
-"247","Christopher Humphrey","EVT-00000973-1","Closed - No Discipline"
-"248","Christopher Kleven","EVT-00000319-1","Closed - No Discipline"
-"249","Christopher Kleven","EVT-00000763-1","Closed - No Discipline"
-"250","Christopher Lange","EVT-00000095-1","Open"
-"251","Christopher Lange","EVT-00000224-1","Closed - No Discipline"
-"252","Christopher Lange","EVT-00000451-1","Open"
-"253","Christopher Perry","EVT-00000549-1","Closed - No Discipline"
-"254","Christopher Perry","EVT-00000610-1","Closed - No Discipline"
-"255","Chuiyee Thao","EVT-00000183-2","Closed - No Discipline"
-"256","Clifton Toles","EVT-00000355-1","Open"
-"257","Clifton Toles","EVT-00000748-1","Closed - No Discipline"
-"258","Clifton Toles","EVT-00000826-1","Open"
-"259","Clifton Toles","EVT-00000932-1","Open"
-"260","Cody Johnson","EVT-00000020-1","Closed - No Discipline"
-"261","Cody Johnson","EVT-00000165-1","Open"
-"262","Cody Johnson","EVT-00000425-1","Closed - No Discipline"
-"263","Conan Hickey","EVT-00000017-1","Closed - No Discipline"
-"264","Conan Hickey","EVT-00000972-1","Closed - No Discipline"
-"265","Connor Sandahl","EVT-00000255-1","Closed - No Discipline"
-"266","Connor Sandahl","EVT-00000256-1","Open"
-"267","Connor Sandahl","EVT-00000455-1","Closed - No Discipline"
-"268","Connor Sandahl","EVT-00000750-1","Open"
-"269","Connor Sandahl","EVT-00000777-1","Open"
-"270","Connor Sandahl","EVT-00000897-1","Closed - No Discipline"
-"271","Connor Sandahl","EVT-00000936-1","Open"
-"272","Conor Mcdonough","EVT-00000315-1","Open"
-"273","Conor Mcdonough","EVT-00000617-1","Closed - No Discipline"
-"274","Conor Mcdonough","EVT-00000700-1","Closed - No Discipline"
-"275","Cordarol Scales","EVT-00000821-1","Closed - No Discipline"
-"276","Corey Schmidt","EVT-00000508-1","Open"
-"277","Corey Schmidt","EVT-00000765-1","Closed - No Discipline"
-"278","Cory Taylor","EVT-00000295-1","Open"
-"279","Craig Crisp","EVT-00000602-2","Closed - No Discipline"
-"280","Daadir Galayr","EVT-00000665-1","Open"
-"281","Daniel Barlow","EVT-00000636-1","Closed - No Discipline"
-"282","Daniel Barlow","EVT-00000636-2","Open"
-"283","Daniel Barlow","EVT-00000673-2","Closed - No Discipline"
-"284","Daniel Barlow","EVT-00000699-1","Open"
-"285","Daniel Barlow","EVT-00000873-1","Closed - No Discipline"
-"286","Daniel Forsgren","EVT-00000014-1","Closed - No Discipline"
-"287","Daniel Forsgren","EVT-00000164-2","Open"
-"288","Daniel Ledman","EVT-00000392-1","Closed - No Discipline"
-"289","Daniel Ledman","EVT-00000997-1","Open"
-"290","Daniel Mccafferty","EVT-00000619-1","Open"
-"291","Daniel Mccafferty","EVT-00000700-1","Closed - No Discipline"
-"292","Daniel Misgen","EVT-00000170-1","Open"
-"293","Daniel Misgen","EVT-00000230-1","Open"
-"294","Daniel Misgen","EVT-00000298-1","Open"
-"295","Daniel Misgen","EVT-00000311-1","Open"
-"296","Daniel Misgen","EVT-00000485-1","Open"
-"297","Daniel Misgen","EVT-00000763-1","Closed - No Discipline"
-"298","Daniel Misgen","EVT-00000765-2","Closed - No Discipline"
-"299","Daniel Misgen","EVT-00000765-3","Closed - No Discipline"
-"300","Daniel Oppergard","EVT-00000541-1","Open"
-"301","Daniel Oppergard","EVT-00000747-1","Open"
-"302","Daniel Payne","EVT-00000020-1","Closed - No Discipline"
-"303","Daniel Vue","EVT-00000551-1","Open"
-"304","Daniel Vue","EVT-00000617-2","Open"
-"305","Daniel Vue","EVT-00000864-1","Closed - No Discipline"
-"306","Daniel Vue","EVT-00000871-1","Closed - No Discipline"
-"307","Dante Dean","EVT-00000282-1","Closed - No Discipline"
-"308","Darren Blauert","EVT-00000060-1","Closed - No Discipline"
-"309","Darren Blauert","EVT-00000489-1","Closed - No Discipline"
-"310","Davens Kenyoru","EVT-00000274-1","Closed - No Discipline"
-"311","Davens Kenyoru","EVT-00000495-1","Closed - No Discipline"
-"312","David Ligneel","EVT-00000023-1","Closed - No Discipline"
-"313","David Nerling","EVT-00000039-1","Closed - No Discipline"
-"314","David Nerling","EVT-00000133-1","Closed - No Discipline"
-"315","David Nerling","EVT-00000153-1","Open"
-"316","David Nerling","EVT-00000176-1","Open"
-"317","David Nerling","EVT-00000297-1","Open"
-"318","David Nerling","EVT-00000538-1","Open"
-"319","David Nerling","EVT-00000836-1","Open"
-"320","David Stichter","EVT-00000382-1","Closed - No Discipline"
-"321","David Swierzewski","EVT-00000546-1","Open"
-"322","David Swierzewski","EVT-00000918-1","Open"
-"323","David Vang","EVT-00000689-1","Open"
-"324","Dawit Teketel","EVT-00000102-1","Closed - Final Discipline"
-"325","Dawit Teketel","EVT-00000554-1","Closed - No Discipline"
-"326","Deitan Dubuc","EVT-00000400-1","Open"
-"327","Dennis Hamilton","EVT-00000932-1","Open"
-"328","Dennis Milner","EVT-00000047-1","Closed - No Discipline"
-"329","Dennis Milner","EVT-00000503-1","Open"
-"330","Derek Berg","EVT-00000125-1","Open"
-"331","Derek Berg","EVT-00000875-1","Open"
-"332","Derek Chauvin","EVT-00000382-1","Closed - No Discipline"
-"333","Dirk Spee","EVT-00000137-1","Open"
-"334","Dirk Spee","EVT-00000528-1","Open"
-"335","Dirk Spee","EVT-00000692-1","Open"
-"336","Dirk Spee","EVT-00000774-1","Closed - No Discipline"
-"337","Dominic Lanasa","EVT-00000628-1","Open"
-"338","Donnell Crayton","EVT-00000299-1","Open"
-"339","Donnell Crayton","EVT-00000324-1","Open"
-"340","Donnell Crayton","EVT-00000412-1","Closed - No Discipline"
-"341","Donnell Crayton","EVT-00000585-1","Open"
-"342","Donovan Ford","EVT-00000324-1","Open"
-"343","Donovan Ford","EVT-00000357-1","Closed - No Discipline"
-"344","Douglas Lemons","EVT-00000438-1","Open"
-"345","Drew Clark","EVT-00000362-1","Open"
-"346","Drew Clark","EVT-00000403-1","Closed - No Discipline"
-"347","Drew Clark","EVT-00000408-1","Closed - No Discipline"
-"348","Drew Clark","EVT-00000435-1","Open"
-"349","Drew Clark","EVT-00000529-1","Open"
-"350","Drew Clark","EVT-00000719-1","Closed - No Discipline"
-"351","Drew Clark","EVT-00000780-1","Open"
-"352","Drew Clark","EVT-00000990-1","Open"
-"353","Dustin Schwarze","EVT-00000602-1","Closed - No Discipline"
-"354","Dylan Barta","EVT-00000226-4","Closed - No Discipline"
-"355","Dylan Barta","EVT-00000420-1","Open"
-"356","Dylan Barta","EVT-00000489-1","Closed - No Discipline"
-"357","Dylan Barta","EVT-00000508-1","Open"
-"358","Dylan Barta","EVT-00000582-1","Open"
-"359","Dylan Johnson","EVT-00000126-1","Closed - No Discipline"
-"360","Dylan Johnson","EVT-00000679-1","Open"
-"361","Dylan Pearson","EVT-00000120-1","Open"
-"362","Dylan Pearson","EVT-00000875-1","Open"
-"363","Efrem Hamilton","EVT-00000164-2","Open"
-"364","Elijah Johnson","EVT-00000084-1","Closed - No Discipline"
-"365","Elijah Johnson","EVT-00000370-1","Open"
-"366","Elijah Johnson","EVT-00000458-1","Closed - No Discipline"
-"367","Elijah Johnson","EVT-00000521-1","Open"
-"368","Elijah Johnson","EVT-00000583-1","Open"
-"369","Elijah Johnson","EVT-00001008-1","Open"
-"370","Elise Hinderliter","EVT-00000081-1","Open"
-"371","Elise Hinderliter","EVT-00000199-1","Open"
-"372","Elise Hinderliter","EVT-00000332-1","Open"
-"373","Elise Hinderliter","EVT-00000412-1","Closed - No Discipline"
-"374","Elise Hinderliter","EVT-00000694-1","Open"
-"375","Elise Hinderliter","EVT-00000742-1","Closed - No Discipline"
-"376","Elizabeth Arashiba","EVT-00000180-1","Closed - No Discipline"
-"377","Elizabeth Sullivan","EVT-00000093-1","Closed - No Discipline"
-"378","Elizabeth Sullivan","EVT-00000099-1","Closed - No Discipline"
-"379","Ellen Jensen","EVT-00000615-1","Closed - No Discipline"
-"380","Emily Olson","EVT-00000790-1","Open"
-"381","Emily Osterberg","EVT-00000433-1","Open"
-"382","Enoch Langford","EVT-00000043-1","Closed - No Discipline"
-"383","Enoch Langford","EVT-00000256-1","Open"
-"384","Enoch Langford","EVT-00000548-1","Open"
-"385","Enoch Langford","EVT-00000586-1","Open"
-"386","Enoch Langford","EVT-00000764-1","Open"
-"387","Eric Duong","EVT-00000027-1","Open"
-"388","Eric Duong","EVT-00000437-1","Closed - No Discipline"
-"389","Eric Duong","EVT-00000600-1","Closed - No Discipline"
-"390","Eric Duong","EVT-00000874-1","Open"
-"391","Eric Madson","EVT-00000138-1","Closed - No Discipline"
-"392","Eric Patch","EVT-00000882-1","Closed - No Discipline"
-"393","Eric Rasmussen","EVT-00000238-1","Closed - No Discipline"
-"394","Eric Rasmussen","EVT-00000407-1","Closed - No Discipline"
-"395","Eric Rasmussen","EVT-00000468-1","Open"
-"396","Eric Rasmussen","EVT-00000731-1","Open"
-"397","Eric Withanom","EVT-00000016-1","Closed - No Discipline"
-"398","Eric Withanom","EVT-00000019-1","Open"
-"399","Eric Withanom","EVT-00000064-1","Closed - No Discipline"
-"400","Eric Withanom","EVT-00000650-1","Open"
-"401","Erick Fors","EVT-00000034-1","Closed - No Discipline"
-"402","Erick Fors","EVT-00000046-1","Closed - No Discipline"
-"403","Erik Saima","EVT-00000444-1","Open"
-"404","Erik Saima","EVT-00000698-1","Closed - No Discipline"
-"405","Erin Stoltz","EVT-00001021-1","Open"
-"406","Evan Ireland","EVT-00000259-1","Open"
-"407","Evan Ireland","EVT-00000444-1","Open"
-"408","Evan Ireland","EVT-00000720-1","Open"
-"409","Evan Ireland","EVT-00000744-1","Open"
-"410","Evan Ireland","EVT-00000933-2","Open"
-"411","Evan Komarek","EVT-00000494-1","Open"
-"412","Ezra Moore","EVT-00000028-1","Closed - No Discipline"
-"413","Ezra Moore","EVT-00000066-1","Closed - No Discipline"
-"414","Ezra Moore","EVT-00000348-1","Closed - No Discipline"
-"415","Ezra Moore","EVT-00000623-1","Closed - No Discipline"
-"416","Ezra Moore","EVT-00000718-1","Open"
-"417","Ezra Moore","EVT-00000857-1","Closed - No Discipline"
-"418","Ezra Moore","EVT-00000865-1","Closed - No Discipline"
-"419","Festus Boateng","EVT-00000441-1","Closed - No Discipline"
-"420","Festus Boateng","EVT-00000767-1","Closed - No Discipline"
-"421","Fue Vue","EVT-00000586-1","Open"
-"422","Gabriel Grout","EVT-00000938-1","Open"
-"423","George Warzinik","EVT-00000662-1","Closed - No Discipline"
-"424","George Warzinik","EVT-00000678-1","Open"
-"425","George Warzinik","EVT-00000688-1","Closed - No Discipline"
-"426","George Warzinik","EVT-00000763-1","Closed - No Discipline"
-"427","Gerald Karpe","EVT-00000183-1","Closed - No Discipline"
-"428","Gerald Karpe","EVT-00000267-1","Open"
-"429","Gerald Karpe","EVT-00000489-1","Closed - No Discipline"
-"430","Gilles Antaya Jr","EVT-00000709-1","Closed - No Discipline"
-"431","Gordon Blackey","EVT-00000590-1","Open"
-"432","Grace Ames","EVT-00000495-1","Closed - No Discipline"
-"433","Grace Ames","EVT-00000496-1","Closed - No Discipline"
-"434","Grace Ames","EVT-00000533-2","Open"
-"435","Grace Ames","EVT-00000552-1","Closed - No Discipline"
-"436","Grace Ames","EVT-00000713-1","Open"
-"437","Grayson Baker","EVT-00000124-1","Closed - No Discipline"
-"438","Grayson Baker","EVT-00000164-3","Open"
-"439","Grayson Baker","EVT-00000397-1","Closed - No Discipline"
-"440","Grayson Baker","EVT-00000608-3","Closed - No Discipline"
-"441","Gregory Freeman","EVT-00000215-1","Closed - No Discipline"
-"442","Gretchen Bloss","EVT-00000288-1","Open"
-"443","Gretchen Bloss","EVT-00000288-2","Closed - No Discipline"
-"444","Gretchen Bloss","EVT-00000426-2","Closed - No Discipline"
-"445","Griffin Hillbo","EVT-00000756-1","Open"
-"446","Hassan Robertson","EVT-00000195-1","Closed - No Discipline"
-"447","Hassan Robertson","EVT-00000320-1","Open"
-"448","Hassan Robertson","EVT-00000534-2","Open"
-"449","Hassan Robertson","EVT-00000576-1","Open"
-"450","Hassan Robertson","EVT-00000577-1","Open"
-"451","Hassan Robertson","EVT-00000585-1","Open"
-"452","Hassan Robertson","EVT-00000761-1","Open"
-"453","Hassan Robertson","EVT-00000797-1","Open"
-"454","Hassan Robertson","EVT-00000899-1","Open"
-"455","Heather Beightol","EVT-00000656-1","Open"
-"456","Heather Beightol","EVT-00000760-1","Open"
-"457","Heather Lindsay","EVT-00000198-1","Closed - No Discipline"
-"458","Heather Lindsay","EVT-00000432-1","Open"
-"459","Heather Lindsay","EVT-00000448-1","Closed - No Discipline"
-"460","Heather Lindsay","EVT-00000468-1","Open"
-"461","Heather Lindsay","EVT-00000517-2","Closed - No Discipline"
-"462","Hector Bugarin","EVT-00000392-1","Closed - No Discipline"
-"463","Hector Bugarin","EVT-00000398-1","Closed - No Discipline"
-"464","Hector Bugarin","EVT-00000670-1","Open"
-"465","Hector Bugarin","EVT-00000833-1","Open"
-"466","Hilary Glasrud","EVT-00000241-2","Closed - No Discipline"
-"467","Horatio Lee","EVT-00000703-1","Closed - No Discipline"
-"468","Horatio Lee","EVT-00000906-1","Open"
-"469","Ian Ott","EVT-00000058-1","Closed - No Discipline"
-"470","Ian Ott","EVT-00000218-1","Closed - No Discipline"
-"471","Ian Ott","EVT-00000425-1","Closed - No Discipline"
-"472","Ibrahim Jedal","EVT-00000122-1","Closed - No Discipline"
-"473","Ibrahim Jedal","EVT-00000168-1","Closed - No Discipline"
-"474","Ibrahim Jedal","EVT-00000556-1","Open"
-"475","Ibrahim Jedal","EVT-00000744-1","Open"
-"476","Ibrahim Keita","EVT-00000108-1","Open"
-"477","Ibrahim Keita","EVT-00000703-1","Closed - No Discipline"
-"478","Ibrahim Keita","EVT-00000997-1","Open"
-"479","Isma'il Toure","EVT-00000049-1","Open"
-"480","Ismail Omar","EVT-00000133-1","Closed - No Discipline"
-"481","Ismail Omar","EVT-00000168-1","Closed - No Discipline"
-"482","Jackson Mclaughlin","EVT-00000347-1","Closed - No Discipline"
-"483","Jaclyn Johnson","EVT-00000837-1","Closed - No Discipline"
-"484","Jacob Skowronek","EVT-00000164-2","Open"
-"485","Jacob Spies","EVT-00000234-1","Closed - No Discipline"
-"486","Jacob Spies","EVT-00000234-2","Closed - No Discipline"
-"487","Jacob Spies","EVT-00000234-3","Open"
-"488","Jacob Spies","EVT-00000234-4","Closed - No Discipline"
-"489","Jacob Spies","EVT-00000234-5","Open"
-"490","Jacob Spies","EVT-00000234-6","Closed - No Discipline"
-"491","Jacob Spies","EVT-00000288-1","Open"
-"492","Jacob Spies","EVT-00000392-1","Closed - No Discipline"
-"493","Jacob Spies","EVT-00000447-1","Open"
-"494","Jacob Spies","EVT-00000453-1","Closed - No Discipline"
-"495","Jacob Spies","EVT-00000594-2","Closed - No Discipline"
-"496","Jacob Spies","EVT-00000598-1","Open"
-"497","Jacob Spies","EVT-00000603-1","Open"
-"498","Jacob Spies","EVT-00000676-1","Closed - No Discipline"
-"499","Jacob Spies","EVT-00000881-2","Open"
-"500","Jaime Arriola","EVT-00000211-1","Closed - No Discipline"
-"501","Jaime Arriola","EVT-00000381-1","Closed - No Discipline"
-"502","Jaime Arriola","EVT-00000550-1","Open"
-"503","James Kelley","EVT-00000250-1","Closed - No Discipline"
-"504","James Novak","EVT-00000022-1","Closed - No Discipline"
-"505","Jamiel Mohammad","EVT-00000177-1","Closed - No Discipline"
-"506","Jamiel Mohammad","EVT-00000555-1","Closed - No Discipline"
-"507","Jamiel Mohammad","EVT-00000966-1","Open"
-"508","Jamy Schwartz","EVT-00000211-1","Closed - No Discipline"
-"509","Jared Tubbs","EVT-00000027-1","Open"
-"510","Jared Tubbs","EVT-00000092-1","Closed - No Discipline"
-"511","Jared Tubbs","EVT-00000437-1","Closed - No Discipline"
-"512","Jared Tubbs","EVT-00000524-1","Open"
-"513","Jarrod Roering","EVT-00000231-1","Open"
-"514","Jarrod Roering","EVT-00000286-1","Closed - No Discipline"
-"515","Jarrod Roering","EVT-00000881-1","Open"
-"516","Jarrod Silva","EVT-00000390-1","Closed - No Discipline"
-"517","Jason Aguirre","EVT-00000489-1","Closed - No Discipline"
-"518","Jason Brezina","EVT-00000164-2","Open"
-"519","Jason Brezina","EVT-00000589-2","Closed - No Discipline"
-"520","Jason Brezina","EVT-00000869-1","Closed - No Discipline"
-"521","Jason Case","EVT-00000043-1","Closed - No Discipline"
-"522","Jason Case","EVT-00000154-1","Open"
-"523","Jason Matthews","EVT-00000447-4","Closed - No Discipline"
-"524","Jason Matthews","EVT-00000453-1","Closed - No Discipline"
-"525","Jason Matthews","EVT-00000544-1","Open"
-"526","Jason Matthews","EVT-00000692-1","Open"
-"527","Jeff Werner","EVT-00000105-1","Open"
-"528","Jeff Werner","EVT-00000106-1","Closed - No Discipline"
-"529","Jeff Werner","EVT-00000299-1","Open"
-"530","Jeff Werner","EVT-00000693-1","Open"
-"531","Jeffrey Bryce","EVT-00000419-1","Closed - No Discipline"
-"532","Jeffrey Carter","EVT-00000966-1","Open"
-"533","Jeffrey Ilstrup","EVT-00000085-1","Closed - No Discipline"
-"534","Jeffrey Ilstrup","EVT-00000717-1","Closed - No Discipline"
-"535","Jeffrey Imming","EVT-00000466-1","Open"
-"536","Jeffrey Imming","EVT-00000548-1","Open"
-"537","Jeffrey Imming","EVT-00000709-1","Closed - No Discipline"
-"538","Jeffrey Waite","EVT-00000580-1","Closed - No Discipline"
-"539","Jeremiah Smedsrud","EVT-00000199-1","Open"
-"540","Jeremiah Smedsrud","EVT-00000347-1","Closed - No Discipline"
-"541","Jeremiah Smedsrud","EVT-00000352-1","Open"
-"542","Jeremiah Smedsrud","EVT-00000411-1","Closed - No Discipline"
-"543","Jeremiah Smedsrud","EVT-00000532-1","Closed - No Discipline"
-"544","Jeremiah Smedsrud","EVT-00000889-1","Open"
-"545","Jeremy Depies","EVT-00000043-1","Closed - No Discipline"
-"546","Jeremy Depies","EVT-00000125-1","Open"
-"547","Jeremy Depies","EVT-00000154-1","Open"
-"548","Jeremy Depies","EVT-00000463-2","Closed - No Discipline"
-"549","Jeremy Depies","EVT-00000601-1","Closed - No Discipline"
-"550","Jeremy Depies","EVT-00000878-1","Open"
-"551","Jeremy Depies","EVT-00000883-1","Open"
-"552","Jeremy Gillard","EVT-00000997-1","Open"
-"553","Jeremy Randle","EVT-00000260-1","Open"
-"554","Jerry Wear","EVT-00000136-1","Closed - No Discipline"
-"555","Jerryline Jackson","EVT-00000735-1","Open"
-"556","Jesse Trebesch","EVT-00000933-2","Open"
-"557","Joe Fuller","EVT-00000324-1","Open"
-"558","Joel Dittman","EVT-00000233-1","Open"
-"559","Joel Hagen","EVT-00000181-1","Open"
-"560","Joel Hagen","EVT-00000319-1","Closed - No Discipline"
-"561","Joel Hagen","EVT-00000414-1","Closed - No Discipline"
-"562","Joel Hagen","EVT-00000529-2","Open"
-"563","Joel Hagen","EVT-00000544-1","Open"
-"564","Joel Hagen","EVT-00000805-1","Open"
-"565","Joel Pucely","EVT-00000509-1","Open"
-"566","John Haugland","EVT-00000037-1","Closed - No Discipline"
-"567","John Hawes","EVT-00000462-1","Closed - Final Discipline"
-"568","John Hawes","EVT-00000501-1","Closed - No Discipline"
-"569","John Kelly Iii","EVT-00000801-1","Closed - No Discipline"
-"570","John Kelly Iii","EVT-00000904-1","Open"
-"571","John Mcdonald","EVT-00000940-1","Open"
-"572","John Sullivan","EVT-00000069-1","Open"
-"573","John Sullivan","EVT-00000078-1","Closed - No Discipline"
-"574","John Sullivan","EVT-00000198-1","Closed - No Discipline"
-"575","John Sysaath","EVT-00000294-1","Open"
-"576","John Wittrock","EVT-00000737-1","Open"
-"577","John Yang","EVT-00000025-1","Closed - No Discipline"
-"578","John Yang","EVT-00000073-1","Closed - No Discipline"
-"579","Johnathan Sherer","EVT-00000655-1","Closed - No Discipline"
-"580","Johnathan Sherer","EVT-00000817-1","Closed - No Discipline"
-"581","Johnathan Sherer","EVT-00000861-1","Open"
-"582","Jomar Villamor","EVT-00000447-3","Closed - No Discipline"
-"583","Jomar Villamor","EVT-00000982-1","Open"
-"584","Jonathan Patino","EVT-00000076-1","Closed - No Discipline"
-"585","Jonathan Patino","EVT-00000299-1","Open"
-"586","Jonathan Patino","EVT-00000413-1","Open"
-"587","Jonathan Patino","EVT-00000418-1","Open"
-"588","Jonathan Patino","EVT-00000420-1","Open"
-"589","Jonathan Patino","EVT-00000463-1","Open"
-"590","Jonathan Patino","EVT-00000695-1","Open"
-"591","Jonathan Patino","EVT-00000744-1","Open"
-"592","Jonathan Patino","EVT-00000750-1","Open"
-"593","Jonathan Patino","EVT-00000836-1","Open"
-"594","Jonathon Pobuda","EVT-00000142-1","Closed - No Discipline"
-"595","Jonathon Pobuda","EVT-00000742-1","Closed - No Discipline"
-"596","Jordan Brenny","EVT-00000049-1","Open"
-"597","Jordan Brenny","EVT-00000610-1","Closed - No Discipline"
-"598","Jordan Brenny","EVT-00000685-1","Closed - No Discipline"
-"599","Jory Perry","EVT-00000586-1","Open"
-"600","Jory Perry","EVT-00000655-1","Closed - No Discipline"
-"601","Jory Perry","EVT-00000720-1","Open"
-"602","Jory Perry","EVT-00000744-1","Open"
-"603","Jory Perry","EVT-00000927-1","Open"
-"604","Jory Perry","EVT-00000935-1","Open"
-"605","Jose Gomez","EVT-00000511-1","Open"
-"606","Joseph Brown","EVT-00000048-1","Open"
-"607","Joseph Brown","EVT-00000431-1","Closed - No Discipline"
-"608","Joseph Fonseca","EVT-00000287-1","Open"
-"609","Joseph Foxley","EVT-00000232-1","Open"
-"610","Joseph Grout","EVT-00000262-1","Open"
-"611","Joseph Grout","EVT-00000664-1","Open"
-"612","Joseph Grout","EVT-00000972-1","Closed - No Discipline"
-"613","Joseph Klimmek","EVT-00000475-1","Open"
-"614","Joseph Klimmek","EVT-00000519-1","Open"
-"615","Joseph Klimmek","EVT-00000781-1","Open"
-"616","Joseph Klimmek","EVT-00000818-1","Open"
-"617","Joseph Klimmek","EVT-00000914-1","Open"
-"618","Joseph Michnowski","EVT-00000895-1","Open"
-"619","Joseph Sullivan","EVT-00000274-1","Closed - No Discipline"
-"620","Joseph Sullivan","EVT-00000407-1","Closed - No Discipline"
-"621","Joshua Domek","EVT-00000671-1","Open"
-"622","Joshua Stewart","EVT-00000056-1","Open"
-"623","Joshua Stewart","EVT-00000098-1","Open"
-"624","Joshua Stewart","EVT-00000320-1","Open"
-"625","Joshua Stewart","EVT-00000560-1","Open"
-"626","Joshua Stewart","EVT-00000587-1","Closed - No Discipline"
-"627","Joshua Stewart","EVT-00000747-1","Open"
-"628","Joshua Stolze","EVT-00000617-1","Closed - No Discipline"
-"629","Joshua Stolze","EVT-00000788-1","Closed - No Discipline"
-"630","Joshua Stolze","EVT-00000911-1","Open"
-"631","Joshua Stolze","EVT-00000964-1","Closed - No Discipline"
-"632","Juan Alonzo","EVT-00000269-1","Closed - Final Discipline"
-"633","Julie Hagen","EVT-00000384-1","Open"
-"634","Julie Hagen","EVT-00000799-1","Open"
-"635","Julie Hagen","EVT-00000962-1","Open"
-"636","Justin Merten","EVT-00000390-1","Closed - No Discipline"
-"637","Justin Padilla","EVT-00000398-1","Closed - No Discipline"
-"638","Justin Padilla","EVT-00000720-2","Open"
-"639","Justin Padilla","EVT-00000825-1","Open"
-"640","Justin Padilla","EVT-00000906-1","Open"
-"641","Justin Saint Jean","EVT-00000651-1","Closed - No Discipline"
-"642","Justin Stetson","EVT-00000295-1","Open"
-"643","Justin Stetson","EVT-00000602-1","Closed - No Discipline"
-"644","Justin Young","EVT-00000033-1","Closed - No Discipline"
-"645","Justin Young","EVT-00000156-1","Open"
-"646","Kabakas Clark","EVT-00000069-1","Open"
-"647","Kabakas Clark","EVT-00000136-1","Closed - No Discipline"
-"648","Kabakas Clark","EVT-00000195-1","Closed - No Discipline"
-"649","Kabakas Clark","EVT-00000407-1","Closed - No Discipline"
-"650","Kaitlyn Donatell","EVT-00000791-1","Open"
-"651","Katherine Pikula","EVT-00000854-1","Closed - No Discipline"
-"652","Katrina Grant","EVT-00000487-1","Closed - No Discipline"
-"653","Katrina Grant","EVT-00000613-1","Closed - No Discipline"
-"654","Keith Del Villar","EVT-00000691-1","Closed - No Discipline"
-"655","Keith Del Villar","EVT-00000814-1","Open"
-"656","Kelly Damon","EVT-00000168-1","Closed - No Discipline"
-"657","Kelly Damon","EVT-00000333-1","Open"
-"658","Kelly Damon","EVT-00000457-1","Open"
-"659","Kelly Damon","EVT-00000464-3","Closed - No Discipline"
-"660","Kelly O'rourke","EVT-00000276-1","Open"
-"661","Kelly O'rourke","EVT-00000346-1","Open"
-"662","Kelly O'rourke","EVT-00000515-1","Open"
-"663","Kelly O'rourke","EVT-00000611-1","Closed - No Discipline"
-"664","Kelly O'rourke","EVT-00000732-1","Closed - Final Discipline"
-"665","Kenneth Mcfee","EVT-00000964-1","Closed - No Discipline"
-"666","Kevin Franek","EVT-00000201-1","Open"
-"667","Kevin Lazarchic","EVT-00000003-1","Closed - No Discipline"
-"668","Kevin Lazarchic","EVT-00000147-1","Open"
-"669","Kevin Lazarchic","EVT-00000259-1","Open"
-"670","Kevin Lazarchic","EVT-00000634-1","Open"
-"671","Kevin Lazarchic","EVT-00000680-1","Open"
-"672","Kevin Lazarchic","EVT-00000728-2","Open"
-"673","Kevin Lazarchic","EVT-00000736-1","Open"
-"674","Kevin Palomata","EVT-00000236-1","Closed - No Discipline"
-"675","Kevin Palomata","EVT-00000249-2","Closed - No Discipline"
-"676","Kimberly Bonilla-Ramos","EVT-00000010-1","Closed - No Discipline"
-"677","Kimberly Bonilla-Ramos","EVT-00000035-1","Closed - No Discipline"
-"678","Kimberly Bonilla-Ramos","EVT-00000076-1","Closed - No Discipline"
-"679","Kimberly Bonilla-Ramos","EVT-00000168-1","Closed - No Discipline"
-"680","Kong Moua","EVT-00000304-1","Open"
-"681","Kong Moua","EVT-00000331-1","Open"
-"682","Kong Moua","EVT-00000482-1","Closed - No Discipline"
-"683","Kong Moua","EVT-00000720-1","Open"
-"684","Kristina Schmidt","EVT-00000643-1","Closed - No Discipline"
-"685","Kristopher Dauble","EVT-00000010-1","Closed - No Discipline"
-"686","Kristopher Dauble","EVT-00000105-1","Open"
-"687","Kristopher Dauble","EVT-00000167-1","Open"
-"688","Kristopher Dauble","EVT-00000181-1","Open"
-"689","Kristopher Dauble","EVT-00000295-1","Open"
-"690","Kristopher Dauble","EVT-00000709-1","Closed - No Discipline"
-"691","Kristopher Dauble","EVT-00000726-1","Closed - No Discipline"
-"692","Krystal Scott","EVT-00000783-1","Open"
-"693","Krystal Scott","EVT-00000806-1","Open"
-"694","Krystle Klund","EVT-00000876-1","Open"
-"695","Kurt Indehar","EVT-00000855-1","Open"
-"696","Kurtis Schoonover","EVT-00000137-1","Open"
-"697","Kyle Andreasen","EVT-00000250-1","Closed - No Discipline"
-"698","Kyle Andreasen","EVT-00000880-1","Closed - No Discipline"
-"699","Kyle Cornwell","EVT-00000010-1","Closed - No Discipline"
-"700","Kyle Cornwell","EVT-00000416-1","Closed - No Discipline"
-"701","Kyle Cornwell","EVT-00000497-1","Open"
-"702","Kyle Cornwell","EVT-00000533-1","Open"
-"703","Kyle Pond","EVT-00000181-2","Closed - No Discipline"
-"704","Kyle Pond","EVT-00000392-1","Closed - No Discipline"
-"705","Kyle Pond","EVT-00000450-1","Open"
-"706","Kyle Pond","EVT-00000463-3","Closed - No Discipline"
-"707","Kyle Pond","EVT-00000576-2","Closed - No Discipline"
-"708","Kyle Pond","EVT-00000581-2","Closed - No Discipline"
-"709","Kyle Pond","EVT-00000584-1","Open"
-"710","Kyle Pond","EVT-00000598-1","Open"
-"711","Kyle Pond","EVT-00000693-2","Closed - No Discipline"
-"712","Kyle Pond","EVT-00000696-2","Closed - No Discipline"
-"713","Kyle Pond","EVT-00000731-2","Closed - No Discipline"
-"714","Kyle Pond","EVT-00000836-2","Closed - No Discipline"
-"715","Kyle Pond","EVT-00000990-2","Closed - No Discipline"
-"716","Kyle Ruud","EVT-00000231-1","Open"
-"717","Kyle Ruud","EVT-00000428-1","Open"
-"718","Kyle Schroeder","EVT-00000020-1","Closed - No Discipline"
-"719","Kyle Schwartz","EVT-00000595-1","Open"
-"720","Kyle Swanson","EVT-00000198-1","Closed - No Discipline"
-"721","Lamandre Wright Sr.","EVT-00000056-1","Open"
-"722","Lamandre Wright Sr.","EVT-00000192-1","Open"
-"723","Laura Nelson","EVT-00000613-1","Closed - No Discipline"
-"724","Laura Nelson","EVT-00000845-1","Open"
-"725","Lee Shafer","EVT-00000120-1","Open"
-"726","Lee Shafer","EVT-00000906-1","Open"
-"727","Leonard Gerten","EVT-00000301-1","Closed - No Discipline"
-"728","Leonard Gerten","EVT-00000413-2","Closed - No Discipline"
-"729","Leonard Gerten","EVT-00000524-1","Open"
-"730","Leonard Gerten","EVT-00000778-1","Open"
-"731","Leonard Gerten","EVT-00000907-1","Open"
-"732","Leonard Gerten","EVT-00001012-1","Open"
-"733","Lesly Patino","EVT-00000869-1","Closed - No Discipline"
-"734","Lewis Bady","EVT-00000279-1","Closed - No Discipline"
-"735","Lewis Bady","EVT-00000765-1","Closed - No Discipline"
-"736","Lindsey Kortus","EVT-00000105-1","Open"
-"737","Lucas Nightengale","EVT-00000685-1","Closed - No Discipline"
-"738","Luke Kittock","EVT-00000237-1","Closed - No Discipline"
-"739","Luke Kittock","EVT-00000280-1","Open"
-"740","Luke Kittock","EVT-00000477-1","Closed - No Discipline"
-"741","Luke Kittock","EVT-00000620-1","Closed - No Discipline"
-"742","Luke Kittock","EVT-00000650-1","Open"
-"743","Luke Kittock","EVT-00000672-1","Open"
-"744","Luke Kittock","EVT-00000905-1","Open"
-"745","Luke Rysavy","EVT-00000407-1","Closed - No Discipline"
-"746","Luke Rysavy","EVT-00000452-1","Closed - No Discipline"
-"747","Luke Rysavy","EVT-00000478-1","Closed - No Discipline"
-"748","Luke Weatherspoon","EVT-00000235-1","Closed - No Discipline"
-"749","Luke Weatherspoon","EVT-00000861-2","Closed - No Discipline"
-"750","Mack Dominguez","EVT-00000970-1","Closed - No Discipline"
-"751","Maiya Cain","EVT-00000617-1","Closed - No Discipline"
-"752","Marc Gingerich","EVT-00000446-1","Closed - No Discipline"
-"753","Marc Gingerich","EVT-00000454-1","Closed - No Discipline"
-"754","Marcus Benner","EVT-00000400-1","Open"
-"755","Marcus Benner","EVT-00000597-1","Open"
-"756","Marcus Ottney","EVT-00000332-1","Open"
-"757","Marcus Ottney","EVT-00000742-1","Closed - No Discipline"
-"758","Marisela Palapa Alonzo","EVT-00000010-1","Closed - No Discipline"
-"759","Marisela Palapa Alonzo","EVT-00000464-2","Closed - No Discipline"
-"760","Marisela Palapa Alonzo","EVT-00000677-1","Open"
-"761","Marisela Palapa Alonzo","EVT-00000722-1","Open"
-"762","Marjane Khazraeinazm..","EVT-00000344-1","Open"
-"763","Mark Bohnen","EVT-00000976-1","Open"
-"764","Mark Bohnsack","EVT-00000090-1","Open"
-"765","Mark Bohnsack","EVT-00000257-1","Closed - No Discipline"
-"766","Mark Doll","EVT-00000163-1","Open"
-"767","Mark Doll","EVT-00000205-1","Open"
-"768","Mark Doll","EVT-00000565-1","Closed - No Discipline"
-"769","Mark Doll","EVT-00000715-2","Open"
-"770","Mark Johnson","EVT-00000208-1","Closed - No Discipline"
-"771","Mark Johnson","EVT-00000345-1","Open"
-"772","Mark Johnson","EVT-00000704-1","Closed - No Discipline"
-"773","Mark Montgomery","EVT-00000669-1","Closed - No Discipline"
-"774","Mark Ringgenberg","EVT-00000295-1","Open"
-"775","Mark Ringgenberg","EVT-00000602-2","Closed - No Discipline"
-"776","Mark Suchta","EVT-00000194-1","Closed - No Discipline"
-"777","Mark Suchta","EVT-00000293-1","Closed - No Discipline"
-"778","Mark Suchta","EVT-00000628-1","Open"
-"779","Mason Schemmel","EVT-00000489-1","Closed - No Discipline"
-"780","Mason Schemmel","EVT-00000661-1","Closed - No Discipline"
-"781","Matthew Collier","EVT-00000831-1","Closed - No Discipline"
-"782","Matthew Heger","EVT-00000228-1","Open"
-"783","Matthew Heger","EVT-00000262-1","Open"
-"784","Matthew Heger","EVT-00000566-1","Closed - No Discipline"
-"785","Matthew Lindquist","EVT-00000133-1","Closed - No Discipline"
-"786","Matthew Lindquist","EVT-00000464-1","Open"
-"787","Matthew Olson (5305)","EVT-00000043-1","Closed - No Discipline"
-"788","Matthew Olson (5305)","EVT-00000154-1","Open"
-"789","Matthew Olson (5305)","EVT-00000452-1","Closed - No Discipline"
-"790","Matthew Olson (5305)","EVT-00000478-1","Closed - No Discipline"
-"791","Matthew Olson (5305)","EVT-00000603-2","Closed - No Discipline"
-"792","Matthew Olson (5305)","EVT-00000804-1","Open"
-"793","Matthew Olson (5305)","EVT-00000924-2","Closed - No Discipline"
-"794","Matthew Olson (5305)","EVT-00000934-1","Open"
-"795","Matthew Olson (5313)","EVT-00000477-1","Closed - No Discipline"
-"796","Matthew Olson (5313)","EVT-00000715-1","Open"
-"797","Matthew Olson (5313)","EVT-00000773-1","Closed - No Discipline"
-"798","Matthew Ryan","EVT-00000461-2","Closed - No Discipline"
-"799","Matthew Severance","EVT-00000034-1","Closed - No Discipline"
-"800","Matthew Severance","EVT-00000046-1","Closed - No Discipline"
-"801","Matthew Severance","EVT-00000293-1","Closed - No Discipline"
-"802","Matthew Severance","EVT-00000294-2","Closed - No Discipline"
-"803","Matthew Severance","EVT-00000837-1","Closed - No Discipline"
-"804","Megan Rengstorf","EVT-00000323-1","Closed - No Discipline"
-"805","Mia Johnson","EVT-00000206-1","Open"
-"806","Mia Johnson","EVT-00000221-1","Open"
-"807","Mia Johnson","EVT-00000314-1","Closed - No Discipline"
-"808","Mia Johnson","EVT-00000339-1","Open"
-"809","Mia Johnson","EVT-00000445-1","Closed - No Discipline"
-"810","Mia Johnson","EVT-00000725-1","Closed - No Discipline"
-"811","Mia Johnson","EVT-00000850-1","Open"
-"812","Michael Bringgold","EVT-00000205-1","Open"
-"813","Michael Bringgold","EVT-00000428-3","Closed - No Discipline"
-"814","Michael Bringgold","EVT-00000460-1","Closed - No Discipline"
-"815","Michael Bringgold","EVT-00000565-1","Closed - No Discipline"
-"816","Michael Bringgold","EVT-00000712-2","Open"
-"817","Michael Frye","EVT-00000100-1","Closed - No Discipline"
-"818","Michael Grahn","EVT-00000286-1","Closed - No Discipline"
-"819","Michael Grahn","EVT-00000410-1","Closed - No Discipline"
-"820","Michael Kennedy","EVT-00000826-5","Closed - No Discipline"
-"821","Michael Mccadden","EVT-00000118-1","Closed - No Discipline"
-"822","Michael Pfaff","EVT-00000075-1","Closed - No Discipline"
-"823","Michael Pfaff","EVT-00000089-1","Closed - No Discipline"
-"824","Michael Selle","EVT-00000191-1","Open"
-"825","Michael Selle","EVT-00000255-1","Closed - No Discipline"
-"826","Michael Selle","EVT-00000298-1","Open"
-"827","Michael Selle","EVT-00000415-1","Open"
-"828","Michael Selle","EVT-00000426-1","Open"
-"829","Michael Selle","EVT-00000434-1","Open"
-"830","Michael Selle","EVT-00000465-1","Open"
-"831","Michael Selle","EVT-00000707-1","Closed - No Discipline"
-"832","Michael Selle","EVT-00000863-1","Open"
-"833","Michael Selle","EVT-00000921-1","Open"
-"834","Michael Selle","EVT-00000922-1","Open"
-"835","Michael Selle","EVT-00000925-1","Open"
-"836","Michael Selle","EVT-00000926-1","Open"
-"837","Michael Wegner","EVT-00000287-1","Open"
-"838","Michael Wegner","EVT-00000494-1","Open"
-"839","Michael Wegner","EVT-00000541-1","Open"
-"840","Michael Wegner","EVT-00000574-1","Closed - No Discipline"
-"841","Michael Wegner","EVT-00000747-1","Open"
-"842","Miguel Martinez Suarez","EVT-00000227-1","Closed - No Discipline"
-"843","Miguel Martinez Suarez","EVT-00000270-1","Open"
-"844","Miguel Martinez Suarez","EVT-00000306-1","Closed - No Discipline"
-"845","Miguel Martinez Suarez","EVT-00000451-1","Open"
-"846","Mike Nimlos","EVT-00000724-1","Closed - Final Discipline"
-"847","Miranda Peterson","EVT-00000372-1","Closed - No Discipline"
-"848","Mitchell Erickson","EVT-00000079-1","Closed - No Discipline"
-"849","Mitchell Waletzki","EVT-00000315-1","Open"
-"850","Mitchell Waletzki","EVT-00000564-1","Closed - No Discipline"
-"851","Mitchell Waletzki","EVT-00000854-1","Closed - No Discipline"
-"852","Mitchell Waletzki","EVT-00000867-2","Open"
-"853","Mohamed Qasim","EVT-00000735-1","Open"
-"854","Mohamud Jama","EVT-00000299-1","Open"
-"855","Mohamud Jama","EVT-00000463-1","Open"
-"856","Mohamud Jama","EVT-00000603-2","Closed - No Discipline"
-"857","Molly Fischer","EVT-00000146-1","Closed - No Discipline"
-"858","Molly Fischer","EVT-00000211-1","Closed - No Discipline"
-"859","Mukhtar Abdulkadir","EVT-00000788-1","Closed - No Discipline"
-"860","Mukhtar Awow","EVT-00000305-1","Open"
-"861","Mukhtar Awow","EVT-00000452-2","Closed - No Discipline"
-"862","Mukhtar Awow","EVT-00000478-1","Closed - No Discipline"
-"863","Mukhtar Awow","EVT-00000623-1","Closed - No Discipline"
-"864","Mukhtar Awow","EVT-00000758-2","Open"
-"865","Mukhtar Awow","EVT-00000857-2","Open"
-"866","Nathan Bauer","EVT-00000027-1","Open"
-"867","Nathan Bauer","EVT-00000673-1","Open"
-"868","Nathan Nelson","EVT-00000144-1","Closed - Final Discipline"
-"869","Nathan Nelson","EVT-00000876-1","Open"
-"870","Nathan Norgren","EVT-00000872-1","Closed - No Discipline"
-"871","Nathan Sundberg","EVT-00000150-1","Closed - No Discipline"
-"872","Nathan Sundberg","EVT-00000266-1","Open"
-"873","Nathan Sundberg","EVT-00000295-1","Open"
-"874","Nathan Sundberg","EVT-00000421-1","Closed - No Discipline"
-"875","Nathan Sundberg","EVT-00000575-1","Closed - No Discipline"
-"876","Neal Walsh","EVT-00000166-1","Open"
-"877","Neal Walsh","EVT-00000288-1","Open"
-"878","Neal Walsh","EVT-00000547-1","Open"
-"879","Neal Walsh","EVT-00000804-1","Open"
-"880","Neal Walsh","EVT-00000834-1","Open"
-"881","Nicholas Anderson","EVT-00000289-1","Closed - No Discipline"
-"882","Nicholas Anderson","EVT-00000468-1","Open"
-"883","Nicholas Davids","EVT-00000408-1","Closed - No Discipline"
-"884","Nicholas Davids","EVT-00000418-1","Open"
-"885","Nicholas Davids","EVT-00000649-1","Closed - No Discipline"
-"886","Nicholas Davids","EVT-00000681-1","Closed - No Discipline"
-"887","Nicholas Davids","EVT-00000691-1","Closed - No Discipline"
-"888","Nicholas Franco","EVT-00000380-1","Open"
-"889","Nicholas Gabrielson","EVT-00000825-1","Open"
-"890","Nicholas Gabrielson","EVT-00000947-1","Closed - No Discipline"
-"891","Nicholas Hansen","EVT-00000166-1","Open"
-"892","Nicholas Hansen","EVT-00000283-1","Closed - No Discipline"
-"893","Nicholas Hansen","EVT-00000927-1","Open"
-"894","Nicholas Hwang","EVT-00000058-1","Closed - No Discipline"
-"895","Nicholas Kapinos","EVT-00000010-1","Closed - No Discipline"
-"896","Nicholas Kapinos","EVT-00000109-1","Open"
-"897","Nicholas Kapinos","EVT-00000176-1","Open"
-"898","Nicholas Kapinos","EVT-00000297-1","Open"
-"899","Nicholas Kapinos","EVT-00000533-1","Open"
-"900","Nicholas Kapinos","EVT-00000631-1","Open"
-"901","Nicholas Kapinos","EVT-00000886-1","Open"
-"902","Nicholas Mccarthy","EVT-00000087-1","Closed - No Discipline"
-"903","Nicholas Sciorrotta Jr","EVT-00000301-1","Closed - No Discipline"
-"904","Nicolas Custode","EVT-00000058-1","Closed - No Discipline"
-"905","Nicolas Custode","EVT-00000313-1","Open"
-"906","Nicolas Custode","EVT-00000574-1","Closed - No Discipline"
-"907","Noukue Cha","EVT-00000025-1","Closed - No Discipline"
-"908","Noukue Cha","EVT-00000073-1","Closed - No Discipline"
-"909","Noukue Cha","EVT-00000267-1","Open"
-"910","Noushoua Cha","EVT-00000069-1","Open"
-"911","Noushoua Cha","EVT-00000882-1","Closed - No Discipline"
-"912","Omar Foulkes","EVT-00000466-1","Open"
-"913","Omar Foulkes","EVT-00000695-1","Open"
-"914","Omar Foulkes","EVT-00000908-1","Open"
-"915","Oscar Macias","EVT-00000031-1","Closed - No Discipline"
-"916","Oscar Macias","EVT-00000169-1","Open"
-"917","Oscar Macias","EVT-00000312-1","Open"
-"918","Oscar Macias","EVT-00000679-1","Open"
-"919","Oscar Macias","EVT-00000836-3","Open"
-"920","Paochoua Xiong","EVT-00000313-1","Open"
-"921","Paochoua Xiong","EVT-00000439-1","Open"
-"922","Patrick Mccarver","EVT-00000116-1","Open"
-"923","Patrick Mccarver","EVT-00000612-1","Closed - No Discipline"
-"924","Patrick Mccarver","EVT-00000668-1","Open"
-"925","Patrick Reuben","EVT-00000047-1","Closed - No Discipline"
-"926","Patrick Reuben","EVT-00000361-1","Closed - No Discipline"
-"927","Patrick Reuben","EVT-00000503-1","Open"
-"928","Patrick Reuben","EVT-00000504-1","Closed - No Discipline"
-"929","Patrick Reuben","EVT-00000702-1","Closed - No Discipline"
-"930","Paul Albers","EVT-00000120-1","Open"
-"931","Paul Albers","EVT-00000466-1","Open"
-"932","Paul Albers","EVT-00000966-1","Open"
-"933","Paul Dellwo","EVT-00000841-3","Closed - No Discipline"
-"934","Paul O'hanlon","EVT-00000211-1","Closed - No Discipline"
-"935","Paul O'hanlon","EVT-00000513-1","Open"
-"936","Paul O'hanlon","EVT-00000550-2","Closed - No Discipline"
-"937","Paul O'hanlon","EVT-00000578-1","Closed - No Discipline"
-"938","Paul O'hanlon","EVT-00000948-1","Closed - No Discipline"
-"939","Paul O'hanlon","EVT-00001017-2","Open"
-"940","Paul Schweiger","EVT-00000379-1","Closed - No Discipline"
-"941","Peng Moua","EVT-00000137-1","Open"
-"942","Peter Bacon","EVT-00000289-1","Closed - No Discipline"
-"943","Peter Ogren","EVT-00000819-1","Closed - No Discipline"
-"944","Peter Stanton","EVT-00000598-1","Open"
-"945","Peter Stanton","EVT-00000676-1","Closed - No Discipline"
-"946","Peter Stanton","EVT-00000774-1","Closed - No Discipline"
-"947","Peter Stanton","EVT-00000841-2","Open"
-"948","Peter Stanton","EVT-00000878-2","Closed - No Discipline"
-"949","Peter Stanton","EVT-00000881-1","Open"
-"950","Peter Stanton","EVT-00000884-1","Open"
-"951","Phillip Gangnon","EVT-00000175-1","Closed - No Discipline"
-"952","Quillan Oak","EVT-00000423-1","Closed - No Discipline"
-"953","Quillan Oak","EVT-00000740-1","Open"
-"954","Rachael Cashin","EVT-00000500-1","Closed - No Discipline"
-"955","Rashad Powell","EVT-00000014-1","Closed - No Discipline"
-"956","Rashad Powell","EVT-00000164-1","Open"
-"957","Rashad Powell","EVT-00000202-1","Open"
-"958","Rashad Powell","EVT-00000254-1","Open"
-"959","Rashad Powell","EVT-00000359-1","Open"
-"960","Rashad Powell","EVT-00000483-1","Open"
-"961","Rebecca Madich","EVT-00000486-1","Open"
-"962","Rebecca Madich","EVT-00000696-3","Open"
-"963","Rebecca Madich","EVT-00000836-3","Open"
-"964","Rebecca Watkins","EVT-00000146-1","Closed - No Discipline"
-"965","Renee Lewis","EVT-00000133-1","Closed - No Discipline"
-"966","Renee Lewis","EVT-00000823-1","Open"
-"967","Ricardo Muro","EVT-00000395-1","Closed - No Discipline"
-"968","Ricardo Muro","EVT-00000399-1","Closed - No Discipline"
-"969","Richard Knoche","EVT-00000026-1","Closed - No Discipline"
-"970","Richard Knoche","EVT-00000121-1","Open"
-"971","Richard Knoche","EVT-00000166-1","Open"
-"972","Richard Knoche","EVT-00000181-1","Open"
-"973","Richard Knoche","EVT-00000428-2","Closed - No Discipline"
-"974","Richard Walker","EVT-00000444-1","Open"
-"975","Richard Walker","EVT-00000776-1","Open"
-"976","Richard Walker","EVT-00000898-2","Open"
-"977","Richard Zimmerman","EVT-00000022-1","Closed - No Discipline"
-"978","Ricky Plunkett","EVT-00000014-1","Closed - No Discipline"
-"979","Ricky Plunkett","EVT-00000164-1","Open"
-"980","Ricky Plunkett","EVT-00000179-1","Open"
-"981","Ricky Plunkett","EVT-00000242-1","Closed - No Discipline"
-"982","Ricky Plunkett","EVT-00000675-1","Open"
-"983","Ricky Plunkett","EVT-00000686-1","Closed - No Discipline"
-"984","Ricky Plunkett","EVT-00000827-1","Open"
-"985","Robert Berry","EVT-00000265-1","Closed - No Discipline"
-"986","Robert Berry","EVT-00000856-1","Open"
-"987","Robert Greer","EVT-00000662-1","Closed - No Discipline"
-"988","Robert Illetschko","EVT-00000316-1","Closed - No Discipline"
-"989","Robert Lewis","EVT-00000086-1","Open"
-"990","Robert Lewis","EVT-00000350-1","Open"
-"991","Robert Mercado","EVT-00000582-1","Open"
-"992","Robert Mercado","EVT-00000739-1","Closed - No Discipline"
-"993","Robert Mercado","EVT-00000778-1","Open"
-"994","Robert Robinson","EVT-00000149-1","Closed - No Discipline"
-"995","Robert Robinson","EVT-00000242-1","Closed - No Discipline"
-"996","Robert Robinson","EVT-00000243-1","Closed - No Discipline"
-"997","Robert Robinson","EVT-00000744-1","Open"
-"998","Roberto Hernandez","EVT-00000019-1","Open"
-"999","Roberto Hernandez","EVT-00000064-1","Closed - No Discipline"
-"1000","Roberto Hernandez","EVT-00000286-1","Closed - No Discipline"
-"1001","Roberto Hernandez","EVT-00000299-1","Open"
-"1002","Roberto Hernandez","EVT-00000417-1","Open"
-"1003","Roberto Hernandez","EVT-00000418-1","Open"
-"1004","Roberto Hernandez","EVT-00000420-1","Open"
-"1005","Roberto Hernandez","EVT-00000463-1","Open"
-"1006","Roger Moua","EVT-00000227-1","Closed - No Discipline"
-"1007","Roger Moua","EVT-00000372-1","Closed - No Discipline"
-"1008","Roger Moua","EVT-00000558-1","Closed - No Discipline"
-"1009","Ronald Stenerson","EVT-00000295-1","Open"
-"1010","Russell Cragin","EVT-00000663-1","Closed - No Discipline"
-"1011","Ryan Atkinson","EVT-00000045-1","Closed - No Discipline"
-"1012","Ryan Atkinson","EVT-00000061-1","Closed - No Discipline"
-"1013","Ryan Atkinson","EVT-00000218-1","Closed - No Discipline"
-"1014","Ryan Atkinson","EVT-00000292-1","Open"
-"1015","Ryan Atkinson","EVT-00000425-1","Closed - No Discipline"
-"1016","Ryan Atkinson","EVT-00000493-1","Open"
-"1017","Ryan Atkinson","EVT-00000507-1","Closed - No Discipline"
-"1018","Ryan Atkinson","EVT-00000514-1","Open"
-"1019","Ryan Atkinson","EVT-00000521-1","Open"
-"1020","Ryan Atkinson","EVT-00000765-1","Closed - No Discipline"
-"1021","Ryan Atkinson","EVT-00000975-1","Open"
-"1022","Ryan Beightol","EVT-00000226-3","Closed - No Discipline"
-"1023","Ryan Beightol","EVT-00000461-1","Open"
-"1024","Ryan Beightol","EVT-00000494-1","Open"
-"1025","Ryan Beightol","EVT-00000560-1","Open"
-"1026","Ryan Calhoun","EVT-00000043-1","Closed - No Discipline"
-"1027","Ryan Calhoun","EVT-00000154-1","Open"
-"1028","Ryan Calhoun","EVT-00000505-1","Open"
-"1029","Ryan Carrero","EVT-00000617-1","Closed - No Discipline"
-"1030","Ryan Johnson","EVT-00000047-1","Closed - No Discipline"
-"1031","Ryan Johnson","EVT-00000150-1","Closed - No Discipline"
-"1032","Ryan Johnson","EVT-00000227-1","Closed - No Discipline"
-"1033","Ryan Kelly","EVT-00000010-1","Closed - No Discipline"
-"1034","Ryan Kelly","EVT-00000039-1","Closed - No Discipline"
-"1035","Ryan Kelly","EVT-00000126-1","Closed - No Discipline"
-"1036","Ryan Kelly","EVT-00000137-1","Open"
-"1037","Ryan Kelly","EVT-00000153-1","Open"
-"1038","Ryan Kelly","EVT-00000167-1","Open"
-"1039","Ryan Kelly","EVT-00000167-2","Open"
-"1040","Ryan Kelly","EVT-00000226-1","Closed - Final Discipline"
-"1041","Ryan Kelly","EVT-00000297-1","Open"
-"1042","Ryan Kelly","EVT-00000420-1","Open"
-"1043","Ryan Kelly","EVT-00000461-1","Open"
-"1044","Ryan Kelly","EVT-00000586-1","Open"
-"1045","Ryan Kelly","EVT-00000604-1","Open"
-"1046","Ryan Kelly","EVT-00000677-1","Open"
-"1047","Ryan Kingdon","EVT-00000050-1","Closed - No Discipline"
-"1048","Ryan Kingdon","EVT-00000135-1","Open"
-"1049","Ryan Kingdon","EVT-00000378-1","Closed - No Discipline"
-"1050","Ryan Kingdon","EVT-00000517-2","Closed - No Discipline"
-"1051","Ryan Kingdon","EVT-00000758-2","Open"
-"1052","Ryan Mccann","EVT-00000485-1","Open"
-"1053","Ryan Merrigan","EVT-00000278-1","Closed - No Discipline"
-"1054","Ryan Merrigan","EVT-00000579-1","Open"
-"1055","Ryan Merrigan","EVT-00000744-1","Open"
-"1056","Ryan Merrigan","EVT-00000927-1","Open"
-"1057","Ryan Merrigan","EVT-00001007-1","Open"
-"1058","Ryan Miller","EVT-00000137-1","Open"
-"1059","Ryan Miller","EVT-00000310-1","Closed - No Discipline"
-"1060","Ryan Pacheco","EVT-00000063-1","Closed - No Discipline"
-"1061","Ryan Pacheco","EVT-00000440-1","Closed - No Discipline"
-"1062","Ryan Weber","EVT-00000688-1","Closed - No Discipline"
-"1063","Ryan Weber","EVT-00000879-1","Closed - No Discipline"
-"1064","Samsua Thao","EVT-00000213-1","Open"
-"1065","Samsua Thao","EVT-00000551-1","Open"
-"1066","Samsua Thao","EVT-00000617-1","Closed - No Discipline"
-"1067","Samsua Thao","EVT-00000661-1","Closed - No Discipline"
-"1068","Samsua Thao","EVT-00000818-2","Open"
-"1069","Samuel Erickson","EVT-00000144-1","Closed - Final Discipline"
-"1070","Samuel Erickson","EVT-00000249-1","Open"
-"1071","Samuel Erickson","EVT-00000299-1","Open"
-"1072","Samuel Erickson","EVT-00000481-1","Closed - No Discipline"
-"1073","Samuel Kjos","EVT-00000418-1","Open"
-"1074","Samuel Kjos","EVT-00000878-1","Open"
-"1075","Samuel Polito","EVT-00000027-1","Open"
-"1076","Samuel Polito","EVT-00000229-1","Closed - No Discipline"
-"1077","Samuel Polito","EVT-00000313-1","Open"
-"1078","Samuel Polito","EVT-00000362-1","Open"
-"1079","Samuel Polito","EVT-00000437-1","Closed - No Discipline"
-"1080","Samuel Polito","EVT-00000439-1","Open"
-"1081","Samuel Polito","EVT-00000492-1","Open"
-"1082","Samuel Polito","EVT-00000542-1","Open"
-"1083","Samuel Polito","EVT-00000670-1","Open"
-"1084","Samuel Polito","EVT-00000701-1","Closed - No Discipline"
-"1085","Samuel Polito","EVT-00000720-2","Open"
-"1086","Samuel Polito","EVT-00000733-1","Open"
-"1087","Saul Garza","EVT-00000731-3","Open"
-"1088","Scot Kaiser","EVT-00000173-1","Closed - No Discipline"
-"1089","Scot Kaiser","EVT-00000247-1","Open"
-"1090","Scot Kaiser","EVT-00000831-2","Open"
-"1091","Scott Aikins","EVT-00000422-1","Closed - No Discipline"
-"1092","Scott Aikins","EVT-00000467-1","Open"
-"1093","Sean Hrab","EVT-00000397-1","Closed - No Discipline"
-"1094","Sean Lessard","EVT-00000438-1","Open"
-"1095","Sean Mc Ginty","EVT-00000184-1","Closed - No Discipline"
-"1096","Sen Xiong","EVT-00000516-1","Closed - No Discipline"
-"1097","Sen Xiong","EVT-00000557-1","Closed - No Discipline"
-"1098","Sergio Villegas","EVT-00000401-1","Open"
-"1099","Sergio Villegas","EVT-00000404-1","Open"
-"1100","Sergio Villegas","EVT-00000636-1","Closed - No Discipline"
-"1101","Sergio Villegas","EVT-00000636-2","Open"
-"1102","Sergio Villegas","EVT-00000873-1","Closed - No Discipline"
-"1103","Seth Porras","EVT-00000151-1","Closed - No Discipline"
-"1104","Seth Porras","EVT-00000374-1","Open"
-"1105","Shane Riley","EVT-00000244-1","Closed - No Discipline"
-"1106","Shane Riley","EVT-00000574-1","Closed - No Discipline"
-"1107","Shawn Brandt","EVT-00000031-1","Closed - No Discipline"
-"1108","Shawn Brandt","EVT-00000166-1","Open"
-"1109","Shawn Brandt","EVT-00000169-1","Open"
-"1110","Shawn Woods","EVT-00000862-1","Closed - No Discipline"
-"1111","Shay Sward","EVT-00000225-1","Open"
-"1112","Sherzad Kordian","EVT-00000516-1","Closed - No Discipline"
-"1113","Sherzad Kordian","EVT-00000570-1","Closed - No Discipline"
-"1114","Shivani Nash","EVT-00000188-1","Open"
-"1115","Siri Gylland","EVT-00000553-1","Open"
-"1116","Siri Gylland","EVT-00000568-1","Closed - No Discipline"
-"1117","Siri Gylland","EVT-00001004-1","Open"
-"1118","Spencer Anderson","EVT-00000298-1","Open"
-"1119","Spencer Anderson","EVT-00000833-1","Open"
-"1120","Spencer Anderson","EVT-00000841-2","Open"
-"1121","Spencer Ericson","EVT-00000092-1","Closed - No Discipline"
-"1122","Stephen Dennison","EVT-00000414-2","Closed - No Discipline"
-"1123","Stephen Mc Bride","EVT-00000866-1","Open"
-"1124","Stephen Sporny","EVT-00000119-1","Open"
-"1125","Stephen Sporny","EVT-00000444-1","Open"
-"1126","Stephen Sporny","EVT-00000517-2","Closed - No Discipline"
-"1127","Steve Wuorinen","EVT-00000210-1","Closed - No Discipline"
-"1128","Steve Wuorinen","EVT-00000245-1","Open"
-"1129","Steve Wuorinen","EVT-00000697-1","Closed - No Discipline"
-"1130","Steve Wuorinen","EVT-00000775-1","Closed - No Discipline"
-"1131","Steve Wuorinen","EVT-00000794-1","Closed - No Discipline"
-"1132","Steven Klimpke","EVT-00000211-1","Closed - No Discipline"
-"1133","Sue Moua","EVT-00000174-1","Closed - No Discipline"
-"1134","Sue Moua","EVT-00000720-2","Open"
-"1135","Teena Curry","EVT-00000574-1","Closed - No Discipline"
-"1136","Teena Curry","EVT-00000747-1","Open"
-"1137","Thomas Conlin","EVT-00000600-1","Closed - No Discipline"
-"1138","Thomas Conlin","EVT-00000630-1","Closed - No Discipline"
-"1139","Thomas Conlin","EVT-00000712-1","Closed - No Discipline"
-"1140","Thomas Fahey","EVT-00000171-1","Open"
-"1141","Thomas Schmid","EVT-00001013-1","Open"
-"1142","Timothy Baskin","EVT-00000048-1","Open"
-"1143","Timothy Callahan","EVT-00000015-1","Closed - No Discipline"
-"1144","Timothy Davis Jr","EVT-00000158-1","Open"
-"1145","Timothy Davis Jr","EVT-00000172-1","Open"
-"1146","Timothy Davis Jr","EVT-00000193-1","Open"
-"1147","Timothy Davis Jr","EVT-00000288-1","Open"
-"1148","Timothy Davis Jr","EVT-00000674-1","Open"
-"1149","Timothy Davis Jr","EVT-00000782-1","Open"
-"1150","Timothy Davis Jr","EVT-00000806-1","Open"
-"1151","Timothy Davis Jr","EVT-00000826-1","Open"
-"1152","Timothy Eck","EVT-00000070-1","Open"
-"1153","Timothy Thao","EVT-00000095-1","Open"
-"1154","Timothy Thao","EVT-00000224-1","Closed - No Discipline"
-"1155","Timothy Thao","EVT-00000306-1","Closed - No Discipline"
-"1156","Tobias Anderson","EVT-00000624-1","Open"
-"1157","Tong Vang","EVT-00000378-1","Closed - No Discipline"
-"1158","Tong Vang","EVT-00000758-1","Closed - No Discipline"
-"1159","Tong Vang","EVT-00000831-1","Closed - No Discipline"
-"1160","Tong Vang","EVT-00000832-1","Closed - No Discipline"
-"1161","Tony Partyka","EVT-00000299-1","Open"
-"1162","Tony Partyka","EVT-00000310-1","Closed - No Discipline"
-"1163","Tony Partyka","EVT-00000369-1","Open"
-"1164","Tony Partyka","EVT-00000425-1","Closed - No Discipline"
-"1165","Tony Partyka","EVT-00000529-2","Open"
-"1166","Tony Partyka","EVT-00000693-1","Open"
-"1167","Tony Partyka","EVT-00000752-1","Open"
-"1168","Tony Partyka","EVT-00000934-2","Open"
-"1169","Tony Partyka","EVT-00000980-1","Open"
-"1170","Tony Ratphoumy","EVT-00001006-1","Open"
-"1171","Tou Moua","EVT-00000651-1","Closed - No Discipline"
-"1172","Tou Moua","EVT-00000776-1","Open"
-"1173","Tou Thao","EVT-00000464-3","Closed - No Discipline"
-"1174","Toula Lor","EVT-00000275-1","Closed - No Discipline"
-"1175","Travis Hansen","EVT-00000832-1","Closed - No Discipline"
-"1176","Travis Hansen","EVT-00000865-1","Closed - No Discipline"
-"1177","Travis Murphy","EVT-00000036-1","Open"
-"1178","Travis Murphy","EVT-00000164-2","Open"
-"1179","Travis Murphy","EVT-00000869-1","Closed - No Discipline"
-"1180","Travis Williams","EVT-00000058-1","Closed - No Discipline"
-"1181","Travis Williams","EVT-00000088-1","Open"
-"1182","Travis Williams","EVT-00000705-1","Closed - No Discipline"
-"1183","Trevor Folke","EVT-00000107-1","Closed - No Discipline"
-"1184","Troy Dillard","EVT-00000363-1","Open"
-"1185","Tser Cheng","EVT-00000831-1","Closed - No Discipline"
-"1186","Tser Cheng","EVT-00000832-1","Closed - No Discipline"
-"1187","Tser Cheng","EVT-00000969-1","Closed - No Discipline"
-"1188","Ty Mattioli","EVT-00000325-1","Closed - No Discipline"
-"1189","Tyler Johnson","EVT-00000360-1","Open"
-"1190","Tyler Johnson","EVT-00000508-1","Open"
-"1191","Tyler Johnson","EVT-00000819-1","Closed - No Discipline"
-"1192","Tyler Klund","EVT-00000295-1","Open"
-"1193","Tyler Nothnagel","EVT-00000414-1","Closed - No Discipline"
-"1194","Tyler Nothnagel","EVT-00000678-1","Open"
-"1195","Valeria Perez Martinez","EVT-00000898-1","Open"
-"1196","Walter Alvarado","EVT-00000732-1","Closed - Final Discipline"
-"1197","William Gregory","EVT-00000027-1","Open"
-"1198","William Gregory","EVT-00000062-1","Closed - No Discipline"
-"1199","William Gregory","EVT-00000111-1","Open"
-"1200","William Gregory","EVT-00000159-1","Open"
-"1201","William Gregory","EVT-00000481-1","Closed - No Discipline"
-"1202","William Gregory","EVT-00000485-1","Open"
-"1203","William Martin","EVT-00000357-1","Closed - No Discipline"
-"1204","William Willner","EVT-00000343-1","Closed - No Discipline"
-"1205","Xavier Rucker","EVT-00000295-1","Open"
-"1206","Xavier Rucker","EVT-00000582-1","Open"
-"1207","Ximena Manjarrez","EVT-00000885-1","Open"
-"1208","Xou Lor","EVT-00000100-1","Closed - No Discipline"
-"1209","Yahye Ahmed","EVT-00000869-1","Closed - No Discipline"
-"1210","Yolanda Wilks","EVT-00000222-1","Closed - No Discipline"
-"1211","Yolanda Wilks","EVT-00000360-1","Open"
-"1212","Yulia Bury","EVT-00000601-1","Closed - No Discipline"
-"1213","Yusef Hassan","EVT-00000043-1","Closed - No Discipline"
-"1214","Yusef Hassan","EVT-00000414-2","Closed - No Discipline"
-"1215","Yusef Hassan","EVT-00000559-1","Open"
-"1216","Yusef Hassan","EVT-00000561-1","Closed - Final Discipline"
-"1217","Yusef Hassan","EVT-00000768-1","Open"
-"1218","Zach Musolf","EVT-00000608-1","Closed - No Discipline"
-"1219","Zach Musolf","EVT-00000793-1","Open"
-"1220","Zachary Seraphine","EVT-00000010-1","Closed - No Discipline"
-"1221","Zachery Randall","EVT-00000283-1","Closed - No Discipline"
-"1222","Zachery Randall","EVT-00000506-1","Closed - No Discipline"
-"1223","Zachery Randall","EVT-00000567-1","Open"
-"1224","Zakari Ketchmark","EVT-00000865-1","Closed - No Discipline"
-"1225","Zerrick Fuller","EVT-00000108-1","Open"
+,name,complaint_id,case_status
+1,Aaron Biard,EVT-00001250-1,Open
+2,Aaron Stone,EVT-00000939-1,Closed - No Discipline
+3,Aaron Womble,EVT-00000022-1,Closed - No Discipline
+4,Aaron Womble,EVT-00000487-1,Closed - No Discipline
+5,Aaron Womble,EVT-00000826-4,Closed - No Discipline
+6,Aaron Womble,EVT-00001476-1,Closed - No Discipline
+7,Aaron Womble,EVT-00001887-1,Open
+8,Abdiasis Mohamed,EVT-00001541-1,Closed - No Discipline
+9,Abdirahman Ali,EVT-00000807-1,Open
+10,Abdirahman Ali,EVT-00000902-1,Closed - No Discipline
+11,Abdirahman Ali,EVT-00001686-1,Closed - No Discipline
+12,Abdirahman Ali,EVT-00001686-2,Open
+13,Abdirahman Ali,EVT-00001732-1,Closed - No Discipline
+14,Abdirahman Ali,EVT-00001732-2,Open
+15,ABDIRIZAQ MUMIN,EVT-00000027-1,Open
+16,ABDIRIZAQ MUMIN,EVT-00000437-1,Closed - No Discipline
+17,ABDIRIZAQ MUMIN,EVT-00000738-1,Open
+18,ABDIRIZAQ MUMIN,EVT-00000941-2,Closed - No Discipline
+19,ABDIRIZAQ MUMIN,EVT-00001714-2,Closed - No Discipline
+20,ABDIRIZAQ MUMIN,EVT-00001761-2,Closed - No Discipline
+21,Abdisamad Ahmed,EVT-00000002-2,Closed - No Discipline
+22,Abdisamad Ahmed,EVT-00000181-1,Open
+23,Abdisamad Ahmed,EVT-00000329-1,Closed - Final Discipline
+24,Abdisamad Ahmed,EVT-00000523-1,Closed - No Discipline
+25,Abdisamad Ahmed,EVT-00000523-2,Open
+26,Abdisamad Ahmed,EVT-00000545-1,Closed - No Discipline
+27,Abdisamad Ahmed,EVT-00000555-2,Closed - No Discipline
+28,Abdisamad Ahmed,EVT-00000734-1,Open
+29,Abdisamad Ahmed,EVT-00000788-1,Closed - No Discipline
+30,Abdisamad Ahmed,EVT-00001044-1,Closed - No Discipline
+31,Abdisamad Ahmed,EVT-00001063-1,Closed - No Discipline
+32,Abdisamad Ahmed,EVT-00001070-1,Open
+33,Abdisamad Ahmed,EVT-00001079-2,Closed - No Discipline
+34,Abdisamad Ahmed,EVT-00001168-1,Closed - No Discipline
+35,Abdisamad Ahmed,EVT-00001237-3,Open
+36,Abdisamad Ahmed,EVT-00001466-1,Open
+37,Abdisamad Ahmed,EVT-00001516-3,Open
+38,Abdisamad Ahmed,EVT-00001517-1,Closed - No Discipline
+39,Abdisamad Ahmed,EVT-00001817-1,Closed - No Discipline
+40,Abdisamad Ahmed,EVT-00001817-2,Open
+41,Abdiwahab Ali,EVT-00000666-1,Closed - No Discipline
+42,Abdiwahab Ali,EVT-00001823-1,Closed - No Discipline
+43,Abdoulaye Camara,EVT-00001465-1,Closed - No Discipline
+44,Abubakar Muridi,EVT-00001281-1,Open
+45,Abubakar Muridi,EVT-00001724-1,Closed - No Discipline
+46,Adam Lepinski,EVT-00000033-1,Closed - No Discipline
+47,Adam Lepinski,EVT-00000156-1,Closed - No Discipline
+48,Adam Lepinski,EVT-00000228-1,Open
+49,Adam Lepinski,EVT-00000692-1,Open
+50,Adam Lepinski,EVT-00000753-1,Closed - No Discipline
+51,Adam Lepinski,EVT-00000779-1,Closed - No Discipline
+52,Adam Lepinski,EVT-00000809-1,Closed - No Discipline
+53,Adam Lepinski,EVT-00001086-2,Closed - No Discipline
+54,Adam Lepinski,EVT-00001649-1,Open
+55,Adam Lewis,EVT-00000060-1,Closed - No Discipline
+56,Adam Lewis,EVT-00000211-1,Closed - No Discipline
+57,Adam Lewis,EVT-00000449-1,Closed - No Discipline
+58,Adam Lewis,EVT-00001263-1,Open
+59,Adam Lewis,EVT-00001643-2,Open
+60,ADDISON ZECK,EVT-00000701-1,Closed - No Discipline
+61,ADDISON ZECK,EVT-00001421-1,Closed - No Discipline
+62,Adnan Didovic,EVT-00001380-1,Closed - No Discipline
+63,Adnan Didovic,EVT-00001480-4,Closed - No Discipline
+64,Adnan Didovic,EVT-00001637-2,Open
+65,Adnan Didovic,EVT-00001819-1,Closed - No Discipline
+66,Adrian Infante,EVT-00000714-1,Open
+67,Aidan Enochs,EVT-00001540-2,Open
+68,Aidan Enochs,EVT-00001673-1,Open
+69,Aimee Linson,EVT-00001258-2,Open
+70,Aimee Linson,EVT-00001312-1,Closed - No Discipline
+71,Alejandro Boldo,EVT-00000727-1,Open
+72,Alejandro Boldo,EVT-00000805-1,Open
+73,Alejandro Boldo,EVT-00000874-1,Open
+74,Alejandro Boldo,EVT-00000924-1,Open
+75,Alejandro Boldo,EVT-00001061-1,Open
+76,Alejandro Boldo,EVT-00001198-1,Closed - No Discipline
+77,Alejandro Boldo,EVT-00001518-2,Closed - No Discipline
+78,Alex Bultman,EVT-00001587-1,Closed - No Discipline
+79,Alex Nonnemacher,EVT-00000447-2,Closed - No Discipline
+80,Alex Nonnemacher,EVT-00000453-1,Closed - No Discipline
+81,Alex Nonnemacher,EVT-00001436-1,Closed - No Discipline
+82,Alex Turner,EVT-00001455-1,Closed - No Discipline
+83,Alex Turner,EVT-00001698-1,Open
+84,Alexander Graham,EVT-00001826-1,Closed - No Discipline
+85,Alexander Hopper,EVT-00001319-1,Closed - No Discipline
+86,Alexander Hopper,EVT-00001319-3,Closed - No Discipline
+87,Alexander Hrabe,EVT-00000689-1,Open
+88,Alexander Hrabe,EVT-00000941-2,Closed - No Discipline
+89,Alexander Hrabe,EVT-00001278-1,Open
+90,Alexander Hrabe,EVT-00001542-3,Closed - No Discipline
+91,Alexander Krohnfeldt,EVT-00000910-1,Closed - No Discipline
+92,Alexander Krohnfeldt,EVT-00000991-1,Open
+93,Alexander Krohnfeldt,EVT-00001369-1,Closed - No Discipline
+94,Alexander Krohnfeldt,EVT-00001389-1,Closed - No Discipline
+95,Alexander Krohnfeldt,EVT-00001410-1,Open
+96,Alexander Krohnfeldt,EVT-00001670-2,Open
+97,ALEXANDER REYNOLDS,EVT-00000133-1,Closed - No Discipline
+98,ALEXANDER REYNOLDS,EVT-00000299-1,Open
+99,ALEXANDER REYNOLDS,EVT-00000337-1,Closed - No Discipline
+100,ALEXANDER REYNOLDS,EVT-00000356-1,Closed - Final Discipline
+101,ALEXANDER REYNOLDS,EVT-00000358-1,Closed - No Discipline
+102,ALEXANDER REYNOLDS,EVT-00000409-1,Closed - No Discipline
+103,ALEXANDER REYNOLDS,EVT-00000456-1,Closed - No Discipline
+104,ALEXANDER REYNOLDS,EVT-00000456-3,Open
+105,ALEXANDER REYNOLDS,EVT-00000463-1,Open
+106,ALEXANDER REYNOLDS,EVT-00000464-1,Open
+107,ALEXANDER REYNOLDS,EVT-00000533-1,Open
+108,ALEXANDER REYNOLDS,EVT-00000534-1,Closed - No Discipline
+109,ALEXANDER REYNOLDS,EVT-00000534-2,Closed - No Discipline
+110,ALEXANDER REYNOLDS,EVT-00000581-1,Open
+111,ALEXANDER REYNOLDS,EVT-00000584-1,Open
+112,ALEXANDER REYNOLDS,EVT-00000598-1,Open
+113,ALEXANDER REYNOLDS,EVT-00000693-1,Open
+114,ALEXANDER REYNOLDS,EVT-00000696-1,Open
+115,ALEXANDER REYNOLDS,EVT-00000731-1,Open
+116,ALEXANDER REYNOLDS,EVT-00000750-1,Closed - Final Discipline
+117,ALEXANDER REYNOLDS,EVT-00000751-1,Closed - No Discipline
+118,ALEXANDER REYNOLDS,EVT-00000753-1,Closed - No Discipline
+119,ALEXANDER REYNOLDS,EVT-00000774-1,Closed - No Discipline
+120,ALEXANDER REYNOLDS,EVT-00000777-1,Open
+121,ALEXANDER REYNOLDS,EVT-00000896-1,Closed - No Discipline
+122,ALEXANDER REYNOLDS,EVT-00000901-1,Closed - No Discipline
+123,ALEXANDER REYNOLDS,EVT-00000937-1,Open
+124,ALEXANDER REYNOLDS,EVT-00000944-1,Open
+125,ALEXANDER REYNOLDS,EVT-00000945-1,Closed - No Discipline
+126,ALEXANDER REYNOLDS,EVT-00000968-1,Open
+127,ALEXANDER REYNOLDS,EVT-00001001-2,Open
+128,ALEXANDER REYNOLDS,EVT-00001003-1,Open
+129,ALEXANDER REYNOLDS,EVT-00001617-3,Open
+130,Alexander Walls,EVT-00001221-1,Closed - No Discipline
+131,Alexander Walls,EVT-00001534-2,Open
+132,Alexander Walls,EVT-00001594-1,Closed - No Discipline
+133,Alexander Walls,EVT-00001783-1,Closed - No Discipline
+134,Alexander Walls,EVT-00001923-1,Open
+135,Alexandra Del Villar,EVT-00000244-1,Closed - No Discipline
+136,Alexandra Del Villar,EVT-00000939-1,Closed - No Discipline
+137,Alexandra Del Villar,EVT-00001113-1,Closed - No Discipline
+138,Alexandra Duong,EVT-00000281-1,Closed - No Discipline
+139,Alexandra Duong,EVT-00000621-3,Closed - No Discipline
+140,Ali Saleh,EVT-00000838-2,Closed - No Discipline
+141,Allie Simonett,EVT-00000456-3,Open
+142,Allie Simonett,EVT-00000567-1,Open
+143,Allie Simonett,EVT-00000696-4,Closed - No Discipline
+144,Allie Simonett,EVT-00000719-1,Closed - No Discipline
+145,Allie Simonett,EVT-00000751-1,Closed - No Discipline
+146,Allie Simonett,EVT-00001003-1,Open
+147,Allie Simonett,EVT-00001047-1,Open
+148,Allie Simonett,EVT-00001099-1,Open
+149,Amanda Sanchez,EVT-00000119-1,Closed - Final Discipline
+150,Amanda Sanchez,EVT-00000260-1,Closed - No Discipline
+151,Amanda Sanchez,EVT-00000331-1,Closed - No Discipline
+152,Amanda Sanchez,EVT-00000488-1,Closed - No Discipline
+153,Amanda Sanchez,EVT-00000809-3,Open
+154,Amanda Sanchez,EVT-00000865-1,Closed - No Discipline
+155,Amanda Sanchez,EVT-00000987-1,Open
+156,Amber Englund,EVT-00000329-1,Closed - Final Discipline
+157,Amber Englund,EVT-00000533-1,Open
+158,Amber Englund,EVT-00001583-2,Open
+159,Andrea Mays,EVT-00000318-1,Closed - No Discipline
+160,Andrea Mays,EVT-00000533-1,Open
+161,Andrea Mays,EVT-00000991-1,Open
+162,Andrea Mays,EVT-00001369-1,Closed - No Discipline
+163,Andrea Mays,EVT-00001389-1,Closed - No Discipline
+164,Andrea Mays,EVT-00001670-1,Closed - No Discipline
+165,Andrew Allen,EVT-00001007-1,Open
+166,Andrew Bittell,EVT-00000295-1,Open
+167,Andrew Braun,EVT-00000602-1,Closed - No Discipline
+168,Andrew Canadeo,EVT-00000569-1,Closed - No Discipline
+169,Andrew Canadeo,EVT-00000710-1,Open
+170,Andrew Canadeo,EVT-00001403-1,Open
+171,Andrew Carigiet,EVT-00000340-1,Open
+172,Andrew Carigiet,EVT-00000430-1,Closed - No Discipline
+173,Andrew Carigiet,EVT-00001321-1,Open
+174,Andrew Carigiet,EVT-00001736-1,Closed - No Discipline
+175,Andrew Carigiet,EVT-00001770-1,Closed - No Discipline
+176,Andrew Dorsey,EVT-00001398-1,Closed - No Discipline
+177,Andrew Dorsey,EVT-00001658-1,Open
+178,Andrew Dorsey,EVT-00001682-2,Open
+179,Andrew Leyrer,EVT-00001216-1,Closed - No Discipline
+180,Andrew Reed,EVT-00000957-4,Closed - No Discipline
+181,Andrew Reed,EVT-00001059-1,Open
+182,Andrew Schroeder,EVT-00000291-1,Open
+183,Andrew Schroeder,EVT-00000411-2,Open
+184,Andrew Schroeder,EVT-00000621-1,Open
+185,Andrew Schroeder,EVT-00000628-1,Open
+186,Andrew Schroeder,EVT-00000673-1,Open
+187,Andrew Schroeder,EVT-00000812-1,Closed - No Discipline
+188,Andrew Schroeder,EVT-00000837-1,Closed - No Discipline
+189,Andrew Schroeder,EVT-00000941-2,Closed - No Discipline
+190,Andrew Schroeder,EVT-00001259-1,Open
+191,Andrew Schroeder,EVT-00001601-1,Closed - No Discipline
+192,Andrew Schroeder,EVT-00001800-1,Closed - No Discipline
+193,Angel Arevalo,EVT-00000008-1,Closed - No Discipline
+194,Angel Arevalo,EVT-00000628-1,Open
+195,Angel Arevalo,EVT-00000915-1,Closed - No Discipline
+196,Angel Arevalo,EVT-00001310-1,Closed - No Discipline
+197,Angel Arevalo,EVT-00001584-2,Open
+198,Angel Arevalo,EVT-00001829-1,Open
+199,Angela Hayden,EVT-00000207-1,Closed - No Discipline
+200,Angela Hayden,EVT-00000510-1,Closed - No Discipline
+201,Angela Hayden,EVT-00000573-1,Open
+202,Angela Hayden,EVT-00001354-1,Closed - No Discipline
+203,Angela Hayden,EVT-00001585-1,Closed - No Discipline
+204,ANGGI ATMADJA,EVT-00000891-1,Open
+205,ANGGI ATMADJA,EVT-00001480-4,Closed - No Discipline
+206,ANGGI ATMADJA,EVT-00001974-1,Open
+207,Anna Davids,EVT-00000795-1,Open
+208,Anna Davids,EVT-00001416-2,Open
+209,Anna Hedberg,EVT-00000211-1,Closed - No Discipline
+210,Anna Hedberg,EVT-00000933-2,Open
+211,Annika Kensrud,EVT-00001176-1,Closed - No Discipline
+212,Anthony Rodin,EVT-00001180-1,Closed - No Discipline
+213,Anthony Rodin,EVT-00001188-3,Open
+214,Anthony Rodin,EVT-00001336-1,Open
+215,Anthony Toscano,EVT-00001409-2,Open
+216,Anthony Toscano,EVT-00001450-1,Closed - No Discipline
+217,Antonio San Roman,EVT-00000638-1,Closed - No Discipline
+218,Antonio San Roman,EVT-00001431-1,Closed - No Discipline
+219,ARIEL LUNA-SANCHEZ,EVT-00000527-1,Closed - No Discipline
+220,ARIEL LUNA-SANCHEZ,EVT-00000877-1,Closed - No Discipline
+221,ARIEL LUNA-SANCHEZ,EVT-00001480-1,Open
+222,ARIEL LUNA-SANCHEZ,EVT-00001722-2,Open
+223,Ashish Joshi,EVT-00000586-1,Open
+224,Ashish Joshi,EVT-00001054-2,Closed - No Discipline
+225,Ashley Bergersen,EVT-00000203-1,Closed - No Discipline
+226,Ashley Bergersen,EVT-00000268-1,Closed - No Discipline
+227,Ashley Bergersen,EVT-00000544-1,Open
+228,Ashley Bergersen,EVT-00000654-1,Open
+229,Ashley Bergersen,EVT-00000763-1,Closed - No Discipline
+230,Ashley Bergersen,EVT-00001264-1,Closed - No Discipline
+231,Ashley Leehane,EVT-00000372-1,Closed - No Discipline
+232,Ashley Leehane,EVT-00000407-1,Closed - No Discipline
+233,Ashton Dorris,EVT-00000014-1,Closed - No Discipline
+234,Ashton Dorris,EVT-00000352-1,Closed - No Discipline
+235,Ashton Dorris,EVT-00000532-1,Closed - No Discipline
+236,Ashton Dorris,EVT-00000676-1,Closed - No Discipline
+237,Ashton Dorris,EVT-00001230-1,Closed - No Discipline
+238,Ashton Dorris,EVT-00001244-1,Closed - No Discipline
+239,Ashton Dorris,EVT-00001339-1,Closed - No Discipline
+240,Austin Reed,EVT-00000891-1,Open
+241,Austin Reed,EVT-00001024-1,Closed - No Discipline
+242,Austin Reed,EVT-00001550-1,Closed - No Discipline
+243,Austin Reed,EVT-00001551-1,Open
+244,Austin Reed,EVT-00001879-1,Open
+245,Austin Sable,EVT-00000145-1,Open
+246,Austin Sable,EVT-00000149-1,Closed - No Discipline
+247,Austin Sable,EVT-00000243-1,Closed - No Discipline
+248,Austin Sable,EVT-00000326-1,Closed - No Discipline
+249,Austin Sable,EVT-00000411-1,Closed - No Discipline
+250,Austin Sable,EVT-00000793-1,Closed - Final Discipline
+251,Austin Sable,EVT-00000867-1,Open
+252,Austin Sable,EVT-00000915-1,Closed - No Discipline
+253,Austin Sable,EVT-00000930-1,Open
+254,Austin Sable,EVT-00001035-2,Open
+255,Austin Sable,EVT-00001317-1,Open
+256,Austin Sable,EVT-00001629-1,Open
+257,Austin Sable,EVT-00001643-5,Open
+258,Austin Sable,EVT-00001675-1,Closed - No Discipline
+259,Austin Sable,EVT-00001812-1,Open
+260,Austin Sable,EVT-00001824-1,Open
+261,Bach Dang,EVT-00000213-1,Closed - Final Discipline
+262,Bach Dang,EVT-00000741-1,Closed - No Discipline
+263,Bach Dang,EVT-00001637-1,Open
+264,Ballah Koiblee,EVT-00001454-1,Open
+265,Ballah Koiblee,EVT-00001454-2,Open
+266,Ballah Koiblee,EVT-00001522-1,Closed - No Discipline
+267,Bee Lee,EVT-00000638-1,Closed - No Discipline
+268,Bee Lee,EVT-00000958-1,Closed - No Discipline
+269,Bee Lee,EVT-00001186-1,Open
+270,Benjamin Bauer,EVT-00000041-1,Closed - Final Discipline
+271,Benjamin Bauer,EVT-00000044-1,Closed - No Discipline
+272,Benjamin Campbell,EVT-00000116-3,Closed - No Discipline
+273,Benjamin Fadell,EVT-00000142-1,Closed - No Discipline
+274,Benjamin Fadell,EVT-00000412-1,Closed - No Discipline
+275,Benjamin Fadell,EVT-00000742-1,Closed - No Discipline
+276,Benjamin Fadell,EVT-00000742-2,Closed - No Discipline
+277,Benjamin Fadell,EVT-00000967-1,Closed - No Discipline
+278,Benjamin Fadell,EVT-00000992-1,Closed - No Discipline
+279,Benjamin Fadell,EVT-00001339-1,Closed - No Discipline
+280,Benjamin Fadell,EVT-00001510-1,Closed - No Discipline
+281,Benjamin Fadell,EVT-00001615-2,Closed - No Discipline
+282,Benjamin Hain,EVT-00000582-1,Open
+283,Benjamin Truong,EVT-00000059-1,Closed - No Discipline
+284,Benjamin Truong,EVT-00000841-2,Open
+285,Benjamin Truong,EVT-00001724-1,Closed - No Discipline
+286,Beth Mota,EVT-00000628-1,Open
+287,Beth Mota,EVT-00000855-1,Open
+288,Bill Peterson,EVT-00001994-1,Open
+289,BLAS GARCIA,EVT-00000097-1,Closed - Final Discipline
+290,BLAS GARCIA,EVT-00000560-1,Open
+291,BLAS GARCIA,EVT-00000574-1,Closed - No Discipline
+292,BLAS GARCIA,EVT-00000738-2,Open
+293,BLAS GARCIA,EVT-00001083-1,Open
+294,BLAS GARCIA,EVT-00001100-1,Open
+295,BLAS GARCIA,EVT-00001292-1,Closed - No Discipline
+296,BLAS GARCIA,EVT-00001303-1,Open
+297,BLAS GARCIA,EVT-00001438-1,Closed - No Discipline
+298,BLAS GARCIA,EVT-00001480-3,Open
+299,BLAS GARCIA,EVT-00001606-1,Closed - No Discipline
+300,Bowen Barnard,EVT-00001124-1,Closed - No Discipline
+301,Brandie Forsgren,EVT-00001786-1,Closed - No Discipline
+302,Brandie Forsgren,EVT-00001795-1,Closed - No Discipline
+303,Brandon Bartholomew,EVT-00000181-1,Open
+304,Brandon Bartholomew,EVT-00000203-1,Closed - Final Discipline
+305,Brandon Bartholomew,EVT-00000445-2,Closed - No Discipline
+306,Brandon Bartholomew,EVT-00000490-1,Closed - No Discipline
+307,Brandon Bartholomew,EVT-00000493-1,Open
+308,Brandon Bartholomew,EVT-00000635-1,Closed - No Discipline
+309,Brandon Bartholomew,EVT-00000883-1,Open
+310,Brandon Bartholomew,EVT-00001269-1,Open
+311,Brandon Bartholomew,EVT-00001304-2,Open
+312,Brandon Bartholomew,EVT-00001474-1,Closed - No Discipline
+313,Brandon Noble,EVT-00000233-1,Open
+314,Brandon Noble,EVT-00000407-1,Closed - No Discipline
+315,Brandon Noble,EVT-00000677-1,Open
+316,Brandon Noble,EVT-00000677-2,Open
+317,Brandon Noble,EVT-00000886-1,Open
+318,Brandon Noble,EVT-00001601-1,Closed - No Discipline
+319,Brian Bennett,EVT-00000602-1,Closed - No Discipline
+320,Brian Butler,EVT-00000004-1,Closed - No Discipline
+321,Brian Butler,EVT-00000148-1,Open
+322,Brian Butler,EVT-00000476-1,Closed - No Discipline
+323,Brian Butler,EVT-00000698-1,Closed - No Discipline
+324,Brian Butler,EVT-00000744-1,Open
+325,Brian Butler,EVT-00000933-1,Open
+326,Brian Butler,EVT-00000977-1,Closed - No Discipline
+327,Brian Butler,EVT-00000978-1,Closed - No Discipline
+328,Brian Butler,EVT-00001005-1,Open
+329,Brian Butler,EVT-00001024-1,Closed - No Discipline
+330,Brian Butler,EVT-00001547-1,Open
+331,Brian Butler,EVT-00001582-1,Closed - No Discipline
+332,Brian Cummings,EVT-00000023-1,Closed - No Discipline
+333,Brian Cummings,EVT-00000155-1,Open
+334,Brian Graupner,EVT-00000940-1,Open
+335,Brian O'Hara,EVT-00000002-1,Open with Office of Community Safety
+336,Brian O'Hara,EVT-00000082-1,Open with Office of Community Safety
+337,Brian O'Hara,EVT-00000113-1,Closed by Office of Community Safety - No Discipline
+338,Brian O'Hara,EVT-00000808-1,Open with Office of Community Safety
+339,Brian O'Hara,EVT-00000809-2,Open with Office of Community Safety
+340,Brian O'Hara,EVT-00000849-2,Closed by Office of Community Safety - No Discipline
+341,Brian O'Hara,EVT-00001030-1,Closed by Office of Community Safety - No Discipline
+342,Brian O'Hara,EVT-00001079-1,Closed by Office of Community Safety - No Discipline
+343,Brian O'Hara,EVT-00001132-1,Open with Office of Community Safety
+344,Brian O'Hara,EVT-00001135-1,Open with Office of Community Safety
+345,Brian O'Hara,EVT-00001235-2,Closed by Office of Community Safety - No Discipline
+346,Brian O'Hara,EVT-00001273-1,Closed by Office of Community Safety - No Discipline
+347,Brian O'Hara,EVT-00001326-1,Closed by Office of Community Safety - No Discipline
+348,Brian O'Hara,EVT-00001422-1,Open with Office of Community Safety
+349,Brian O'Hara,EVT-00001451-1,Closed by Office of Community Safety - No Discipline
+350,Brian O'Hara,EVT-00001456-1,Open with Office of Community Safety
+351,Brian O'Hara,EVT-00001463-1,Closed by Office of Community Safety - No Discipline
+352,Brian O'Hara,EVT-00001464-1,Closed by Office of Community Safety - No Discipline
+353,Brian O'Hara,EVT-00001468-1,Closed by Office of Community Safety - No Discipline
+354,Brian O'Hara,EVT-00001491-1,Closed by Office of Community Safety - No Discipline
+355,Brian O'Hara,EVT-00001500-1,Closed by Office of Community Safety - No Discipline
+356,Brian O'Hara,EVT-00001504-3,Closed by Office of Community Safety - No Discipline
+357,Brian O'Hara,EVT-00001506-1,Closed by Office of Community Safety - No Discipline
+358,Brian O'Hara,EVT-00001538-1,Closed by Office of Community Safety - No Discipline
+359,Brian O'Hara,EVT-00001558-1,Closed by Office of Community Safety - No Discipline
+360,Brian O'Hara,EVT-00001563-1,Open with Office of Community Safety
+361,Brian O'Hara,EVT-00001566-1,Open with Office of Community Safety
+362,Brian O'Hara,EVT-00001574-1,Open with Office of Community Safety
+363,Brian O'Hara,EVT-00001579-1,Open with Office of Community Safety
+364,Brian O'Hara,EVT-00001591-1,Open with Office of Community Safety
+365,Brian O'Hara,EVT-00001593-1,Open with Office of Community Safety
+366,Brian O'Hara,EVT-00001625-1,Open with Office of Community Safety
+367,Brian O'Hara,EVT-00001721-1,Open with Office of Community Safety
+368,Brian O'Hara,EVT-00001745-1,Open with Office of Community Safety
+369,Brian O'Hara,EVT-00001787-2,Open with Office of Community Safety
+370,Brian O'Hara,EVT-00001805-1,Open with Office of Community Safety
+371,Brian Peebles,EVT-00000425-1,Closed - No Discipline
+372,Brian Peebles,EVT-00000465-2,Closed - Final Discipline
+373,Brian Peebles,EVT-00000583-2,Closed - No Discipline
+374,Brian Peebles,EVT-00000746-2,Closed - No Discipline
+375,Brian Peebles,EVT-00000780-1,Open
+376,Brian Peebles,EVT-00000997-1,Open
+377,Brian Peebles,EVT-00001093-1,Closed - No Discipline
+378,Brian Sand,EVT-00000762-1,Open
+379,Brian Thureson,EVT-00000324-1,Closed - No Discipline
+380,Brittney Adams,EVT-00000063-1,Closed - No Discipline
+381,Brittney Adams,EVT-00000143-1,Open
+382,Brittney Adams,EVT-00000484-1,Closed - No Discipline
+383,Brittney Adams,EVT-00000941-2,Closed - No Discipline
+384,Brittney Adams,EVT-00001188-1,Closed - No Discipline
+385,Bruce Holson,EVT-00001541-1,Closed - No Discipline
+386,Bruce Holson,EVT-00001671-1,Open
+387,Bruce Holson,EVT-00001677-2,Open
+388,Bryan Castle,EVT-00000566-1,Closed - No Discipline
+389,Bryan Castle,EVT-00001571-1,Closed - No Discipline
+390,BRYAN MATLON,EVT-00000778-1,Open
+391,BRYAN MATLON,EVT-00001054-2,Closed - No Discipline
+392,BRYAN OLSON,EVT-00000533-1,Open
+393,BRYAN OLSON,EVT-00000880-1,Closed - No Discipline
+394,BRYAN OLSON,EVT-00000957-5,Closed - No Discipline
+395,BRYAN OLSON,EVT-00001157-1,Open
+396,Caleb Kittock,EVT-00000979-1,Closed - No Discipline
+397,Caleb Kittock,EVT-00001442-2,Open
+398,Cameron Spiczka,EVT-00000450-1,Open
+399,Cameron Spiczka,EVT-00000480-1,Closed - No Discipline
+400,Cameron Spiczka,EVT-00000621-2,Closed - No Discipline
+401,Cameron Spiczka,EVT-00000676-1,Closed - No Discipline
+402,Cameron Spiczka,EVT-00000731-3,Open
+403,Cameron Spiczka,EVT-00001014-1,Open
+404,Cameron Spiczka,EVT-00001152-1,Open
+405,Cameron Spiczka,EVT-00001302-1,Open
+406,Cameron Spiczka,EVT-00001488-1,Closed - No Discipline
+407,Cameron Spiczka,EVT-00001601-1,Closed - No Discipline
+408,Camren Dearing,EVT-00000042-1,Closed - No Discipline
+409,Camren Dearing,EVT-00000043-1,Closed - No Discipline
+410,Camren Dearing,EVT-00000157-1,Open
+411,Camren Dearing,EVT-00000272-1,Closed - Final Discipline
+412,Camren Dearing,EVT-00000429-1,Closed - No Discipline
+413,Camren Dearing,EVT-00000793-1,Open
+414,Camren Dearing,EVT-00001035-1,Open
+415,Camren Dearing,EVT-00001181-2,Closed - No Discipline
+416,Carl Blad,EVT-00000602-1,Closed - No Discipline
+417,Carlos Baires Escobar,EVT-00000076-1,Closed - No Discipline
+418,Carlos Baires Escobar,EVT-00000132-1,Open
+419,Carlos Baires Escobar,EVT-00000178-1,Closed - Final Discipline
+420,Carlos Baires Escobar,EVT-00000340-1,Open
+421,Carlos Baires Escobar,EVT-00000666-2,Open
+422,Carlos Baires Escobar,EVT-00000858-1,Open
+423,Carlos Baires Escobar,EVT-00000951-1,Closed - No Discipline
+424,Carlos Baires Escobar,EVT-00001831-1,Open
+425,Carlos Baires Escobar,EVT-00001881-1,Open
+426,Carston Toedter,EVT-00001820-1,Open
+427,Chad Conner,EVT-00000670-1,Open
+428,Chad Conner,EVT-00001509-1,Closed - No Discipline
+429,Chad Conner,EVT-00001666-1,Open
+430,Chad Fuchs,EVT-00001283-1,Closed - No Discipline
+431,Chad Fuchs,EVT-00001428-1,Open
+432,Chad Joseph,EVT-00001431-2,Closed - No Discipline
+433,Chang Lee,EVT-00000016-1,Closed - No Discipline
+434,Chang Lee,EVT-00000370-1,Open
+435,Chang Lee,EVT-00000512-1,Closed - No Discipline
+436,Chang Lee,EVT-00000557-1,Closed - No Discipline
+437,Chanica Hall,EVT-00000657-1,Closed - No Discipline
+438,Chanica Hall,EVT-00000981-1,Open
+439,Chanica Hall,EVT-00001485-1,Closed - Final Discipline
+440,Charles Beise,EVT-00001227-1,Closed - No Discipline
+441,Charles Greaves,EVT-00001095-1,Closed - No Discipline
+442,Charles Keith,EVT-00000915-2,Open
+443,Charles Keith,EVT-00000915-6,Open
+444,Charles Keith,EVT-00000998-1,Closed - No Discipline
+445,Charles Keith,EVT-00001453-1,Closed - No Discipline
+446,Charles Keith,EVT-00001533-1,Open
+447,Charles Keith,EVT-00001786-1,Closed - No Discipline
+448,Charles Mc Cree,EVT-00000099-1,Closed - No Discipline
+449,Charles Mc Cree,EVT-00000182-1,Closed - No Discipline
+450,Charles Mc Cree,EVT-00000222-1,Closed - No Discipline
+451,Charles Mc Cree,EVT-00000841-1,Open
+452,Charles Mc Cree,EVT-00000927-2,Closed - No Discipline
+453,Charles Mc Cree,EVT-00001035-1,Open
+454,Charles Starkman,EVT-00000608-2,Open
+455,Charlie Adams,EVT-00000600-1,Closed - No Discipline
+456,Charlie Adams,EVT-00000669-1,Closed - No Discipline
+457,Charlie Adams,EVT-00001028-1,Open
+458,Charlie Adams,EVT-00001091-1,Closed - No Discipline
+459,Charlie Adams,EVT-00001697-1,Closed - No Discipline
+460,Chaz Wilson,EVT-00000226-2,Closed - No Discipline
+461,Chaz Wilson,EVT-00000420-1,Open
+462,Chaz Wilson,EVT-00000489-1,Closed - No Discipline
+463,Chaz Wilson,EVT-00000494-1,Open
+464,Chaz Wilson,EVT-00000582-1,Open
+465,Chaz Wilson,EVT-00000604-1,Open
+466,Chaz Wilson,EVT-00001741-1,Open
+467,Cheng Chang,EVT-00000941-1,Open
+468,Cheng Vang,EVT-00001272-2,Open
+469,Cheng Vang,EVT-00001380-1,Closed - No Discipline
+470,Cheng Vang,EVT-00001819-1,Closed - No Discipline
+471,Cheryl-Leigh Goodman,EVT-00000915-8,Open
+472,Chou Moua,EVT-00000341-1,Closed - No Discipline
+473,Chou Moua,EVT-00000706-1,Closed - No Discipline
+474,Chou Moua,EVT-00001035-3,Closed - No Discipline
+475,Chou Moua,EVT-00001748-1,Closed - No Discipline
+476,Chou Moua,EVT-00001782-1,Open
+477,CHRISTIAN GOMEZ SANTOS,EVT-00000077-1,Closed - No Discipline
+478,CHRISTIAN GOMEZ SANTOS,EVT-00000407-1,Closed - No Discipline
+479,CHRISTIAN GOMEZ SANTOS,EVT-00000425-1,Closed - No Discipline
+480,CHRISTIAN GOMEZ SANTOS,EVT-00000481-1,Closed - No Discipline
+481,CHRISTIAN GOMEZ SANTOS,EVT-00000633-1,Closed - No Discipline
+482,CHRISTIAN GOMEZ SANTOS,EVT-00000746-2,Closed - No Discipline
+483,CHRISTIAN GOMEZ SANTOS,EVT-00000765-1,Closed - No Discipline
+484,CHRISTIAN GOMEZ SANTOS,EVT-00000883-1,Open
+485,CHRISTIAN GOMEZ SANTOS,EVT-00000949-1,Open
+486,CHRISTIAN GOMEZ SANTOS,EVT-00001617-2,Closed - No Discipline
+487,Christie Nelson,EVT-00000546-1,Closed - No Discipline
+488,Christie Nelson,EVT-00000759-1,Open
+489,Christie Nelson,EVT-00000809-1,Closed - No Discipline
+490,Christie Nelson,EVT-00000832-1,Closed - No Discipline
+491,Christine Friday,EVT-00001966-2,Closed - No Discipline
+492,Christopher Carlson,EVT-00000915-1,Closed - No Discipline
+493,Christopher Carlson,EVT-00001011-1,Open
+494,Christopher Carlson,EVT-00001638-2,Closed - No Discipline
+495,Christopher Cushenbery,EVT-00000295-1,Open
+496,Christopher Duncan,EVT-00000008-1,Closed - No Discipline
+497,Christopher Duncan,EVT-00000564-1,Closed - No Discipline
+498,Christopher Duncan,EVT-00000589-1,Open
+499,Christopher Duncan,EVT-00000783-1,Open
+500,Christopher Duncan,EVT-00000869-1,Closed - No Discipline
+501,Christopher Duncan,EVT-00000915-1,Closed - No Discipline
+502,Christopher Duncan,EVT-00001121-1,Closed - No Discipline
+503,Christopher Duncan,EVT-00001531-2,Open
+504,Christopher Duncan,EVT-00001714-3,Open
+505,Christopher Gaiters,EVT-00001235-2,Closed - No Discipline
+506,Christopher Gaiters,EVT-00001235-3,Closed - No Discipline
+507,Christopher Humphrey,EVT-00000957-2,Closed - No Discipline
+508,Christopher Humphrey,EVT-00000973-1,Closed - No Discipline
+509,Christopher Humphrey,EVT-00001877-1,Closed - No Discipline
+510,Christopher Kleven,EVT-00000319-1,Closed - No Discipline
+511,Christopher Kleven,EVT-00000763-1,Closed - No Discipline
+512,Christopher Lange,EVT-00000095-1,Closed - No Discipline
+513,Christopher Lange,EVT-00000224-1,Closed - No Discipline
+514,Christopher Lange,EVT-00000451-1,Open
+515,Christopher Lange,EVT-00001249-1,Open
+516,Christopher Lange,EVT-00001478-1,Open
+517,Christopher Lange,EVT-00001528-1,Open
+518,Christopher Miller,EVT-00001750-1,Closed - No Discipline
+519,CHRISTOPHER PERRY,EVT-00000549-1,Closed - No Discipline
+520,CHRISTOPHER PERRY,EVT-00000610-1,Closed - No Discipline
+521,CHRISTOPHER PERRY,EVT-00001428-1,Open
+522,CHRISTOPHER PERRY,EVT-00001478-2,Open
+523,CHRISTOPHER PERRY,EVT-00001761-2,Closed - No Discipline
+524,CHRISTOPHER PERRY,EVT-00001946-1,Open
+525,CHUIYEE THAO,EVT-00000183-2,Closed - No Discipline
+526,Clark Becker,EVT-00001622-1,Closed - No Discipline
+527,Clark Goset,EVT-00000710-1,Open
+528,Clifton Toles,EVT-00000355-1,Closed - Final Discipline
+529,Clifton Toles,EVT-00000748-1,Closed - No Discipline
+530,Clifton Toles,EVT-00000826-1,Open
+531,Clifton Toles,EVT-00000932-1,Open
+532,Clifton Toles,EVT-00001647-1,Closed - No Discipline
+533,Clifton Toles,EVT-00001724-1,Closed - No Discipline
+534,Cody Johnson,EVT-00000020-1,Closed - No Discipline
+535,Cody Johnson,EVT-00000165-1,Open
+536,Cody Johnson,EVT-00000425-1,Closed - No Discipline
+537,Cody Johnson,EVT-00001613-1,Closed - No Discipline
+538,Cole Peterson,EVT-00001932-1,Closed - No Discipline
+539,Cole Vryens,EVT-00001772-1,Open
+540,Cole Vryens,EVT-00001908-1,Open
+541,Cole Vryens,EVT-00001917-1,Open
+542,Colin Lorntson,EVT-00001189-1,Closed - No Discipline
+543,Colin Lorntson,EVT-00001467-1,Open
+544,Colin Lorntson,EVT-00001671-1,Open
+545,Conan Hickey,EVT-00000017-1,Closed - No Discipline
+546,Conan Hickey,EVT-00000509-1,Closed - No Discipline
+547,Conan Hickey,EVT-00000972-1,Closed - No Discipline
+548,Connor Johnson,EVT-00001368-1,Open
+549,Connor Sandahl,EVT-00000255-1,Closed - No Discipline
+550,Connor Sandahl,EVT-00000256-1,Closed - Final Discipline
+551,Connor Sandahl,EVT-00000455-1,Closed - No Discipline
+552,Connor Sandahl,EVT-00000621-2,Closed - No Discipline
+553,Connor Sandahl,EVT-00000750-1,Open
+554,Connor Sandahl,EVT-00000777-1,Open
+555,Connor Sandahl,EVT-00000863-1,Open
+556,Connor Sandahl,EVT-00000897-1,Closed - No Discipline
+557,Connor Sandahl,EVT-00000920-1,Open
+558,Connor Sandahl,EVT-00000936-1,Open
+559,Connor Sandahl,EVT-00001014-1,Open
+560,Connor Sandahl,EVT-00001086-1,Open
+561,Connor Sandahl,EVT-00001090-1,Open
+562,Connor Sandahl,EVT-00001110-1,Open
+563,Connor Sandahl,EVT-00001123-1,Open
+564,Connor Sandahl,EVT-00001426-1,Open
+565,Conor McDonough,EVT-00000315-1,Open
+566,Conor McDonough,EVT-00000617-1,Closed - No Discipline
+567,Conor McDonough,EVT-00000700-1,Closed - No Discipline
+568,Conor McDonough,EVT-00000915-2,Open
+569,Conor McDonough,EVT-00000915-7,Open
+570,Conor McDonough,EVT-00001258-1,Closed - No Discipline
+571,Conor McDonough,EVT-00001311-1,Closed - No Discipline
+572,Conor McDonough,EVT-00001431-1,Closed - No Discipline
+573,Cordarius Boyd,EVT-00001534-1,Closed - No Discipline
+574,Cordarius Boyd,EVT-00001639-2,Closed - No Discipline
+575,Cordarius Boyd,EVT-00001679-1,Open
+576,Cordarius Boyd,EVT-00001688-1,Closed - No Discipline
+577,Cordarol Scales,EVT-00000821-1,Closed - No Discipline
+578,Corey Schmidt,EVT-00000765-1,Closed - No Discipline
+579,Corey Schmidt,EVT-00001342-1,Closed - No Discipline
+580,Cory Taylor,EVT-00000295-1,Open
+581,Craig Crisp,EVT-00000509-1,Closed - No Discipline
+582,Craig Crisp,EVT-00000602-2,Closed - No Discipline
+583,Craig Crisp,EVT-00001873-1,Open
+584,Cyann Reid,EVT-00001544-1,Open
+585,Daadir Galayr,EVT-00000665-1,Open
+586,Daadir Galayr,EVT-00000950-1,Open
+587,Daadir Galayr,EVT-00001489-1,Closed - No Discipline
+588,DaMarcus Zeroth,EVT-00001042-2,Closed - No Discipline
+589,Daniel Barlow,EVT-00000636-1,Closed - No Discipline
+590,Daniel Barlow,EVT-00000636-2,Open
+591,Daniel Barlow,EVT-00000673-2,Closed - No Discipline
+592,Daniel Barlow,EVT-00000699-1,Closed - Final Discipline
+593,Daniel Barlow,EVT-00000873-1,Closed - No Discipline
+594,Daniel Barlow,EVT-00001085-1,Closed - No Discipline
+595,Daniel Barlow,EVT-00001488-1,Closed - No Discipline
+596,Daniel Forsgren,EVT-00000014-1,Closed - No Discipline
+597,Daniel Forsgren,EVT-00000164-2,Open
+598,Daniel Forsgren,EVT-00000915-2,Open
+599,Daniel Forsgren,EVT-00000915-6,Open
+600,Daniel Forsgren,EVT-00001144-1,Open
+601,Daniel Forsgren,EVT-00001217-1,Closed - No Discipline
+602,Daniel Forsgren,EVT-00001615-1,Closed - No Discipline
+603,Daniel Forsgren,EVT-00001617-1,Closed - No Discipline
+604,Daniel Gehrz,EVT-00000941-2,Closed - No Discipline
+605,Daniel Ledman,EVT-00000392-1,Closed - No Discipline
+606,Daniel Ledman,EVT-00000941-2,Closed - No Discipline
+607,Daniel Ledman,EVT-00000997-1,Open
+608,Daniel Ledman,EVT-00001093-1,Closed - No Discipline
+609,Daniel Ledman,EVT-00001381-1,Closed - No Discipline
+610,Daniel Ledman,EVT-00001641-3,Closed - No Discipline
+611,Daniel Ledman,EVT-00001692-1,Open
+612,Daniel McCafferty,EVT-00000619-1,Open
+613,Daniel McCafferty,EVT-00000700-1,Closed - No Discipline
+614,Daniel McCafferty,EVT-00001431-1,Closed - No Discipline
+615,Daniel Misgen,EVT-00000170-1,Closed - Final Discipline
+616,Daniel Misgen,EVT-00000230-1,Open
+617,Daniel Misgen,EVT-00000298-3,Closed - No Discipline
+618,Daniel Misgen,EVT-00000311-1,Closed - Final Discipline
+619,Daniel Misgen,EVT-00000485-1,Open
+620,Daniel Misgen,EVT-00000763-1,Closed - No Discipline
+621,Daniel Misgen,EVT-00000765-2,Closed - No Discipline
+622,Daniel Misgen,EVT-00000765-3,Closed - No Discipline
+623,Daniel Misgen,EVT-00001435-1,Open
+624,Daniel Misgen,EVT-00001542-2,Open
+625,Daniel Misgen,EVT-00001754-2,Open
+626,Daniel Misgen,EVT-00001830-2,Closed - No Discipline
+627,Daniel Oppegard,EVT-00000541-1,Open
+628,Daniel Oppegard,EVT-00000747-1,Open
+629,Daniel Payne,EVT-00000020-1,Closed - No Discipline
+630,Daniel Vue,EVT-00000551-1,Closed - Final Discipline
+631,Daniel Vue,EVT-00000617-2,Open
+632,Daniel Vue,EVT-00000864-1,Closed - No Discipline
+633,Daniel Vue,EVT-00000871-1,Closed - No Discipline
+634,Daniel Vue,EVT-00001505-1,Closed - No Discipline
+635,Daniel Vue,EVT-00001531-1,Open
+636,Daniel Vue,EVT-00001734-1,Open
+637,Daniel Vue,EVT-00001759-1,Open
+638,Daniel Vue,EVT-00001896-2,Open
+639,Daniel Wagner,EVT-00001811-1,Closed - No Discipline
+640,Daniel Wagner,EVT-00001914-1,Closed - No Discipline
+641,Danielle Phernetton,EVT-00001689-1,Open
+642,Dante Dean,EVT-00000282-1,Closed - No Discipline
+643,darcy horn,EVT-00000710-1,Open
+644,Darren Blauert,EVT-00000060-1,Closed - No Discipline
+645,Darren Blauert,EVT-00000489-1,Closed - No Discipline
+646,DAVENS KENYORU,EVT-00000274-1,Closed - No Discipline
+647,DAVENS KENYORU,EVT-00000495-1,Closed - No Discipline
+648,DAVENS KENYORU,EVT-00001068-1,Closed - No Discipline
+649,DAVENS KENYORU,EVT-00001866-1,Open
+650,David Garman,EVT-00001035-5,Closed - No Discipline
+651,David Garman,EVT-00001084-1,Closed - No Discipline
+652,David Garman,EVT-00001907-3,Open
+653,David Ligneel,EVT-00000023-1,Closed - No Discipline
+654,David Mathes,EVT-00001923-1,Open
+655,David Nerling,EVT-00000039-1,Closed - No Discipline
+656,David Nerling,EVT-00000133-1,Closed - No Discipline
+657,David Nerling,EVT-00000153-1,Open
+658,David Nerling,EVT-00000176-1,Closed - No Discipline
+659,David Nerling,EVT-00000538-1,Closed - No Discipline
+660,David Nerling,EVT-00000836-2,Closed - No Discipline
+661,David Stichter,EVT-00000382-1,Closed - No Discipline
+662,David Swierzewski,EVT-00000546-1,Closed - No Discipline
+663,David Swierzewski,EVT-00000918-1,Open
+664,David Swierzewski,EVT-00001409-1,Open
+665,David Swierzewski,EVT-00001488-1,Closed - No Discipline
+666,David Vang,EVT-00001073-1,Closed - No Discipline
+667,David Vang,EVT-00001167-1,Closed - No Discipline
+668,David Vang,EVT-00001984-1,Closed - No Discipline
+669,Davis Mueller,EVT-00001923-1,Open
+670,DAWIT TEKETEL,EVT-00000102-1,Closed - Final Discipline
+671,DAWIT TEKETEL,EVT-00000554-1,Closed - No Discipline
+672,Dawson Baker,EVT-00001305-1,Closed - No Discipline
+673,Dawson Baker,EVT-00001754-1,Open
+674,Dawson Baker,EVT-00001755-1,Open
+675,Dawson Baker,EVT-00001764-1,Open
+676,Deion Stevens,EVT-00001644-3,Open
+677,Deitan Dubuc,EVT-00000400-1,Open
+678,Deitan Dubuc,EVT-00001050-1,Open
+679,Deitan Dubuc,EVT-00001115-1,Open
+680,Deitan Dubuc,EVT-00001324-1,Closed - No Discipline
+681,Dennis Hamilton,EVT-00000932-1,Open
+682,Dennis Milner,EVT-00000047-1,Closed - No Discipline
+683,Dennis Milner,EVT-00000503-1,Closed - No Discipline
+684,Derek Berg,EVT-00000125-1,Closed - No Discipline
+685,Derek Berg,EVT-00000616-2,Open
+686,Derek Berg,EVT-00000875-1,Open
+687,Derek Berg,EVT-00001370-1,Closed - No Discipline
+688,Derek Berg,EVT-00001370-2,Open
+689,Derek Berg,EVT-00001481-1,Closed - No Discipline
+690,Derek Berg,EVT-00001769-1,Closed - No Discipline
+691,Derek Chauvin,EVT-00000382-1,Closed - No Discipline
+692,Derek Chauvin,EVT-00001930-1,Closed - No Discipline
+693,Devante Lockett,EVT-00001620-1,Open
+694,Devante Lockett,EVT-00001733-1,Open
+695,Dirk Spee,EVT-00000528-1,Closed - No Discipline
+696,Dirk Spee,EVT-00000621-2,Closed - No Discipline
+697,Dirk Spee,EVT-00000692-1,Open
+698,Dirk Spee,EVT-00000774-1,Closed - No Discipline
+699,Dirk Spee,EVT-00001066-1,Closed - No Discipline
+700,Dirk Spee,EVT-00001246-1,Closed - No Discipline
+701,Dirk Spee,EVT-00001617-4,Closed - No Discipline
+702,Dirk Spee,EVT-00001664-1,Open
+703,Dominic LaNasa,EVT-00000621-2,Closed - No Discipline
+704,Dominic LaNasa,EVT-00000628-1,Open
+705,Dominic LaNasa,EVT-00001060-1,Open
+706,Dominic Manelli,EVT-00000915-1,Closed - No Discipline
+707,Donald Jach,EVT-00000915-3,Open
+708,Donald Jach,EVT-00000915-5,Open
+709,Donnell Crayton,EVT-00000299-1,Closed - Final Discipline
+710,Donnell Crayton,EVT-00000324-1,Closed - No Discipline
+711,Donnell Crayton,EVT-00000412-1,Closed - No Discipline
+712,Donnell Crayton,EVT-00000585-1,Open
+713,Donovan Ford,EVT-00000324-1,Closed - No Discipline
+714,Donovan Ford,EVT-00000357-1,Closed - No Discipline
+715,Donovan Ford,EVT-00000723-1,Closed - No Discipline
+716,Donovan Ford,EVT-00001532-1,Closed - No Discipline
+717,Douglas Lemons,EVT-00000438-1,Open
+718,Drew Clark,EVT-00000362-1,Closed - No Discipline
+719,Drew Clark,EVT-00000403-1,Closed - No Discipline
+720,Drew Clark,EVT-00000408-1,Closed - No Discipline
+721,Drew Clark,EVT-00000435-1,Open
+722,Drew Clark,EVT-00000529-1,Closed - No Discipline
+723,Drew Clark,EVT-00000719-1,Closed - No Discipline
+724,Drew Clark,EVT-00000746-2,Closed - No Discipline
+725,Drew Clark,EVT-00000780-1,Open
+726,Drew Clark,EVT-00000990-1,Open
+727,Drew Clark,EVT-00001018-1,Open
+728,Drew Clark,EVT-00001429-1,Closed - No Discipline
+729,Dustin Schwarze,EVT-00000602-1,Closed - No Discipline
+730,DYLAN BARTA,EVT-00000226-4,Closed - No Discipline
+731,DYLAN BARTA,EVT-00000420-1,Open
+732,DYLAN BARTA,EVT-00000489-1,Closed - No Discipline
+733,DYLAN BARTA,EVT-00000508-1,Open
+734,DYLAN BARTA,EVT-00000582-1,Open
+735,DYLAN BARTA,EVT-00001064-2,Closed - No Discipline
+736,DYLAN BARTA,EVT-00001640-1,Closed - No Discipline
+737,Dylan Johnson,EVT-00000126-1,Closed - No Discipline
+738,Dylan Johnson,EVT-00000679-1,Open
+739,Dylan Johnson,EVT-00001064-1,Open
+740,Dylan Johnson,EVT-00001185-1,Closed - No Discipline
+741,Dylan Johnson,EVT-00001247-1,Open
+742,Dylan Johnson,EVT-00001601-1,Closed - No Discipline
+743,Dylan Pearson,EVT-00000120-1,Closed - Final Discipline
+744,Dylan Pearson,EVT-00000875-1,Open
+745,Efrem Hamilton,EVT-00000014-1,Closed - No Discipline
+746,Efrem Hamilton,EVT-00000164-2,Open
+747,Efrem Hamilton,EVT-00001357-1,Closed - No Discipline
+748,Efrem Hamilton,EVT-00001441-1,Closed - No Discipline
+749,Efrem Hamilton,EVT-00001601-1,Closed - No Discipline
+750,Efrem Hamilton,EVT-00001638-1,Open
+751,Ehdoh Ezekisoe,EVT-00001364-1,Closed - No Discipline
+752,Ehdoh Ezekisoe,EVT-00001658-2,Closed - No Discipline
+753,Ehdoh Ezekisoe,EVT-00001682-2,Open
+754,Ehdoh Ezekisoe,EVT-00001734-2,Open
+755,Elijah Johnson,EVT-00000084-1,Closed - No Discipline
+756,Elijah Johnson,EVT-00000370-1,Open
+757,Elijah Johnson,EVT-00000458-1,Closed - No Discipline
+758,Elijah Johnson,EVT-00000521-1,Open
+759,Elijah Johnson,EVT-00000583-1,Open
+760,Elijah Johnson,EVT-00001008-1,Open
+761,Elijah Johnson,EVT-00001261-1,Open
+762,Elijah Johnson,EVT-00001693-1,Closed - No Discipline
+763,ELISE HINDERLITER,EVT-00000081-1,Closed - Final Discipline
+764,ELISE HINDERLITER,EVT-00000199-1,Open
+765,ELISE HINDERLITER,EVT-00000332-1,Open
+766,ELISE HINDERLITER,EVT-00000412-1,Closed - No Discipline
+767,ELISE HINDERLITER,EVT-00000694-1,Open
+768,ELISE HINDERLITER,EVT-00000742-1,Closed - No Discipline
+769,ELISE HINDERLITER,EVT-00001339-1,Closed - No Discipline
+770,Elizabeth Arashiba,EVT-00000180-1,Closed - No Discipline
+771,Elizabeth Sullivan,EVT-00000093-1,Closed - No Discipline
+772,Elizabeth Sullivan,EVT-00000099-1,Closed - No Discipline
+773,Ellen Jensen,EVT-00000615-1,Closed - No Discipline
+774,Emanuel Alle,EVT-00001569-1,Closed - No Discipline
+775,Emanuel Alle,EVT-00001590-1,Open
+776,Emanuel Alle,EVT-00001746-1,Closed - No Discipline
+777,Emily Olson,EVT-00000710-1,Open
+778,Emily Olson,EVT-00000790-1,Open
+779,Emily Olson,EVT-00001288-1,Open
+780,Emily Olson,EVT-00001329-1,Closed - No Discipline
+781,Emily Osterberg,EVT-00000433-1,Closed - Final Discipline
+782,Enoch Langford,EVT-00000043-1,Closed - No Discipline
+783,Enoch Langford,EVT-00000256-1,Closed - Final Discipline
+784,Enoch Langford,EVT-00000548-1,Open
+785,Enoch Langford,EVT-00000586-1,Open
+786,Enoch Langford,EVT-00000764-1,Open
+787,Enoch Langford,EVT-00001076-1,Closed - No Discipline
+788,Enoch Langford,EVT-00001424-1,Open
+789,Enoch Langford,EVT-00001454-1,Open
+790,Enoch Langford,EVT-00001761-1,Open
+791,Enoch Langford,EVT-00001771-1,Closed - No Discipline
+792,Eren Erbay,EVT-00001612-1,Closed - No Discipline
+793,Eren Erbay,EVT-00001644-1,Closed - No Discipline
+794,Eric Duong,EVT-00000437-1,Closed - No Discipline
+795,Eric Duong,EVT-00000600-1,Closed - No Discipline
+796,Eric Duong,EVT-00000874-1,Open
+797,Eric Duong,EVT-00001237-5,Closed - No Discipline
+798,Eric Duong,EVT-00001417-3,Closed - No Discipline
+799,Eric Madson,EVT-00000138-1,Closed - No Discipline
+800,Eric Patch,EVT-00000882-1,Closed - No Discipline
+801,Eric Patch,EVT-00001062-1,Closed - No Discipline
+802,Eric Patch,EVT-00001390-1,Closed - No Discipline
+803,Eric Patch,EVT-00001399-1,Open
+804,Eric Patch,EVT-00001416-1,Closed - No Discipline
+805,Eric Patch,EVT-00001418-1,Open
+806,Eric Patch,EVT-00001729-1,Open
+807,Eric Rasmussen,EVT-00000238-1,Closed - No Discipline
+808,Eric Rasmussen,EVT-00000407-1,Closed - No Discipline
+809,Eric Rasmussen,EVT-00000468-1,Closed - Final Discipline
+810,Eric Rasmussen,EVT-00000731-1,Open
+811,Eric Rasmussen,EVT-00001601-1,Closed - No Discipline
+812,Eric Withanom,EVT-00000016-1,Closed - No Discipline
+813,Eric Withanom,EVT-00000019-1,Closed - No Discipline
+814,Eric Withanom,EVT-00000064-1,Closed - No Discipline
+815,Eric Withanom,EVT-00000650-1,Open
+816,Eric Withanom,EVT-00001060-1,Open
+817,Eric Withanom,EVT-00001766-1,Open
+818,Eric Withanom,EVT-00001807-2,Open
+819,Erick Fors,EVT-00000034-1,Closed - No Discipline
+820,Erick Fors,EVT-00000046-1,Closed - No Discipline
+821,Erick Fors,EVT-00000291-1,Open
+822,ERIK SAIMA,EVT-00000698-1,Closed - No Discipline
+823,ERIK SAIMA,EVT-00001488-1,Closed - No Discipline
+824,ERIK SAIMA,EVT-00001741-1,Open
+825,ERIK SAIMA,EVT-00001752-1,Closed - No Discipline
+826,Erin Stoltz,EVT-00001021-1,Open
+827,Esteban Lozano,EVT-00001814-1,Closed - No Discipline
+828,Esteban Lozano,EVT-00001916-1,Open
+829,Evan Ireland,EVT-00000444-1,Open
+830,Evan Ireland,EVT-00000720-1,Open
+831,Evan Ireland,EVT-00000744-1,Open
+832,Evan Ireland,EVT-00000933-2,Open
+833,Evan Ireland,EVT-00001277-1,Closed - No Discipline
+834,Evan Ireland,EVT-00001601-1,Closed - No Discipline
+835,Evan Ireland,EVT-00001738-1,Open
+836,Evan Ireland,EVT-00001752-1,Closed - No Discipline
+837,EVAN KOMAREK,EVT-00000494-1,Open
+838,EVAN KOMAREK,EVT-00000494-2,Open
+839,EVAN KOMAREK,EVT-00001402-1,Closed - No Discipline
+840,EVAN KOMAREK,EVT-00001488-1,Closed - No Discipline
+841,Ezra Moore,EVT-00000028-1,Closed - No Discipline
+842,Ezra Moore,EVT-00000066-1,Closed - No Discipline
+843,Ezra Moore,EVT-00000348-1,Closed - No Discipline
+844,Ezra Moore,EVT-00000623-1,Closed - No Discipline
+845,Ezra Moore,EVT-00000718-1,Open
+846,Ezra Moore,EVT-00000857-1,Closed - No Discipline
+847,Ezra Moore,EVT-00000865-1,Closed - No Discipline
+848,Ezra Moore,EVT-00001233-1,Open
+849,Ezra Moore,EVT-00001272-1,Open
+850,Ezra Moore,EVT-00001604-2,Closed - No Discipline
+851,Ezra Moore,EVT-00001668-1,Closed - No Discipline
+852,Ezra Moore,EVT-00001759-2,Closed - No Discipline
+853,Fabian Sosa Calderon,EVT-00001291-1,Closed - No Discipline
+854,Fernando Bugarin,EVT-00001875-1,Open
+855,Festus Boateng,EVT-00000441-1,Closed - No Discipline
+856,Festus Boateng,EVT-00000767-1,Closed - No Discipline
+857,Festus Boateng,EVT-00001076-1,Closed - No Discipline
+858,Fred Snyder,EVT-00001362-1,Open
+859,Fred Snyder,EVT-00001488-1,Closed - No Discipline
+860,Fred Snyder,EVT-00001849-1,Closed - No Discipline
+861,Fue Vue,EVT-00000586-1,Open
+862,Fue Vue,EVT-00001062-1,Closed - No Discipline
+863,Gabriel Grout,EVT-00000938-1,Closed - No Discipline
+864,Gabriel Wood,EVT-00000913-1,Closed - No Discipline
+865,Garrett Parten,EVT-00000746-1,Closed - No Discipline
+866,Geoffrey Johnson,EVT-00000991-1,Open
+867,Geoffrey Johnson,EVT-00001090-2,Open
+868,Geoffrey Johnson,EVT-00001260-1,Open
+869,Geoffrey Toscano,EVT-00001641-1,Closed - No Discipline
+870,George Warzinik,EVT-00000662-1,Closed - No Discipline
+871,George Warzinik,EVT-00000678-1,Open
+872,George Warzinik,EVT-00000688-1,Closed - No Discipline
+873,George Warzinik,EVT-00000763-1,Closed - No Discipline
+874,George Warzinik,EVT-00000919-2,Closed - No Discipline
+875,George Warzinik,EVT-00001248-1,Closed - No Discipline
+876,George Warzinik,EVT-00001294-1,Open
+877,George Warzinik,EVT-00001876-1,Open
+878,Gerald Karpe,EVT-00000183-1,Closed - No Discipline
+879,Gerald Karpe,EVT-00000267-1,Closed - No Discipline
+880,Gerald Karpe,EVT-00000489-1,Closed - No Discipline
+881,Gilles Antaya Jr,EVT-00000709-1,Closed - No Discipline
+882,Gilles Antaya Jr,EVT-00001095-1,Closed - No Discipline
+883,Gilles Antaya Jr,EVT-00001601-1,Closed - No Discipline
+884,Gilles Antaya Jr,EVT-00001838-1,Closed - No Discipline
+885,Gordon Blackey,EVT-00000590-1,Open
+886,Grace Ames,EVT-00000495-1,Closed - No Discipline
+887,Grace Ames,EVT-00000496-1,Closed - No Discipline
+888,Grace Ames,EVT-00000533-2,Closed - No Discipline
+889,Grace Ames,EVT-00000552-1,Closed - No Discipline
+890,Grace Ames,EVT-00000713-1,Open
+891,Grace Ames,EVT-00001107-1,Open
+892,Grayson Baker,EVT-00000124-1,Closed - No Discipline
+893,Grayson Baker,EVT-00000164-3,Closed - No Discipline
+894,Grayson Baker,EVT-00000397-1,Closed - No Discipline
+895,Grayson Baker,EVT-00000608-3,Closed - No Discipline
+896,Gregory Freeman,EVT-00000215-1,Closed - No Discipline
+897,Gregory Wenzel,EVT-00001835-1,Closed - No Discipline
+898,Gretchen Bloss,EVT-00000288-2,Closed - No Discipline
+899,Gretchen Bloss,EVT-00000426-2,Closed - No Discipline
+900,Griffin Hillbo,EVT-00000756-1,Closed - No Discipline
+901,Haakon Homstad,EVT-00001831-2,Open
+902,Hamze Mursal,EVT-00001210-1,Closed - No Discipline
+903,Hassan Robertson,EVT-00000195-1,Closed - No Discipline
+904,Hassan Robertson,EVT-00000320-1,Closed - No Discipline
+905,Hassan Robertson,EVT-00000576-1,Open
+906,Hassan Robertson,EVT-00000577-1,Closed - No Discipline
+907,Hassan Robertson,EVT-00000585-1,Open
+908,Hassan Robertson,EVT-00000761-1,Open
+909,Hassan Robertson,EVT-00000797-1,Open
+910,Hassan Robertson,EVT-00000899-1,Open
+911,Hassan Robertson,EVT-00000901-1,Closed - No Discipline
+912,Hassan Robertson,EVT-00000944-1,Open
+913,Hassan Robertson,EVT-00001001-1,Open
+914,Hassan Robertson,EVT-00001014-1,Open
+915,Hassan Robertson,EVT-00001086-1,Open
+916,Hassan Robertson,EVT-00001297-1,Closed - No Discipline
+917,Hassan Robertson,EVT-00001488-1,Closed - No Discipline
+918,Heather Beightol,EVT-00000656-1,Open
+919,Heather Beightol,EVT-00000760-1,Closed - No Discipline
+920,Heather Lindsay,EVT-00000198-1,Closed - No Discipline
+921,Heather Lindsay,EVT-00000432-1,Closed - No Discipline
+922,Heather Lindsay,EVT-00000448-1,Closed - No Discipline
+923,Heather Lindsay,EVT-00000468-1,Closed - Final Discipline
+924,Heather Lindsay,EVT-00000517-2,Closed - No Discipline
+925,Heather Lindsay,EVT-00000942-2,Closed - No Discipline
+926,Heather Lindsay,EVT-00001519-2,Closed - No Discipline
+927,Heather Starry,EVT-00001069-1,Closed - No Discipline
+928,Heather Starry,EVT-00001349-1,Open
+929,Heather Starry,EVT-00001706-1,Open
+930,HECTOR BUGARIN,EVT-00000392-1,Closed - No Discipline
+931,HECTOR BUGARIN,EVT-00000398-1,Closed - No Discipline
+932,HECTOR BUGARIN,EVT-00000633-1,Closed - No Discipline
+933,HECTOR BUGARIN,EVT-00000670-1,Open
+934,HECTOR BUGARIN,EVT-00000833-1,Open
+935,HECTOR BUGARIN,EVT-00000941-2,Closed - No Discipline
+936,HECTOR BUGARIN,EVT-00001269-1,Open
+937,HECTOR BUGARIN,EVT-00001858-1,Open
+938,Hel Say,EVT-00001182-1,Closed - No Discipline
+939,Hel Say,EVT-00001267-1,Closed - No Discipline
+940,Hel Say,EVT-00001434-1,Closed - No Discipline
+941,Hel Say,EVT-00001667-1,Open
+942,Henry Nguyen,EVT-00001104-1,Open
+943,Henry Nguyen,EVT-00001504-1,Open
+944,Henry Nguyen,EVT-00001753-1,Open
+945,Hilary Glasrud,EVT-00000241-2,Closed - No Discipline
+946,Horatio Lee,EVT-00000703-1,Closed - No Discipline
+947,Horatio Lee,EVT-00000906-1,Open
+948,Horatio Lee,EVT-00001278-1,Open
+949,Hunter Sable,EVT-00001370-2,Open
+950,Hunter Sable,EVT-00001844-1,Closed - No Discipline
+951,IAN OTT,EVT-00000058-1,Closed - No Discipline
+952,IAN OTT,EVT-00000218-1,Closed - No Discipline
+953,IAN OTT,EVT-00000425-1,Closed - No Discipline
+954,IAN OTT,EVT-00001269-1,Open
+955,IBRAHIM JEDAL,EVT-00000122-1,Closed - No Discipline
+956,IBRAHIM JEDAL,EVT-00000168-1,Closed - No Discipline
+957,IBRAHIM JEDAL,EVT-00000556-1,Open
+958,IBRAHIM JEDAL,EVT-00000744-1,Open
+959,IBRAHIM JEDAL,EVT-00001043-1,Open
+960,IBRAHIM JEDAL,EVT-00001120-1,Open
+961,IBRAHIM JEDAL,EVT-00001358-1,Open
+962,IBRAHIM JEDAL,EVT-00001504-2,Closed - No Discipline
+963,Ibrahim Keita,EVT-00000108-1,Closed - No Discipline
+964,Ibrahim Keita,EVT-00000703-1,Closed - No Discipline
+965,Ibrahim Keita,EVT-00000941-2,Closed - No Discipline
+966,Ibrahim Keita,EVT-00000997-1,Open
+967,Ibrahim Keita,EVT-00001093-1,Closed - No Discipline
+968,Ibrahim Keita,EVT-00001923-1,Open
+969,Ikran Mohamed,EVT-00001505-2,Open
+970,Ikran Mohamed,EVT-00001578-1,Closed - No Discipline
+971,Ikran Mohamed,EVT-00001648-1,Closed - No Discipline
+972,Ikran Mohamed,EVT-00001714-1,Open
+973,Ikran Mohamed,EVT-00001824-1,Open
+974,Isma'il Toure,EVT-00000049-1,Open
+975,Isma'il Toure,EVT-00001281-1,Open
+976,Isma'il Toure,EVT-00001371-1,Open
+977,Isma'il Toure,EVT-00001459-2,Closed - No Discipline
+978,ISMAIL OMAR,EVT-00000133-1,Closed - No Discipline
+979,ISMAIL OMAR,EVT-00000168-1,Closed - No Discipline
+980,ISMAIL OMAR,EVT-00000991-1,Open
+981,Jackson Mclaughlin,EVT-00000347-1,Closed - No Discipline
+982,Jaclyn Johnson,EVT-00000291-1,Open
+983,Jaclyn Johnson,EVT-00000837-1,Closed - No Discipline
+984,Jaclyn Johnson,EVT-00000953-1,Closed - No Discipline
+985,Jaclyn Johnson,EVT-00001601-1,Closed - No Discipline
+986,Jaclyn Johnson,EVT-00001863-1,Open
+987,Jacob Deuermeyer,EVT-00001542-1,Closed - No Discipline
+988,Jacob Deuermeyer,EVT-00001643-4,Open
+989,Jacob Freese,EVT-00001707-2,Open
+990,Jacob Freese,EVT-00001714-4,Open
+991,Jacob Skowronek,EVT-00000164-2,Open
+992,Jacob Skowronek,EVT-00000633-1,Closed - No Discipline
+993,Jacob Spies,EVT-00000009-1,Closed - No Discipline
+994,Jacob Spies,EVT-00000234-1,Closed - No Discipline
+995,Jacob Spies,EVT-00000234-2,Closed - No Discipline
+996,Jacob Spies,EVT-00000234-3,Open
+997,Jacob Spies,EVT-00000234-4,Closed - No Discipline
+998,Jacob Spies,EVT-00000234-5,Closed - Final Discipline
+999,Jacob Spies,EVT-00000234-6,Closed - No Discipline
+1000,Jacob Spies,EVT-00000288-1,Open
+1001,Jacob Spies,EVT-00000392-1,Closed - No Discipline
+1002,Jacob Spies,EVT-00000447-1,Open
+1003,Jacob Spies,EVT-00000453-1,Closed - No Discipline
+1004,Jacob Spies,EVT-00000594-2,Closed - No Discipline
+1005,Jacob Spies,EVT-00000598-1,Open
+1006,Jacob Spies,EVT-00000603-1,Open
+1007,Jacob Spies,EVT-00000676-1,Closed - No Discipline
+1008,Jacob Spies,EVT-00000881-2,Open
+1009,Jacob Spies,EVT-00001213-1,Closed - No Discipline
+1010,Jacob Spies,EVT-00001237-1,Closed - No Discipline
+1011,Jacob Spies,EVT-00001355-1,Closed - No Discipline
+1012,Jacob Spies,EVT-00001444-1,Open
+1013,Jacob Spies,EVT-00001597-1,Closed - No Discipline
+1014,Jacob Spies,EVT-00001654-1,Closed - No Discipline
+1015,Jacob Spies,EVT-00001681-1,Open
+1016,Jacob Spies,EVT-00001948-1,Open
+1017,JAIME ARRIOLA,EVT-00000211-1,Closed - No Discipline
+1018,JAIME ARRIOLA,EVT-00000381-1,Closed - No Discipline
+1019,JAIME ARRIOLA,EVT-00000550-1,Open
+1020,JAIME ARRIOLA,EVT-00001304-1,Closed - No Discipline
+1021,James Carroll,EVT-00000991-1,Open
+1022,James Carroll,EVT-00001090-3,Closed - No Discipline
+1023,James Kelley,EVT-00000250-1,Closed - No Discipline
+1024,James Novak,EVT-00000022-1,Closed - No Discipline
+1025,James Novak,EVT-00001363-1,Open
+1026,Jamiel Mohammad,EVT-00000177-1,Closed - No Discipline
+1027,Jamiel Mohammad,EVT-00000555-1,Closed - No Discipline
+1028,Jamiel Mohammad,EVT-00000966-1,Open
+1029,Jamiel Mohammad,EVT-00001096-1,Open
+1030,Jamiel Mohammad,EVT-00001105-1,Closed - No Discipline
+1031,Jamiel Mohammad,EVT-00001166-1,Closed - No Discipline
+1032,Jamiel Mohammad,EVT-00001250-1,Open
+1033,Jamiel Mohammad,EVT-00001474-3,Closed - No Discipline
+1034,Jamiel Mohammad,EVT-00001880-1,Open
+1035,Jamy Schwartz,EVT-00000211-1,Closed - No Discipline
+1036,Jamy Schwartz,EVT-00001173-1,Closed - No Discipline
+1037,Jamy Schwartz,EVT-00001441-2,Open
+1038,Jared Tubbs,EVT-00000027-1,Open
+1039,Jared Tubbs,EVT-00000092-1,Closed - No Discipline
+1040,Jared Tubbs,EVT-00000437-1,Closed - No Discipline
+1041,Jared Tubbs,EVT-00000524-1,Closed - No Discipline
+1042,Jared Tubbs,EVT-00001543-1,Closed - No Discipline
+1043,Jarrod Roering,EVT-00000231-1,Open
+1044,Jarrod Roering,EVT-00000286-1,Closed - No Discipline
+1045,Jarrod Roering,EVT-00000881-1,Open
+1046,Jarrod Silva,EVT-00000390-1,Closed - No Discipline
+1047,Jarrod Silva,EVT-00001758-1,Open
+1048,Jason Aguirre,EVT-00000489-1,Closed - No Discipline
+1049,Jason Aguirre,EVT-00001502-1,Closed - No Discipline
+1050,Jason Andersen,EVT-00000116-3,Closed - No Discipline
+1051,Jason Brezina,EVT-00000164-2,Open
+1052,Jason Brezina,EVT-00000589-2,Closed - No Discipline
+1053,Jason Brezina,EVT-00000869-1,Closed - No Discipline
+1054,Jason Brezina,EVT-00001035-5,Closed - No Discipline
+1055,Jason Brezina,EVT-00001966-1,Open
+1056,Jason Case,EVT-00000043-1,Closed - No Discipline
+1057,Jason Case,EVT-00000154-1,Open
+1058,Jason Matthews,EVT-00000447-4,Closed - No Discipline
+1059,Jason Matthews,EVT-00000453-1,Closed - No Discipline
+1060,Jason Matthews,EVT-00000544-1,Open
+1061,Jason Matthews,EVT-00000692-1,Open
+1062,Jason Matthews,EVT-00001198-1,Closed - No Discipline
+1063,Jason Matthews,EVT-00001813-2,Closed - No Discipline
+1064,Jason Matthews,EVT-00001906-1,Open
+1065,Jeff Werner,EVT-00000105-1,Closed - No Discipline
+1066,Jeff Werner,EVT-00000106-1,Closed - No Discipline
+1067,Jeff Werner,EVT-00000299-1,Closed - Final Discipline
+1068,Jeff Werner,EVT-00000693-1,Open
+1069,Jeff Werner,EVT-00001061-1,Open
+1070,Jeff Werner,EVT-00001259-1,Open
+1071,Jeffrey Bryce,EVT-00000419-1,Closed - No Discipline
+1072,Jeffrey Carter,EVT-00000966-1,Open
+1073,Jeffrey Carter,EVT-00001959-1,Open
+1074,JEFFREY ILSTRUP,EVT-00000085-1,Closed - No Discipline
+1075,JEFFREY ILSTRUP,EVT-00000717-1,Closed - No Discipline
+1076,Jeffrey Imming,EVT-00000466-1,Open
+1077,Jeffrey Imming,EVT-00000548-1,Open
+1078,Jeffrey Imming,EVT-00000709-1,Closed - No Discipline
+1079,Jeffrey Waite,EVT-00000580-1,Closed - No Discipline
+1080,Jena Wasche,EVT-00001934-1,Open
+1081,Jena Wasche,EVT-00001934-2,Open
+1082,Jeremiah Smedsrud,EVT-00000199-1,Open
+1083,Jeremiah Smedsrud,EVT-00000347-1,Closed - No Discipline
+1084,Jeremiah Smedsrud,EVT-00000352-1,Closed - No Discipline
+1085,Jeremiah Smedsrud,EVT-00000411-1,Closed - No Discipline
+1086,Jeremiah Smedsrud,EVT-00000532-1,Closed - No Discipline
+1087,Jeremiah Smedsrud,EVT-00000889-1,Open
+1088,Jeremiah Smedsrud,EVT-00001244-1,Closed - No Discipline
+1089,Jeremiah Smedsrud,EVT-00001411-1,Open
+1090,Jeremy Depies,EVT-00000043-1,Closed - No Discipline
+1091,Jeremy Depies,EVT-00000125-1,Closed - No Discipline
+1092,Jeremy Depies,EVT-00000154-1,Open
+1093,Jeremy Depies,EVT-00000463-2,Closed - No Discipline
+1094,Jeremy Depies,EVT-00000573-1,Open
+1095,Jeremy Depies,EVT-00000601-1,Closed - No Discipline
+1096,Jeremy Depies,EVT-00000878-1,Open
+1097,Jeremy Depies,EVT-00000883-1,Open
+1098,Jeremy Depies,EVT-00001189-1,Closed - No Discipline
+1099,Jeremy Depies,EVT-00001366-1,Open
+1100,Jeremy Depies,EVT-00001608-1,Closed - No Discipline
+1101,Jeremy Gillard,EVT-00000746-2,Closed - No Discipline
+1102,Jeremy Gillard,EVT-00000941-2,Closed - No Discipline
+1103,Jeremy Gillard,EVT-00000997-1,Open
+1104,Jeremy Gillard,EVT-00001073-1,Closed - No Discipline
+1105,Jeremy Gillard,EVT-00001093-1,Closed - No Discipline
+1106,Jeremy Gillard,EVT-00001266-1,Closed - No Discipline
+1107,Jeremy Gillard,EVT-00001342-1,Closed - No Discipline
+1108,Jeremy Gillard,EVT-00001901-1,Open
+1109,Jeremy Randle,EVT-00000260-1,Closed - No Discipline
+1110,Jeremy Randle,EVT-00001459-2,Closed - No Discipline
+1111,Jeremy Randle,EVT-00001649-1,Open
+1112,Jeremy Riley,EVT-00001923-1,Open
+1113,JERRY WEAR,EVT-00000136-1,Closed - No Discipline
+1114,Jerryline Jackson,EVT-00000735-1,Open
+1115,Jesse Thiel,EVT-00001844-1,Closed - No Discipline
+1116,Jesse Trebesch,EVT-00000933-2,Open
+1117,Jesse Trebesch,EVT-00001676-3,Closed - No Discipline
+1118,Joe Fuller,EVT-00000324-1,Closed - No Discipline
+1119,Joe Fuller,EVT-00000991-1,Open
+1120,Joel Dittman,EVT-00000233-1,Open
+1121,Joel Hagen,EVT-00000181-1,Open
+1122,Joel Hagen,EVT-00000319-1,Closed - No Discipline
+1123,Joel Hagen,EVT-00000414-1,Closed - No Discipline
+1124,Joel Hagen,EVT-00000529-2,Open
+1125,Joel Hagen,EVT-00000544-1,Open
+1126,Joel Hagen,EVT-00000805-1,Open
+1127,Joel Santana,EVT-00001804-1,Open
+1128,John Biederman,EVT-00001193-1,Closed - No Discipline
+1129,John Haugland,EVT-00000037-1,Closed - No Discipline
+1130,John Hawes,EVT-00000462-1,Closed - Final Discipline
+1131,John Hawes,EVT-00000501-1,Closed - No Discipline
+1132,John Hawes,EVT-00001636-1,Open
+1133,John Kelly III,EVT-00000801-1,Closed - No Discipline
+1134,John Kelly III,EVT-00000904-1,Open
+1135,John Kelly III,EVT-00001084-1,Closed - No Discipline
+1136,John McDonald,EVT-00000940-1,Open
+1137,John McDonald,EVT-00001780-1,Open
+1138,John McDonald,EVT-00001974-1,Open
+1139,john reed,EVT-00000076-1,Closed - No Discipline
+1140,John Sullivan,EVT-00000069-1,Closed - No Discipline
+1141,John Sullivan,EVT-00000078-1,Closed - No Discipline
+1142,John Sullivan,EVT-00000198-1,Closed - No Discipline
+1143,John Sysaath,EVT-00000294-1,Open
+1144,John Sysaath,EVT-00001559-1,Open
+1145,John Wittrock,EVT-00000737-1,Open
+1146,John Yang,EVT-00000025-1,Closed - No Discipline
+1147,John Yang,EVT-00000073-1,Closed - No Discipline
+1148,John Yang,EVT-00001669-1,Closed - No Discipline
+1149,Johnathan Sherer,EVT-00000655-1,Closed - No Discipline
+1150,Johnathan Sherer,EVT-00000817-1,Closed - No Discipline
+1151,Johnathan Sherer,EVT-00000861-1,Open
+1152,Johnathan Sherer,EVT-00001024-1,Closed - No Discipline
+1153,Johnathan Sherer,EVT-00001277-1,Closed - No Discipline
+1154,Johnathan Sherer,EVT-00001356-1,Open
+1155,Johnathan Sherer,EVT-00001373-1,Open
+1156,Johnathan Sherer,EVT-00001384-1,Closed - No Discipline
+1157,Johnathan Sherer,EVT-00001532-2,Closed - No Discipline
+1158,Jomar Villamor,EVT-00000447-3,Closed - No Discipline
+1159,Jomar Villamor,EVT-00000982-1,Open
+1160,Jonathan Patino,EVT-00000076-1,Closed - No Discipline
+1161,Jonathan Patino,EVT-00000299-1,Open
+1162,Jonathan Patino,EVT-00000413-1,Open
+1163,Jonathan Patino,EVT-00000418-1,Open
+1164,Jonathan Patino,EVT-00000420-1,Open
+1165,Jonathan Patino,EVT-00000450-1,Open
+1166,Jonathan Patino,EVT-00000463-1,Open
+1167,Jonathan Patino,EVT-00000695-1,Open
+1168,Jonathan Patino,EVT-00000744-1,Open
+1169,Jonathan Patino,EVT-00000750-1,Open
+1170,Jonathan Patino,EVT-00000836-1,Open
+1171,Jonathan Patino,EVT-00001217-1,Closed - No Discipline
+1172,Jonathan Patino,EVT-00001302-1,Open
+1173,Jonathan Patino,EVT-00001426-1,Open
+1174,Jonathan Patino,EVT-00001653-1,Closed - No Discipline
+1175,Jonathan Patino,EVT-00001702-1,Open
+1176,Jonathon Pobuda,EVT-00000142-1,Closed - No Discipline
+1177,Jonathon Pobuda,EVT-00000742-1,Closed - No Discipline
+1178,Jonathon Pobuda,EVT-00000967-1,Closed - No Discipline
+1179,Jonathon Pobuda,EVT-00001230-1,Closed - No Discipline
+1180,Jonathon Pobuda,EVT-00001244-1,Closed - No Discipline
+1181,Jonathon Pobuda,EVT-00001772-2,Open
+1182,Jordan Brenny,EVT-00000049-1,Open
+1183,Jordan Brenny,EVT-00000610-1,Closed - No Discipline
+1184,Jordan Brenny,EVT-00000685-1,Closed - No Discipline
+1185,Jory Perry,EVT-00000586-1,Open
+1186,Jory Perry,EVT-00000655-1,Closed - No Discipline
+1187,Jory Perry,EVT-00000720-1,Open
+1188,Jory Perry,EVT-00000744-1,Open
+1189,Jory Perry,EVT-00000927-1,Open
+1190,Jory Perry,EVT-00000935-1,Open
+1191,Jory Perry,EVT-00001156-1,Open
+1192,Jory Perry,EVT-00001194-1,Closed - No Discipline
+1193,Jory Perry,EVT-00001277-1,Closed - No Discipline
+1194,Jory Perry,EVT-00001298-1,Closed - No Discipline
+1195,Jory Perry,EVT-00001373-1,Open
+1196,Jose Gomez,EVT-00000511-1,Closed - No Discipline
+1197,Joseph Brown,EVT-00000048-1,Closed - No Discipline
+1198,Joseph Brown,EVT-00000431-1,Closed - No Discipline
+1199,Joseph Brown,EVT-00000957-5,Closed - No Discipline
+1200,Joseph Fonseca,EVT-00000287-1,Open
+1201,Joseph Fonseca,EVT-00000592-1,Closed - No Discipline
+1202,Joseph Fonseca,EVT-00001085-2,Closed - No Discipline
+1203,Joseph Foxley,EVT-00000232-1,Open
+1204,Joseph Grout,EVT-00000262-1,Open
+1205,Joseph Grout,EVT-00000664-1,Closed - No Discipline
+1206,Joseph Grout,EVT-00000972-1,Closed - No Discipline
+1207,Joseph Grout,EVT-00001259-1,Open
+1208,Joseph Klimmek,EVT-00000475-1,Open
+1209,Joseph Klimmek,EVT-00000519-1,Closed - Final Discipline
+1210,Joseph Klimmek,EVT-00000781-1,Open
+1211,Joseph Klimmek,EVT-00000818-1,Open
+1212,Joseph Klimmek,EVT-00000914-1,Open
+1213,Joseph Klimmek,EVT-00000915-1,Closed - No Discipline
+1214,Joseph Klimmek,EVT-00001203-1,Closed - No Discipline
+1215,Joseph Klimmek,EVT-00001207-1,Closed - No Discipline
+1216,Joseph Klimmek,EVT-00001474-4,Closed - No Discipline
+1217,JOSEPH MICHNOWSKI,EVT-00000895-1,Open
+1218,JOSEPH MICHNOWSKI,EVT-00001635-2,Open
+1219,JOSEPH MICHNOWSKI,EVT-00001872-1,Open
+1220,Joseph Sullivan,EVT-00000274-1,Closed - No Discipline
+1221,Joseph Sullivan,EVT-00000407-1,Closed - No Discipline
+1222,Joshua Domek,EVT-00000671-1,Open
+1223,Joshua Domek,EVT-00001304-3,Open
+1224,Joshua Domek,EVT-00001480-4,Closed - No Discipline
+1225,Joshua Gonia,EVT-00001582-1,Closed - No Discipline
+1226,Joshua Lee,EVT-00001370-1,Closed - No Discipline
+1227,Joshua Lee,EVT-00001370-2,Open
+1228,Joshua Stewart,EVT-00000056-1,Closed - No Discipline
+1229,Joshua Stewart,EVT-00000098-1,Closed - No Discipline
+1230,Joshua Stewart,EVT-00000320-1,Closed - No Discipline
+1231,Joshua Stewart,EVT-00000560-1,Open
+1232,Joshua Stewart,EVT-00000587-1,Closed - No Discipline
+1233,Joshua Stewart,EVT-00000747-1,Open
+1234,Joshua Stewart,EVT-00001064-1,Open
+1235,Joshua Stewart,EVT-00001223-1,Closed - No Discipline
+1236,Joshua Stewart,EVT-00001276-1,Open
+1237,Joshua Stewart,EVT-00001504-1,Open
+1238,Joshua Stewart,EVT-00001627-1,Closed - No Discipline
+1239,Joshua Stewart,EVT-00001826-1,Closed - No Discipline
+1240,Joshua Stewart,EVT-00001859-1,Open
+1241,Joshua Stewart,EVT-00001949-1,Open
+1242,Joshua Stolze,EVT-00000617-1,Closed - No Discipline
+1243,Joshua Stolze,EVT-00000788-1,Closed - No Discipline
+1244,Joshua Stolze,EVT-00000911-1,Open
+1245,Joshua Stolze,EVT-00000915-2,Open
+1246,Joshua Stolze,EVT-00000915-9,Open
+1247,Joshua Stolze,EVT-00000964-1,Closed - No Discipline
+1248,Joshua Stolze,EVT-00001398-1,Closed - No Discipline
+1249,Joshua Stolze,EVT-00001480-6,Closed - No Discipline
+1250,Joshua Stolze,EVT-00001533-2,Closed - No Discipline
+1251,Joshua Stolze,EVT-00001535-1,Open
+1252,Joshua Stolze,EVT-00001682-2,Open
+1253,JUAN ALONZO,EVT-00000269-1,Closed - Final Discipline
+1254,Judah Wimbley,EVT-00000741-1,Closed - No Discipline
+1255,Julie Hagen,EVT-00000384-1,Open
+1256,Julie Hagen,EVT-00000799-1,Open
+1257,Julie Hagen,EVT-00000962-1,Open
+1258,Julie Hagen,EVT-00001206-1,Open
+1259,Justin Merten,EVT-00000390-1,Closed - No Discipline
+1260,Justin Oswald,EVT-00001844-1,Closed - No Discipline
+1261,JUSTIN PADILLA,EVT-00000398-1,Closed - No Discipline
+1262,JUSTIN PADILLA,EVT-00000720-2,Open
+1263,JUSTIN PADILLA,EVT-00000825-1,Open
+1264,JUSTIN PADILLA,EVT-00000906-1,Open
+1265,JUSTIN PADILLA,EVT-00001714-2,Open
+1266,Justin Reisdorfer,EVT-00000952-1,Closed - No Discipline
+1267,Justin Saint Jean,EVT-00000651-1,Closed - No Discipline
+1268,Justin Stetson,EVT-00000295-1,Open
+1269,Justin Stetson,EVT-00000602-1,Closed - No Discipline
+1270,Justin Young,EVT-00000033-1,Closed - No Discipline
+1271,Justin Young,EVT-00000156-1,Closed - No Discipline
+1272,Justin Young,EVT-00001649-1,Open
+1273,Kabakas Clark,EVT-00000069-1,Closed - No Discipline
+1274,Kabakas Clark,EVT-00000136-1,Closed - No Discipline
+1275,Kabakas Clark,EVT-00000195-1,Closed - No Discipline
+1276,Kabakas Clark,EVT-00000407-1,Closed - No Discipline
+1277,Kabakas Clark,EVT-00001089-1,Open
+1278,Kabakas Clark,EVT-00001292-1,Closed - No Discipline
+1279,Kabakas Clark,EVT-00001488-1,Closed - No Discipline
+1280,Kabakas Clark,EVT-00001601-1,Closed - No Discipline
+1281,Kabakas Clark,EVT-00001741-1,Open
+1282,Kabakas Clark,EVT-00001948-1,Open
+1283,Kabakas Clark,EVT-00001992-1,Open
+1284,Kaitlyn Donatell,EVT-00000791-1,Open
+1285,Katherine Pikula,EVT-00000854-1,Closed - No Discipline
+1286,Katherine Pikula,EVT-00001010-1,Closed - No Discipline
+1287,Katherine Pikula,EVT-00001635-2,Open
+1288,Katherine Pikula,EVT-00001868-1,Closed - No Discipline
+1289,Katie Blackwell,EVT-00001102-1,Closed - No Discipline
+1290,Katie Blackwell,EVT-00001116-1,Closed - No Discipline
+1291,Katie Blackwell,EVT-00001155-1,Closed - No Discipline
+1292,Katie Blackwell,EVT-00001460-1,Closed - No Discipline
+1293,Katie Blackwell,EVT-00001516-2,Closed - No Discipline
+1294,Katie Blackwell,EVT-00001815-1,Open with Office of Community Safety
+1295,Katie Miller,EVT-00001255-1,Open
+1296,Katrina Grant,EVT-00000487-1,Closed - No Discipline
+1297,Katrina Grant,EVT-00000613-1,Closed - No Discipline
+1298,Katrina Grant,EVT-00001256-1,Open
+1299,Katrina Grant,EVT-00001626-1,Open
+1300,KeHeung Anderson,EVT-00001800-1,Closed - No Discipline
+1301,Keia Boyd,EVT-00001175-1,Closed - No Discipline
+1302,Keia Boyd,EVT-00001277-1,Closed - No Discipline
+1303,Keia Boyd,EVT-00001373-1,Open
+1304,Keia Boyd,EVT-00001683-1,Closed - No Discipline
+1305,Keith Del Villar,EVT-00000691-1,Closed - No Discipline
+1306,Keith Del Villar,EVT-00000814-1,Open
+1307,Keith Del Villar,EVT-00001053-1,Open
+1308,Keith Del Villar,EVT-00001390-1,Closed - No Discipline
+1309,Keith Del Villar,EVT-00001595-1,Closed - No Discipline
+1310,Keith Del Villar,EVT-00001841-1,Closed - No Discipline
+1311,Kelly Damon,EVT-00000168-1,Closed - No Discipline
+1312,Kelly Damon,EVT-00000333-1,Closed - No Discipline
+1313,Kelly Damon,EVT-00000457-1,Closed - No Discipline
+1314,Kelly Damon,EVT-00000464-3,Closed - No Discipline
+1315,Kelly Damon,EVT-00001089-1,Open
+1316,Kelly Damon,EVT-00001245-1,Closed - No Discipline
+1317,Kelly Damon,EVT-00001415-1,Closed - No Discipline
+1318,Kelly Damon,EVT-00001480-2,Closed - No Discipline
+1319,Kelly Kasel,EVT-00001190-1,Closed - No Discipline
+1320,Kelly Kasel,EVT-00001449-1,Closed - No Discipline
+1321,Kelly Kasel,EVT-00001488-1,Closed - No Discipline
+1322,Kelly Kasel,EVT-00001611-2,Closed - No Discipline
+1323,Kelly O'Rourke,EVT-00000276-1,Open
+1324,Kelly O'Rourke,EVT-00000346-1,Open
+1325,Kelly O'Rourke,EVT-00000515-1,Open
+1326,Kelly O'Rourke,EVT-00000611-1,Closed - No Discipline
+1327,Kelly O'Rourke,EVT-00000732-1,Closed - Final Discipline
+1328,Kelly O'Rourke,EVT-00000799-1,Open
+1329,Kendra Krause,EVT-00000009-1,Closed - No Discipline
+1330,Kenneth Barrios,EVT-00001181-1,Closed - No Discipline
+1331,Kenneth Barrios,EVT-00001429-1,Closed - No Discipline
+1332,Kenneth Barrios,EVT-00001677-1,Closed - No Discipline
+1333,Kenneth Feucht,EVT-00001084-1,Closed - No Discipline
+1334,Kenneth Feucht,EVT-00001354-1,Closed - No Discipline
+1335,Kenneth McFee,EVT-00000964-1,Closed - No Discipline
+1336,Kenneth McFee,EVT-00001269-1,Open
+1337,Kenneth McFee,EVT-00001896-2,Open
+1338,Kevin Franek,EVT-00000201-1,Open
+1339,Kevin Franek,EVT-00001620-2,Open
+1340,Kevin Franek,EVT-00001656-1,Closed - No Discipline
+1341,Kevin Franek,EVT-00001656-2,Open
+1342,Kevin Lazarchic,EVT-00000003-1,Closed - No Discipline
+1343,Kevin Lazarchic,EVT-00000147-1,Closed - Final Discipline
+1344,Kevin Lazarchic,EVT-00000259-1,Closed - No Discipline
+1345,Kevin Lazarchic,EVT-00000634-1,Closed - No Discipline
+1346,Kevin Lazarchic,EVT-00000680-1,Closed - Final Discipline
+1347,Kevin Lazarchic,EVT-00000728-2,Closed - No Discipline
+1348,Kevin Lazarchic,EVT-00000736-1,Closed - Final Discipline
+1349,Kevin Palomata,EVT-00000236-1,Closed - No Discipline
+1350,Kevin Palomata,EVT-00000249-2,Closed - No Discipline
+1351,Kevin Truong,EVT-00001227-1,Closed - No Discipline
+1352,Kimberly Bonilla-Ramos,EVT-00000010-1,Closed - No Discipline
+1353,Kimberly Bonilla-Ramos,EVT-00000035-1,Closed - No Discipline
+1354,Kimberly Bonilla-Ramos,EVT-00000076-1,Closed - No Discipline
+1355,Kimberly Bonilla-Ramos,EVT-00000168-1,Closed - No Discipline
+1356,Kimberly Bonilla-Ramos,EVT-00001401-2,Closed - No Discipline
+1357,Kong Moua,EVT-00000304-1,Open
+1358,Kong Moua,EVT-00000331-1,Closed - No Discipline
+1359,Kong Moua,EVT-00000482-1,Closed - No Discipline
+1360,Kong Moua,EVT-00000720-1,Open
+1361,Kong Moua,EVT-00000825-2,Open
+1362,Kong Moua,EVT-00001827-1,Open
+1363,Kristina Schmidt,EVT-00000643-1,Closed - No Discipline
+1364,Kristopher Dauble,EVT-00000010-1,Closed - No Discipline
+1365,Kristopher Dauble,EVT-00000105-1,Closed - Final Discipline
+1366,Kristopher Dauble,EVT-00000167-1,Open
+1367,Kristopher Dauble,EVT-00000181-1,Open
+1368,Kristopher Dauble,EVT-00000295-1,Open
+1369,Kristopher Dauble,EVT-00000387-1,Closed - No Discipline
+1370,Kristopher Dauble,EVT-00000709-1,Closed - No Discipline
+1371,Kristopher Dauble,EVT-00000726-1,Closed - No Discipline
+1372,Kristopher Dauble,EVT-00001259-1,Open
+1373,Krystal Scott,EVT-00000783-1,Open
+1374,Krystal Scott,EVT-00000806-1,Open
+1375,Krystal Scott,EVT-00001413-1,Open
+1376,Krystle Klund,EVT-00000009-1,Closed - No Discipline
+1377,Krystle Klund,EVT-00000876-2,Open
+1378,Kurt Indehar,EVT-00000855-1,Open
+1379,KYLE ANDREASEN,EVT-00000250-1,Closed - No Discipline
+1380,KYLE ANDREASEN,EVT-00000880-1,Closed - No Discipline
+1381,KYLE ANDREASEN,EVT-00001157-1,Open
+1382,KYLE ANDREASEN,EVT-00001183-1,Open
+1383,KYLE ANDREASEN,EVT-00001192-1,Open
+1384,Kyle Cornwell,EVT-00000010-1,Closed - No Discipline
+1385,Kyle Cornwell,EVT-00000416-1,Closed - No Discipline
+1386,Kyle Cornwell,EVT-00000497-1,Closed - No Discipline
+1387,Kyle Cornwell,EVT-00000533-1,Open
+1388,Kyle Cornwell,EVT-00001401-1,Closed - No Discipline
+1389,Kyle Cornwell,EVT-00001718-1,Closed - No Discipline
+1390,Kyle Fowlkes,EVT-00001807-1,Open
+1391,Kyle Fowlkes,EVT-00001809-1,Closed - No Discipline
+1392,Kyle Mader,EVT-00000957-5,Closed - No Discipline
+1393,Kyle Mader,EVT-00001089-2,Open
+1394,Kyle Mader,EVT-00001204-1,Closed - No Discipline
+1395,Kyle Pond,EVT-00000181-2,Closed - No Discipline
+1396,Kyle Pond,EVT-00000392-1,Closed - No Discipline
+1397,Kyle Pond,EVT-00000450-2,Open
+1398,Kyle Pond,EVT-00000463-3,Closed - No Discipline
+1399,Kyle Pond,EVT-00000576-2,Closed - No Discipline
+1400,Kyle Pond,EVT-00000581-2,Closed - No Discipline
+1401,Kyle Pond,EVT-00000584-2,Closed - No Discipline
+1402,Kyle Pond,EVT-00000598-2,Closed - No Discipline
+1403,Kyle Pond,EVT-00000693-2,Closed - No Discipline
+1404,Kyle Pond,EVT-00000695-2,Closed - No Discipline
+1405,Kyle Pond,EVT-00000696-2,Closed - No Discipline
+1406,Kyle Pond,EVT-00000731-2,Closed - No Discipline
+1407,Kyle Pond,EVT-00000836-2,Closed - No Discipline
+1408,Kyle Pond,EVT-00000990-2,Closed - No Discipline
+1409,Kyle Pond,EVT-00001018-2,Closed - No Discipline
+1410,Kyle Pond,EVT-00001634-1,Closed - No Discipline
+1411,Kyle Ruud,EVT-00000231-1,Open
+1412,Kyle Ruud,EVT-00000428-1,Closed - No Discipline
+1413,Kyle Schroeder,EVT-00000020-1,Closed - No Discipline
+1414,Kyle Schwartz,EVT-00000479-1,Closed - No Discipline
+1415,Kyle Schwartz,EVT-00000595-1,Open
+1416,Kyle Swanson,EVT-00000198-1,Closed - No Discipline
+1417,Lamandre Wright Sr.,EVT-00000056-1,Closed - No Discipline
+1418,Lamandre Wright Sr.,EVT-00000192-1,Closed - No Discipline
+1419,Lamandre Wright Sr.,EVT-00001658-1,Open
+1420,Laura Nelson,EVT-00000613-1,Closed - No Discipline
+1421,Laura Nelson,EVT-00000845-1,Open
+1422,Laura Nelson,EVT-00000941-2,Closed - No Discipline
+1423,Laura Nelson,EVT-00001165-1,Open
+1424,Laura Nelson,EVT-00001459-1,Open
+1425,Lawrence Doyle,EVT-00001793-1,Open
+1426,Lee Shafer,EVT-00000120-1,Open
+1427,Lee Shafer,EVT-00000906-1,Open
+1428,Lee Shafer,EVT-00001893-1,Open
+1429,Leonard Gerten,EVT-00000301-1,Closed - No Discipline
+1430,Leonard Gerten,EVT-00000413-2,Closed - No Discipline
+1431,Leonard Gerten,EVT-00000524-1,Closed - No Discipline
+1432,Leonard Gerten,EVT-00000684-1,Closed - No Discipline
+1433,Leonard Gerten,EVT-00000778-1,Open
+1434,Leonard Gerten,EVT-00000907-1,Open
+1435,Leonard Gerten,EVT-00000965-1,Closed - No Discipline
+1436,Leonard Gerten,EVT-00001012-1,Closed - No Discipline
+1437,Leonard Gerten,EVT-00001377-1,Open
+1438,Leonard Gerten,EVT-00001507-1,Closed - No Discipline
+1439,Leonard Gerten,EVT-00001603-1,Open
+1440,Leonard Gerten,EVT-00001640-2,Closed - No Discipline
+1441,Lesly Vera,EVT-00000869-1,Closed - No Discipline
+1442,Lesly Vera,EVT-00001127-1,Closed - No Discipline
+1443,Lesly Vera,EVT-00001127-2,Closed - No Discipline
+1444,Lesly Vera,EVT-00001648-1,Closed - No Discipline
+1445,Lesly Vera,EVT-00001872-2,Open
+1446,LEWIS BADY,EVT-00000279-1,Closed - No Discipline
+1447,LEWIS BADY,EVT-00000765-1,Closed - No Discipline
+1448,LEWIS BADY,EVT-00001296-1,Open
+1449,Liban Artan,EVT-00001614-1,Open
+1450,Liban Ibrahim,EVT-00001067-1,Closed - No Discipline
+1451,Liban Ibrahim,EVT-00001435-1,Open
+1452,Liban Ibrahim,EVT-00001440-2,Closed - No Discipline
+1453,Liban Ibrahim,EVT-00001477-1,Closed - No Discipline
+1454,Liban Ibrahim,EVT-00001488-1,Closed - No Discipline
+1455,Lila Hanson,EVT-00001055-1,Open
+1456,Lindsey Kortus,EVT-00000105-1,Closed - No Discipline
+1457,Lucas Nightengale,EVT-00000685-1,Closed - No Discipline
+1458,Lucas Oachs,EVT-00001763-1,Open
+1459,Lucas Schroeder,EVT-00001788-1,Closed - No Discipline
+1460,Lucas Schroeder,EVT-00001848-1,Closed - No Discipline
+1461,Luke Kittock,EVT-00000237-1,Closed - No Discipline
+1462,Luke Kittock,EVT-00000280-1,Open
+1463,Luke Kittock,EVT-00000477-1,Closed - No Discipline
+1464,Luke Kittock,EVT-00000620-1,Closed - No Discipline
+1465,Luke Kittock,EVT-00000650-1,Open
+1466,Luke Kittock,EVT-00000672-1,Closed - Final Discipline
+1467,Luke Kittock,EVT-00000905-1,Open
+1468,Luke Kittock,EVT-00000915-1,Closed - No Discipline
+1469,Luke Kittock,EVT-00001181-1,Closed - No Discipline
+1470,Luke Kittock,EVT-00001320-1,Closed - No Discipline
+1471,Luke Kittock,EVT-00001452-1,Open
+1472,Luke Kittock,EVT-00001525-1,Closed - No Discipline
+1473,Luke Kittock,EVT-00001630-1,Closed - No Discipline
+1474,Luke Kittock,EVT-00001773-1,Open
+1475,LUKE RYSAVY,EVT-00000407-1,Closed - No Discipline
+1476,LUKE RYSAVY,EVT-00000452-1,Closed - No Discipline
+1477,LUKE RYSAVY,EVT-00000478-1,Closed - No Discipline
+1478,LUKE RYSAVY,EVT-00001650-1,Open
+1479,Luke Tungseth,EVT-00001379-1,Open
+1480,LUKE WEATHERSPOON,EVT-00000235-1,Closed - No Discipline
+1481,LUKE WEATHERSPOON,EVT-00000861-2,Closed - No Discipline
+1482,LUKE WEATHERSPOON,EVT-00001427-1,Open
+1483,Macauley Reuben,EVT-00000690-1,Open
+1484,Mace Orris,EVT-00001729-1,Open
+1485,Mack Dominguez,EVT-00000799-2,Open
+1486,Mack Dominguez,EVT-00000970-1,Closed - No Discipline
+1487,Mack Dominguez,EVT-00001856-1,Open
+1488,Mackenzie Awalt,EVT-00001068-1,Closed - No Discipline
+1489,Mackenzie Awalt,EVT-00001663-1,Closed - No Discipline
+1490,Mahamed Dahir,EVT-00001071-1,Open
+1491,MAIYA CAIN,EVT-00000617-1,Closed - No Discipline
+1492,MAIYA CAIN,EVT-00001127-1,Closed - No Discipline
+1493,MAIYA CAIN,EVT-00001127-2,Closed - No Discipline
+1494,MAIYA CAIN,EVT-00001487-1,Closed - No Discipline
+1495,Marc Gingerich,EVT-00000446-1,Closed - No Discipline
+1496,Marc Gingerich,EVT-00000454-1,Closed - No Discipline
+1497,Marcus Benner,EVT-00000116-2,Open
+1498,Marcus Benner,EVT-00000400-1,Open
+1499,Marcus Benner,EVT-00000597-1,Open
+1500,Marcus Benner,EVT-00000931-1,Open
+1501,Marcus Benner,EVT-00001250-1,Open
+1502,Marcus Benner,EVT-00001393-1,Open
+1503,Marcus Benner,EVT-00001687-1,Closed - No Discipline
+1504,Marcus Benner,EVT-00001687-2,Open
+1505,Marcus Ottney,EVT-00000742-1,Closed - No Discipline
+1506,Marcus Ottney,EVT-00000967-1,Closed - No Discipline
+1507,Marcus Ottney,EVT-00001144-1,Open
+1508,Marcus Ottney,EVT-00001300-1,Closed - No Discipline
+1509,MARISELA PALAPA ALONZO,EVT-00000010-1,Closed - No Discipline
+1510,MARISELA PALAPA ALONZO,EVT-00000464-2,Closed - No Discipline
+1511,MARISELA PALAPA ALONZO,EVT-00000677-1,Open
+1512,MARISELA PALAPA ALONZO,EVT-00000722-1,Open
+1513,MARISELA PALAPA ALONZO,EVT-00001058-1,Open
+1514,Marjane Khazraeinazm..,EVT-00000344-1,Open
+1515,Mark Bascovsky Jr,EVT-00000891-1,Open
+1516,Mark Bascovsky Jr,EVT-00001024-1,Closed - No Discipline
+1517,Mark Bascovsky Jr,EVT-00001082-1,Closed - No Discipline
+1518,Mark Bohnen,EVT-00000976-1,Open
+1519,Mark Bohnen,EVT-00001024-1,Closed - No Discipline
+1520,Mark Bohnen,EVT-00001188-4,Closed - No Discipline
+1521,Mark Bohnen,EVT-00001278-1,Open
+1522,Mark Bohnsack,EVT-00000090-1,Closed - No Discipline
+1523,Mark Bohnsack,EVT-00000257-1,Closed - No Discipline
+1524,Mark Doll,EVT-00000163-1,Closed - No Discipline
+1525,Mark Doll,EVT-00000205-1,Open
+1526,Mark Doll,EVT-00000565-1,Closed - No Discipline
+1527,Mark Doll,EVT-00000715-2,Open
+1528,Mark Doll,EVT-00001403-1,Open
+1529,Mark Doll,EVT-00001467-1,Open
+1530,Mark Johnson,EVT-00000208-1,Closed - No Discipline
+1531,Mark Johnson,EVT-00000345-1,Closed - No Discipline
+1532,Mark Johnson,EVT-00000704-1,Closed - No Discipline
+1533,Mark Johnson,EVT-00001279-1,Open
+1534,Mark Johnson,EVT-00001488-1,Closed - No Discipline
+1535,Mark Johnson,EVT-00001552-1,Closed - No Discipline
+1536,Mark Johnson,EVT-00001553-1,Closed - No Discipline
+1537,Mark Kaspszak,EVT-00001195-1,Closed - No Discipline
+1538,Mark Kaspszak,EVT-00001754-3,Open
+1539,Mark Klukow,EVT-00001458-1,Closed - No Discipline
+1540,Mark Klukow,EVT-00001643-6,Closed - No Discipline
+1541,Mark Klukow,EVT-00001643-8,Open
+1542,Mark Klukow,EVT-00001994-1,Open
+1543,Mark Montgomery,EVT-00000669-1,Closed - No Discipline
+1544,Mark Ringgenberg,EVT-00000295-1,Open
+1545,Mark Ringgenberg,EVT-00000602-2,Closed - No Discipline
+1546,Mark Ringgenberg,EVT-00001245-1,Closed - No Discipline
+1547,Mark Suchta,EVT-00000194-1,Closed - No Discipline
+1548,Mark Suchta,EVT-00000291-1,Open
+1549,Mark Suchta,EVT-00000293-1,Closed - No Discipline
+1550,Mark Suchta,EVT-00000628-1,Open
+1551,Mark Suchta,EVT-00001548-1,Closed - No Discipline
+1552,Maslah Abdi,EVT-00001493-1,Open
+1553,Maslah Abdi,EVT-00001555-1,Closed - No Discipline
+1554,Maslah Abdi,EVT-00001584-1,Closed - No Discipline
+1555,Maslah Abdi,EVT-00001670-2,Open
+1556,Maslah Abdi,EVT-00001714-1,Open
+1557,Maslah Abdi,EVT-00001775-1,Open
+1558,Mason Schemmel,EVT-00000489-1,Closed - No Discipline
+1559,Mason Schemmel,EVT-00000661-1,Closed - No Discipline
+1560,Mason Schemmel,EVT-00001052-1,Open
+1561,Mason Schemmel,EVT-00001442-1,Open
+1562,Mason Schemmel,EVT-00001530-1,Open
+1563,Mason Schemmel,EVT-00001682-1,Open
+1564,Mason Schemmel,EVT-00001773-1,Open
+1565,Mason Schemmel,EVT-00001776-1,Open
+1566,Matthew Cashin,EVT-00000915-1,Closed - No Discipline
+1567,Matthew Cashin,EVT-00000942-2,Closed - No Discipline
+1568,Matthew Cashin,EVT-00001432-1,Closed - No Discipline
+1569,Matthew Cashin,EVT-00001639-3,Open
+1570,Matthew Collier,EVT-00000831-1,Closed - No Discipline
+1571,Matthew Collier,EVT-00000891-1,Open
+1572,Matthew Collier,EVT-00001711-1,Open
+1573,Matthew Collier,EVT-00001729-1,Open
+1574,Matthew Gottsch,EVT-00001496-1,Closed - No Discipline
+1575,Matthew Heger,EVT-00000262-1,Open
+1576,Matthew Heger,EVT-00000566-1,Closed - No Discipline
+1577,Matthew Heger,EVT-00001571-1,Closed - No Discipline
+1578,Matthew Lindquist,EVT-00000133-1,Closed - No Discipline
+1579,Matthew Lindquist,EVT-00000464-1,Open
+1580,Matthew Lindquist,EVT-00001813-1,Closed - No Discipline
+1581,Matthew Nolan,EVT-00001035-3,Closed - No Discipline
+1582,Matthew Nolan,EVT-00001319-1,Closed - No Discipline
+1583,Matthew Nolan,EVT-00001319-2,Closed - No Discipline
+1584,Matthew Nolan,EVT-00001714-5,Open
+1585,Matthew Olson (5305),EVT-00000043-1,Closed - No Discipline
+1586,Matthew Olson (5305),EVT-00000154-1,Open
+1587,Matthew Olson (5305),EVT-00000452-1,Closed - No Discipline
+1588,Matthew Olson (5305),EVT-00000478-1,Closed - No Discipline
+1589,Matthew Olson (5305),EVT-00000603-2,Closed - No Discipline
+1590,Matthew Olson (5305),EVT-00000804-1,Open
+1591,Matthew Olson (5305),EVT-00000924-2,Closed - No Discipline
+1592,Matthew Olson (5305),EVT-00000934-1,Open
+1593,Matthew Olson (5305),EVT-00001518-1,Closed - No Discipline
+1594,Matthew Olson (5305),EVT-00001948-1,Open
+1595,Matthew Olson (5305),EVT-00001992-1,Open
+1596,Matthew Olson (5313),EVT-00000477-1,Closed - No Discipline
+1597,Matthew Olson (5313),EVT-00000715-1,Open
+1598,Matthew Olson (5313),EVT-00000773-1,Closed - No Discipline
+1599,Matthew Olson (5313),EVT-00001250-1,Open
+1600,Matthew Olson (5313),EVT-00001641-1,Closed - No Discipline
+1601,Matthew Olson (5313),EVT-00001692-1,Open
+1602,Matthew Olson (5313),EVT-00001887-2,Open
+1603,Matthew Olson (5313),EVT-00001893-1,Open
+1604,Matthew Ryan,EVT-00000461-2,Closed - No Discipline
+1605,Matthew Severance,EVT-00000034-1,Closed - No Discipline
+1606,Matthew Severance,EVT-00000046-1,Closed - No Discipline
+1607,Matthew Severance,EVT-00000291-1,Open
+1608,Matthew Severance,EVT-00000293-1,Closed - No Discipline
+1609,Matthew Severance,EVT-00000294-2,Closed - No Discipline
+1610,Matthew Severance,EVT-00000837-1,Closed - No Discipline
+1611,Megan Rengstorf,EVT-00000323-1,Closed - No Discipline
+1612,Megan Rengstorf,EVT-00001470-2,Closed - No Discipline
+1613,Melissa Hansen,EVT-00001204-1,Closed - No Discipline
+1614,Meng Yang,EVT-00001446-1,Closed - No Discipline
+1615,Meng Yang,EVT-00001498-1,Closed - No Discipline
+1616,Merlin Pooniwala,EVT-00001415-1,Closed - No Discipline
+1617,Merlin Pooniwala,EVT-00001480-2,Closed - No Discipline
+1618,Merlin Pooniwala,EVT-00001529-1,Open
+1619,Merlin Pooniwala,EVT-00001586-1,Closed - No Discipline
+1620,Merlin Pooniwala,EVT-00001714-1,Open
+1621,Mia Johnson,EVT-00000206-1,Closed - No Discipline
+1622,Mia Johnson,EVT-00000221-1,Closed - Final Discipline
+1623,Mia Johnson,EVT-00000314-1,Closed - No Discipline
+1624,Mia Johnson,EVT-00000339-1,Closed - Final Discipline
+1625,Mia Johnson,EVT-00000445-1,Closed - No Discipline
+1626,Mia Johnson,EVT-00000725-1,Closed - No Discipline
+1627,Mia Johnson,EVT-00000850-1,Closed - No Discipline
+1628,Mia Johnson,EVT-00000991-1,Open
+1629,Mia Johnson,EVT-00001723-1,Open
+1630,Mia Johnson,EVT-00001798-1,Closed - No Discipline
+1631,Mia Johnson,EVT-00001902-1,Closed - No Discipline
+1632,Michael Bringgold,EVT-00000205-1,Open
+1633,Michael Bringgold,EVT-00000428-3,Closed - No Discipline
+1634,Michael Bringgold,EVT-00000460-1,Closed - No Discipline
+1635,Michael Bringgold,EVT-00000565-1,Closed - No Discipline
+1636,Michael Bringgold,EVT-00000712-2,Open
+1637,Michael Bringgold,EVT-00001626-1,Open
+1638,Michael Chiappetta,EVT-00001343-2,Closed - No Discipline
+1639,Michael Frye,EVT-00000100-1,Closed - No Discipline
+1640,Michael Grahn,EVT-00000286-1,Closed - No Discipline
+1641,Michael Grahn,EVT-00000410-1,Closed - No Discipline
+1642,Michael Grahn,EVT-00001396-1,Open
+1643,Michael Heyer,EVT-00000915-1,Closed - No Discipline
+1644,Michael Honeycutt,EVT-00000919-1,Open
+1645,Michael Kennedy,EVT-00000826-5,Closed - No Discipline
+1646,Michael McCadden,EVT-00000118-1,Closed - No Discipline
+1647,Michael Meath,EVT-00001236-1,Closed - No Discipline
+1648,Michael Norris,EVT-00001301-1,Closed - No Discipline
+1649,Michael Pfaff,EVT-00000075-1,Closed - No Discipline
+1650,Michael Pfaff,EVT-00000089-1,Closed - No Discipline
+1651,Michael Pfaff,EVT-00000116-1,Open
+1652,Michael Pfaff,EVT-00000942-1,Closed - No Discipline
+1653,Michael Pfaff,EVT-00001250-1,Open
+1654,Michael Pfaff,EVT-00001263-1,Open
+1655,Michael Pfaff,EVT-00001546-1,Closed - No Discipline
+1656,Michael Pfaff,EVT-00001724-1,Closed - No Discipline
+1657,MICHAEL SELLE,EVT-00000191-1,Closed - Final Discipline
+1658,MICHAEL SELLE,EVT-00000255-1,Closed - No Discipline
+1659,MICHAEL SELLE,EVT-00000298-2,Closed - No Discipline
+1660,MICHAEL SELLE,EVT-00000415-1,Closed - No Discipline
+1661,MICHAEL SELLE,EVT-00000426-1,Open
+1662,MICHAEL SELLE,EVT-00000434-1,Closed - No Discipline
+1663,MICHAEL SELLE,EVT-00000465-1,Open
+1664,MICHAEL SELLE,EVT-00000707-1,Closed - No Discipline
+1665,MICHAEL SELLE,EVT-00000863-2,Closed - No Discipline
+1666,MICHAEL SELLE,EVT-00000920-2,Closed - No Discipline
+1667,MICHAEL SELLE,EVT-00000921-1,Closed - No Discipline
+1668,MICHAEL SELLE,EVT-00000922-1,Closed - No Discipline
+1669,MICHAEL SELLE,EVT-00000925-1,Closed - No Discipline
+1670,MICHAEL SELLE,EVT-00000926-1,Closed - No Discipline
+1671,MICHAEL SELLE,EVT-00001014-1,Open
+1672,MICHAEL SELLE,EVT-00001140-1,Closed - No Discipline
+1673,Michael Wegner,EVT-00000287-1,Open
+1674,Michael Wegner,EVT-00000494-1,Open
+1675,Michael Wegner,EVT-00000494-2,Open
+1676,Michael Wegner,EVT-00000541-1,Open
+1677,Michael Wegner,EVT-00000574-1,Closed - No Discipline
+1678,Michael Wegner,EVT-00000747-1,Open
+1679,Michael Wegner,EVT-00001235-1,Closed - No Discipline
+1680,Michael Wegner,EVT-00001831-1,Open
+1681,Michael Wegner,EVT-00001923-1,Open
+1682,Michael Woods,EVT-00001816-1,Closed - No Discipline
+1683,Michael Woods,EVT-00001907-2,Open
+1684,Miguel Martinez Suarez,EVT-00000227-1,Closed - No Discipline
+1685,Miguel Martinez Suarez,EVT-00000270-1,Open
+1686,Miguel Martinez Suarez,EVT-00000306-1,Closed - No Discipline
+1687,Miguel Martinez Suarez,EVT-00000451-1,Open
+1688,Miguel Martinez Suarez,EVT-00001478-1,Open
+1689,Mike Nimlos,EVT-00000724-1,Closed - Final Discipline
+1690,Miranda Peterson,EVT-00000372-1,Closed - No Discipline
+1691,Mitchell Erickson,EVT-00000079-1,Closed - No Discipline
+1692,MITCHELL WALETZKI,EVT-00000315-1,Closed - No Discipline
+1693,MITCHELL WALETZKI,EVT-00000564-1,Closed - No Discipline
+1694,MITCHELL WALETZKI,EVT-00000854-1,Closed - No Discipline
+1695,MITCHELL WALETZKI,EVT-00000867-1,Open
+1696,MITCHELL WALETZKI,EVT-00000867-2,Closed - No Discipline
+1697,MITCHELL WALETZKI,EVT-00001319-1,Closed - No Discipline
+1698,MITCHELL WALETZKI,EVT-00001533-2,Closed - No Discipline
+1699,MITCHELL WALETZKI,EVT-00001639-1,Open
+1700,MITCHELL WALETZKI,EVT-00001639-2,Closed - No Discipline
+1701,MITCHELL WALETZKI,EVT-00001678-1,Open
+1702,MITCHELL WALETZKI,EVT-00001766-1,Open
+1703,MITCHELL WALETZKI,EVT-00001782-1,Open
+1704,Mohamed Qasim,EVT-00000735-1,Open
+1705,Mohamed Qasim,EVT-00000965-1,Closed - No Discipline
+1706,Mohamed Qasim,EVT-00001057-1,Open
+1707,Mohamed Qasim,EVT-00001260-1,Open
+1708,Mohamed Qasim,EVT-00001325-1,Open
+1709,Mohamed Qasim,EVT-00001387-1,Open
+1710,Mohamed Yusuf,EVT-00001344-1,Closed - No Discipline
+1711,Mohamud Farah,EVT-00001035-4,Closed - No Discipline
+1712,Mohamud Farah,EVT-00001480-7,Open
+1713,Mohamud Farah,EVT-00001676-1,Closed - No Discipline
+1714,Mohamud Jama,EVT-00000009-1,Closed - No Discipline
+1715,Mohamud Jama,EVT-00000199-2,Open
+1716,Mohamud Jama,EVT-00000463-1,Open
+1717,Mohamud Jama,EVT-00001095-1,Closed - No Discipline
+1718,Mohamud Jama,EVT-00001144-2,Open
+1719,Mohamud Jama,EVT-00001179-1,Closed - No Discipline
+1720,Mohamud Jama,EVT-00001355-1,Closed - No Discipline
+1721,Mohamud Jama,EVT-00001425-1,Open
+1722,Molly Fischer,EVT-00000146-1,Closed - No Discipline
+1723,Molly Fischer,EVT-00000211-1,Closed - No Discipline
+1724,Molly Fischer,EVT-00001235-1,Closed - No Discipline
+1725,Molly Kiewatt,EVT-00000915-2,Open
+1726,Molly Kiewatt,EVT-00000915-7,Open
+1727,Molly Kiewatt,EVT-00001258-1,Closed - No Discipline
+1728,Molly Kiewatt,EVT-00001311-1,Closed - No Discipline
+1729,Morgan Brackenbury,EVT-00001402-1,Closed - No Discipline
+1730,Morgan Brackenbury,EVT-00001777-1,Closed - No Discipline
+1731,Morgan Brackenbury,EVT-00001778-1,Open
+1732,Moshe Davis,EVT-00001923-1,Open
+1733,Mukhtar Abdulkadir,EVT-00000788-1,Closed - No Discipline
+1734,Mukhtar Abdulkadir,EVT-00001515-1,Open
+1735,Mukhtar Awow,EVT-00000305-1,Closed - No Discipline
+1736,Mukhtar Awow,EVT-00000452-2,Closed - No Discipline
+1737,Mukhtar Awow,EVT-00000478-1,Closed - No Discipline
+1738,Mukhtar Awow,EVT-00000623-1,Closed - No Discipline
+1739,Mukhtar Awow,EVT-00000758-2,Open
+1740,Mukhtar Awow,EVT-00000857-2,Open
+1741,Mukhtar Awow,EVT-00001676-2,Open
+1742,Mymuna Sayid,EVT-00001636-1,Open
+1743,Mymuna Sayid,EVT-00001684-1,Open
+1744,Mymuna Sayid,EVT-00001936-1,Open
+1745,Myron Phernetton,EVT-00001635-2,Open
+1746,Myron Phernetton,EVT-00001888-1,Closed - No Discipline
+1747,Nadia Mitnick,EVT-00001729-1,Open
+1748,Natalie Tonkovitz,EVT-00001711-2,Closed - No Discipline
+1749,Nathan Bauer,EVT-00000009-1,Closed - No Discipline
+1750,Nathan Bauer,EVT-00000027-1,Open
+1751,Nathan Bauer,EVT-00000450-1,Open
+1752,Nathan Bauer,EVT-00000450-3,Closed - No Discipline
+1753,Nathan Bauer,EVT-00000673-1,Open
+1754,Nathan Bauer,EVT-00001260-1,Open
+1755,Nathan Bauer,EVT-00001446-1,Closed - No Discipline
+1756,Nathan Bauer,EVT-00001912-1,Open
+1757,Nathan Nelson,EVT-00000112-2,Open
+1758,Nathan Nelson,EVT-00000144-1,Closed - Final Discipline
+1759,Nathan Nelson,EVT-00000363-1,Closed - No Discipline
+1760,Nathan Nelson,EVT-00000633-1,Closed - No Discipline
+1761,Nathan Nelson,EVT-00000876-1,Open
+1762,Nathan Nelson,EVT-00001269-1,Open
+1763,Nathan Nelson,EVT-00001417-2,Open
+1764,Nathan Norgren,EVT-00000872-1,Closed - No Discipline
+1765,Nathan Norgren,EVT-00001733-1,Open
+1766,Nathan Sundberg,EVT-00000150-1,Closed - No Discipline
+1767,Nathan Sundberg,EVT-00000266-1,Closed - No Discipline
+1768,Nathan Sundberg,EVT-00000295-1,Open
+1769,Nathan Sundberg,EVT-00000421-1,Closed - No Discipline
+1770,Nathan Sundberg,EVT-00000575-1,Closed - No Discipline
+1771,Nathan Sundberg,EVT-00001262-1,Open
+1772,Nathan Sundberg,EVT-00001763-1,Open
+1773,Neal Walsh,EVT-00000009-1,Closed - No Discipline
+1774,Neal Walsh,EVT-00000166-1,Open
+1775,Neal Walsh,EVT-00000547-1,Open
+1776,Neal Walsh,EVT-00000804-1,Open
+1777,Neal Walsh,EVT-00000834-1,Open
+1778,Neal Walsh,EVT-00001049-1,Open
+1779,Neal Walsh,EVT-00001425-2,Open
+1780,Neal Walsh,EVT-00001664-1,Open
+1781,Neal Walsh,EVT-00001840-1,Open
+1782,Neal Walsh,EVT-00001906-1,Open
+1783,Nicholas Anderson,EVT-00000289-1,Closed - No Discipline
+1784,Nicholas Anderson,EVT-00000468-1,Closed - Final Discipline
+1785,Nicholas Davids,EVT-00000408-1,Closed - No Discipline
+1786,Nicholas Davids,EVT-00000418-1,Open
+1787,Nicholas Davids,EVT-00000649-1,Closed - No Discipline
+1788,Nicholas Davids,EVT-00000681-1,Closed - No Discipline
+1789,Nicholas Davids,EVT-00000691-1,Closed - No Discipline
+1790,Nicholas Davids,EVT-00001277-1,Closed - No Discipline
+1791,Nicholas Davids,EVT-00001298-1,Closed - No Discipline
+1792,Nicholas Davids,EVT-00001373-1,Open
+1793,Nicholas Franco,EVT-00000380-1,Open
+1794,Nicholas Franco,EVT-00001022-1,Open
+1795,Nicholas Franco,EVT-00001256-1,Open
+1796,Nicholas Franco,EVT-00001294-1,Open
+1797,Nicholas Franco,EVT-00001808-1,Closed - No Discipline
+1798,Nicholas Gabrielson,EVT-00000825-1,Open
+1799,Nicholas Gabrielson,EVT-00000947-1,Closed - No Discipline
+1800,Nicholas Gabrielson,EVT-00001439-1,Open
+1801,Nicholas Hansen,EVT-00000009-1,Closed - No Discipline
+1802,Nicholas Hansen,EVT-00000283-1,Closed - No Discipline
+1803,Nicholas Hansen,EVT-00000891-1,Open
+1804,Nicholas Hansen,EVT-00000927-1,Open
+1805,Nicholas Hansen,EVT-00001019-1,Open
+1806,Nicholas Hwang,EVT-00000058-1,Closed - No Discipline
+1807,Nicholas Hwang,EVT-00000941-1,Open
+1808,Nicholas Kapinos,EVT-00000010-1,Closed - No Discipline
+1809,Nicholas Kapinos,EVT-00000109-1,Closed - Final Discipline
+1810,Nicholas Kapinos,EVT-00000176-1,Closed - No Discipline
+1811,Nicholas Kapinos,EVT-00000297-1,Open
+1812,Nicholas Kapinos,EVT-00000533-1,Open
+1813,Nicholas Kapinos,EVT-00000631-1,Open
+1814,Nicholas Kapinos,EVT-00000886-1,Open
+1815,Nicholas Kapinos,EVT-00000913-1,Closed - No Discipline
+1816,Nicholas Kapinos,EVT-00001225-1,Open
+1817,Nicholas Kapinos,EVT-00001792-1,Closed - No Discipline
+1818,Nicholas McCarthy,EVT-00000087-1,Closed - No Discipline
+1819,Nicholas McCarthy,EVT-00001152-1,Open
+1820,Nicholas McCarthy,EVT-00001435-1,Open
+1821,Nicholas McCarthy,EVT-00001601-1,Closed - No Discipline
+1822,Nicholas Parker,EVT-00001733-1,Open
+1823,Nicholas Radunz,EVT-00000988-1,Open
+1824,Nicholas Ramsay,EVT-00001744-1,Open
+1825,Nicholas Ramsay,EVT-00001750-1,Closed - No Discipline
+1826,Nicholas Ramsay,EVT-00001974-1,Open
+1827,Nicholas Sciorrotta JR,EVT-00000301-1,Closed - No Discipline
+1828,Nicholas Sciorrotta JR,EVT-00001560-1,Open
+1829,Nicholas Torborg,EVT-00000710-1,Open
+1830,Nicolas Custode,EVT-00000058-1,Closed - No Discipline
+1831,Nicolas Custode,EVT-00000313-1,Open
+1832,Nicolas Custode,EVT-00000574-1,Closed - No Discipline
+1833,Nicolas Custode,EVT-00000915-1,Closed - No Discipline
+1834,Nicolas Custode,EVT-00001037-2,Open
+1835,Nicole Murray,EVT-00000800-1,Closed - No Discipline
+1836,Nicole Murray,EVT-00001611-1,Closed - No Discipline
+1837,Noah Kadela,EVT-00001913-1,Open
+1838,Noukue Cha,EVT-00000025-1,Closed - No Discipline
+1839,Noukue Cha,EVT-00000073-1,Closed - No Discipline
+1840,Noukue Cha,EVT-00001659-1,Closed - No Discipline
+1841,Noushoua Cha,EVT-00000069-1,Closed - No Discipline
+1842,Noushoua Cha,EVT-00000882-1,Closed - No Discipline
+1843,Noushoua Cha,EVT-00001009-1,Closed - No Discipline
+1844,Noushoua Cha,EVT-00001844-1,Closed - No Discipline
+1845,Omar Foulkes,EVT-00000466-1,Open
+1846,Omar Foulkes,EVT-00000695-1,Open
+1847,Omar Foulkes,EVT-00000908-1,Open
+1848,Omar Foulkes,EVT-00001051-1,Open
+1849,Omar Foulkes,EVT-00001707-1,Open
+1850,Oscar Macias,EVT-00000031-1,Closed - No Discipline
+1851,Oscar Macias,EVT-00000169-1,Closed - No Discipline
+1852,Oscar Macias,EVT-00000312-1,Closed - No Discipline
+1853,Oscar Macias,EVT-00000679-1,Open
+1854,Oscar Macias,EVT-00000836-3,Closed - No Discipline
+1855,Oscar Macias,EVT-00001386-1,Closed - No Discipline
+1856,Owen Peterson,EVT-00001733-1,Open
+1857,Paochoua Xiong,EVT-00000313-1,Open
+1858,Paochoua Xiong,EVT-00000439-1,Open
+1859,Paochoua Xiong,EVT-00000941-1,Open
+1860,Patricia Lugo,EVT-00001905-1,Closed - No Discipline
+1861,Patrick McCarver,EVT-00000612-1,Closed - No Discipline
+1862,Patrick McCarver,EVT-00000668-1,Closed - No Discipline
+1863,Patrick McCarver,EVT-00000807-1,Open
+1864,Patrick McCarver,EVT-00001197-1,Open
+1865,Patrick McCarver,EVT-00001343-1,Closed - No Discipline
+1866,Patrick McCarver,EVT-00001602-1,Open
+1867,Patrick McCarver,EVT-00001691-1,Open
+1868,Patrick Reuben,EVT-00000361-1,Closed - No Discipline
+1869,Patrick Reuben,EVT-00000504-1,Closed - No Discipline
+1870,Patrick Reuben,EVT-00000702-1,Closed - No Discipline
+1871,Patrick Windus,EVT-00001237-4,Closed - No Discipline
+1872,Patrick Windus,EVT-00001583-2,Open
+1873,Patrick Windus,EVT-00001673-2,Open
+1874,Paul Albers,EVT-00000120-1,Closed - Final Discipline
+1875,Paul Albers,EVT-00000466-1,Open
+1876,Paul Albers,EVT-00000966-1,Open
+1877,Paul Dellwo,EVT-00000841-3,Closed - No Discipline
+1878,Paul O'Hanlon,EVT-00000211-1,Closed - No Discipline
+1879,Paul O'Hanlon,EVT-00000513-1,Closed - No Discipline
+1880,Paul O'Hanlon,EVT-00000550-2,Closed - No Discipline
+1881,Paul O'Hanlon,EVT-00000578-1,Closed - No Discipline
+1882,Paul O'Hanlon,EVT-00000948-1,Closed - No Discipline
+1883,Paul O'Hanlon,EVT-00001017-2,Open
+1884,Paul Schweiger,EVT-00000379-1,Closed - No Discipline
+1885,Pedro Rodriguez Aguilar,EVT-00001409-3,Closed - No Discipline
+1886,Pedro Rodriguez Aguilar,EVT-00001453-1,Closed - No Discipline
+1887,Pedro Rodriguez Aguilar,EVT-00001886-1,Closed - No Discipline
+1888,Peter Bacon,EVT-00000289-1,Closed - No Discipline
+1889,Peter Bacon,EVT-00001101-1,Closed - No Discipline
+1890,Peter Ogren,EVT-00000819-1,Closed - No Discipline
+1891,Peter Ogren,EVT-00001153-1,Open
+1892,Peter Ogren,EVT-00001305-1,Closed - No Discipline
+1893,Peter Stanton,EVT-00000598-1,Open
+1894,Peter Stanton,EVT-00000676-1,Closed - No Discipline
+1895,Peter Stanton,EVT-00000774-1,Closed - No Discipline
+1896,Peter Stanton,EVT-00000841-2,Open
+1897,Peter Stanton,EVT-00000878-2,Closed - No Discipline
+1898,Peter Stanton,EVT-00000881-1,Open
+1899,Peter Stanton,EVT-00000884-1,Open
+1900,Peter Stanton,EVT-00000963-1,Closed - No Discipline
+1901,Peter Stanton,EVT-00001005-1,Open
+1902,Peter Stanton,EVT-00001139-1,Closed - No Discipline
+1903,Peter Stanton,EVT-00001293-1,Closed - No Discipline
+1904,Peter Stanton,EVT-00001601-1,Closed - No Discipline
+1905,Peter Stanton,EVT-00001664-1,Open
+1906,Peter Stanton,EVT-00001840-1,Open
+1907,Philip Alejandrino,EVT-00000068-1,Closed - No Discipline
+1908,Phillip Gangnon,EVT-00000175-1,Closed - No Discipline
+1909,Phillip Hadley,EVT-00001310-1,Closed - No Discipline
+1910,Phillip Hadley,EVT-00001734-1,Open
+1911,Porter McRae,EVT-00001184-1,Closed - No Discipline
+1912,Quillan Oak,EVT-00000423-1,Closed - No Discipline
+1913,Quillan Oak,EVT-00000740-1,Open
+1914,Quillan Oak,EVT-00000915-2,Open
+1915,Quillan Oak,EVT-00000915-9,Open
+1916,Quillan Oak,EVT-00000952-1,Closed - No Discipline
+1917,Quillan Oak,EVT-00001896-2,Open
+1918,Rachael Cashin,EVT-00000500-1,Closed - No Discipline
+1919,Rachael Cashin,EVT-00001101-1,Closed - No Discipline
+1920,Rachael Cashin,EVT-00001604-1,Open
+1921,Rachael Cashin,EVT-00001670-2,Open
+1922,Rachael Cashin,EVT-00001753-1,Open
+1923,Rachael Cashin,EVT-00001907-2,Open
+1924,RACHEL BATINICH,EVT-00001516-1,Closed - No Discipline
+1925,RaShad Powell,EVT-00000014-1,Closed - No Discipline
+1926,RaShad Powell,EVT-00000164-1,Open
+1927,RaShad Powell,EVT-00000202-1,Closed - Final Discipline
+1928,RaShad Powell,EVT-00000254-1,Closed - Final Discipline
+1929,RaShad Powell,EVT-00000359-1,Open
+1930,RaShad Powell,EVT-00000483-1,Closed - No Discipline
+1931,RaShad Powell,EVT-00001440-1,Closed - No Discipline
+1932,RaShad Powell,EVT-00001682-1,Open
+1933,RaShad Powell,EVT-00001850-1,Closed - No Discipline
+1934,Rebecca Madich,EVT-00000486-1,Closed - No Discipline
+1935,Rebecca Madich,EVT-00000696-3,Closed - No Discipline
+1936,Rebecca Madich,EVT-00000836-3,Closed - No Discipline
+1937,Rebecca Madich,EVT-00000957-5,Closed - No Discipline
+1938,Rebecca Watkins,EVT-00000146-1,Closed - No Discipline
+1939,Rebecca Watkins,EVT-00001023-1,Open
+1940,Rebecca Watkins,EVT-00001114-1,Closed - No Discipline
+1941,Rebecca Watkins,EVT-00001241-1,Open
+1942,Renee Lewis,EVT-00000133-1,Closed - No Discipline
+1943,Renee Lewis,EVT-00000823-1,Open
+1944,Renee Lewis,EVT-00000950-1,Open
+1945,Ricardo Muro,EVT-00000395-1,Closed - No Discipline
+1946,Ricardo Muro,EVT-00000399-1,Closed - No Discipline
+1947,Richard Hand,EVT-00001876-1,Open
+1948,Richard Hand,EVT-00001887-1,Open
+1949,Richard Knoche,EVT-00000009-1,Closed - No Discipline
+1950,Richard Knoche,EVT-00000026-1,Closed - No Discipline
+1951,Richard Knoche,EVT-00000121-1,Open
+1952,Richard Knoche,EVT-00000166-1,Open
+1953,Richard Knoche,EVT-00000181-1,Open
+1954,Richard Knoche,EVT-00000428-2,Closed - No Discipline
+1955,Richard Knoche,EVT-00001478-1,Open
+1956,Richard Knoche,EVT-00001884-1,Open
+1957,Richard Walker,EVT-00000365-1,Closed - No Discipline
+1958,Richard Walker,EVT-00000776-1,Open
+1959,Richard Walker,EVT-00000898-2,Open
+1960,Richard Walker,EVT-00001480-5,Open
+1961,Richard Walker Jr,EVT-00001368-1,Open
+1962,Richard Zimmerman,EVT-00000022-1,Closed - No Discipline
+1963,Richard Zimmerman,EVT-00001727-2,Closed - No Discipline
+1964,Ricky Plunkett,EVT-00000014-1,Closed - No Discipline
+1965,Ricky Plunkett,EVT-00000164-1,Open
+1966,Ricky Plunkett,EVT-00000179-1,Closed - Final Discipline
+1967,Ricky Plunkett,EVT-00000242-1,Closed - No Discipline
+1968,Ricky Plunkett,EVT-00000675-1,Open
+1969,Ricky Plunkett,EVT-00000686-1,Closed - No Discipline
+1970,Ricky Plunkett,EVT-00000827-1,Open
+1971,Ricky Plunkett,EVT-00001202-1,Open
+1972,Ricky Plunkett,EVT-00001533-2,Closed - No Discipline
+1973,Ricky Plunkett,EVT-00001703-1,Closed - No Discipline
+1974,Ricky Xiong,EVT-00002020-1,Open
+1975,Robert Berry,EVT-00000265-1,Closed - No Discipline
+1976,Robert Berry,EVT-00000856-1,Closed - No Discipline
+1977,Robert Berry,EVT-00001628-1,Closed - No Discipline
+1978,Robert Greer,EVT-00000662-1,Closed - No Discipline
+1979,Robert Greer,EVT-00001173-1,Closed - No Discipline
+1980,Robert Heiple,EVT-00001011-2,Closed - No Discipline
+1981,Robert Heiple,EVT-00001096-1,Open
+1982,Robert Heiple,EVT-00001105-1,Closed - No Discipline
+1983,Robert Heiple,EVT-00001166-1,Closed - No Discipline
+1984,Robert Illetschko,EVT-00000316-1,Closed - No Discipline
+1985,Robert Illetschko,EVT-00001559-1,Open
+1986,Robert Illetschko,EVT-00001786-1,Closed - No Discipline
+1987,Robert Illetschko,EVT-00001787-1,Closed - No Discipline
+1988,Robert Lewis,EVT-00000350-1,Closed - No Discipline
+1989,Robert Lewis,EVT-00001552-2,Open
+1990,Robert Lewis,EVT-00001644-3,Open
+1991,Robert Mercado,EVT-00000582-1,Open
+1992,Robert Mercado,EVT-00000739-1,Closed - No Discipline
+1993,Robert Mercado,EVT-00000778-1,Open
+1994,ROBERT ROBINSON,EVT-00000149-1,Closed - No Discipline
+1995,ROBERT ROBINSON,EVT-00000242-1,Closed - No Discipline
+1996,ROBERT ROBINSON,EVT-00000359-1,Open
+1997,ROBERT ROBINSON,EVT-00000744-1,Open
+1998,ROBERT ROBINSON,EVT-00001082-1,Closed - No Discipline
+1999,ROBERT ROBINSON,EVT-00001711-1,Open
+2000,ROBERT ROBINSON,EVT-00001711-2,Closed - No Discipline
+2001,Robert Thunder,EVT-00001478-2,Open
+2002,Roberto Hernandez,EVT-00000019-1,Closed - No Discipline
+2003,Roberto Hernandez,EVT-00000064-1,Closed - No Discipline
+2004,Roberto Hernandez,EVT-00000286-1,Closed - No Discipline
+2005,Roberto Hernandez,EVT-00000299-1,Closed - Final Discipline
+2006,Roberto Hernandez,EVT-00000417-1,Open
+2007,Roberto Hernandez,EVT-00000418-1,Open
+2008,Roberto Hernandez,EVT-00000418-2,Open
+2009,Roberto Hernandez,EVT-00000420-1,Open
+2010,Roberto Hernandez,EVT-00000463-1,Open
+2011,Roberto Hernandez,EVT-00000891-1,Open
+2012,Roberto Hernandez,EVT-00001231-1,Open
+2013,Roberto Hernandez,EVT-00001634-2,Closed - No Discipline
+2014,Roberto Hernandez,EVT-00001711-1,Open
+2015,Roger Moua,EVT-00000227-1,Closed - No Discipline
+2016,Roger Moua,EVT-00000372-1,Closed - No Discipline
+2017,Roger Moua,EVT-00000558-1,Closed - No Discipline
+2018,Roger Moua,EVT-00000994-1,Closed - No Discipline
+2019,Roger Moua,EVT-00001656-1,Closed - No Discipline
+2020,Roger Moua,EVT-00001656-2,Open
+2021,Ronald Stenerson,EVT-00000295-1,Open
+2022,Russell Cragin,EVT-00000663-1,Closed - No Discipline
+2023,Ryan Atkinson,EVT-00000045-1,Closed - No Discipline
+2024,Ryan Atkinson,EVT-00000061-1,Closed - No Discipline
+2025,Ryan Atkinson,EVT-00000218-1,Closed - No Discipline
+2026,Ryan Atkinson,EVT-00000292-1,Open
+2027,Ryan Atkinson,EVT-00000425-1,Closed - No Discipline
+2028,Ryan Atkinson,EVT-00000493-1,Open
+2029,Ryan Atkinson,EVT-00000507-1,Closed - No Discipline
+2030,Ryan Atkinson,EVT-00000514-1,Open
+2031,Ryan Atkinson,EVT-00000521-1,Open
+2032,Ryan Atkinson,EVT-00000621-2,Closed - No Discipline
+2033,Ryan Atkinson,EVT-00000765-1,Closed - No Discipline
+2034,Ryan Atkinson,EVT-00000941-2,Closed - No Discipline
+2035,Ryan Atkinson,EVT-00000975-1,Open
+2036,Ryan Atkinson,EVT-00001188-2,Closed - No Discipline
+2037,Ryan Atkinson,EVT-00001216-1,Closed - No Discipline
+2038,Ryan Atkinson,EVT-00001237-1,Closed - No Discipline
+2039,Ryan Atkinson,EVT-00001278-1,Open
+2040,Ryan Atkinson,EVT-00001366-1,Open
+2041,Ryan Atkinson,EVT-00001876-1,Open
+2042,Ryan Beightol,EVT-00000226-3,Closed - No Discipline
+2043,Ryan Beightol,EVT-00000461-1,Open
+2044,Ryan Beightol,EVT-00000494-1,Closed - Final Discipline
+2045,Ryan Beightol,EVT-00000560-1,Open
+2046,Ryan Beightol,EVT-00001136-1,Open
+2047,Ryan Beightol,EVT-00001484-1,Open
+2048,Ryan Beightol,EVT-00001662-1,Open
+2049,RYAN CALHOUN,EVT-00000043-1,Closed - No Discipline
+2050,RYAN CALHOUN,EVT-00000154-1,Open
+2051,RYAN CALHOUN,EVT-00000505-1,Closed - No Discipline
+2052,Ryan Carrero,EVT-00000617-1,Closed - No Discipline
+2053,Ryan Carrero,EVT-00001295-1,Closed - No Discipline
+2054,Ryan Davis,EVT-00000633-1,Closed - No Discipline
+2055,Ryan Davis,EVT-00000965-1,Closed - No Discipline
+2056,Ryan Johnson,EVT-00000150-1,Closed - No Discipline
+2057,Ryan Johnson,EVT-00000227-1,Closed - No Discipline
+2058,Ryan Kelly,EVT-00000010-1,Closed - No Discipline
+2059,Ryan Kelly,EVT-00000039-1,Closed - No Discipline
+2060,Ryan Kelly,EVT-00000126-1,Closed - No Discipline
+2061,Ryan Kelly,EVT-00000137-1,Open
+2062,Ryan Kelly,EVT-00000153-1,Open
+2063,Ryan Kelly,EVT-00000167-2,Open
+2064,Ryan Kelly,EVT-00000226-1,Closed - Final Discipline
+2065,Ryan Kelly,EVT-00000297-1,Open
+2066,Ryan Kelly,EVT-00000387-1,Closed - No Discipline
+2067,Ryan Kelly,EVT-00000420-1,Open
+2068,Ryan Kelly,EVT-00000461-1,Open
+2069,Ryan Kelly,EVT-00000586-1,Closed - Final Discipline
+2070,Ryan Kelly,EVT-00000604-1,Open
+2071,Ryan Kelly,EVT-00000677-1,Closed - Final Discipline
+2072,Ryan Kelly,EVT-00001089-1,Open
+2073,Ryan Kelly,EVT-00001134-1,Closed - No Discipline
+2074,Ryan Kelly,EVT-00001644-3,Open
+2075,Ryan Kelly,EVT-00001762-1,Open
+2076,RYAN KINGDON,EVT-00000050-1,Closed - No Discipline
+2077,RYAN KINGDON,EVT-00000135-1,Open
+2078,RYAN KINGDON,EVT-00000378-1,Closed - No Discipline
+2079,RYAN KINGDON,EVT-00000517-2,Closed - No Discipline
+2080,RYAN KINGDON,EVT-00000758-2,Open
+2081,RYAN KINGDON,EVT-00001277-1,Closed - No Discipline
+2082,RYAN KINGDON,EVT-00001373-1,Open
+2083,Ryan Knoll,EVT-00001713-1,Closed - No Discipline
+2084,Ryan McCann,EVT-00000485-1,Open
+2085,Ryan McCann,EVT-00001765-1,Open
+2086,Ryan Merrigan,EVT-00000278-1,Closed - No Discipline
+2087,Ryan Merrigan,EVT-00000579-1,Open
+2088,Ryan Merrigan,EVT-00000744-1,Open
+2089,Ryan Merrigan,EVT-00000927-1,Open
+2090,Ryan Merrigan,EVT-00001007-1,Open
+2091,Ryan Merrigan,EVT-00001042-1,Open
+2092,Ryan Merrigan,EVT-00001277-1,Closed - No Discipline
+2093,Ryan Merrigan,EVT-00001298-1,Closed - No Discipline
+2094,Ryan Merrigan,EVT-00001373-1,Open
+2095,Ryan Merrigan,EVT-00001419-1,Open
+2096,Ryan Miller,EVT-00000310-1,Closed - No Discipline
+2097,Ryan OHara,EVT-00001035-5,Closed - No Discipline
+2098,Ryan OHara,EVT-00001992-1,Open
+2099,Ryan Pacheco,EVT-00000063-1,Closed - No Discipline
+2100,Ryan Pacheco,EVT-00000440-1,Closed - No Discipline
+2101,Ryan Pacheco,EVT-00001372-1,Open
+2102,Ryan Pacheco,EVT-00001536-1,Open
+2103,Ryan Pacheco,EVT-00001606-1,Closed - No Discipline
+2104,Ryan Pacheco,EVT-00001635-1,Closed - No Discipline
+2105,Ryan Pacheco,EVT-00001896-1,Open
+2106,Ryan Weber,EVT-00000688-1,Closed - No Discipline
+2107,Ryan Weber,EVT-00000879-1,Closed - No Discipline
+2108,Ryan Weber,EVT-00001362-1,Open
+2109,SAMSUA THAO,EVT-00000213-1,Closed - Final Discipline
+2110,SAMSUA THAO,EVT-00000551-1,Closed - Final Discipline
+2111,SAMSUA THAO,EVT-00000617-1,Closed - No Discipline
+2112,SAMSUA THAO,EVT-00000661-1,Closed - No Discipline
+2113,SAMSUA THAO,EVT-00000818-2,Open
+2114,SAMSUA THAO,EVT-00001057-1,Open
+2115,SAMSUA THAO,EVT-00001525-1,Closed - No Discipline
+2116,SAMSUA THAO,EVT-00001584-1,Closed - No Discipline
+2117,Samuel Erickson,EVT-00000144-1,Closed - Final Discipline
+2118,Samuel Erickson,EVT-00000249-1,Closed - Final Discipline
+2119,Samuel Erickson,EVT-00000481-1,Closed - No Discipline
+2120,Samuel Erickson,EVT-00000915-1,Closed - No Discipline
+2121,Samuel Erickson,EVT-00001542-2,Open
+2122,SAMUEL KJOS,EVT-00000418-1,Open
+2123,SAMUEL KJOS,EVT-00000621-2,Closed - No Discipline
+2124,SAMUEL KJOS,EVT-00000878-1,Open
+2125,Samuel Polito,EVT-00000027-1,Open
+2126,Samuel Polito,EVT-00000229-1,Closed - No Discipline
+2127,Samuel Polito,EVT-00000313-1,Open
+2128,Samuel Polito,EVT-00000362-1,Closed - No Discipline
+2129,Samuel Polito,EVT-00000437-1,Closed - No Discipline
+2130,Samuel Polito,EVT-00000439-1,Open
+2131,Samuel Polito,EVT-00000492-1,Open
+2132,Samuel Polito,EVT-00000498-1,Closed - No Discipline
+2133,Samuel Polito,EVT-00000542-1,Open
+2134,Samuel Polito,EVT-00000670-1,Open
+2135,Samuel Polito,EVT-00000701-1,Closed - No Discipline
+2136,Samuel Polito,EVT-00000720-2,Open
+2137,Samuel Polito,EVT-00000733-1,Closed - No Discipline
+2138,Samuel Polito,EVT-00001025-1,Open
+2139,Samuel Polito,EVT-00001157-1,Open
+2140,Samuel Polito,EVT-00001421-1,Closed - No Discipline
+2141,Sara Idmoussa,EVT-00001748-1,Closed - No Discipline
+2142,Sarah Wegner,EVT-00001158-1,Closed - No Discipline
+2143,Saul Garza,EVT-00000731-3,Open
+2144,Saul Garza,EVT-00001367-1,Closed - No Discipline
+2145,Saul Garza,EVT-00001831-1,Open
+2146,Sawyer Moen,EVT-00001065-1,Closed - No Discipline
+2147,Scot Kaiser,EVT-00000173-1,Closed - No Discipline
+2148,Scot Kaiser,EVT-00000247-1,Open
+2149,Scot Kaiser,EVT-00000831-2,Open
+2150,Scot Kaiser,EVT-00001759-2,Closed - No Discipline
+2151,Scott Aikins,EVT-00000422-1,Closed - No Discipline
+2152,Scott Aikins,EVT-00000467-1,Open
+2153,Sean Hrab,EVT-00000397-1,Closed - No Discipline
+2154,Sean Hrab,EVT-00001048-1,Closed - No Discipline
+2155,Sean Hrab,EVT-00001536-1,Open
+2156,Sean Lessard,EVT-00000438-1,Open
+2157,Sean Mc Ginty,EVT-00000184-1,Closed - No Discipline
+2158,Sen Xiong,EVT-00000516-1,Closed - No Discipline
+2159,Sen Xiong,EVT-00000557-1,Closed - No Discipline
+2160,Sen Xiong,EVT-00000941-2,Closed - No Discipline
+2161,Sen Xiong,EVT-00001342-1,Closed - No Discipline
+2162,Sergio Villegas,EVT-00000401-1,Open
+2163,Sergio Villegas,EVT-00000404-1,Open
+2164,Sergio Villegas,EVT-00000636-1,Closed - No Discipline
+2165,Sergio Villegas,EVT-00000636-2,Open
+2166,Sergio Villegas,EVT-00000873-1,Closed - No Discipline
+2167,Sergio Villegas,EVT-00001488-1,Closed - No Discipline
+2168,Seth Porras,EVT-00000151-1,Closed - No Discipline
+2169,Seth Porras,EVT-00000374-1,Closed - No Discipline
+2170,Shane Riley,EVT-00000244-1,Closed - No Discipline
+2171,Shane Riley,EVT-00000574-1,Closed - No Discipline
+2172,Shane Riley,EVT-00001037-1,Open
+2173,Shane Riley,EVT-00001060-1,Open
+2174,Shane Riley,EVT-00001504-1,Open
+2175,Shane Riley,EVT-00001601-1,Closed - No Discipline
+2176,Shane Riley,EVT-00001829-1,Open
+2177,Shawn Brandt,EVT-00000009-1,Closed - No Discipline
+2178,Shawn Brandt,EVT-00000031-1,Closed - No Discipline
+2179,Shawn Brandt,EVT-00000166-1,Open
+2180,Shawn Brandt,EVT-00000169-1,Closed - No Discipline
+2181,Shawn Brandt,EVT-00001370-2,Open
+2182,Shawn Woods,EVT-00000862-1,Closed - No Discipline
+2183,Shay Sward,EVT-00000225-1,Open
+2184,Sherral Schmidt,EVT-00001035-2,Open
+2185,Sherzad Kordian,EVT-00000516-1,Closed - No Discipline
+2186,Sherzad Kordian,EVT-00000570-1,Closed - No Discipline
+2187,Sherzad Kordian,EVT-00001071-1,Open
+2188,Sherzad Kordian,EVT-00001267-1,Closed - No Discipline
+2189,Sherzad Kordian,EVT-00001480-2,Closed - No Discipline
+2190,Sherzad Kordian,EVT-00001601-1,Closed - No Discipline
+2191,Sherzad Kordian,EVT-00001842-1,Closed - No Discipline
+2192,Shivani Nash,EVT-00000188-1,Open
+2193,Shivani Nash,EVT-00001382-1,Open
+2194,Shivani Nash,EVT-00001397-1,Closed - No Discipline
+2195,Shivani Nash,EVT-00001624-1,Open
+2196,SIRI GYLLAND,EVT-00000553-1,Closed - No Discipline
+2197,SIRI GYLLAND,EVT-00000568-1,Closed - No Discipline
+2198,SIRI GYLLAND,EVT-00001004-1,Closed - No Discipline
+2199,SPENCER ANDERSON,EVT-00000298-1,Open
+2200,SPENCER ANDERSON,EVT-00000833-1,Open
+2201,SPENCER ANDERSON,EVT-00000841-2,Closed - Final Discipline
+2202,SPENCER ANDERSON,EVT-00001217-1,Closed - No Discipline
+2203,SPENCER ANDERSON,EVT-00001617-2,Closed - No Discipline
+2204,SPENCER ANDERSON,EVT-00001650-1,Open
+2205,SPENCER ANDERSON,EVT-00001803-1,Closed - No Discipline
+2206,SPENCER ERICSON,EVT-00000092-1,Closed - No Discipline
+2207,SPENCER ERICSON,EVT-00000957-2,Closed - No Discipline
+2208,Stephen Dennison,EVT-00000414-2,Closed - No Discipline
+2209,Stephen Dennison,EVT-00001035-2,Open
+2210,Stephen Dennison,EVT-00001417-1,Closed - No Discipline
+2211,Stephen Mc Bride,EVT-00000866-1,Open
+2212,Stephen Mc Bride,EVT-00001633-1,Closed - No Discipline
+2213,Stephen Sporny,EVT-00000119-1,Closed - Final Discipline
+2214,Stephen Sporny,EVT-00000517-2,Closed - No Discipline
+2215,Stephen Sporny,EVT-00001141-1,Closed - No Discipline
+2216,Stephen Sporny,EVT-00001237-2,Closed - No Discipline
+2217,Steve Wuorinen,EVT-00000210-1,Closed - No Discipline
+2218,Steve Wuorinen,EVT-00000245-1,Open
+2219,Steve Wuorinen,EVT-00000697-1,Closed - No Discipline
+2220,Steve Wuorinen,EVT-00000775-1,Closed - No Discipline
+2221,Steve Wuorinen,EVT-00000794-1,Closed - No Discipline
+2222,Steve Wuorinen,EVT-00001092-1,Open
+2223,Steve Wuorinen,EVT-00001234-1,Closed - No Discipline
+2224,Steve Wuorinen,EVT-00001450-1,Closed - No Discipline
+2225,Steve Wuorinen,EVT-00001580-1,Open
+2226,Steve Wuorinen,EVT-00001643-3,Open
+2227,Steve Wuorinen,EVT-00001646-1,Open
+2228,Steve Wuorinen,EVT-00001802-1,Closed - No Discipline
+2229,Steve Wuorinen,EVT-00001907-1,Open
+2230,Steven Klimpke,EVT-00000211-1,Closed - No Discipline
+2231,Steven Klimpke,EVT-00000621-2,Closed - No Discipline
+2232,Steven Klimpke,EVT-00001871-1,Open
+2233,Steven Klimpke,EVT-00001901-1,Open
+2234,Steven Klimpke,EVT-00001907-2,Open
+2235,Steven Klimpke,EVT-00001970-1,Open
+2236,Sue Moua,EVT-00000174-1,Closed - No Discipline
+2237,Sue Moua,EVT-00000720-2,Open
+2238,Sue Moua,EVT-00000891-1,Open
+2239,Sue Moua,EVT-00001904-1,Open
+2240,Tammy Werner,EVT-00001106-1,Closed - No Discipline
+2241,Tedros Semere,EVT-00001737-1,Closed - No Discipline
+2242,Tedros Semere,EVT-00001746-1,Closed - No Discipline
+2243,Tedros Semere,EVT-00001984-1,Closed - No Discipline
+2244,Teena Curry,EVT-00000112-1,Open
+2245,Teena Curry,EVT-00000574-1,Closed - No Discipline
+2246,Teena Curry,EVT-00000747-1,Open
+2247,Teena Curry,EVT-00001153-1,Open
+2248,Teena Curry,EVT-00001488-1,Closed - No Discipline
+2249,Teresa Eisfelder,EVT-00001026-1,Open
+2250,Teresa Eisfelder,EVT-00001270-1,Closed - No Discipline
+2251,Teresa Eisfelder,EVT-00001270-2,Closed - No Discipline
+2252,Thomas Conlin,EVT-00000600-1,Closed - No Discipline
+2253,Thomas Conlin,EVT-00000630-1,Closed - No Discipline
+2254,Thomas Conlin,EVT-00000712-1,Closed - No Discipline
+2255,Thomas Conlin,EVT-00001189-1,Closed - No Discipline
+2256,Thomas Conlin,EVT-00001237-1,Closed - No Discipline
+2257,Thomas Fahey,EVT-00000171-1,Open
+2258,Thomas Fahey,EVT-00001754-3,Open
+2259,Thomas Schmid,EVT-00001013-1,Closed - No Discipline
+2260,Timothy Baskin,EVT-00000048-1,Closed - No Discipline
+2261,Timothy Baskin,EVT-00000383-1,Closed - No Discipline
+2262,Timothy Baskin,EVT-00000847-1,Closed - No Discipline
+2263,Timothy Baskin,EVT-00000887-1,Closed - No Discipline
+2264,Timothy Baskin,EVT-00000915-4,Open
+2265,Timothy Callahan,EVT-00000015-1,Closed - No Discipline
+2266,Timothy Callahan,EVT-00000915-1,Closed - No Discipline
+2267,Timothy Callahan,EVT-00001122-1,Open
+2268,Timothy Callahan,EVT-00001717-1,Open
+2269,Timothy Davis Jr,EVT-00000158-1,Open
+2270,Timothy Davis Jr,EVT-00000172-1,Open
+2271,Timothy Davis Jr,EVT-00000193-1,Open
+2272,Timothy Davis Jr,EVT-00000674-1,Closed - No Discipline
+2273,Timothy Davis Jr,EVT-00000782-1,Open
+2274,Timothy Davis Jr,EVT-00000806-1,Open
+2275,Timothy Davis Jr,EVT-00000826-6,Open
+2276,Timothy Davis Jr,EVT-00001035-1,Open
+2277,Timothy Davis Jr,EVT-00001564-1,Closed - No Discipline
+2278,Timothy Davis Jr,EVT-00001772-2,Open
+2279,Timothy Davis Jr,EVT-00001907-1,Open
+2280,Timothy Davis Jr,EVT-00001918-2,Open
+2281,Timothy Eck,EVT-00000070-1,Closed - Final Discipline
+2282,Timothy Eck,EVT-00001659-2,Closed - No Discipline
+2283,Timothy Eck,EVT-00001877-1,Closed - No Discipline
+2284,Timothy Eck,EVT-00001971-1,Closed - No Discipline
+2285,Timothy Eck,EVT-00001977-1,Closed - No Discipline
+2286,Timothy Eck,EVT-00001997-1,Open
+2287,Timothy Thao,EVT-00000095-1,Closed - No Discipline
+2288,Timothy Thao,EVT-00000224-1,Closed - No Discipline
+2289,Timothy Thao,EVT-00000306-1,Closed - No Discipline
+2290,Timothy Thao,EVT-00001157-1,Open
+2291,Timothy Thao,EVT-00001249-1,Open
+2292,Tobias Anderson,EVT-00000624-1,Closed - Final Discipline
+2293,Tobias Anderson,EVT-00000915-1,Closed - No Discipline
+2294,Tobias Anderson,EVT-00001002-1,Open
+2295,Tobias Anderson,EVT-00001291-1,Closed - No Discipline
+2296,Tobias Anderson,EVT-00001807-2,Open
+2297,Tobias Anderson,EVT-00001870-1,Open
+2298,Todd Harder,EVT-00001655-1,Closed - No Discipline
+2299,Tong Lee,EVT-00001788-1,Closed - No Discipline
+2300,Tong Lee,EVT-00001869-1,Open
+2301,Tong Vang,EVT-00000378-1,Closed - No Discipline
+2302,Tong Vang,EVT-00000758-1,Closed - No Discipline
+2303,Tong Vang,EVT-00000831-1,Closed - No Discipline
+2304,Tong Vang,EVT-00000832-1,Closed - No Discipline
+2305,Tong Vang,EVT-00001644-2,Closed - No Discipline
+2306,Tony Partyka,EVT-00000299-1,Open
+2307,Tony Partyka,EVT-00000310-1,Closed - No Discipline
+2308,Tony Partyka,EVT-00000369-1,Closed - No Discipline
+2309,Tony Partyka,EVT-00000425-1,Closed - No Discipline
+2310,Tony Partyka,EVT-00000529-2,Open
+2311,Tony Partyka,EVT-00000693-1,Open
+2312,Tony Partyka,EVT-00000752-1,Open
+2313,Tony Partyka,EVT-00000934-2,Open
+2314,Tony Partyka,EVT-00000946-1,Closed - No Discipline
+2315,Tony Partyka,EVT-00000957-4,Closed - No Discipline
+2316,Tony Partyka,EVT-00000980-1,Open
+2317,Tony Partyka,EVT-00001452-1,Open
+2318,Tony Ratphoumy,EVT-00001006-1,Closed - No Discipline
+2319,Tony Ratphoumy,EVT-00001045-1,Open
+2320,Tony Ratphoumy,EVT-00001478-2,Open
+2321,Tou Moua,EVT-00000651-1,Closed - No Discipline
+2322,Tou Moua,EVT-00000776-1,Open
+2323,Tou Moua,EVT-00001204-1,Closed - No Discipline
+2324,TOU THAO,EVT-00000464-3,Closed - No Discipline
+2325,TOU THAO,EVT-00001734-2,Open
+2326,TOU THAO,EVT-00001759-1,Open
+2327,TOU THAO,EVT-00001791-1,Closed - No Discipline
+2328,Tou Thao,EVT-00001930-1,Closed - No Discipline
+2329,Toula Lor,EVT-00000275-1,Closed - No Discipline
+2330,Toula Lor,EVT-00001425-1,Open
+2331,Travis Hansen,EVT-00000832-1,Closed - No Discipline
+2332,Travis Hansen,EVT-00000865-1,Closed - No Discipline
+2333,Travis Hansen,EVT-00000942-2,Closed - No Discipline
+2334,Travis Murphy,EVT-00000036-1,Open
+2335,Travis Murphy,EVT-00000164-2,Open
+2336,Travis Murphy,EVT-00000869-1,Closed - No Discipline
+2337,Travis Murphy,EVT-00001121-1,Closed - No Discipline
+2338,Travis Murphy,EVT-00001199-1,Closed - No Discipline
+2339,Travis Murphy,EVT-00001243-1,Closed - No Discipline
+2340,Travis Murphy,EVT-00001323-1,Closed - No Discipline
+2341,Travis Murphy,EVT-00001482-1,Closed - No Discipline
+2342,Travis Murphy,EVT-00001487-1,Closed - No Discipline
+2343,Travis Murphy,EVT-00001555-1,Closed - No Discipline
+2344,Travis Murphy,EVT-00001688-1,Closed - No Discipline
+2345,Travis Murphy,EVT-00001728-1,Open
+2346,Travis Murphy,EVT-00001766-1,Open
+2347,Travis Murphy,EVT-00001801-1,Open
+2348,Travis Williams,EVT-00000058-1,Closed - No Discipline
+2349,Travis Williams,EVT-00000088-1,Closed - No Discipline
+2350,Travis Williams,EVT-00000705-1,Closed - No Discipline
+2351,Travis Williams,EVT-00001351-1,Closed - No Discipline
+2352,Travis Williams,EVT-00001362-1,Open
+2353,Travis Williams,EVT-00001425-1,Open
+2354,Trevor Folke,EVT-00000107-1,Closed - No Discipline
+2355,Trevor Folke,EVT-00000942-2,Closed - No Discipline
+2356,Trevor Folke,EVT-00001217-1,Closed - No Discipline
+2357,TRISTAN FAIRBANKS,EVT-00000592-1,Closed - No Discipline
+2358,TRISTAN FAIRBANKS,EVT-00001831-3,Open
+2359,Troy Dillard,EVT-00001549-1,Closed - No Discipline
+2360,Troy Walker,EVT-00001288-2,Closed - No Discipline
+2361,Tser Cheng,EVT-00000831-1,Closed - No Discipline
+2362,Tser Cheng,EVT-00000832-1,Closed - No Discipline
+2363,Tser Cheng,EVT-00000969-1,Closed - No Discipline
+2364,Ty Mattioli,EVT-00000325-1,Closed - No Discipline
+2365,Ty Mattioli,EVT-00001239-1,Closed - No Discipline
+2366,TYLER JOHNSON,EVT-00000360-1,Closed - Final Discipline
+2367,TYLER JOHNSON,EVT-00000508-1,Open
+2368,TYLER JOHNSON,EVT-00000819-1,Closed - No Discipline
+2369,TYLER JOHNSON,EVT-00001054-2,Closed - No Discipline
+2370,Tyler Klund,EVT-00000295-1,Open
+2371,Tyler Nothnagel,EVT-00000414-1,Closed - No Discipline
+2372,Tyler Nothnagel,EVT-00000678-1,Open
+2373,Tyler Nothnagel,EVT-00001467-1,Open
+2374,Valeria Perez Martinez,EVT-00000898-1,Closed - No Discipline
+2375,Valeria Perez Martinez,EVT-00001771-2,Open
+2376,Vanessa Anderson,EVT-00001713-1,Closed - No Discipline
+2377,Victoria Artishon,EVT-00001636-1,Open
+2378,Victoria Artishon,EVT-00001872-1,Open
+2379,Victoria Artishon,EVT-00001874-1,Open
+2380,Walter Alvarado,EVT-00000732-1,Closed - Final Discipline
+2381,Wesley Kwong,EVT-00001583-1,Closed - No Discipline
+2382,Wesley Vert III,EVT-00001923-1,Open
+2383,William Gregory,EVT-00000027-1,Open
+2384,William Gregory,EVT-00000111-1,Open
+2385,William Gregory,EVT-00000159-1,Closed - Final Discipline
+2386,William Gregory,EVT-00000481-1,Closed - No Discipline
+2387,William Gregory,EVT-00000485-1,Open
+2388,William Gregory,EVT-00000941-2,Closed - No Discipline
+2389,William Gregory,EVT-00001077-1,Closed - No Discipline
+2390,William Gregory,EVT-00001077-2,Closed - No Discipline
+2391,William Gregory,EVT-00001433-1,Closed - No Discipline
+2392,William Gregory,EVT-00001690-1,Open
+2393,William Martin,EVT-00000357-1,Closed - No Discipline
+2394,William Martin,EVT-00000387-1,Closed - No Discipline
+2395,William Martin,EVT-00001143-1,Closed - No Discipline
+2396,William Willner,EVT-00000343-1,Closed - No Discipline
+2397,Xavier Rucker,EVT-00000295-1,Open
+2398,Xavier Rucker,EVT-00000582-1,Open
+2399,Ximena Manjarrez,EVT-00000885-1,Open
+2400,Xou Lor,EVT-00000100-1,Closed - No Discipline
+2401,Xou Lor,EVT-00001492-1,Closed - No Discipline
+2402,Yadanno Ahmed,EVT-00001480-8,Closed - No Discipline
+2403,Yadanno Ahmed,EVT-00001525-1,Closed - No Discipline
+2404,Yadanno Ahmed,EVT-00001918-1,Closed - No Discipline
+2405,Yadanno Ahmed,EVT-00001919-1,Closed - No Discipline
+2406,Yahye Ahmed,EVT-00000869-1,Closed - No Discipline
+2407,Yahye Ahmed,EVT-00001147-1,Closed - No Discipline
+2408,Yahye Ahmed,EVT-00001452-1,Open
+2409,Yahye Ahmed,EVT-00001525-1,Closed - No Discipline
+2410,Yahye Ahmed,EVT-00001534-2,Open
+2411,Yahye Ahmed,EVT-00001743-1,Open
+2412,Yahye Ahmed,EVT-00001830-1,Open
+2413,Yahye Ahmed,EVT-00001871-1,Open
+2414,Yahye Ahmed,EVT-00002010-1,Closed - No Discipline
+2415,YOGANAND SINGH,EVT-00000891-1,Open
+2416,YOGANAND SINGH,EVT-00001480-4,Closed - No Discipline
+2417,Yolanda Wilks,EVT-00000222-1,Closed - No Discipline
+2418,Yolanda Wilks,EVT-00000360-1,Open
+2419,Yolanda Wilks,EVT-00001056-1,Open
+2420,Yolanda Wilks,EVT-00001072-1,Closed - No Discipline
+2421,Yolanda Wilks,EVT-00001097-1,Closed - No Discipline
+2422,YULIA BURY,EVT-00000601-1,Closed - No Discipline
+2423,YULIA BURY,EVT-00000986-1,Closed - No Discipline
+2424,YULIA BURY,EVT-00001256-2,Closed - No Discipline
+2425,Yusef Hassan,EVT-00000043-1,Closed - No Discipline
+2426,Yusef Hassan,EVT-00000414-2,Closed - No Discipline
+2427,Yusef Hassan,EVT-00000559-1,Open
+2428,Yusef Hassan,EVT-00000561-1,Closed - Final Discipline
+2429,Yusef Hassan,EVT-00000768-1,Open
+2430,Yusef Hassan,EVT-00001035-2,Open
+2431,Yusef Hassan,EVT-00001181-2,Closed - No Discipline
+2432,Yusef Hassan,EVT-00001488-1,Closed - No Discipline
+2433,Yusef Hassan,EVT-00001672-1,Closed - No Discipline
+2434,Zach Musolf,EVT-00000608-1,Closed - No Discipline
+2435,Zach Musolf,EVT-00000793-1,Open
+2436,Zach Musolf,EVT-00001052-2,Closed - No Discipline
+2437,Zach Musolf,EVT-00001156-1,Open
+2438,Zach Musolf,EVT-00001417-2,Open
+2439,Zach Musolf,EVT-00001420-1,Closed - No Discipline
+2440,Zachary Blankenburg,EVT-00001616-1,Closed - No Discipline
+2441,Zachary Blankenburg,EVT-00001772-3,Open
+2442,Zachary Blankenburg,EVT-00001824-1,Open
+2443,Zachary Seraphine,EVT-00000010-1,Closed - No Discipline
+2444,Zachery Randall,EVT-00000283-1,Closed - No Discipline
+2445,Zachery Randall,EVT-00000506-1,Closed - No Discipline
+2446,Zachery Randall,EVT-00000567-1,Open
+2447,Zachery Randall,EVT-00001759-2,Closed - No Discipline
+2448,Zakari Ketchmark,EVT-00000865-1,Closed - No Discipline
+2449,Zane Anderson,EVT-00000994-1,Closed - No Discipline
+2450,Zane Anderson,EVT-00001062-1,Closed - No Discipline
+2451,Zane Anderson,EVT-00001309-1,Closed - No Discipline
+2452,Zane Anderson,EVT-00001446-1,Closed - No Discipline
+2453,Zane Anderson,EVT-00001528-1,Open
+2454,Zane Anderson,EVT-00001651-1,Closed - No Discipline
+2455,Zane Anderson,EVT-00001714-2,Open
+2456,Zerrick Fuller,EVT-00000108-1,Closed - No Discipline
+2457,Zerrick Fuller,EVT-00001022-1,Open
+2458,Zerrick Fuller,EVT-00001256-1,Open
+2459,Zerrick Fuller,EVT-00001294-1,Open
+2460,Zerrick Fuller,EVT-00001370-3,Closed - No Discipline
